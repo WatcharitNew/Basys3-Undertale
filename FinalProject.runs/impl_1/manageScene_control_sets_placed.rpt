@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Fri May 15 22:32:58 2020
+| Date         : Fri May 15 23:32:24 2020
 | Host         : DESKTOP-KFTK1LL running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file manageScene_control_sets_placed.rpt
 | Design       : manageScene
@@ -54,54 +54,54 @@ Table of Contents
 | No           | No                    | No                     |              65 |           43 |
 | No           | No                    | Yes                    |               2 |            1 |
 | No           | Yes                   | No                     |              29 |            9 |
-| Yes          | No                    | No                     |              59 |           25 |
+| Yes          | No                    | No                     |              59 |           21 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              28 |            7 |
+| Yes          | Yes                   | No                     |              28 |            8 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+------------------------------------+----------------------------------+---------------------------------------------+------------------+----------------+
-|            Clock Signal            |           Enable Signal          |               Set/Reset Signal              | Slice Load Count | Bel Load Count |
-+------------------------------------+----------------------------------+---------------------------------------------+------------------+----------------+
-|  ats/genblk1[1].fdiv/clkDiv_reg_0  |                                  |                                             |                1 |              1 |
-|  ats/genblk1[17].fdiv/clkDiv_reg_0 |                                  |                                             |                1 |              1 |
-|  ats/genblk1[16].fdiv/clkDiv_reg_0 |                                  |                                             |                1 |              1 |
-|  ats/genblk1[0].fdiv/clkDiv_reg_0  |                                  |                                             |                1 |              1 |
-|  ats/genblk1[10].fdiv/clkDiv_reg_0 |                                  |                                             |                1 |              1 |
-|  ats/genblk1[6].fdiv/clkDiv_reg_0  |                                  |                                             |                1 |              1 |
-|  ats/genblk1[2].fdiv/clkDiv_reg_0  |                                  |                                             |                1 |              1 |
-|  ats/genblk1[4].fdiv/clkDiv_reg_0  |                                  |                                             |                1 |              1 |
-|  ats/genblk1[7].fdiv/clkDiv_reg_0  |                                  |                                             |                1 |              1 |
-|  ats/genblk1[5].fdiv/clkDiv_reg_0  |                                  |                                             |                1 |              1 |
-|  ats/genblk1[3].fdiv/clkDiv_reg_0  |                                  |                                             |                1 |              1 |
-|  ats/genblk1[11].fdiv/clkDiv_reg_0 |                                  |                                             |                1 |              1 |
-|  ats/genblk1[12].fdiv/clkDiv_reg_0 |                                  |                                             |                1 |              1 |
-|  ats/genblk1[13].fdiv/clkDiv_reg_0 |                                  |                                             |                1 |              1 |
-|  ats/genblk1[14].fdiv/clkDiv_reg_0 |                                  |                                             |                1 |              1 |
-|  ats/genblk1[8].fdiv/clkDiv_reg_0  |                                  |                                             |                1 |              1 |
-|  ats/genblk1[9].fdiv/clkDiv_reg_0  |                                  |                                             |                1 |              1 |
-|  ats/genblk1[15].fdiv/clkDiv_reg_0 |                                  |                                             |                1 |              1 |
-|  ats/vga_sync_unit/CLK             |                                  |                                             |                1 |              1 |
-|  clk_IBUF_BUFG                     |                                  | ats/nolabel_line67/TxD_i_1_n_0              |                1 |              1 |
-|  ats/vga_sync_unit/CLK             |                                  | reset_IBUF                                  |                1 |              2 |
-|  clk_IBUF_BUFG                     | ats/receiver_unit/bitcounter     | ats/receiver_unit/bitcounter[3]_i_1_n_0     |                1 |              4 |
-|  clk_IBUF_BUFG                     | ats/receiver_unit/direc117_out   |                                             |                1 |              4 |
-|  clk_IBUF_BUFG                     | ats/nolabel_line67/bitcounter    | ats/nolabel_line67/bitcounter[3]_i_1__0_n_0 |                1 |              4 |
-|  clk_IBUF_BUFG                     | ats/nolabel_line67/rightshiftreg | ats/nolabel_line67/rightshiftreg[8]_i_1_n_0 |                1 |              4 |
-|  clk_IBUF_BUFG                     | ats/nolabel_line67/rightshiftreg |                                             |                1 |              6 |
-|  clk_IBUF_BUFG                     | ats/receiver_unit/rxshiftreg     |                                             |                3 |              9 |
-|  ats/newpic                        | ats/y_pos[9]_i_1_n_0             |                                             |                4 |             10 |
-|  ats/newpic                        | ats/x_pos                        |                                             |                4 |             10 |
-|  clk_IBUF_BUFG                     | ats/vga_sync_unit/CLK            |                                             |                6 |             10 |
-|  clk_IBUF_BUFG                     | ats/vga_sync_unit/v_count_reg0   |                                             |                6 |             10 |
-|  clk_IBUF_BUFG                     |                                  | ats/receiver_unit/counter[0]_i_1_n_0        |                4 |             14 |
-|  clk_IBUF_BUFG                     |                                  | ats/nolabel_line67/counter[0]_i_1__0_n_0    |                4 |             14 |
-|  clk_IBUF_BUFG                     | ats/transmit1                    | ats/receiver_unit/direc117_out              |                4 |             16 |
-|  clk_IBUF_BUFG                     |                                  |                                             |               12 |             23 |
-|  ats/fdivTarget/CLK                |                                  |                                             |               12 |             23 |
-+------------------------------------+----------------------------------+---------------------------------------------+------------------+----------------+
++------------------------------------+---------------------------------------------+---------------------------------------------+------------------+----------------+
+|            Clock Signal            |                Enable Signal                |               Set/Reset Signal              | Slice Load Count | Bel Load Count |
++------------------------------------+---------------------------------------------+---------------------------------------------+------------------+----------------+
+|  ats/genblk1[0].fdiv/clkDiv_reg_0  |                                             |                                             |                1 |              1 |
+|  ats/genblk1[10].fdiv/clkDiv_reg_0 |                                             |                                             |                1 |              1 |
+|  clk_IBUF_BUFG                     |                                             | ats/nolabel_line67/TxD_i_1_n_0              |                1 |              1 |
+|  ats/genblk1[5].fdiv/clkDiv_reg_0  |                                             |                                             |                1 |              1 |
+|  ats/genblk1[6].fdiv/clkDiv_reg_0  |                                             |                                             |                1 |              1 |
+|  ats/genblk1[7].fdiv/clkDiv_reg_0  |                                             |                                             |                1 |              1 |
+|  ats/genblk1[3].fdiv/clkDiv_reg_0  |                                             |                                             |                1 |              1 |
+|  ats/genblk1[4].fdiv/clkDiv_reg_0  |                                             |                                             |                1 |              1 |
+|  ats/genblk1[2].fdiv/clkDiv_reg_0  |                                             |                                             |                1 |              1 |
+|  ats/genblk1[12].fdiv/clkDiv_reg_0 |                                             |                                             |                1 |              1 |
+|  ats/genblk1[14].fdiv/clkDiv_reg_0 |                                             |                                             |                1 |              1 |
+|  ats/genblk1[8].fdiv/clkDiv_reg_0  |                                             |                                             |                1 |              1 |
+|  ats/genblk1[13].fdiv/clkDiv_reg_0 |                                             |                                             |                1 |              1 |
+|  ats/genblk1[9].fdiv/clkDiv_reg_0  |                                             |                                             |                1 |              1 |
+|  ats/genblk1[11].fdiv/clkDiv_reg_0 |                                             |                                             |                1 |              1 |
+|  ats/genblk1[1].fdiv/clkDiv_reg_0  |                                             |                                             |                1 |              1 |
+|  ats/genblk1[17].fdiv/clkDiv_reg_0 |                                             |                                             |                1 |              1 |
+|  ats/genblk1[15].fdiv/clkDiv_reg_0 |                                             |                                             |                1 |              1 |
+|  ats/genblk1[16].fdiv/clkDiv_reg_0 |                                             |                                             |                1 |              1 |
+|  ats/vga_sync_unit/CLK             |                                             |                                             |                1 |              1 |
+|  ats/vga_sync_unit/CLK             |                                             | reset_IBUF                                  |                1 |              2 |
+|  clk_IBUF_BUFG                     | ats/receiver_unit/direc117_out              |                                             |                1 |              4 |
+|  clk_IBUF_BUFG                     | ats/receiver_unit/bitcounter                | ats/receiver_unit/bitcounter[3]_i_1_n_0     |                1 |              4 |
+|  clk_IBUF_BUFG                     | ats/nolabel_line67/bitcounter[3]_i_2__0_n_0 | ats/nolabel_line67/bitcounter[3]_i_1__0_n_0 |                1 |              4 |
+|  clk_IBUF_BUFG                     | ats/nolabel_line67/rightshiftreg            | ats/nolabel_line67/rightshiftreg[8]_i_1_n_0 |                2 |              4 |
+|  clk_IBUF_BUFG                     | ats/nolabel_line67/rightshiftreg            |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                     | ats/receiver_unit/rxshiftreg                |                                             |                2 |              9 |
+|  ats/newpic                        | ats/y_pos[9]_i_1_n_0                        |                                             |                4 |             10 |
+|  ats/newpic                        | ats/x_pos                                   |                                             |                4 |             10 |
+|  clk_IBUF_BUFG                     | ats/vga_sync_unit/CLK                       |                                             |                5 |             10 |
+|  clk_IBUF_BUFG                     | ats/vga_sync_unit/v_count_reg0              |                                             |                4 |             10 |
+|  clk_IBUF_BUFG                     |                                             | ats/receiver_unit/counter[0]_i_1_n_0        |                4 |             14 |
+|  clk_IBUF_BUFG                     |                                             | ats/nolabel_line67/counter[0]_i_1__0_n_0    |                4 |             14 |
+|  clk_IBUF_BUFG                     | ats/transmit1                               | ats/receiver_unit/direc117_out              |                4 |             16 |
+|  ats/fdivTarget/CLK                |                                             |                                             |               12 |             23 |
+|  clk_IBUF_BUFG                     |                                             |                                             |               12 |             23 |
++------------------------------------+---------------------------------------------+---------------------------------------------+------------------+----------------+
 
 

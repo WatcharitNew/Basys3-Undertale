@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Fri May 15 22:33:27 2020
+| Date         : Fri May 15 23:32:55 2020
 | Host         : DESKTOP-KFTK1LL running 64-bit major release  (build 9200)
 | Command      : report_methodology -file manageScene_methodology_drc_routed.rpt -pb manageScene_methodology_drc_routed.pb -rpx manageScene_methodology_drc_routed.rpx
 | Design       : manageScene
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 110
+             Violations found: 116
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
-| SYNTH-10  | Warning  | Wide multiplier               | 30         |
+| SYNTH-10  | Warning  | Wide multiplier               | 36         |
 | TIMING-17 | Warning  | Non-clocked sequential cell   | 64         |
 | TIMING-18 | Warning  | Missing input or output delay | 16         |
 +-----------+----------+-------------------------------+------------+
@@ -146,40 +146,70 @@ Related violations: <none>
 
 SYNTH-10#23 Warning
 Wide multiplier  
-Detected multiplier at ats/rgb_reg4__2 of size 16x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Detected multiplier at ats/rgb_reg4__17 of size 16x18, it is decomposed from a wide multipler into 4 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#24 Warning
 Wide multiplier  
-Detected multiplier at ats/rgb_reg4__3 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Detected multiplier at ats/rgb_reg4__18 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#25 Warning
 Wide multiplier  
-Detected multiplier at ats/rgb_reg4__4 of size 18x16, it is decomposed from a wide multipler into 4 DSP blocks.
+Detected multiplier at ats/rgb_reg4__19 of size 18x16, it is decomposed from a wide multipler into 4 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#26 Warning
 Wide multiplier  
-Detected multiplier at ats/rgb_reg4__5 of size 16x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Detected multiplier at ats/rgb_reg4__2 of size 16x18, it is decomposed from a wide multipler into 4 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#27 Warning
 Wide multiplier  
-Detected multiplier at ats/rgb_reg4__6 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Detected multiplier at ats/rgb_reg4__20 of size 16x18, it is decomposed from a wide multipler into 4 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#28 Warning
 Wide multiplier  
-Detected multiplier at ats/rgb_reg4__7 of size 18x16, it is decomposed from a wide multipler into 4 DSP blocks.
+Detected multiplier at ats/rgb_reg4__21 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#29 Warning
 Wide multiplier  
-Detected multiplier at ats/rgb_reg4__8 of size 16x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Detected multiplier at ats/rgb_reg4__22 of size 18x16, it is decomposed from a wide multipler into 4 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#30 Warning
+Wide multiplier  
+Detected multiplier at ats/rgb_reg4__3 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#31 Warning
+Wide multiplier  
+Detected multiplier at ats/rgb_reg4__4 of size 18x16, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#32 Warning
+Wide multiplier  
+Detected multiplier at ats/rgb_reg4__5 of size 16x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#33 Warning
+Wide multiplier  
+Detected multiplier at ats/rgb_reg4__6 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#34 Warning
+Wide multiplier  
+Detected multiplier at ats/rgb_reg4__7 of size 18x16, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#35 Warning
+Wide multiplier  
+Detected multiplier at ats/rgb_reg4__8 of size 16x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#36 Warning
 Wide multiplier  
 Detected multiplier at ats/rgb_reg4__9 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
 Related violations: <none>
