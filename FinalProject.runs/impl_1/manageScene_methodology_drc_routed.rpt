@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Fri May 15 23:32:55 2020
+| Date         : Sat May 16 12:15:38 2020
 | Host         : DESKTOP-KFTK1LL running 64-bit major release  (build 9200)
 | Command      : report_methodology -file manageScene_methodology_drc_routed.rpt -pb manageScene_methodology_drc_routed.pb -rpx manageScene_methodology_drc_routed.rpx
 | Design       : manageScene
@@ -23,12 +23,12 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 116
+             Violations found: 127
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
 | SYNTH-10  | Warning  | Wide multiplier               | 36         |
-| TIMING-17 | Warning  | Non-clocked sequential cell   | 64         |
+| TIMING-17 | Warning  | Non-clocked sequential cell   | 75         |
 | TIMING-18 | Warning  | Missing input or output delay | 16         |
 +-----------+----------+-------------------------------+------------+
 
@@ -36,62 +36,62 @@ Table of Contents
 -----------------
 SYNTH-10#1 Warning
 Wide multiplier  
-Detected multiplier at ats/hitEnemy12 of size 16x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Detected multiplier at ats/health3 of size 16x18, it is decomposed from a wide multipler into 4 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#2 Warning
 Wide multiplier  
-Detected multiplier at ats/hitEnemy12__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Detected multiplier at ats/health3__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#3 Warning
 Wide multiplier  
-Detected multiplier at ats/hitEnemy12__1 of size 18x16, it is decomposed from a wide multipler into 4 DSP blocks.
+Detected multiplier at ats/health3__1 of size 18x16, it is decomposed from a wide multipler into 4 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#4 Warning
 Wide multiplier  
-Detected multiplier at ats/hitEnemy12__2 of size 16x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Detected multiplier at ats/health3__2 of size 16x18, it is decomposed from a wide multipler into 4 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#5 Warning
 Wide multiplier  
-Detected multiplier at ats/hitEnemy12__3 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Detected multiplier at ats/health3__3 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#6 Warning
 Wide multiplier  
-Detected multiplier at ats/hitEnemy12__4 of size 18x16, it is decomposed from a wide multipler into 4 DSP blocks.
+Detected multiplier at ats/health3__4 of size 18x16, it is decomposed from a wide multipler into 4 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#7 Warning
 Wide multiplier  
-Detected multiplier at ats/hitEnemy22 of size 16x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Detected multiplier at ats/hitEnemy13 of size 16x18, it is decomposed from a wide multipler into 4 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#8 Warning
 Wide multiplier  
-Detected multiplier at ats/hitEnemy22__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Detected multiplier at ats/hitEnemy13__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#9 Warning
 Wide multiplier  
-Detected multiplier at ats/hitEnemy22__1 of size 18x16, it is decomposed from a wide multipler into 4 DSP blocks.
+Detected multiplier at ats/hitEnemy13__1 of size 18x16, it is decomposed from a wide multipler into 4 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#10 Warning
 Wide multiplier  
-Detected multiplier at ats/hitEnemy22__2 of size 16x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Detected multiplier at ats/hitEnemy13__2 of size 16x18, it is decomposed from a wide multipler into 4 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#11 Warning
 Wide multiplier  
-Detected multiplier at ats/hitEnemy22__3 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Detected multiplier at ats/hitEnemy13__3 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#12 Warning
 Wide multiplier  
-Detected multiplier at ats/hitEnemy22__4 of size 18x16, it is decomposed from a wide multipler into 4 DSP blocks.
+Detected multiplier at ats/hitEnemy13__4 of size 18x16, it is decomposed from a wide multipler into 4 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#13 Warning
@@ -411,125 +411,180 @@ Related violations: <none>
 
 TIMING-17#40 Warning
 Non-clocked sequential cell  
-The clock pin ats/hitEnemy1_reg/C is not reached by a timing clock
+The clock pin ats/health_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#41 Warning
 Non-clocked sequential cell  
-The clock pin ats/hitEnemy2_reg/C is not reached by a timing clock
+The clock pin ats/health_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#42 Warning
 Non-clocked sequential cell  
-The clock pin ats/newpic_reg/C is not reached by a timing clock
+The clock pin ats/health_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#43 Warning
 Non-clocked sequential cell  
-The clock pin ats/rgb_reg_reg[11]/C is not reached by a timing clock
+The clock pin ats/health_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#44 Warning
 Non-clocked sequential cell  
-The clock pin ats/rgb_reg_reg[7]/C is not reached by a timing clock
+The clock pin ats/health_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#45 Warning
 Non-clocked sequential cell  
-The clock pin ats/x_pos_reg[0]/C is not reached by a timing clock
+The clock pin ats/health_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#46 Warning
 Non-clocked sequential cell  
-The clock pin ats/x_pos_reg[1]/C is not reached by a timing clock
+The clock pin ats/health_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#47 Warning
 Non-clocked sequential cell  
-The clock pin ats/x_pos_reg[2]/C is not reached by a timing clock
+The clock pin ats/health_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#48 Warning
 Non-clocked sequential cell  
-The clock pin ats/x_pos_reg[3]/C is not reached by a timing clock
+The clock pin ats/health_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#49 Warning
 Non-clocked sequential cell  
-The clock pin ats/x_pos_reg[4]/C is not reached by a timing clock
+The clock pin ats/health_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#50 Warning
 Non-clocked sequential cell  
-The clock pin ats/x_pos_reg[5]/C is not reached by a timing clock
+The clock pin ats/hitEnemy1_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#51 Warning
 Non-clocked sequential cell  
-The clock pin ats/x_pos_reg[6]/C is not reached by a timing clock
+The clock pin ats/hitEnemy2_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#52 Warning
 Non-clocked sequential cell  
-The clock pin ats/x_pos_reg[7]/C is not reached by a timing clock
+The clock pin ats/newpic_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#53 Warning
 Non-clocked sequential cell  
-The clock pin ats/x_pos_reg[8]/C is not reached by a timing clock
+The clock pin ats/rgb_reg_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#54 Warning
 Non-clocked sequential cell  
-The clock pin ats/x_pos_reg[9]/C is not reached by a timing clock
+The clock pin ats/rgb_reg_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#55 Warning
 Non-clocked sequential cell  
-The clock pin ats/y_pos_reg[0]/C is not reached by a timing clock
+The clock pin ats/rgb_reg_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#56 Warning
 Non-clocked sequential cell  
-The clock pin ats/y_pos_reg[1]/C is not reached by a timing clock
+The clock pin ats/x_pos_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#57 Warning
 Non-clocked sequential cell  
-The clock pin ats/y_pos_reg[2]/C is not reached by a timing clock
+The clock pin ats/x_pos_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#58 Warning
 Non-clocked sequential cell  
-The clock pin ats/y_pos_reg[3]/C is not reached by a timing clock
+The clock pin ats/x_pos_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#59 Warning
 Non-clocked sequential cell  
-The clock pin ats/y_pos_reg[4]/C is not reached by a timing clock
+The clock pin ats/x_pos_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#60 Warning
 Non-clocked sequential cell  
-The clock pin ats/y_pos_reg[5]/C is not reached by a timing clock
+The clock pin ats/x_pos_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#61 Warning
 Non-clocked sequential cell  
-The clock pin ats/y_pos_reg[6]/C is not reached by a timing clock
+The clock pin ats/x_pos_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#62 Warning
 Non-clocked sequential cell  
-The clock pin ats/y_pos_reg[7]/C is not reached by a timing clock
+The clock pin ats/x_pos_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#63 Warning
 Non-clocked sequential cell  
-The clock pin ats/y_pos_reg[8]/C is not reached by a timing clock
+The clock pin ats/x_pos_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#64 Warning
+Non-clocked sequential cell  
+The clock pin ats/x_pos_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#65 Warning
+Non-clocked sequential cell  
+The clock pin ats/x_pos_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#66 Warning
+Non-clocked sequential cell  
+The clock pin ats/y_pos_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#67 Warning
+Non-clocked sequential cell  
+The clock pin ats/y_pos_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#68 Warning
+Non-clocked sequential cell  
+The clock pin ats/y_pos_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#69 Warning
+Non-clocked sequential cell  
+The clock pin ats/y_pos_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#70 Warning
+Non-clocked sequential cell  
+The clock pin ats/y_pos_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#71 Warning
+Non-clocked sequential cell  
+The clock pin ats/y_pos_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#72 Warning
+Non-clocked sequential cell  
+The clock pin ats/y_pos_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#73 Warning
+Non-clocked sequential cell  
+The clock pin ats/y_pos_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#74 Warning
+Non-clocked sequential cell  
+The clock pin ats/y_pos_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#75 Warning
 Non-clocked sequential cell  
 The clock pin ats/y_pos_reg[9]/C is not reached by a timing clock
 Related violations: <none>

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Fri May 15 23:32:56 2020
+| Date             : Sat May 16 12:15:39 2020
 | Host             : DESKTOP-KFTK1LL running 64-bit major release  (build 9200)
 | Command          : report_power -file manageScene_power_routed.rpt -pb manageScene_power_summary_routed.pb -rpx manageScene_power_routed.rpx
 | Design           : manageScene
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.112        |
+| Total On-Chip Power (W)  | 0.114        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.040        |
+| Dynamic (W)              | 0.042        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.4         |
@@ -52,17 +52,18 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |     0.005 |     1149 |       --- |             --- |
-|   LUT as Logic |     0.004 |      741 |     20800 |            3.56 |
-|   CARRY4       |    <0.001 |      132 |      8150 |            1.62 |
-|   Register     |    <0.001 |      183 |     41600 |            0.44 |
+| Clocks         |     0.001 |        3 |       --- |             --- |
+| Slice Logic    |     0.005 |     1226 |       --- |             --- |
+|   LUT as Logic |     0.004 |      787 |     20800 |            3.78 |
+|   CARRY4       |    <0.001 |      134 |      8150 |            1.64 |
+|   Register     |    <0.001 |      194 |     41600 |            0.47 |
+|   BUFG         |    <0.001 |        1 |        32 |            3.13 |
 |   Others       |     0.000 |       48 |       --- |             --- |
-| Signals        |     0.007 |     2114 |       --- |             --- |
-| DSPs           |     0.027 |       36 |        90 |           40.00 |
-| I/O            |    <0.001 |       18 |       106 |           16.98 |
+| Signals        |     0.007 |     2178 |       --- |             --- |
+| DSPs           |     0.028 |       37 |        90 |           41.11 |
+| I/O            |     0.001 |       18 |       106 |           16.98 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.112 |          |           |                 |
+| Total          |     0.114 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.050 |       0.040 |      0.010 |
+| Vccint    |       1.000 |     0.051 |       0.041 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -141,8 +142,8 @@ Table of Contents
 +-------------+-----------+
 | Name        | Power (W) |
 +-------------+-----------+
-| manageScene |     0.040 |
-|   ats       |     0.040 |
+| manageScene |     0.042 |
+|   ats       |     0.041 |
 +-------------+-----------+
 
 
