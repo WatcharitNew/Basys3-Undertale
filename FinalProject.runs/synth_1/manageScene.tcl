@@ -31,11 +31,11 @@ set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
 set_property ip_output_repo f:/HWLAB/FinalProject/FinalProject.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  F:/HWLAB/Lab2/Lab2.srcs/sources_1/new/CLockDivider.v
-  F:/HWLAB/Lab6/Lab6.srcs/sources_1/new/receiver.v
-  F:/HWLAB/Lab6/Lab6.srcs/sources_1/new/transmitter.v
-  F:/HWLAB/Lab6/Lab6.srcs/sources_1/new/vga_sync.v
-  F:/HWLAB/Lab6/Lab6.srcs/sources_1/new/vga_test.v
+  F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/CLockDivider.v
+  F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/receiver.v
+  F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/transmitter.v
+  F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_sync.v
+  F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v
   F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/manageScene.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -46,8 +46,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc F:/HWLAB/Lab6/Lab6.srcs/constrs_1/new/Basys3_Master.xdc
-set_property used_in_implementation false [get_files F:/HWLAB/Lab6/Lab6.srcs/constrs_1/new/Basys3_Master.xdc]
+read_xdc F:/HWLAB/FinalProject/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc
+set_property used_in_implementation false [get_files F:/HWLAB/FinalProject/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

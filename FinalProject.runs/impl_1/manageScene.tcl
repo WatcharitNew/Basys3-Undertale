@@ -75,7 +75,7 @@ set rc [catch {
   set_property ip_output_repo F:/HWLAB/FinalProject/FinalProject.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   add_files -quiet F:/HWLAB/FinalProject/FinalProject.runs/synth_1/manageScene.dcp
-  read_xdc F:/HWLAB/Lab6/Lab6.srcs/constrs_1/new/Basys3_Master.xdc
+  read_xdc F:/HWLAB/FinalProject/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc
   link_design -top manageScene -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]
