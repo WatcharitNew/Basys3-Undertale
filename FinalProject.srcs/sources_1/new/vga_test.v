@@ -21,23 +21,16 @@
 
 module afterTurnScene
 	(
-		input wire clk, reset,
+		input wire clk,
+		input wire video_on,
+		input wire p_tick, 
+		input wire [9:0] x,y,
 		input wire RsRx,
-		output wire Hsync, Vsync,
-		output wire [3:0] vgaRed,
-		output wire [3:0] vgaGreen,
-		output wire [3:0] vgaBlue,
+		input wire newscene,
+		output reg [11:0] rgb_reg,
 		output wire RsTx
 	);
-	
-	// register for Basys 2 8-bit RGB DAC {4R,4G,4B}
-	reg [11:0] rgb_reg;
-	
-	// video status output from vga_sync to tell when to route out rgb signal to DAC
-	wire video_on;
 
-    // x and y
-    wire [9:0] x, y;
     reg [9:0] x_pos,y_pos,mainRadius,boxLeft,boxRight,boxTop,boxBottom,boxThick,health,maxHealth;
     reg [9:0] enemy1_x_pos,enemy1_y_pos,enemyRadius,enemy2_x_pos,enemy2_y_pos,enemy3_x_pos,enemy3_y_pos,enemy4_x_pos,enemy4_y_pos,enemy5_x_pos,enemy5_y_pos;    
     reg enemyMove4,enemyMove5;
@@ -46,78 +39,68 @@ module afterTurnScene
     reg hitEnemy1,hitEnemy2,hitEnemy3,hitEnemy4,hitEnemy5;
     // move
     reg [2:0]direc;
-    //color
-    reg [1:0]color;
-    //p_tick
-    wire p_tick;
+    
     //tell whether this is a new picture
     reg newpic;
     
-        // instantiate vga_sync
-        vga_sync vga_sync_unit (.clk(clk), .reset(reset), .hsync(Hsync), .vsync(Vsync),
-                                .video_on(video_on), .p_tick(p_tick), .x(x), .y(y));
-   
-        //Receiver
-        wire [7:0]RxData;
-        wire state;
-        wire nextstate;
-        receiver receiver_unit(RxData, state, nextstate, clk, 0, RsRx);
+    //Receiver
+    wire [7:0]RxData;
+    wire state;
+    wire nextstate;
+    receiver receiver_unit(RxData, state, nextstate, clk, 0, RsRx);
+    
+    //Transmitter
+    reg [7:0]TxData;
+    reg transmit;
+    reg [15:0]counter;
+    transmitter(RsTx, clk, 0, transmit, TxData);
         
-        //Transmitter
-        reg [7:0]TxData;
-        reg transmit;
-        reg [15:0]counter;
-        transmitter(RsTx, clk, 0, transmit, TxData);
+    //clock
+    wire targetClk;
+    wire [18:0] tclk;
+    assign tclk[0]=clk;
+    genvar c;
+    generate for(c=0;c<18;c=c+1)
+    begin 
+        ClockDivider fdiv(tclk[c+1],tclk[c]);
+    end endgenerate
+    ClockDivider fdivTarget(targetClk,tclk[18]);
         
-        //clock
-        wire targetClk;
-        wire [18:0] tclk;
-        assign tclk[0]=clk;
-        genvar c;
-        generate for(c=0;c<18;c=c+1)
-        begin 
-            ClockDivider fdiv(tclk[c+1],tclk[c]);
-        end endgenerate
-        ClockDivider fdivTarget(targetClk,tclk[18]);
-        
-        //initialize
-        wire [9:0] healthBar = (maxHealth - health)*36;
-        initial
-        begin
-            transmit = 0;
-            counter = 0;
-            direc = 0;
-            color = 3;
-            x_pos = 320;
-            y_pos = 240;
-            enemy1_x_pos = 250;
-            enemy1_y_pos = 190;
-            enemy2_x_pos = 230;
-            enemy2_y_pos = 300;
-            enemy3_x_pos = 230;
-            enemy3_y_pos = 220;
-            mainRadius = 8;
-            enemyRadius = 5;
-            enemyMove1_y = 1;
-            enemyMove2_x = 1;
-            enemyMove3_y = 1;
-            enemyMove3_x = 1;
-            boxLeft = 220;
-            boxRight = 420;
-            boxTop = 140;
-            boxBottom = 340;
-            boxThick = 5;
-            hitEnemy1 = 0;
-            hitEnemy2 = 0;
-            hitEnemy3 = 0;
-            health = 5;
-            maxHealth = 5;
-        end
+    //initialize
+    wire [9:0] healthBar = (maxHealth - health)*36;
+    initial
+    begin
+        direc = 0;
+        x_pos = 320;
+        y_pos = 240;
+        enemy1_x_pos = 250;
+        enemy1_y_pos = 190;
+        enemy2_x_pos = 230;
+        enemy2_y_pos = 300;
+        enemy3_x_pos = 230;
+        enemy3_y_pos = 220;
+        mainRadius = 8;
+        enemyRadius = 5;
+        enemyMove1_y = 1;
+        enemyMove2_x = 1;
+        enemyMove3_y = 1;
+        enemyMove3_x = 1;
+        boxLeft = 220;
+        boxRight = 420;
+        boxTop = 140;
+        boxBottom = 340;
+        boxThick = 5;
+        hitEnemy1 = 0;
+        hitEnemy2 = 0;
+        hitEnemy3 = 0;
+        health = 5;
+        maxHealth = 5;
+    end
         // rgb buffer (color)
-        always @(posedge p_tick, posedge reset)
+        always @(posedge p_tick)
         //main character
         begin
-        if ( reset || (64 > (x-x_pos)**2 + (y-y_pos)**2))
+        if (64 > (x-x_pos)**2 + (y-y_pos)**2)
             rgb_reg <= 12'hF00;
         //enemy1
         else if (25 > (x-enemy1_x_pos)**2 + (y-enemy1_y_pos)**2 && hitEnemy1 == 0)
@@ -240,6 +223,5 @@ module afterTurnScene
                     health <= health-1;
                 end
         end
-        // output
-        assign {vgaRed,vgaGreen,vgaBlue} = (video_on) ? rgb_reg : 12'b0;
+        
 endmodule

@@ -32,6 +32,7 @@ set_property ip_output_repo f:/HWLAB/FinalProject/FinalProject.cache/ip [current
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
   F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/CLockDivider.v
+  F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/blackScene.v
   F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/receiver.v
   F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/transmitter.v
   F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_sync.v

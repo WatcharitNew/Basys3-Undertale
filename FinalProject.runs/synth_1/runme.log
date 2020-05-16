@@ -14,16 +14,16 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 3368 
+INFO: Helper process launched with PID 6004 
 WARNING: [Synth 8-2611] redeclaration of ansi port state is not allowed [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/receiver.v:36]
 WARNING: [Synth 8-2611] redeclaration of ansi port nextstate is not allowed [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/receiver.v:36]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 391.266 ; gain = 112.078
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 392.141 ; gain = 112.262
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'manageScene' [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/manageScene.v:23]
-INFO: [Synth 8-6157] synthesizing module 'afterTurnScene' [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:22]
 INFO: [Synth 8-6157] synthesizing module 'ClockDivider' [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/CLockDivider.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'ClockDivider' (1#1) [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/CLockDivider.v:23]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/manageScene.v:90]
 INFO: [Synth 8-6157] synthesizing module 'vga_sync' [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_sync.v:23]
 	Parameter H_DISPLAY bound to: 640 - type: integer 
 	Parameter H_L_BORDER bound to: 48 - type: integer 
@@ -40,6 +40,7 @@ INFO: [Synth 8-6157] synthesizing module 'vga_sync' [F:/HWLAB/FinalProject/Final
 	Parameter START_V_RETRACE bound to: 513 - type: integer 
 	Parameter END_V_RETRACE bound to: 514 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (2#1) [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_sync.v:23]
+INFO: [Synth 8-6157] synthesizing module 'afterTurnScene' [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:22]
 INFO: [Synth 8-6157] synthesizing module 'receiver' [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/receiver.v:23]
 	Parameter clk_freq bound to: 100000000 - type: integer 
 	Parameter baud_rate bound to: 9600 - type: integer 
@@ -53,10 +54,16 @@ INFO: [Synth 8-6157] synthesizing module 'transmitter' [F:/HWLAB/FinalProject/Fi
 INFO: [Synth 8-226] default block is never used [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/transmitter.v:77]
 INFO: [Synth 8-6155] done synthesizing module 'transmitter' (4#1) [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/transmitter.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'afterTurnScene' (5#1) [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:22]
-INFO: [Synth 8-6155] done synthesizing module 'manageScene' (6#1) [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/manageScene.v:23]
+INFO: [Synth 8-6157] synthesizing module 'loadingScene' [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/blackScene.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'loadingScene' (6#1) [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/blackScene.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'manageScene' (7#1) [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/manageScene.v:23]
+WARNING: [Synth 8-3331] design loadingScene has unconnected port video_on
+WARNING: [Synth 8-3331] design loadingScene has unconnected port newscene
+WARNING: [Synth 8-3331] design afterTurnScene has unconnected port video_on
+WARNING: [Synth 8-3331] design afterTurnScene has unconnected port newscene
 WARNING: [Synth 8-3331] design vga_sync has unconnected port reset
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 429.523 ; gain = 150.336
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 430.703 ; gain = 150.824
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -69,10 +76,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 429.523 ; gain = 150.336
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 430.703 ; gain = 150.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 429.523 ; gain = 150.336
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 430.703 ; gain = 150.824
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -101,30 +108,30 @@ Resolution: If [get_<value>] was used to populate the object, check to make sure
 Finished Parsing XDC File [F:/HWLAB/FinalProject/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/HWLAB/FinalProject/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/manageScene_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/manageScene_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 772.117 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 773.969 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 772.117 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 773.969 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 772.117 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 772.117 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 773.969 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 773.969 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 772.117 ; gain = 492.930
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 773.969 ; gain = 494.090
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 772.117 ; gain = 492.930
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 773.969 ; gain = 494.090
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 772.117 ; gain = 492.930
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 773.969 ; gain = 494.090
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "shift" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "inc_bitcounter" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -140,7 +147,7 @@ INFO: [Synth 8-5544] ROM "enemyMove2_x" won't be mapped to Block RAM because add
 INFO: [Synth 8-5544] ROM "enemyMove3_x" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "enemyMove3_x" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 772.117 ; gain = 492.930
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 773.969 ; gain = 494.090
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -155,21 +162,24 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input     32 Bit       Adders := 14    
 	   3 Input     32 Bit       Adders := 10    
-	   2 Input     10 Bit       Adders := 10    
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 11    
 	   2 Input      4 Bit       Adders := 2     
 	   2 Input      2 Bit       Adders := 2     
 +---Registers : 
-	               12 Bit    Registers := 1     
-	               10 Bit    Registers := 15    
+	               12 Bit    Registers := 2     
+	               10 Bit    Registers := 16    
 	                8 Bit    Registers := 1     
 	                4 Bit    Registers := 2     
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 39    
+	                1 Bit    Registers := 96    
 +---Multipliers : 
 	                32x32  Multipliers := 16    
 +---Muxes : 
-	  14 Input     12 Bit        Muxes := 1     
+	   5 Input     12 Bit        Muxes := 1     
+	  13 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
 	   2 Input     10 Bit        Muxes := 13    
 	   5 Input     10 Bit        Muxes := 1     
 	   6 Input     10 Bit        Muxes := 1     
@@ -187,6 +197,12 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
+Module manageScene 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
 Module vga_sync 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -196,6 +212,10 @@ Detailed RTL Component Info :
 	               10 Bit    Registers := 2     
 	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 2     
+Module ClockDivider 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
 Module receiver 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -220,10 +240,6 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     10 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 7     
-Module ClockDivider 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
 Module afterTurnScene 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -239,7 +255,8 @@ Detailed RTL Component Info :
 +---Multipliers : 
 	                32x32  Multipliers := 16    
 +---Muxes : 
-	  14 Input     12 Bit        Muxes := 1     
+	   5 Input     12 Bit        Muxes := 1     
+	  13 Input     12 Bit        Muxes := 1     
 	   2 Input     10 Bit        Muxes := 12    
 	   5 Input     10 Bit        Muxes := 1     
 	   6 Input     10 Bit        Muxes := 1     
@@ -249,6 +266,14 @@ Detailed RTL Component Info :
 	   2 Input      3 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 9     
 	   5 Input      1 Bit        Muxes := 1     
+Module loadingScene 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -265,47 +290,23 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-5544] ROM "shift" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:146]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:146]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:227]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:227]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:232]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:232]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:237]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:237]
+INFO: [Synth 8-5544] ROM "receiver_unit/shift" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:210]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:210]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:215]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:215]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:220]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:220]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:112]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:112]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:109]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:109]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:106]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:106]
 INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:129]
 INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:129]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:126]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:126]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:123]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:123]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:120]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:120]
-DSP Report: Generating DSP rgb_reg4, operation Mode is: A*B.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: Generating DSP rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: Generating DSP rgb_reg4, operation Mode is: A*B.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: Generating DSP rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: Generating DSP rgb_reg4, operation Mode is: A*B.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: Generating DSP rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: Generating DSP rgb_reg4, operation Mode is: A*B.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: Generating DSP rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:103]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:103]
 DSP Report: Generating DSP hitEnemy13, operation Mode is: A*B.
 DSP Report: operator hitEnemy13 is absorbed into DSP hitEnemy13.
 DSP Report: operator hitEnemy13 is absorbed into DSP hitEnemy13.
@@ -477,6 +478,34 @@ DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
 DSP Report: Generating DSP rgb_reg3, operation Mode is: (C:0x1a4)-A*(B:0x24).
 DSP Report: operator rgb_reg3 is absorbed into DSP rgb_reg3.
 DSP Report: operator healthBar is absorbed into DSP rgb_reg3.
+DSP Report: Generating DSP rgb_reg3, operation Mode is: A*B.
+DSP Report: operator rgb_reg3 is absorbed into DSP rgb_reg3.
+DSP Report: operator rgb_reg3 is absorbed into DSP rgb_reg3.
+DSP Report: Generating DSP rgb_reg3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb_reg3 is absorbed into DSP rgb_reg3.
+DSP Report: operator rgb_reg3 is absorbed into DSP rgb_reg3.
+DSP Report: Generating DSP rgb_reg3, operation Mode is: A*B.
+DSP Report: operator rgb_reg3 is absorbed into DSP rgb_reg3.
+DSP Report: operator rgb_reg3 is absorbed into DSP rgb_reg3.
+DSP Report: Generating DSP rgb_reg3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb_reg3 is absorbed into DSP rgb_reg3.
+DSP Report: operator rgb_reg3 is absorbed into DSP rgb_reg3.
+DSP Report: Generating DSP rgb_reg3, operation Mode is: A*B.
+DSP Report: operator rgb_reg3 is absorbed into DSP rgb_reg3.
+DSP Report: operator rgb_reg3 is absorbed into DSP rgb_reg3.
+DSP Report: Generating DSP rgb_reg3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb_reg3 is absorbed into DSP rgb_reg3.
+DSP Report: operator rgb_reg3 is absorbed into DSP rgb_reg3.
+DSP Report: Generating DSP rgb_reg3, operation Mode is: A*B.
+DSP Report: operator rgb_reg3 is absorbed into DSP rgb_reg3.
+DSP Report: operator rgb_reg3 is absorbed into DSP rgb_reg3.
+DSP Report: Generating DSP rgb_reg3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb_reg3 is absorbed into DSP rgb_reg3.
+DSP Report: operator rgb_reg3 is absorbed into DSP rgb_reg3.
+WARNING: [Synth 8-3331] design loadingScene has unconnected port video_on
+WARNING: [Synth 8-3331] design loadingScene has unconnected port newscene
+WARNING: [Synth 8-3331] design afterTurnScene has unconnected port video_on
+WARNING: [Synth 8-3331] design afterTurnScene has unconnected port newscene
 WARNING: [Synth 8-3331] design vga_sync has unconnected port reset
 INFO: [Synth 8-3886] merging instance 'ats/TxData_reg[5]' (FDE) to 'ats/TxData_reg[3]'
 INFO: [Synth 8-3886] merging instance 'ats/TxData_reg[4]' (FDE) to 'ats/TxData_reg[1]'
@@ -517,17 +546,31 @@ INFO: [Synth 8-3886] merging instance 'ats/enemyMove3_y_reg[5]' (FDSE) to 'ats/e
 INFO: [Synth 8-3886] merging instance 'ats/enemyMove3_y_reg[6]' (FDSE) to 'ats/enemyMove3_y_reg[7]'
 INFO: [Synth 8-3886] merging instance 'ats/enemyMove3_y_reg[7]' (FDSE) to 'ats/enemyMove3_y_reg[8]'
 INFO: [Synth 8-3886] merging instance 'ats/enemyMove3_y_reg[8]' (FDSE) to 'ats/enemyMove3_y_reg[9]'
-INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[0]' (FDC) to 'ats/rgb_reg_reg[1]'
-INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[1]' (FDC) to 'ats/rgb_reg_reg[2]'
-INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[2]' (FDC) to 'ats/rgb_reg_reg[3]'
-INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[4]' (FDC) to 'ats/rgb_reg_reg[5]'
-INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[5]' (FDC) to 'ats/rgb_reg_reg[6]'
-INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[6]' (FDC) to 'ats/rgb_reg_reg[7]'
-INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[8]' (FDP) to 'ats/rgb_reg_reg[9]'
-INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[9]' (FDP) to 'ats/rgb_reg_reg[10]'
-INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[10]' (FDP) to 'ats/rgb_reg_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ls/loadingBar0_inferred__0 /\ls/loadingBar_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ls/loadingBar0_inferred__0 /\ls/loadingBar_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ls/loadingBar0_inferred__0 /\ls/loadingBar_reg[2] )
+INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[0]' (FDR) to 'ls/rgb_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[0]' (FDR) to 'ats/rgb_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[1]' (FDR) to 'ls/rgb_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[1]' (FDR) to 'ats/rgb_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[2]' (FDR) to 'ls/rgb_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[2]' (FDR) to 'ats/rgb_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[3]' (FDR) to 'ls/rgb_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[4]' (FDS) to 'ls/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[4]' (FDR) to 'ats/rgb_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[5]' (FDS) to 'ls/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[5]' (FDR) to 'ats/rgb_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[6]' (FDS) to 'ls/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[6]' (FDR) to 'ats/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[8]' (FDR) to 'ls/rgb_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[8]' (FDS) to 'ats/rgb_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[9]' (FDR) to 'ls/rgb_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[9]' (FDS) to 'ats/rgb_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[10]' (FDR) to 'ls/rgb_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[10]' (FDS) to 'ats/rgb_reg_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ls/rgb_reg_reg[11] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 772.117 ; gain = 492.930
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 773.969 ; gain = 494.090
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -593,15 +636,15 @@ DSP: Preliminary Mapping  Report (see note below)
 |afterTurnScene | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |afterTurnScene | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |afterTurnScene | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|afterTurnScene | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|afterTurnScene | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|afterTurnScene | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|afterTurnScene | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|afterTurnScene | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|afterTurnScene | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|afterTurnScene | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|afterTurnScene | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |afterTurnScene | (C:0x1a4)-A*(B:0x24) | 10     | 6      | 9      | -      | 10     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 +---------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
@@ -618,13 +661,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 817.336 ; gain = 538.148
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 819.512 ; gain = 539.633
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 864.141 ; gain = 584.953
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 863.176 ; gain = 583.297
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -636,7 +679,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 874.270 ; gain = 595.082
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 872.699 ; gain = 592.820
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -660,7 +703,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 874.270 ; gain = 595.082
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 872.699 ; gain = 592.820
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -673,7 +716,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 874.270 ; gain = 595.082
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 872.699 ; gain = 592.820
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -685,25 +728,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 874.270 ; gain = 595.082
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 872.699 ; gain = 592.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 874.270 ; gain = 595.082
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 872.699 ; gain = 592.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 874.270 ; gain = 595.082
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 872.699 ; gain = 592.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 874.270 ; gain = 595.082
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 872.699 ; gain = 592.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -720,74 +763,129 @@ Report Cell Usage:
 |      |Cell      |Count |
 +------+----------+------+
 |1     |BUFG      |     2|
-|2     |CARRY4    |   190|
+|2     |CARRY4    |   192|
 |3     |DSP48E1   |    48|
 |4     |DSP48E1_1 |     1|
-|5     |LUT1      |    45|
-|6     |LUT2      |   682|
-|7     |LUT3      |    35|
-|8     |LUT4      |    85|
-|9     |LUT5      |    67|
-|10    |LUT6      |   104|
-|11    |FDCE      |     2|
-|12    |FDPE      |     1|
-|13    |FDRE      |   214|
-|14    |FDSE      |     1|
-|15    |IBUF      |     3|
-|16    |OBUF      |    15|
+|5     |LUT1      |   103|
+|6     |LUT2      |   687|
+|7     |LUT3      |    42|
+|8     |LUT4      |    90|
+|9     |LUT5      |    75|
+|10    |LUT6      |   107|
+|11    |FDRE      |   281|
+|12    |FDSE      |     1|
+|13    |IBUF      |     2|
+|14    |OBUF      |    15|
 +------+----------+------+
 
 Report Instance Areas: 
 +------+-----------------------+----------------+------+
 |      |Instance               |Module          |Cells |
 +------+-----------------------+----------------+------+
-|1     |top                    |                |  1495|
-|2     |  ats                  |afterTurnScene  |  1475|
-|3     |    fdivTarget         |ClockDivider    |     2|
-|4     |    \genblk1[0].fdiv   |ClockDivider_0  |     2|
-|5     |    \genblk1[10].fdiv  |ClockDivider_1  |     2|
-|6     |    \genblk1[11].fdiv  |ClockDivider_2  |     2|
-|7     |    \genblk1[12].fdiv  |ClockDivider_3  |     2|
-|8     |    \genblk1[13].fdiv  |ClockDivider_4  |     2|
-|9     |    \genblk1[14].fdiv  |ClockDivider_5  |     2|
-|10    |    \genblk1[15].fdiv  |ClockDivider_6  |     2|
-|11    |    \genblk1[16].fdiv  |ClockDivider_7  |     2|
-|12    |    \genblk1[17].fdiv  |ClockDivider_8  |     2|
-|13    |    \genblk1[1].fdiv   |ClockDivider_9  |     2|
-|14    |    \genblk1[2].fdiv   |ClockDivider_10 |     2|
-|15    |    \genblk1[3].fdiv   |ClockDivider_11 |     2|
-|16    |    \genblk1[4].fdiv   |ClockDivider_12 |     2|
-|17    |    \genblk1[5].fdiv   |ClockDivider_13 |     2|
-|18    |    \genblk1[6].fdiv   |ClockDivider_14 |     2|
-|19    |    \genblk1[7].fdiv   |ClockDivider_15 |     2|
-|20    |    \genblk1[8].fdiv   |ClockDivider_16 |     2|
-|21    |    \genblk1[9].fdiv   |ClockDivider_17 |     2|
-|22    |    nolabel_line70     |transmitter     |    62|
+|1     |top                    |                |  1646|
+|2     |  ats                  |afterTurnScene  |  1278|
+|3     |    fdivTarget         |ClockDivider_55 |     2|
+|4     |    \genblk1[0].fdiv   |ClockDivider_56 |     2|
+|5     |    \genblk1[10].fdiv  |ClockDivider_57 |     2|
+|6     |    \genblk1[11].fdiv  |ClockDivider_58 |     2|
+|7     |    \genblk1[12].fdiv  |ClockDivider_59 |     2|
+|8     |    \genblk1[13].fdiv  |ClockDivider_60 |     2|
+|9     |    \genblk1[14].fdiv  |ClockDivider_61 |     2|
+|10    |    \genblk1[15].fdiv  |ClockDivider_62 |     2|
+|11    |    \genblk1[16].fdiv  |ClockDivider_63 |     2|
+|12    |    \genblk1[17].fdiv  |ClockDivider_64 |     2|
+|13    |    \genblk1[1].fdiv   |ClockDivider_65 |     2|
+|14    |    \genblk1[2].fdiv   |ClockDivider_66 |     2|
+|15    |    \genblk1[3].fdiv   |ClockDivider_67 |     2|
+|16    |    \genblk1[4].fdiv   |ClockDivider_68 |     2|
+|17    |    \genblk1[5].fdiv   |ClockDivider_69 |     2|
+|18    |    \genblk1[6].fdiv   |ClockDivider_70 |     2|
+|19    |    \genblk1[7].fdiv   |ClockDivider_71 |     2|
+|20    |    \genblk1[8].fdiv   |ClockDivider_72 |     2|
+|21    |    \genblk1[9].fdiv   |ClockDivider_73 |     2|
+|22    |    nolabel_line56     |transmitter     |    62|
 |23    |    receiver_unit      |receiver        |    77|
-|24    |    vga_sync_unit      |vga_sync        |   213|
+|24    |  fdivTarget2          |ClockDivider    |     2|
+|25    |  \genblk1[0].fdiv2    |ClockDivider_0  |     2|
+|26    |  \genblk1[10].fdiv2   |ClockDivider_1  |     2|
+|27    |  \genblk1[11].fdiv2   |ClockDivider_2  |     2|
+|28    |  \genblk1[12].fdiv2   |ClockDivider_3  |     2|
+|29    |  \genblk1[13].fdiv2   |ClockDivider_4  |     2|
+|30    |  \genblk1[14].fdiv2   |ClockDivider_5  |     2|
+|31    |  \genblk1[15].fdiv2   |ClockDivider_6  |     2|
+|32    |  \genblk1[16].fdiv2   |ClockDivider_7  |     2|
+|33    |  \genblk1[17].fdiv2   |ClockDivider_8  |     2|
+|34    |  \genblk1[18].fdiv2   |ClockDivider_9  |     2|
+|35    |  \genblk1[19].fdiv2   |ClockDivider_10 |     2|
+|36    |  \genblk1[1].fdiv2    |ClockDivider_11 |     2|
+|37    |  \genblk1[20].fdiv2   |ClockDivider_12 |     2|
+|38    |  \genblk1[21].fdiv2   |ClockDivider_13 |     2|
+|39    |  \genblk1[22].fdiv2   |ClockDivider_14 |     2|
+|40    |  \genblk1[23].fdiv2   |ClockDivider_15 |     2|
+|41    |  \genblk1[24].fdiv2   |ClockDivider_16 |     2|
+|42    |  \genblk1[25].fdiv2   |ClockDivider_17 |     2|
+|43    |  \genblk1[26].fdiv2   |ClockDivider_18 |     2|
+|44    |  \genblk1[27].fdiv2   |ClockDivider_19 |     2|
+|45    |  \genblk1[2].fdiv2    |ClockDivider_20 |     2|
+|46    |  \genblk1[3].fdiv2    |ClockDivider_21 |     2|
+|47    |  \genblk1[4].fdiv2    |ClockDivider_22 |     2|
+|48    |  \genblk1[5].fdiv2    |ClockDivider_23 |     2|
+|49    |  \genblk1[6].fdiv2    |ClockDivider_24 |     2|
+|50    |  \genblk1[7].fdiv2    |ClockDivider_25 |     2|
+|51    |  \genblk1[8].fdiv2    |ClockDivider_26 |     2|
+|52    |  \genblk1[9].fdiv2    |ClockDivider_27 |     2|
+|53    |  ls                   |loadingScene    |    76|
+|54    |    fdivTarget         |ClockDivider_28 |     2|
+|55    |    \genblk1[0].fdiv   |ClockDivider_29 |     2|
+|56    |    \genblk1[10].fdiv  |ClockDivider_30 |     2|
+|57    |    \genblk1[11].fdiv  |ClockDivider_31 |     2|
+|58    |    \genblk1[12].fdiv  |ClockDivider_32 |     2|
+|59    |    \genblk1[13].fdiv  |ClockDivider_33 |     2|
+|60    |    \genblk1[14].fdiv  |ClockDivider_34 |     2|
+|61    |    \genblk1[15].fdiv  |ClockDivider_35 |     2|
+|62    |    \genblk1[16].fdiv  |ClockDivider_36 |     2|
+|63    |    \genblk1[17].fdiv  |ClockDivider_37 |     2|
+|64    |    \genblk1[18].fdiv  |ClockDivider_38 |     2|
+|65    |    \genblk1[19].fdiv  |ClockDivider_39 |     2|
+|66    |    \genblk1[1].fdiv   |ClockDivider_40 |     2|
+|67    |    \genblk1[20].fdiv  |ClockDivider_41 |     2|
+|68    |    \genblk1[21].fdiv  |ClockDivider_42 |     2|
+|69    |    \genblk1[22].fdiv  |ClockDivider_43 |     2|
+|70    |    \genblk1[23].fdiv  |ClockDivider_44 |     2|
+|71    |    \genblk1[24].fdiv  |ClockDivider_45 |     2|
+|72    |    \genblk1[25].fdiv  |ClockDivider_46 |     2|
+|73    |    \genblk1[2].fdiv   |ClockDivider_47 |     2|
+|74    |    \genblk1[3].fdiv   |ClockDivider_48 |     2|
+|75    |    \genblk1[4].fdiv   |ClockDivider_49 |     2|
+|76    |    \genblk1[5].fdiv   |ClockDivider_50 |     2|
+|77    |    \genblk1[6].fdiv   |ClockDivider_51 |     2|
+|78    |    \genblk1[7].fdiv   |ClockDivider_52 |     2|
+|79    |    \genblk1[8].fdiv   |ClockDivider_53 |     2|
+|80    |    \genblk1[9].fdiv   |ClockDivider_54 |     2|
+|81    |  vga_sync_unit        |vga_sync        |   213|
 +------+-----------------------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 874.270 ; gain = 595.082
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 872.699 ; gain = 592.820
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 874.270 ; gain = 252.488
-Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 874.270 ; gain = 595.082
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 872.699 ; gain = 249.555
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 872.699 ; gain = 592.820
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 239 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 241 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 874.270 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 872.699 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-104 Infos, 10 Warnings, 6 Critical Warnings and 0 Errors encountered.
+120 Infos, 19 Warnings, 6 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 874.270 ; gain = 607.527
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 874.270 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 872.699 ; gain = 605.074
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 872.699 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'F:/HWLAB/FinalProject/FinalProject.runs/synth_1/manageScene.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file manageScene_utilization_synth.rpt -pb manageScene_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat May 16 17:02:06 2020...
+INFO: [Common 17-206] Exiting Vivado at Sat May 16 23:13:00 2020...
