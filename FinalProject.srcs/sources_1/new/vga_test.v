@@ -40,7 +40,9 @@ module afterTurnScene
     wire [9:0] x, y;
     reg [9:0] x_pos,y_pos,mainRadius,boxLeft,boxRight,boxTop,boxBottom,boxThick,health,maxHealth;
     reg [9:0] enemy1_x_pos,enemy1_y_pos,enemyRadius,enemy2_x_pos,enemy2_y_pos,enemy3_x_pos,enemy3_y_pos,enemy4_x_pos,enemy4_y_pos,enemy5_x_pos,enemy5_y_pos;    
-    reg enemyMove1,enemyMove2,enemyMove3,enemyMove4,enemyMove5;
+    reg enemyMove4,enemyMove5;
+    reg [9:0] enemyMove1_y,enemyMove2_x;
+    reg [9:0] enemyMove3_y,enemyMove3_x;
     reg hitEnemy1,hitEnemy2,hitEnemy3,hitEnemy4,hitEnemy5;
     // move
     reg [2:0]direc;
@@ -96,9 +98,10 @@ module afterTurnScene
             enemy3_y_pos = 220;
             mainRadius = 8;
             enemyRadius = 5;
-            enemyMove1 = 0;
-            enemyMove2 = 0;
-            enemyMove3 = 0;
+            enemyMove1_y = 1;
+            enemyMove2_x = 1;
+            enemyMove3_y = 1;
+            enemyMove3_x = 1;
             boxLeft = 220;
             boxRight = 420;
             boxTop = 140;
@@ -198,55 +201,28 @@ module afterTurnScene
         always @(posedge targetClk)
         begin
             if(hitEnemy1 == 0)
-            case(enemyMove1)
-            0:
             begin
-                enemy1_y_pos <= enemy1_y_pos+1;
-                if (enemy1_y_pos > boxBottom - enemyRadius)
-                    enemyMove1 <= 1;
-                
+                enemy1_y_pos <= enemy1_y_pos+enemyMove1_y;
+                if (enemy1_y_pos > boxBottom - enemyRadius)     enemyMove1_y <= -1;
+                else if (enemy1_y_pos < boxTop + enemyRadius)   enemyMove1_y <= 1;
             end
-            1:
-            begin
-                enemy1_y_pos <= enemy1_y_pos-1;
-                if (enemy1_y_pos < boxTop + enemyRadius)
-                    enemyMove1 <= 0;
-            end
-            endcase
             
             if(hitEnemy2 == 0)
-            case(enemyMove2)
-            0:
             begin
-                enemy2_x_pos <= enemy2_x_pos+1;
-                if (enemy2_x_pos > boxRight - enemyRadius)
-                    enemyMove2 <= 1;
+                enemy2_x_pos <= enemy2_x_pos+enemyMove2_x;
+                if (enemy2_x_pos > boxRight - enemyRadius)        enemyMove2_x <= -1;
+                else if (enemy2_x_pos < boxLeft + enemyRadius)        enemyMove2_x <= 1;
             end
-            1:
-            begin
-                enemy2_x_pos <= enemy2_x_pos-1;
-                if (enemy2_x_pos < boxLeft + enemyRadius)
-                    enemyMove2 <= 0;
-            end
-            endcase
             
             if(hitEnemy3 == 0)
-            case(enemyMove3)
-            0:
             begin
-                enemy3_x_pos <= enemy3_x_pos+1;
-                enemy3_y_pos <= enemy3_y_pos+1;
-                if (enemy3_x_pos > boxRight - enemyRadius || enemy3_y_pos > boxBottom - enemyRadius)
-                    enemyMove3 <= 1;
+                enemy3_x_pos <= enemy3_x_pos+enemyMove3_x;
+                enemy3_y_pos <= enemy3_y_pos+enemyMove3_y;
+                if(enemy3_x_pos > boxRight - enemyRadius)   enemyMove3_x <= -1;
+                else if(enemy3_x_pos < boxLeft + enemyRadius)   enemyMove3_x <= 1;
+                else if(enemy3_y_pos > boxBottom - enemyRadius)   enemyMove3_y <= -1;
+                else if(enemy3_y_pos < boxTop + enemyRadius)   enemyMove3_y <= 1;   
             end
-            1:
-            begin
-                enemy3_x_pos <= enemy3_x_pos-1;
-                enemy3_y_pos <= enemy3_y_pos-1;
-                if (enemy3_y_pos < boxTop + enemyRadius || enemy3_x_pos < boxLeft + enemyRadius)
-                    enemyMove3 <= 0;
-            end
-            endcase
             
             if(((x_pos)-(enemy1_x_pos))**2 + ((y_pos)-(enemy1_y_pos))**2 <= 169 && hitEnemy1 == 0)
                 begin

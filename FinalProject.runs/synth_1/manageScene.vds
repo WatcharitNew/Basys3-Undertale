@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sat May 16 16:12:15 2020
-# Process ID: 3196
+# Start of session at: Sat May 16 17:01:17 2020
+# Process ID: 14496
 # Current directory: F:/HWLAB/FinalProject/FinalProject.runs/synth_1
 # Command line: vivado.exe -log manageScene.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source manageScene.tcl
 # Log file: F:/HWLAB/FinalProject/FinalProject.runs/synth_1/manageScene.vds
@@ -15,11 +15,11 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 2232 
+INFO: Helper process launched with PID 3368 
 WARNING: [Synth 8-2611] redeclaration of ansi port state is not allowed [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/receiver.v:36]
 WARNING: [Synth 8-2611] redeclaration of ansi port nextstate is not allowed [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/receiver.v:36]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 391.832 ; gain = 113.109
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 391.266 ; gain = 112.078
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'manageScene' [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/manageScene.v:23]
 INFO: [Synth 8-6157] synthesizing module 'afterTurnScene' [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:22]
@@ -57,7 +57,7 @@ INFO: [Synth 8-6155] done synthesizing module 'afterTurnScene' (5#1) [F:/HWLAB/F
 INFO: [Synth 8-6155] done synthesizing module 'manageScene' (6#1) [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/manageScene.v:23]
 WARNING: [Synth 8-3331] design vga_sync has unconnected port reset
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 429.383 ; gain = 150.660
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 429.523 ; gain = 150.336
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -70,10 +70,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 429.383 ; gain = 150.660
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 429.523 ; gain = 150.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 429.383 ; gain = 150.660
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 429.523 ; gain = 150.336
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -102,44 +102,46 @@ Resolution: If [get_<value>] was used to populate the object, check to make sure
 Finished Parsing XDC File [F:/HWLAB/FinalProject/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/HWLAB/FinalProject/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/manageScene_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/manageScene_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 771.566 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 772.117 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 771.566 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 772.117 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 771.566 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 771.566 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 772.117 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 772.117 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 771.566 ; gain = 492.844
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 772.117 ; gain = 492.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 771.566 ; gain = 492.844
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 772.117 ; gain = 492.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 771.566 ; gain = 492.844
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 772.117 ; gain = 492.930
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "shift" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "inc_bitcounter" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:201]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:218]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:234]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:234]
 INFO: [Synth 8-5546] ROM "direc" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "TxData" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "direc" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "TxData" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "enemyMove1_y" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enemyMove1_y" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enemyMove2_x" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enemyMove2_x" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enemyMove3_x" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enemyMove3_x" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 771.566 ; gain = 492.844
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 772.117 ; gain = 492.930
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -159,22 +161,24 @@ Detailed RTL Component Info :
 	   2 Input      2 Bit       Adders := 2     
 +---Registers : 
 	               12 Bit    Registers := 1     
-	               10 Bit    Registers := 11    
+	               10 Bit    Registers := 15    
 	                8 Bit    Registers := 1     
 	                4 Bit    Registers := 2     
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 42    
+	                1 Bit    Registers := 39    
 +---Multipliers : 
 	                32x32  Multipliers := 16    
 +---Muxes : 
 	  14 Input     12 Bit        Muxes := 1     
-	   2 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 13    
+	   5 Input     10 Bit        Muxes := 1     
+	   6 Input     10 Bit        Muxes := 1     
 	   2 Input      7 Bit        Muxes := 1     
 	   5 Input      7 Bit        Muxes := 1     
 	   6 Input      3 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 27    
+	   2 Input      1 Bit        Muxes := 24    
 	   4 Input      1 Bit        Muxes := 1     
 	   5 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
@@ -229,19 +233,22 @@ Detailed RTL Component Info :
 	   2 Input     10 Bit       Adders := 8     
 +---Registers : 
 	               12 Bit    Registers := 1     
-	               10 Bit    Registers := 7     
+	               10 Bit    Registers := 11    
 	                8 Bit    Registers := 1     
 	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 8     
+	                1 Bit    Registers := 5     
 +---Multipliers : 
 	                32x32  Multipliers := 16    
 +---Muxes : 
 	  14 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 12    
+	   5 Input     10 Bit        Muxes := 1     
+	   6 Input     10 Bit        Muxes := 1     
 	   2 Input      7 Bit        Muxes := 1     
 	   5 Input      7 Bit        Muxes := 1     
 	   6 Input      3 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 12    
+	   2 Input      1 Bit        Muxes := 9     
 	   5 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
@@ -259,221 +266,258 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-5544] ROM "ats/receiver_unit/shift" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:143]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:143]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:251]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:251]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:256]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:256]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:261]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:261]
+INFO: [Synth 8-5544] ROM "shift" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:146]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:146]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:227]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:227]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:232]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:232]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:237]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:237]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:129]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:129]
 INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:126]
 INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:126]
 INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:123]
 INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:123]
 INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:120]
 INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:120]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:117]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:117]
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/hitEnemy13, operation Mode is: A*B.
-DSP Report: operator ats/hitEnemy13 is absorbed into DSP ats/hitEnemy13.
-DSP Report: operator ats/hitEnemy13 is absorbed into DSP ats/hitEnemy13.
-DSP Report: Generating DSP ats/hitEnemy13, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator ats/hitEnemy13 is absorbed into DSP ats/hitEnemy13.
-DSP Report: operator ats/hitEnemy13 is absorbed into DSP ats/hitEnemy13.
-DSP Report: Generating DSP ats/hitEnemy13, operation Mode is: A*B.
-DSP Report: operator ats/hitEnemy13 is absorbed into DSP ats/hitEnemy13.
-DSP Report: operator ats/hitEnemy13 is absorbed into DSP ats/hitEnemy13.
-DSP Report: Generating DSP ats/hitEnemy13, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator ats/hitEnemy13 is absorbed into DSP ats/hitEnemy13.
-DSP Report: operator ats/hitEnemy13 is absorbed into DSP ats/hitEnemy13.
-DSP Report: Generating DSP ats/hitEnemy13, operation Mode is: A*B.
-DSP Report: operator ats/hitEnemy13 is absorbed into DSP ats/hitEnemy13.
-DSP Report: operator ats/hitEnemy13 is absorbed into DSP ats/hitEnemy13.
-DSP Report: Generating DSP ats/hitEnemy13, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator ats/hitEnemy13 is absorbed into DSP ats/hitEnemy13.
-DSP Report: operator ats/hitEnemy13 is absorbed into DSP ats/hitEnemy13.
-DSP Report: Generating DSP ats/hitEnemy13, operation Mode is: A*B.
-DSP Report: operator ats/hitEnemy13 is absorbed into DSP ats/hitEnemy13.
-DSP Report: operator ats/hitEnemy13 is absorbed into DSP ats/hitEnemy13.
-DSP Report: Generating DSP ats/hitEnemy13, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator ats/hitEnemy13 is absorbed into DSP ats/hitEnemy13.
-DSP Report: operator ats/hitEnemy13 is absorbed into DSP ats/hitEnemy13.
-DSP Report: Generating DSP ats/health4, operation Mode is: A*B.
-DSP Report: operator ats/health4 is absorbed into DSP ats/health4.
-DSP Report: operator ats/health4 is absorbed into DSP ats/health4.
-DSP Report: Generating DSP ats/health4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator ats/health4 is absorbed into DSP ats/health4.
-DSP Report: operator ats/health4 is absorbed into DSP ats/health4.
-DSP Report: Generating DSP ats/health4, operation Mode is: A*B.
-DSP Report: operator ats/health4 is absorbed into DSP ats/health4.
-DSP Report: operator ats/health4 is absorbed into DSP ats/health4.
-DSP Report: Generating DSP ats/health4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator ats/health4 is absorbed into DSP ats/health4.
-DSP Report: operator ats/health4 is absorbed into DSP ats/health4.
-DSP Report: Generating DSP ats/health4, operation Mode is: A*B.
-DSP Report: operator ats/health4 is absorbed into DSP ats/health4.
-DSP Report: operator ats/health4 is absorbed into DSP ats/health4.
-DSP Report: Generating DSP ats/health4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator ats/health4 is absorbed into DSP ats/health4.
-DSP Report: operator ats/health4 is absorbed into DSP ats/health4.
-DSP Report: Generating DSP ats/health4, operation Mode is: A*B.
-DSP Report: operator ats/health4 is absorbed into DSP ats/health4.
-DSP Report: operator ats/health4 is absorbed into DSP ats/health4.
-DSP Report: Generating DSP ats/health4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator ats/health4 is absorbed into DSP ats/health4.
-DSP Report: operator ats/health4 is absorbed into DSP ats/health4.
-DSP Report: Generating DSP ats/health3, operation Mode is: A*B.
-DSP Report: operator ats/health3 is absorbed into DSP ats/health3.
-DSP Report: operator ats/health3 is absorbed into DSP ats/health3.
-DSP Report: Generating DSP ats/health3, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator ats/health3 is absorbed into DSP ats/health3.
-DSP Report: operator ats/health3 is absorbed into DSP ats/health3.
-DSP Report: Generating DSP ats/health3, operation Mode is: A*B.
-DSP Report: operator ats/health3 is absorbed into DSP ats/health3.
-DSP Report: operator ats/health3 is absorbed into DSP ats/health3.
-DSP Report: Generating DSP ats/health3, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator ats/health3 is absorbed into DSP ats/health3.
-DSP Report: operator ats/health3 is absorbed into DSP ats/health3.
-DSP Report: Generating DSP ats/health3, operation Mode is: A*B.
-DSP Report: operator ats/health3 is absorbed into DSP ats/health3.
-DSP Report: operator ats/health3 is absorbed into DSP ats/health3.
-DSP Report: Generating DSP ats/health3, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator ats/health3 is absorbed into DSP ats/health3.
-DSP Report: operator ats/health3 is absorbed into DSP ats/health3.
-DSP Report: Generating DSP ats/health3, operation Mode is: A*B.
-DSP Report: operator ats/health3 is absorbed into DSP ats/health3.
-DSP Report: operator ats/health3 is absorbed into DSP ats/health3.
-DSP Report: Generating DSP ats/health3, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator ats/health3 is absorbed into DSP ats/health3.
-DSP Report: operator ats/health3 is absorbed into DSP ats/health3.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: operator ats/rgb_reg4 is absorbed into DSP ats/rgb_reg4.
-DSP Report: Generating DSP ats/rgb_reg3, operation Mode is: (C:0x1a4)-A*(B:0x24).
-DSP Report: operator ats/rgb_reg3 is absorbed into DSP ats/rgb_reg3.
-DSP Report: operator ats/healthBar is absorbed into DSP ats/rgb_reg3.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP hitEnemy13, operation Mode is: A*B.
+DSP Report: operator hitEnemy13 is absorbed into DSP hitEnemy13.
+DSP Report: operator hitEnemy13 is absorbed into DSP hitEnemy13.
+DSP Report: Generating DSP hitEnemy13, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator hitEnemy13 is absorbed into DSP hitEnemy13.
+DSP Report: operator hitEnemy13 is absorbed into DSP hitEnemy13.
+DSP Report: Generating DSP hitEnemy13, operation Mode is: A*B.
+DSP Report: operator hitEnemy13 is absorbed into DSP hitEnemy13.
+DSP Report: operator hitEnemy13 is absorbed into DSP hitEnemy13.
+DSP Report: Generating DSP hitEnemy13, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator hitEnemy13 is absorbed into DSP hitEnemy13.
+DSP Report: operator hitEnemy13 is absorbed into DSP hitEnemy13.
+DSP Report: Generating DSP hitEnemy13, operation Mode is: A*B.
+DSP Report: operator hitEnemy13 is absorbed into DSP hitEnemy13.
+DSP Report: operator hitEnemy13 is absorbed into DSP hitEnemy13.
+DSP Report: Generating DSP hitEnemy13, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator hitEnemy13 is absorbed into DSP hitEnemy13.
+DSP Report: operator hitEnemy13 is absorbed into DSP hitEnemy13.
+DSP Report: Generating DSP hitEnemy13, operation Mode is: A*B.
+DSP Report: operator hitEnemy13 is absorbed into DSP hitEnemy13.
+DSP Report: operator hitEnemy13 is absorbed into DSP hitEnemy13.
+DSP Report: Generating DSP hitEnemy13, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator hitEnemy13 is absorbed into DSP hitEnemy13.
+DSP Report: operator hitEnemy13 is absorbed into DSP hitEnemy13.
+DSP Report: Generating DSP health4, operation Mode is: A*B.
+DSP Report: operator health4 is absorbed into DSP health4.
+DSP Report: operator health4 is absorbed into DSP health4.
+DSP Report: Generating DSP health4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator health4 is absorbed into DSP health4.
+DSP Report: operator health4 is absorbed into DSP health4.
+DSP Report: Generating DSP health4, operation Mode is: A*B.
+DSP Report: operator health4 is absorbed into DSP health4.
+DSP Report: operator health4 is absorbed into DSP health4.
+DSP Report: Generating DSP health4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator health4 is absorbed into DSP health4.
+DSP Report: operator health4 is absorbed into DSP health4.
+DSP Report: Generating DSP health4, operation Mode is: A*B.
+DSP Report: operator health4 is absorbed into DSP health4.
+DSP Report: operator health4 is absorbed into DSP health4.
+DSP Report: Generating DSP health4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator health4 is absorbed into DSP health4.
+DSP Report: operator health4 is absorbed into DSP health4.
+DSP Report: Generating DSP health4, operation Mode is: A*B.
+DSP Report: operator health4 is absorbed into DSP health4.
+DSP Report: operator health4 is absorbed into DSP health4.
+DSP Report: Generating DSP health4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator health4 is absorbed into DSP health4.
+DSP Report: operator health4 is absorbed into DSP health4.
+DSP Report: Generating DSP health3, operation Mode is: A*B.
+DSP Report: operator health3 is absorbed into DSP health3.
+DSP Report: operator health3 is absorbed into DSP health3.
+DSP Report: Generating DSP health3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator health3 is absorbed into DSP health3.
+DSP Report: operator health3 is absorbed into DSP health3.
+DSP Report: Generating DSP health3, operation Mode is: A*B.
+DSP Report: operator health3 is absorbed into DSP health3.
+DSP Report: operator health3 is absorbed into DSP health3.
+DSP Report: Generating DSP health3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator health3 is absorbed into DSP health3.
+DSP Report: operator health3 is absorbed into DSP health3.
+DSP Report: Generating DSP health3, operation Mode is: A*B.
+DSP Report: operator health3 is absorbed into DSP health3.
+DSP Report: operator health3 is absorbed into DSP health3.
+DSP Report: Generating DSP health3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator health3 is absorbed into DSP health3.
+DSP Report: operator health3 is absorbed into DSP health3.
+DSP Report: Generating DSP health3, operation Mode is: A*B.
+DSP Report: operator health3 is absorbed into DSP health3.
+DSP Report: operator health3 is absorbed into DSP health3.
+DSP Report: Generating DSP health3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator health3 is absorbed into DSP health3.
+DSP Report: operator health3 is absorbed into DSP health3.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP rgb_reg3, operation Mode is: (C:0x1a4)-A*(B:0x24).
+DSP Report: operator rgb_reg3 is absorbed into DSP rgb_reg3.
+DSP Report: operator healthBar is absorbed into DSP rgb_reg3.
+WARNING: [Synth 8-3331] design vga_sync has unconnected port reset
 INFO: [Synth 8-3886] merging instance 'ats/TxData_reg[5]' (FDE) to 'ats/TxData_reg[3]'
 INFO: [Synth 8-3886] merging instance 'ats/TxData_reg[4]' (FDE) to 'ats/TxData_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ats/TxData_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ats/enemyMove1_y_reg[0] )
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove1_y_reg[1]' (FDSE) to 'ats/enemyMove1_y_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove1_y_reg[2]' (FDSE) to 'ats/enemyMove1_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove1_y_reg[3]' (FDSE) to 'ats/enemyMove1_y_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove1_y_reg[4]' (FDSE) to 'ats/enemyMove1_y_reg[5]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove1_y_reg[5]' (FDSE) to 'ats/enemyMove1_y_reg[6]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove1_y_reg[6]' (FDSE) to 'ats/enemyMove1_y_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove1_y_reg[7]' (FDSE) to 'ats/enemyMove1_y_reg[8]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove1_y_reg[8]' (FDSE) to 'ats/enemyMove1_y_reg[9]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ats/enemyMove2_x_reg[0] )
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove2_x_reg[1]' (FDSE) to 'ats/enemyMove2_x_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove2_x_reg[2]' (FDSE) to 'ats/enemyMove2_x_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove2_x_reg[3]' (FDSE) to 'ats/enemyMove2_x_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove2_x_reg[4]' (FDSE) to 'ats/enemyMove2_x_reg[5]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove2_x_reg[5]' (FDSE) to 'ats/enemyMove2_x_reg[6]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove2_x_reg[6]' (FDSE) to 'ats/enemyMove2_x_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove2_x_reg[7]' (FDSE) to 'ats/enemyMove2_x_reg[8]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove2_x_reg[8]' (FDSE) to 'ats/enemyMove2_x_reg[9]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ats/enemyMove3_x_reg[0] )
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove3_x_reg[1]' (FDSE) to 'ats/enemyMove3_x_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove3_x_reg[2]' (FDSE) to 'ats/enemyMove3_x_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove3_x_reg[3]' (FDSE) to 'ats/enemyMove3_x_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove3_x_reg[4]' (FDSE) to 'ats/enemyMove3_x_reg[5]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove3_x_reg[5]' (FDSE) to 'ats/enemyMove3_x_reg[6]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove3_x_reg[6]' (FDSE) to 'ats/enemyMove3_x_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove3_x_reg[7]' (FDSE) to 'ats/enemyMove3_x_reg[8]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove3_x_reg[8]' (FDSE) to 'ats/enemyMove3_x_reg[9]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ats/enemyMove3_y_reg[0] )
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove3_y_reg[1]' (FDSE) to 'ats/enemyMove3_y_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove3_y_reg[2]' (FDSE) to 'ats/enemyMove3_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove3_y_reg[3]' (FDSE) to 'ats/enemyMove3_y_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove3_y_reg[4]' (FDSE) to 'ats/enemyMove3_y_reg[5]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove3_y_reg[5]' (FDSE) to 'ats/enemyMove3_y_reg[6]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove3_y_reg[6]' (FDSE) to 'ats/enemyMove3_y_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove3_y_reg[7]' (FDSE) to 'ats/enemyMove3_y_reg[8]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove3_y_reg[8]' (FDSE) to 'ats/enemyMove3_y_reg[9]'
 INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[0]' (FDC) to 'ats/rgb_reg_reg[1]'
 INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[1]' (FDC) to 'ats/rgb_reg_reg[2]'
 INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[2]' (FDC) to 'ats/rgb_reg_reg[3]'
@@ -484,7 +528,7 @@ INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[8]' (FDP) to 'ats/rgb_reg
 INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[9]' (FDP) to 'ats/rgb_reg_reg[10]'
 INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[10]' (FDP) to 'ats/rgb_reg_reg[11]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 771.566 ; gain = 492.844
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 772.117 ; gain = 492.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -494,70 +538,70 @@ DSP: Preliminary Mapping  Report (see note below)
 +---------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name    | DSP Mapping          | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +---------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|manageScene    | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|manageScene    | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|afterTurnScene | (PCIN>>17)+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |afterTurnScene | (C:0x1a4)-A*(B:0x24) | 10     | 6      | 9      | -      | 10     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
 +---------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
@@ -575,13 +619,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 818.914 ; gain = 540.191
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 817.336 ; gain = 538.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 871.051 ; gain = 592.328
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 864.141 ; gain = 584.953
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -593,7 +637,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 875.285 ; gain = 596.563
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 874.270 ; gain = 595.082
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -617,7 +661,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 875.285 ; gain = 596.563
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 874.270 ; gain = 595.082
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -630,7 +674,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 875.285 ; gain = 596.563
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 874.270 ; gain = 595.082
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -642,25 +686,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 875.285 ; gain = 596.563
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 874.270 ; gain = 595.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 875.285 ; gain = 596.563
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 874.270 ; gain = 595.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 875.285 ; gain = 596.563
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 874.270 ; gain = 595.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 875.285 ; gain = 596.563
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 874.270 ; gain = 595.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -680,15 +724,15 @@ Report Cell Usage:
 |2     |CARRY4    |   190|
 |3     |DSP48E1   |    48|
 |4     |DSP48E1_1 |     1|
-|5     |LUT1      |    49|
+|5     |LUT1      |    45|
 |6     |LUT2      |   682|
-|7     |LUT3      |    38|
-|8     |LUT4      |    89|
-|9     |LUT5      |    71|
-|10    |LUT6      |   102|
+|7     |LUT3      |    35|
+|8     |LUT4      |    85|
+|9     |LUT5      |    67|
+|10    |LUT6      |   104|
 |11    |FDCE      |     2|
 |12    |FDPE      |     1|
-|13    |FDRE      |   213|
+|13    |FDRE      |   214|
 |14    |FDSE      |     1|
 |15    |IBUF      |     3|
 |16    |OBUF      |    15|
@@ -698,8 +742,8 @@ Report Instance Areas:
 +------+-----------------------+----------------+------+
 |      |Instance               |Module          |Cells |
 +------+-----------------------+----------------+------+
-|1     |top                    |                |  1507|
-|2     |  ats                  |afterTurnScene  |  1487|
+|1     |top                    |                |  1495|
+|2     |  ats                  |afterTurnScene  |  1475|
 |3     |    fdivTarget         |ClockDivider    |     2|
 |4     |    \genblk1[0].fdiv   |ClockDivider_0  |     2|
 |5     |    \genblk1[10].fdiv  |ClockDivider_1  |     2|
@@ -719,32 +763,32 @@ Report Instance Areas:
 |19    |    \genblk1[7].fdiv   |ClockDivider_15 |     2|
 |20    |    \genblk1[8].fdiv   |ClockDivider_16 |     2|
 |21    |    \genblk1[9].fdiv   |ClockDivider_17 |     2|
-|22    |    nolabel_line68     |transmitter     |    62|
-|23    |    receiver_unit      |receiver        |    74|
-|24    |    vga_sync_unit      |vga_sync        |   228|
+|22    |    nolabel_line70     |transmitter     |    62|
+|23    |    receiver_unit      |receiver        |    77|
+|24    |    vga_sync_unit      |vga_sync        |   213|
 +------+-----------------------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 875.285 ; gain = 596.563
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 874.270 ; gain = 595.082
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 875.285 ; gain = 254.379
-Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 875.285 ; gain = 596.563
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 874.270 ; gain = 252.488
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 874.270 ; gain = 595.082
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 239 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 875.285 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 874.270 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-66 Infos, 9 Warnings, 6 Critical Warnings and 0 Errors encountered.
+104 Infos, 10 Warnings, 6 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 875.285 ; gain = 608.441
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 875.285 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 874.270 ; gain = 607.527
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 874.270 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'F:/HWLAB/FinalProject/FinalProject.runs/synth_1/manageScene.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file manageScene_utilization_synth.rpt -pb manageScene_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat May 16 16:13:05 2020...
+INFO: [Common 17-206] Exiting Vivado at Sat May 16 17:02:06 2020...
