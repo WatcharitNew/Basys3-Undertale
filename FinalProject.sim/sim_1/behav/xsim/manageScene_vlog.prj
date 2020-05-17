@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../FinalProject.srcs/sources_1/new/CLockDivider.v" \
+"../../../../FinalProject.srcs/sources_1/new/blackScene.v" \
+"../../../../FinalProject.srcs/sources_1/new/receiver.v" \
+"../../../../FinalProject.srcs/sources_1/new/transmitter.v" \
+"../../../../FinalProject.srcs/sources_1/new/vga_sync.v" \
+"../../../../FinalProject.srcs/sources_1/new/vga_test.v" \
+"../../../../FinalProject.srcs/sources_1/new/manageScene.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

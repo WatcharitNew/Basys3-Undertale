@@ -60,12 +60,12 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param xicom.use_bs_reader 1
   open_checkpoint manageScene_routed.dcp
   set_property webtalk.parent_dir C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.cache/wt [current_project]
   catch { write_mem_info -force manageScene.mmi }

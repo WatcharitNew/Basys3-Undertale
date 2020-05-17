@@ -17,7 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -38,6 +38,11 @@ read_verilog -library xil_defaultlib {
   C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_sync.v
   C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v
   C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v
+}
+read_vhdl -library xil_defaultlib {
+  C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/commonPak.vhd
+  C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Font_Rom.vhd
+  C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

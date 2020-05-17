@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sun May 17 16:39:00 2020
+| Date         : Sun May 17 23:20:42 2020
 | Host         : DESKTOP-VG3SLB4 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file manageScene_utilization_synth.rpt -pb manageScene_utilization_synth.pb
 | Design       : manageScene
@@ -30,11 +30,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             | 1035 |     0 |     20800 |  4.98 |
-|   LUT as Logic          | 1035 |     0 |     20800 |  4.98 |
+| Slice LUTs*             |  111 |     0 |     20800 |  0.53 |
+|   LUT as Logic          |  111 |     0 |     20800 |  0.53 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
-| Slice Registers         |  285 |     0 |     41600 |  0.69 |
-|   Register as Flip Flop |  285 |     0 |     41600 |  0.69 |
+| Slice Registers         |  116 |     0 |     41600 |  0.28 |
+|   Register as Flip Flop |  116 |     0 |     41600 |  0.28 |
 |   Register as Latch     |    0 |     0 |     41600 |  0.00 |
 | F7 Muxes                |    0 |     0 |     16300 |  0.00 |
 | F8 Muxes                |    0 |     0 |      8150 |  0.00 |
@@ -56,33 +56,33 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 7     |          Yes |         Set |            - |
-| 278   |          Yes |       Reset |            - |
+| 1     |          Yes |         Set |            - |
+| 115   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
 2. Memory
 ---------
 
-+----------------+------+-------+-----------+-------+
-|    Site Type   | Used | Fixed | Available | Util% |
-+----------------+------+-------+-----------+-------+
-| Block RAM Tile |    0 |     0 |        50 |  0.00 |
-|   RAMB36/FIFO* |    0 |     0 |        50 |  0.00 |
-|   RAMB18       |    0 |     0 |       100 |  0.00 |
-+----------------+------+-------+-----------+-------+
++-------------------+------+-------+-----------+-------+
+|     Site Type     | Used | Fixed | Available | Util% |
++-------------------+------+-------+-----------+-------+
+| Block RAM Tile    |  0.5 |     0 |        50 |  1.00 |
+|   RAMB36/FIFO*    |    0 |     0 |        50 |  0.00 |
+|   RAMB18          |    1 |     0 |       100 |  1.00 |
+|     RAMB18E1 only |    1 |       |           |       |
++-------------------+------+-------+-----------+-------+
 * Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
 
 
 3. DSP
 ------
 
-+----------------+------+-------+-----------+-------+
-|    Site Type   | Used | Fixed | Available | Util% |
-+----------------+------+-------+-----------+-------+
-| DSPs           |   49 |     0 |        90 | 54.44 |
-|   DSP48E1 only |   49 |       |           |       |
-+----------------+------+-------+-----------+-------+
++-----------+------+-------+-----------+-------+
+| Site Type | Used | Fixed | Available | Util% |
++-----------+------+-------+-----------+-------+
+| DSPs      |    0 |     0 |        90 |  0.00 |
++-----------+------+-------+-----------+-------+
 
 
 4. IO and GT Specific
@@ -116,7 +116,7 @@ Table of Contents
 +------------+------+-------+-----------+-------+
 |  Site Type | Used | Fixed | Available | Util% |
 +------------+------+-------+-----------+-------+
-| BUFGCTRL   |    2 |     0 |        32 |  6.25 |
+| BUFGCTRL   |    1 |     0 |        32 |  3.13 |
 | BUFIO      |    0 |     0 |        20 |  0.00 |
 | MMCME2_ADV |    0 |     0 |         5 |  0.00 |
 | PLLE2_ADV  |    0 |     0 |         5 |  0.00 |
@@ -150,19 +150,19 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT2     |  685 |                 LUT |
-| FDRE     |  278 |        Flop & Latch |
-| CARRY4   |  192 |          CarryLogic |
-| LUT6     |  101 |                 LUT |
-| LUT1     |   97 |                 LUT |
-| LUT4     |   93 |                 LUT |
-| LUT5     |   80 |                 LUT |
-| LUT3     |   49 |                 LUT |
-| DSP48E1  |   49 |    Block Arithmetic |
+| FDRE     |  115 |        Flop & Latch |
+| LUT2     |   33 |                 LUT |
+| LUT6     |   29 |                 LUT |
+| CARRY4   |   27 |          CarryLogic |
+| LUT4     |   25 |                 LUT |
+| LUT5     |   23 |                 LUT |
+| LUT1     |   23 |                 LUT |
+| LUT3     |   17 |                 LUT |
 | OBUF     |   15 |                  IO |
-| FDSE     |    7 |        Flop & Latch |
 | IBUF     |    2 |                  IO |
-| BUFG     |    2 |               Clock |
+| RAMB18E1 |    1 |        Block Memory |
+| FDSE     |    1 |        Flop & Latch |
+| BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 
 

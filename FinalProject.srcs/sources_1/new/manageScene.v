@@ -45,18 +45,6 @@ module manageScene(
     wire p_tick;
     vga_sync vga_sync_unit (.clk(clk), .reset(reset), .hsync(Hsync), .vsync(Vsync),
                                 .video_on(video_on), .p_tick(p_tick), .x(x), .y(y));
-    
-   /* //Receiver
-    wire [7:0]RxData;
-    wire state;
-    wire nextstate;
-    receiver receiver_unit(RxData, state, nextstate, clk, 0, RsRx);
-    
-    //Transmitter
-    reg [7:0]TxData;
-    reg transmit;
-    reg [15:0]counter;
-    transmitter(RsTx, clk, 0, transmit, TxData);*/
         
     wire atsClk;
     wire [28:0] tclk;
@@ -81,6 +69,17 @@ module manageScene(
     afterTurnScene ats(clk, video_on, p_tick, x, y, RsRx, newScene_ats, rgb_reg_ats, RsTx);
     loadingScene ls(clk,video_on, p_tick, x, y, newScene_ls, rgb_reg_ls);
     
+    // text generator
+    wire text1;
+    Pixel_On_Text2 #(.displayText("Pixel_On_Text2 -- test1 at (220,420)")) t1(
+                clk,
+                220, // text position.x (top left)
+                420, // text position.y (top left)
+                x, // current position.x
+                y, // current position.y
+                text1  // result, 1 if current pixel is on text, 0 otherwise
+            );
+    
     initial begin
         changeScene = 0;
         newScene_ats = 0;
@@ -92,11 +91,10 @@ module manageScene(
     
     always @*
     begin
-//        if (changeScene == 0)   rgb_reg = rgb_reg_ats;
-//        else  rgb_reg = rgb_reg_ls;
 //        primary -> after turn scene
 //        secondary -> loading scene
-        rgb_reg = (rgb_reg_ats != 12'b0) ? rgb_reg_ats : rgb_reg_ls;
+//        rgb_reg = (rgb_reg_ats != 12'b0) ? rgb_reg_ats : rgb_reg_ls;
+        rgb_reg = (text1 == 1) ? 12'hFFF : 12'b0;
     end
     
     always @(posedge atsClk)
