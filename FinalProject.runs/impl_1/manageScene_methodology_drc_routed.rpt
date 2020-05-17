@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sun May 17 14:29:23 2020
-| Host         : DESKTOP-KFTK1LL running 64-bit major release  (build 9200)
+| Date         : Sun May 17 16:40:29 2020
+| Host         : DESKTOP-VG3SLB4 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file manageScene_methodology_drc_routed.rpt -pb manageScene_methodology_drc_routed.pb -rpx manageScene_methodology_drc_routed.rpx
 | Design       : manageScene
 | Device       : xc7a35tcpg236-1
@@ -666,17 +666,17 @@ Related violations: <none>
 
 TIMING-17#79 Warning
 Non-clocked sequential cell  
-The clock pin ats/rgb_reg_reg[11]/C is not reached by a timing clock
+The clock pin ats/rgb_reg_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#80 Warning
 Non-clocked sequential cell  
-The clock pin ats/rgb_reg_reg[3]/C is not reached by a timing clock
+The clock pin ats/rgb_reg_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#81 Warning
 Non-clocked sequential cell  
-The clock pin ats/rgb_reg_reg[7]/C is not reached by a timing clock
+The clock pin ats/rgb_reg_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#82 Warning
@@ -1086,7 +1086,7 @@ Related violations: <none>
 
 TIMING-17#163 Warning
 Non-clocked sequential cell  
-The clock pin ls/rgb_reg_reg[7]/C is not reached by a timing clock
+The clock pin ls/rgb_reg_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#164 Warning

@@ -14,17 +14,17 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 6060 
-WARNING: [Synth 8-2611] redeclaration of ansi port state is not allowed [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/receiver.v:36]
-WARNING: [Synth 8-2611] redeclaration of ansi port nextstate is not allowed [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/receiver.v:36]
+INFO: Helper process launched with PID 5604 
+WARNING: [Synth 8-2611] redeclaration of ansi port state is not allowed [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/receiver.v:36]
+WARNING: [Synth 8-2611] redeclaration of ansi port nextstate is not allowed [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/receiver.v:36]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 391.652 ; gain = 112.691
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 390.852 ; gain = 112.316
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'manageScene' [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/manageScene.v:23]
-INFO: [Synth 8-6157] synthesizing module 'ClockDivider' [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/CLockDivider.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClockDivider' (1#1) [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/CLockDivider.v:23]
-WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/manageScene.v:90]
-INFO: [Synth 8-6157] synthesizing module 'vga_sync' [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_sync.v:23]
+INFO: [Synth 8-6157] synthesizing module 'manageScene' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ClockDivider' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/CLockDivider.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClockDivider' (1#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/CLockDivider.v:23]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:90]
+INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_sync.v:23]
 	Parameter H_DISPLAY bound to: 640 - type: integer 
 	Parameter H_L_BORDER bound to: 48 - type: integer 
 	Parameter H_R_BORDER bound to: 16 - type: integer 
@@ -39,35 +39,35 @@ INFO: [Synth 8-6157] synthesizing module 'vga_sync' [F:/HWLAB/FinalProject/Final
 	Parameter V_MAX bound to: 524 - type: integer 
 	Parameter START_V_RETRACE bound to: 513 - type: integer 
 	Parameter END_V_RETRACE bound to: 514 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (2#1) [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_sync.v:23]
-INFO: [Synth 8-6157] synthesizing module 'afterTurnScene' [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:22]
-INFO: [Synth 8-6157] synthesizing module 'receiver' [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/receiver.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (2#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_sync.v:23]
+INFO: [Synth 8-6157] synthesizing module 'afterTurnScene' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:22]
+INFO: [Synth 8-6157] synthesizing module 'receiver' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/receiver.v:23]
 	Parameter clk_freq bound to: 100000000 - type: integer 
 	Parameter baud_rate bound to: 9600 - type: integer 
 	Parameter div_sample bound to: 4 - type: integer 
 	Parameter div_counter bound to: 2604 - type: integer 
 	Parameter mid_sample bound to: 2 - type: integer 
 	Parameter div_bit bound to: 10 - type: integer 
-INFO: [Synth 8-226] default block is never used [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/receiver.v:82]
-INFO: [Synth 8-6155] done synthesizing module 'receiver' (3#1) [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/receiver.v:23]
-INFO: [Synth 8-6157] synthesizing module 'transmitter' [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/transmitter.v:23]
-INFO: [Synth 8-226] default block is never used [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/transmitter.v:77]
-INFO: [Synth 8-6155] done synthesizing module 'transmitter' (4#1) [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/transmitter.v:23]
-WARNING: [Synth 8-6090] variable 'y_pos' is written by both blocking and non-blocking assignments, entire logic could be removed [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:164]
-WARNING: [Synth 8-6090] variable 'x_pos' is written by both blocking and non-blocking assignments, entire logic could be removed [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:166]
-WARNING: [Synth 8-6090] variable 'y_pos' is written by both blocking and non-blocking assignments, entire logic could be removed [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:168]
-WARNING: [Synth 8-6090] variable 'x_pos' is written by both blocking and non-blocking assignments, entire logic could be removed [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:170]
-INFO: [Synth 8-6155] done synthesizing module 'afterTurnScene' (5#1) [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:22]
-INFO: [Synth 8-6157] synthesizing module 'loadingScene' [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/blackScene.v:23]
-WARNING: [Synth 8-6014] Unused sequential element oldscene_reg was removed.  [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/blackScene.v:65]
-INFO: [Synth 8-6155] done synthesizing module 'loadingScene' (6#1) [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/blackScene.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'manageScene' (7#1) [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/manageScene.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/receiver.v:82]
+INFO: [Synth 8-6155] done synthesizing module 'receiver' (3#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/receiver.v:23]
+INFO: [Synth 8-6157] synthesizing module 'transmitter' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/transmitter.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/transmitter.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'transmitter' (4#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/transmitter.v:23]
+WARNING: [Synth 8-6090] variable 'y_pos' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:164]
+WARNING: [Synth 8-6090] variable 'x_pos' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:166]
+WARNING: [Synth 8-6090] variable 'y_pos' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:168]
+WARNING: [Synth 8-6090] variable 'x_pos' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:170]
+INFO: [Synth 8-6155] done synthesizing module 'afterTurnScene' (5#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:22]
+INFO: [Synth 8-6157] synthesizing module 'loadingScene' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/blackScene.v:23]
+WARNING: [Synth 8-6014] Unused sequential element oldscene_reg was removed.  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/blackScene.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'loadingScene' (6#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/blackScene.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'manageScene' (7#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:23]
 WARNING: [Synth 8-3331] design loadingScene has unconnected port video_on
 WARNING: [Synth 8-3331] design loadingScene has unconnected port newscene
 WARNING: [Synth 8-3331] design afterTurnScene has unconnected port video_on
 WARNING: [Synth 8-3331] design vga_sync has unconnected port reset
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 430.625 ; gain = 151.664
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 429.910 ; gain = 151.375
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -80,62 +80,62 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 430.625 ; gain = 151.664
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 429.910 ; gain = 151.375
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 430.625 ; gain = 151.664
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 429.910 ; gain = 151.375
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [F:/HWLAB/FinalProject/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc]
-WARNING: [Vivado 12-584] No ports matched 'PS2Clk'. [F:/HWLAB/FinalProject/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc:274]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/HWLAB/FinalProject/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc:274]
+Parsing XDC File [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'PS2Clk'. [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc:274]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc:274]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'PS2Clk'. [F:/HWLAB/FinalProject/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc:275]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/HWLAB/FinalProject/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc:275]
+WARNING: [Vivado 12-584] No ports matched 'PS2Clk'. [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc:275]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc:275]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'PS2Clk'. [F:/HWLAB/FinalProject/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc:276]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/HWLAB/FinalProject/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc:276]
+WARNING: [Vivado 12-584] No ports matched 'PS2Clk'. [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc:276]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc:276]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'PS2Data'. [F:/HWLAB/FinalProject/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc:277]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/HWLAB/FinalProject/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc:277]
+WARNING: [Vivado 12-584] No ports matched 'PS2Data'. [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc:277]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc:277]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'PS2Data'. [F:/HWLAB/FinalProject/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc:278]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/HWLAB/FinalProject/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc:278]
+WARNING: [Vivado 12-584] No ports matched 'PS2Data'. [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc:278]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc:278]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'PS2Data'. [F:/HWLAB/FinalProject/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc:279]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/HWLAB/FinalProject/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc:279]
+WARNING: [Vivado 12-584] No ports matched 'PS2Data'. [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc:279]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc:279]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [F:/HWLAB/FinalProject/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/HWLAB/FinalProject/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/manageScene_propImpl.xdc].
+Finished Parsing XDC File [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/manageScene_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/manageScene_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 774.371 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 772.918 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 774.371 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 772.918 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 774.371 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.091 . Memory (MB): peak = 774.371 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 772.918 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 772.918 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 774.371 ; gain = 495.410
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 772.918 ; gain = 494.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 774.371 ; gain = 495.410
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 772.918 ; gain = 494.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 774.371 ; gain = 495.410
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 772.918 ; gain = 494.383
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "shift" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "inc_bitcounter" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -151,7 +151,7 @@ INFO: [Synth 8-5544] ROM "enemyMove2_x" won't be mapped to Block RAM because add
 INFO: [Synth 8-5544] ROM "enemyMove3_x" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "enemyMove3_x" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:37 . Memory (MB): peak = 774.371 ; gain = 495.410
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 772.918 ; gain = 494.383
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -297,22 +297,22 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 INFO: [Synth 8-5544] ROM "receiver_unit/shift" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:241]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:241]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:231]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:231]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:236]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:236]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:119]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:119]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:116]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:116]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:113]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:113]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:136]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:136]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:110]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_test.v:110]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:241]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:241]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:231]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:231]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:236]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:236]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:119]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:119]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:116]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:116]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:113]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:113]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:136]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:136]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:110]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:110]
 DSP Report: Generating DSP hitEnemy34, operation Mode is: A*B.
 DSP Report: operator hitEnemy34 is absorbed into DSP hitEnemy34.
 DSP Report: operator hitEnemy34 is absorbed into DSP hitEnemy34.
@@ -515,15 +515,6 @@ WARNING: [Synth 8-3331] design vga_sync has unconnected port reset
 INFO: [Synth 8-3886] merging instance 'ats/TxData_reg[5]' (FDE) to 'ats/TxData_reg[3]'
 INFO: [Synth 8-3886] merging instance 'ats/TxData_reg[4]' (FDE) to 'ats/TxData_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ats/TxData_reg[3] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ats/enemyMove1_y_reg[0] )
-INFO: [Synth 8-3886] merging instance 'ats/enemyMove1_y_reg[1]' (FDSE) to 'ats/enemyMove1_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'ats/enemyMove1_y_reg[2]' (FDSE) to 'ats/enemyMove1_y_reg[3]'
-INFO: [Synth 8-3886] merging instance 'ats/enemyMove1_y_reg[3]' (FDSE) to 'ats/enemyMove1_y_reg[4]'
-INFO: [Synth 8-3886] merging instance 'ats/enemyMove1_y_reg[4]' (FDSE) to 'ats/enemyMove1_y_reg[5]'
-INFO: [Synth 8-3886] merging instance 'ats/enemyMove1_y_reg[5]' (FDSE) to 'ats/enemyMove1_y_reg[6]'
-INFO: [Synth 8-3886] merging instance 'ats/enemyMove1_y_reg[6]' (FDSE) to 'ats/enemyMove1_y_reg[7]'
-INFO: [Synth 8-3886] merging instance 'ats/enemyMove1_y_reg[7]' (FDSE) to 'ats/enemyMove1_y_reg[8]'
-INFO: [Synth 8-3886] merging instance 'ats/enemyMove1_y_reg[8]' (FDSE) to 'ats/enemyMove1_y_reg[9]'
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ats/enemyMove2_x_reg[0] )
 INFO: [Synth 8-3886] merging instance 'ats/enemyMove2_x_reg[1]' (FDSE) to 'ats/enemyMove2_x_reg[2]'
 INFO: [Synth 8-3886] merging instance 'ats/enemyMove2_x_reg[2]' (FDSE) to 'ats/enemyMove2_x_reg[3]'
@@ -533,6 +524,15 @@ INFO: [Synth 8-3886] merging instance 'ats/enemyMove2_x_reg[5]' (FDSE) to 'ats/e
 INFO: [Synth 8-3886] merging instance 'ats/enemyMove2_x_reg[6]' (FDSE) to 'ats/enemyMove2_x_reg[7]'
 INFO: [Synth 8-3886] merging instance 'ats/enemyMove2_x_reg[7]' (FDSE) to 'ats/enemyMove2_x_reg[8]'
 INFO: [Synth 8-3886] merging instance 'ats/enemyMove2_x_reg[8]' (FDSE) to 'ats/enemyMove2_x_reg[9]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ats/enemyMove1_y_reg[0] )
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove1_y_reg[1]' (FDSE) to 'ats/enemyMove1_y_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove1_y_reg[2]' (FDSE) to 'ats/enemyMove1_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove1_y_reg[3]' (FDSE) to 'ats/enemyMove1_y_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove1_y_reg[4]' (FDSE) to 'ats/enemyMove1_y_reg[5]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove1_y_reg[5]' (FDSE) to 'ats/enemyMove1_y_reg[6]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove1_y_reg[6]' (FDSE) to 'ats/enemyMove1_y_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove1_y_reg[7]' (FDSE) to 'ats/enemyMove1_y_reg[8]'
+INFO: [Synth 8-3886] merging instance 'ats/enemyMove1_y_reg[8]' (FDSE) to 'ats/enemyMove1_y_reg[9]'
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ats/enemyMove3_x_reg[0] )
 INFO: [Synth 8-3886] merging instance 'ats/enemyMove3_x_reg[1]' (FDSE) to 'ats/enemyMove3_x_reg[2]'
 INFO: [Synth 8-3886] merging instance 'ats/enemyMove3_x_reg[2]' (FDSE) to 'ats/enemyMove3_x_reg[3]'
@@ -554,28 +554,28 @@ INFO: [Synth 8-3886] merging instance 'ats/enemyMove3_y_reg[8]' (FDSE) to 'ats/e
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ls/loadingBar0_inferred__0 /\ls/loadingBar_reg[1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ls/loadingBar0_inferred__0 /\ls/loadingBar_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ls/loadingBar0_inferred__0 /\ls/loadingBar_reg[2] )
-INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[0]' (FDR) to 'ls/rgb_reg_reg[11]'
-INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[0]' (FDR) to 'ats/rgb_reg_reg[1]'
-INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[1]' (FDR) to 'ls/rgb_reg_reg[11]'
-INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[1]' (FDR) to 'ats/rgb_reg_reg[2]'
-INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[2]' (FDR) to 'ls/rgb_reg_reg[11]'
-INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[2]' (FDR) to 'ats/rgb_reg_reg[3]'
-INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[3]' (FDR) to 'ls/rgb_reg_reg[11]'
-INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[4]' (FDS) to 'ls/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[0]' (FDR) to 'ls/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[1]' (FDR) to 'ls/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[2]' (FDR) to 'ls/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[3]' (FDR) to 'ls/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[4]' (FDR) to 'ls/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[5]' (FDR) to 'ls/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[6]' (FDR) to 'ls/rgb_reg_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ls/rgb_reg_reg[7] )
+INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[8]' (FDS) to 'ls/rgb_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[9]' (FDS) to 'ls/rgb_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[10]' (FDS) to 'ls/rgb_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[3]' (FDR) to 'ats/rgb_reg_reg[0]'
 INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[4]' (FDR) to 'ats/rgb_reg_reg[5]'
-INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[5]' (FDS) to 'ls/rgb_reg_reg[7]'
 INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[5]' (FDR) to 'ats/rgb_reg_reg[6]'
-INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[6]' (FDS) to 'ls/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[2]' (FDR) to 'ats/rgb_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[0]' (FDR) to 'ats/rgb_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[9]' (FDS) to 'ats/rgb_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[11]' (FDS) to 'ats/rgb_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[10]' (FDS) to 'ats/rgb_reg_reg[8]'
 INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[6]' (FDR) to 'ats/rgb_reg_reg[7]'
-INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[8]' (FDR) to 'ls/rgb_reg_reg[11]'
-INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[8]' (FDS) to 'ats/rgb_reg_reg[9]'
-INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[9]' (FDR) to 'ls/rgb_reg_reg[11]'
-INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[9]' (FDS) to 'ats/rgb_reg_reg[10]'
-INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[10]' (FDR) to 'ls/rgb_reg_reg[11]'
-INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[10]' (FDS) to 'ats/rgb_reg_reg[11]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ls/rgb_reg_reg[11] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:44 . Memory (MB): peak = 774.371 ; gain = 495.410
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 772.918 ; gain = 494.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -666,13 +666,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:01:01 . Memory (MB): peak = 820.906 ; gain = 541.945
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 820.875 ; gain = 542.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:01:05 . Memory (MB): peak = 865.957 ; gain = 586.996
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 872.375 ; gain = 593.840
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -684,7 +684,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:01:09 . Memory (MB): peak = 874.984 ; gain = 596.023
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 882.055 ; gain = 603.520
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -708,7 +708,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:01:10 . Memory (MB): peak = 874.984 ; gain = 596.023
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 882.055 ; gain = 603.520
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -721,7 +721,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:01:10 . Memory (MB): peak = 874.984 ; gain = 596.023
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 882.055 ; gain = 603.520
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -733,25 +733,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:01:11 . Memory (MB): peak = 874.984 ; gain = 596.023
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 882.055 ; gain = 603.520
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:01:11 . Memory (MB): peak = 874.984 ; gain = 596.023
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 882.055 ; gain = 603.520
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:01:11 . Memory (MB): peak = 874.984 ; gain = 596.023
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 882.055 ; gain = 603.520
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:01:11 . Memory (MB): peak = 874.984 ; gain = 596.023
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 882.055 ; gain = 603.520
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -771,12 +771,12 @@ Report Cell Usage:
 |2     |CARRY4    |   192|
 |3     |DSP48E1   |    48|
 |4     |DSP48E1_1 |     1|
-|5     |LUT1      |    99|
-|6     |LUT2      |   688|
-|7     |LUT3      |    47|
-|8     |LUT4      |    90|
-|9     |LUT5      |    78|
-|10    |LUT6      |   106|
+|5     |LUT1      |    97|
+|6     |LUT2      |   685|
+|7     |LUT3      |    49|
+|8     |LUT4      |    93|
+|9     |LUT5      |    80|
+|10    |LUT6      |   101|
 |11    |FDRE      |   278|
 |12    |FDSE      |     7|
 |13    |IBUF      |     2|
@@ -787,8 +787,8 @@ Report Instance Areas:
 +------+-----------------------+----------------+------+
 |      |Instance               |Module          |Cells |
 +------+-----------------------+----------------+------+
-|1     |top                    |                |  1653|
-|2     |  ats                  |afterTurnScene  |  1282|
+|1     |top                    |                |  1650|
+|2     |  ats                  |afterTurnScene  |  1277|
 |3     |    fdivTarget         |ClockDivider_55 |     2|
 |4     |    \genblk1[0].fdiv   |ClockDivider_56 |     2|
 |5     |    \genblk1[10].fdiv  |ClockDivider_57 |     2|
@@ -809,7 +809,7 @@ Report Instance Areas:
 |20    |    \genblk1[8].fdiv   |ClockDivider_72 |     2|
 |21    |    \genblk1[9].fdiv   |ClockDivider_73 |     2|
 |22    |    nolabel_line56     |transmitter     |    62|
-|23    |    receiver_unit      |receiver        |    77|
+|23    |    receiver_unit      |receiver        |    76|
 |24    |  fdivTarget2          |ClockDivider    |     2|
 |25    |  \genblk1[0].fdiv2    |ClockDivider_0  |     2|
 |26    |  \genblk1[10].fdiv2   |ClockDivider_1  |     2|
@@ -867,30 +867,30 @@ Report Instance Areas:
 |78    |    \genblk1[7].fdiv   |ClockDivider_52 |     2|
 |79    |    \genblk1[8].fdiv   |ClockDivider_53 |     2|
 |80    |    \genblk1[9].fdiv   |ClockDivider_54 |     2|
-|81    |  vga_sync_unit        |vga_sync        |   214|
+|81    |  vga_sync_unit        |vga_sync        |   216|
 +------+-----------------------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:01:11 . Memory (MB): peak = 874.984 ; gain = 596.023
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 882.055 ; gain = 603.520
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:50 . Memory (MB): peak = 874.984 ; gain = 252.277
-Synthesis Optimization Complete : Time (s): cpu = 00:00:55 ; elapsed = 00:01:11 . Memory (MB): peak = 874.984 ; gain = 596.023
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 882.055 ; gain = 260.512
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 882.055 ; gain = 603.520
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 241 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 874.984 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 882.055 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 120 Infos, 22 Warnings, 6 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:01:16 . Memory (MB): peak = 874.984 ; gain = 608.328
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 874.984 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 882.055 ; gain = 615.590
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 882.055 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'F:/HWLAB/FinalProject/FinalProject.runs/synth_1/manageScene.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.runs/synth_1/manageScene.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file manageScene_utilization_synth.rpt -pb manageScene_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun May 17 14:27:25 2020...
+INFO: [Common 17-206] Exiting Vivado at Sun May 17 16:39:00 2020...

@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun May 17 02:17:11 2020
+# Process ID: 2848
+# Current directory: C:/Users/HP/Desktop/Basys3-Undertale
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12920 C:\Users\HP\Desktop\Basys3-Undertale\FinalProject.xpr
+# Log file: C:/Users/HP/Desktop/Basys3-Undertale/vivado.log
+# Journal file: C:/Users/HP/Desktop/Basys3-Undertale\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 734.957 ; gain = 130.582
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May 17 02:22:19 2020...

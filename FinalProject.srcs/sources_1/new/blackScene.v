@@ -54,8 +54,8 @@ module loadingScene
     always @(posedge p_tick)
     //main character
     begin
-        if (400 <= y && y <= 410 && 220 <= x && x <= 220 + loadingBar)
-            rgb_reg <= 12'h0F0;
+        if (405 <= y && y <= 415 && 220 <= x && x <= 220 + loadingBar)
+            rgb_reg <= 12'hF00;
         else
         rgb_reg <= 12'h000;
     end    

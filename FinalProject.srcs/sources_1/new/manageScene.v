@@ -92,8 +92,11 @@ module manageScene(
     
     always @*
     begin
-        if (changeScene == 0)   rgb_reg = rgb_reg_ats;
-        else  rgb_reg = rgb_reg_ls;
+//        if (changeScene == 0)   rgb_reg = rgb_reg_ats;
+//        else  rgb_reg = rgb_reg_ls;
+//        primary -> after turn scene
+//        secondary -> loading scene
+        rgb_reg = (rgb_reg_ats != 12'b0) ? rgb_reg_ats : rgb_reg_ls;
     end
     
     always @(posedge atsClk)

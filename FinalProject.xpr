@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="39" Path="F:/HWLAB/FinalProject/FinalProject.xpr">
+<Project Version="7" Minor="39" Path="C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="f0c537cc793c4e47bd033dddd9c0b014"/>
