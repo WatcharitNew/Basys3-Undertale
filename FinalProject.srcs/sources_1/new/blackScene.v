@@ -44,8 +44,10 @@ module loadingScene
     end endgenerate
     ClockDivider fdivTarget(targetClk,tclk[26]);
 
+    reg oldscene;
     initial begin
         loadingBar = 0;
+        oldscene = 0;
     end
     
     // rgb buffer (color)
@@ -60,6 +62,11 @@ module loadingScene
     
     always @(posedge targetClk)
     begin
+        if(oldscene != newscene)
+        begin
+            loadingBar <= 0;
+            oldscene <= newscene;
+        end
         if(loadingBar > 200)    loadingBar <= 0;
         else loadingBar <= loadingBar + 40;
     end

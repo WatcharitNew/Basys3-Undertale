@@ -68,6 +68,11 @@ module afterTurnScene
         
     //initialize
     wire [9:0] healthBar = (maxHealth - health)*36;
+    
+    //scene
+    reg oldsceneMain;
+    reg oldsceneEnemy;
+    
     initial
     begin
         direc = 0;
@@ -95,6 +100,8 @@ module afterTurnScene
         hitEnemy3 = 0;
         health = 5;
         maxHealth = 5;
+        oldsceneMain = 0;
+        oldsceneEnemy = 0;
     end
         // rgb buffer (color)
         always @(posedge p_tick)
@@ -142,10 +149,17 @@ module afterTurnScene
             newpic=1;
         else
             newpic=0;
-            
+        
+        
         //move
         always @(posedge newpic)
         begin
+        if(oldsceneMain != newscene)
+        begin
+            x_pos <= 320;
+            y_pos <= 240;
+            oldsceneMain <= newscene;
+        end
         if (direc==1 && y_pos>=boxTop + mainRadius)
             y_pos=y_pos-3;
         else if (direc==2 && x_pos>=boxLeft + mainRadius)
@@ -183,6 +197,13 @@ module afterTurnScene
         //enemy
         always @(posedge targetClk)
         begin
+            if(oldsceneEnemy != oldsceneMain)
+            begin
+                hitEnemy1 = 0;
+                hitEnemy2 = 0;
+                hitEnemy3 = 0;
+                oldsceneEnemy <= oldsceneMain;
+            end
             if(hitEnemy1 == 0)
             begin
                 enemy1_y_pos <= enemy1_y_pos+enemyMove1_y;

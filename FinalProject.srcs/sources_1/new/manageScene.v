@@ -98,8 +98,8 @@ module manageScene(
     
     always @(posedge atsClk)
     begin
-        if(changeScene == 0) changeScene = 1;
-        else  changeScene = 0;
+        if(changeScene == 0) begin newScene_ats <= ~newScene_ats; changeScene = 1; end
+        else begin newScene_ls <= ~newScene_ls; changeScene = 0; end
     end
     
     // output
