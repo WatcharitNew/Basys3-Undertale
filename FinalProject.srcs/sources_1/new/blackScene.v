@@ -30,8 +30,6 @@ module loadingScene
 		output reg [11:0] rgb_reg
 	);
 	
-    //tell whether this is a new picture
-    reg newpic;
     reg [9:0] loadingBar;
     //clock
     wire targetClk;

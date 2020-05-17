@@ -27,11 +27,13 @@ module afterTurnScene
 		input wire [9:0] x,y,
 		input wire RsRx,
 		input wire newscene,
+		input wire [9:0] maxHealth,
 		output reg [11:0] rgb_reg,
-		output wire RsTx
+		output wire RsTx,
+		output reg [9:0] newHealth
 	);
 
-    reg [9:0] x_pos,y_pos,mainRadius,boxLeft,boxRight,boxTop,boxBottom,boxThick,health,maxHealth;
+    reg [9:0] x_pos,y_pos,mainRadius,boxLeft,boxRight,boxTop,boxBottom,boxThick;
     reg [9:0] enemy1_x_pos,enemy1_y_pos,enemyRadius,enemy2_x_pos,enemy2_y_pos,enemy3_x_pos,enemy3_y_pos,enemy4_x_pos,enemy4_y_pos,enemy5_x_pos,enemy5_y_pos;    
     reg enemyMove4,enemyMove5;
     reg [9:0] enemyMove1_y,enemyMove2_x;
@@ -67,7 +69,8 @@ module afterTurnScene
     ClockDivider fdivTarget(targetClk,tclk[18]);
         
     //initialize
-    wire [9:0] healthBar = (maxHealth - health)*36;
+    
+    wire [9:0] healthBar = (maxHealth - newHealth)*36;
     
     //scene
     reg oldsceneMain;
@@ -98,10 +101,9 @@ module afterTurnScene
         hitEnemy1 = 0;
         hitEnemy2 = 0;
         hitEnemy3 = 0;
-        health = 5;
-        maxHealth = 5;
         oldsceneMain = 0;
         oldsceneEnemy = 0;
+        newHealth = 6;
     end
         // rgb buffer (color)
         always @(posedge p_tick)
@@ -231,17 +233,17 @@ module afterTurnScene
             if(((x_pos)-(enemy1_x_pos))**2 + ((y_pos)-(enemy1_y_pos))**2 <= 169 && hitEnemy1 == 0)
                 begin
                     hitEnemy1 <= 1;
-                    health <= health-1;
+                    newHealth <= newHealth-1;
                 end
             else if(((x_pos)-(enemy2_x_pos))**2 + ((y_pos)-(enemy2_y_pos))**2 <= 169 && hitEnemy2 == 0)
                 begin
                     hitEnemy2 <= 1;
-                    health <= health-1;
+                    newHealth <= newHealth-1;
                 end
             else if(((x_pos)-(enemy3_x_pos))**2 + ((y_pos)-(enemy3_y_pos))**2 <= 169 && hitEnemy3 == 0)
                 begin
                     hitEnemy3 <= 1;
-                    health <= health-1;
+                    newHealth <= newHealth-1;
                 end
         end
         

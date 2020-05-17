@@ -34,6 +34,7 @@ module manageScene(
 	reg [11:0] rgb_reg;
 	wire [11:0] rgb_reg_ats;
 	wire [11:0] rgb_reg_ls;
+	wire [11:0] rgb_reg_go;
 	
 	// video status output from vga_sync to tell when to route out rgb signal to DAC
 	wire video_on;
@@ -68,7 +69,7 @@ module manageScene(
     end endgenerate
     ClockDivider fdivTarget2(atsClk,tclk[28]);
     
-    reg changeScene;
+    reg [1:0] changeScene;
     reg newScene_ats;
     reg newScene_ls;
     
@@ -78,8 +79,9 @@ module manageScene(
     reg [1:0] nextStateScene_ats;
     reg [1:0] nextStateScene_ls;
     
-    afterTurnScene ats(clk, video_on, p_tick, x, y, RsRx, newScene_ats, rgb_reg_ats, RsTx);
-    loadingScene ls(clk,video_on, p_tick, x, y, newScene_ls, rgb_reg_ls);
+    //health
+    wire [9:0] maxHealth=6;
+    wire [9:0] newHealth;
     
     initial begin
         changeScene = 0;
@@ -90,15 +92,22 @@ module manageScene(
         rgb_reg = rgb_reg_ats;
     end
     
+    afterTurnScene ats(clk, video_on, p_tick, x, y, RsRx, newScene_ats, maxHealth, rgb_reg_ats, RsTx, newHealth);
+    loadingScene ls(clk,video_on, p_tick, x, y, newScene_ls, rgb_reg_ls);
+    gameOver go(clk,video_on, p_tick, x, y, rgb_reg_go);
+    
     always @*
     begin
         if (changeScene == 0)   rgb_reg = rgb_reg_ats;
-        else  rgb_reg = rgb_reg_ls;
+        else if(changeScene == 1)  rgb_reg = rgb_reg_ls;
+        else if(changeScene == 2) rgb_reg = rgb_reg_go;
     end
     
-    always @(posedge atsClk)
+    wire isDie = (newHealth <= 1);
+    always @(posedge atsClk or posedge isDie)
     begin
-        if(changeScene == 0) begin newScene_ats <= ~newScene_ats; changeScene = 1; end
+        if(isDie) begin changeScene = 2; end 
+        else if(changeScene == 0) begin newScene_ats <= ~newScene_ats; changeScene = 1; end
         else begin newScene_ls <= ~newScene_ls; changeScene = 0; end
     end
     

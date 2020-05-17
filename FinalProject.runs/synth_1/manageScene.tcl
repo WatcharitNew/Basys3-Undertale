@@ -17,7 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_msg_config -id {Common 17-41} -limit 10000000
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -33,6 +33,7 @@ set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
   F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/CLockDivider.v
   F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/blackScene.v
+  F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/gameOver.v
   F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/receiver.v
   F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/transmitter.v
   F:/HWLAB/FinalProject/FinalProject.srcs/sources_1/new/vga_sync.v

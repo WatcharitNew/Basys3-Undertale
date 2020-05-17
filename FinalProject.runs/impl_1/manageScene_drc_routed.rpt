@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sun May 17 14:29:20 2020
+| Date         : Sun May 17 16:45:53 2020
 | Host         : DESKTOP-KFTK1LL running 64-bit major release  (build 9200)
 | Command      : report_drc -file manageScene_drc_routed.rpt -pb manageScene_drc_routed.pb -rpx manageScene_drc_routed.rpx
 | Design       : manageScene
@@ -24,7 +24,7 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 198
+             Violations found: 199
 +-------------+----------+-------------------------------------------------------------+------------+
 | Rule        | Severity | Description                                                 | Violations |
 +-------------+----------+-------------------------------------------------------------+------------+
@@ -32,7 +32,7 @@ Table of Contents
 | DPIP-1      | Warning  | Input pipelining                                            | 97         |
 | DPOP-1      | Warning  | PREG Output pipelining                                      | 49         |
 | DPOP-2      | Warning  | MREG Output pipelining                                      | 49         |
-| PDRC-153    | Warning  | Gated clock check                                           | 1          |
+| PDRC-153    | Warning  | Gated clock check                                           | 2          |
 | PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
 +-------------+----------+-------------------------------------------------------------+------------+
 
@@ -1027,6 +1027,11 @@ DSP ats/rgb_reg4__9 multiplier stage ats/rgb_reg4__9/P[47:0] is not pipelined (M
 Related violations: <none>
 
 PDRC-153#1 Warning
+Gated clock check  
+Net rgb_reg_reg[11]_i_2_n_0 is a gated clock net sourced by a combinational pin rgb_reg_reg[11]_i_2/O, cell rgb_reg_reg[11]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
 Gated clock check  
 Net vga_sync_unit/p_tick is a gated clock net sourced by a combinational pin vga_sync_unit/h_count_reg[9]_i_1/O, cell vga_sync_unit/h_count_reg[9]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
