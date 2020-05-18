@@ -35,6 +35,7 @@ module manageScene(
 	wire [11:0] rgb_reg_ats;
 	wire [11:0] rgb_reg_ls;
 	wire [11:0] rgb_reg_go;
+	wire [11:0] rgb_reg_cred;
 	
 	// video status output from vga_sync to tell when to route out rgb signal to DAC
 	wire video_on;
@@ -72,12 +73,15 @@ module manageScene(
     reg [1:0] changeScene;
     reg newScene_ats;
     reg newScene_ls;
+    reg newScene_cred;
     
     reg [1:0] stateScene_ats;
     reg [1:0] stateScene_ls;
+    reg [1:0] stateScene_cred;
     
     reg [1:0] nextStateScene_ats;
     reg [1:0] nextStateScene_ls;
+    reg [1:0] nextStateScene_cred;
     
     //health
     wire [9:0] maxHealth=6;
@@ -87,6 +91,7 @@ module manageScene(
         changeScene = 0;
         newScene_ats = 1;
         newScene_ls = 1;
+        newScene_cred = 1;
         stateScene_ats = 0;
         stateScene_ls = 0;
         rgb_reg = rgb_reg_ats;
@@ -95,20 +100,24 @@ module manageScene(
     afterTurnScene ats(clk, video_on, p_tick, x, y, RsRx, newScene_ats, maxHealth, rgb_reg_ats, RsTx, newHealth);
     loadingScene ls(clk,video_on, p_tick, x, y, newScene_ls, rgb_reg_ls);
     gameOver go(clk,video_on, p_tick, x, y, rgb_reg_go);
+    creditScene cred(clk, video_on, p_tick, x, y, rgb_reg_cred);
     
     always @*
     begin
         if (changeScene == 0)   rgb_reg = rgb_reg_ats;
         else if(changeScene == 1)  rgb_reg = rgb_reg_ls;
         else if(changeScene == 2) rgb_reg = rgb_reg_go;
+        else if (changeScene == 3) rgb_reg = rgb_reg_cred;
     end
     
     wire isDie = (newHealth <= 1);
     always @(posedge atsClk or posedge isDie)
     begin
         if(isDie) begin changeScene = 2; end 
-        else if(changeScene == 0) begin newScene_ats <= ~newScene_ats; changeScene = 1; end
-        else begin newScene_ls <= ~newScene_ls; changeScene = 0; end
+//        else if(changeScene == 0) begin newScene_ats <= ~newScene_ats; changeScene = 1; end
+//        else if (changeScene == 1) begin newScene_ls <= ~newScene_ls; changeScene = 0; end
+        else if (changeScene == 0) begin newScene_ats <= ~newScene_ats; changeScene = 3; end
+        else if (changeScene == 3) begin changeScene = 0; end
     end
     
     // output

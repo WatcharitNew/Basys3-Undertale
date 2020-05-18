@@ -33,6 +33,7 @@ set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
   C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/CLockDivider.v
   C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/blackScene.v
+  C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/creditScene.v
   C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v
   C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/gameOver.v
   C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/receiver.v

@@ -1,0 +1,160 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon May 18 20:45:35 2020
+| Host         : DESKTOP-VG3SLB4 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file manageScene_control_sets_placed.rpt
+| Design       : manageScene
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    87 |
+| Unused register locations in slices containing registers |   550 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |           66 |
+|      2 |            1 |
+|      3 |            1 |
+|      4 |            4 |
+|      5 |            1 |
+|      6 |            1 |
+|      9 |            3 |
+|     10 |            4 |
+|     14 |            2 |
+|    16+ |            4 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             179 |          114 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              38 |           12 |
+| Yes          | No                    | No                     |              39 |           15 |
+| Yes          | No                    | Yes                    |               3 |            1 |
+| Yes          | Yes                   | No                     |              47 |           15 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------+---------------------------------------------+---------------------------------------------+------------------+----------------+
+|              Clock Signal              |                Enable Signal                |               Set/Reset Signal              | Slice Load Count | Bel Load Count |
++----------------------------------------+---------------------------------------------+---------------------------------------------+------------------+----------------+
+|  ats/ec2/genblk1[14].fdiv/clkDiv_reg_0 |                                             |                                             |                1 |              1 |
+|  ats/ec2/genblk1[11].fdiv/clkDiv_reg_0 |                                             |                                             |                1 |              1 |
+|  ats/ec2/genblk1[15].fdiv/clkDiv_reg_0 |                                             |                                             |                1 |              1 |
+|  ats/ec2/genblk1[12].fdiv/clkDiv_reg_0 |                                             |                                             |                1 |              1 |
+|  ats/ec2/genblk1[10].fdiv/clkDiv_reg_0 |                                             |                                             |                1 |              1 |
+|  ats/ec2/genblk1[13].fdiv/clkDiv_reg_0 |                                             |                                             |                1 |              1 |
+|  ats/ec2/genblk1[0].fdiv/clkDiv_reg_0  |                                             |                                             |                1 |              1 |
+|  ats/ec2/genblk1[1].fdiv/clkDiv_reg_0  |                                             |                                             |                1 |              1 |
+|  ats/ec2/genblk1[17].fdiv/clkDiv_reg_0 |                                             |                                             |                1 |              1 |
+|  ats/ec2/genblk1[16].fdiv/clkDiv_reg_0 |                                             |                                             |                1 |              1 |
+|  ats/ec2/genblk1[2].fdiv/clkDiv_reg_0  |                                             |                                             |                1 |              1 |
+|  ats/ec2/genblk1[3].fdiv/clkDiv_reg_0  |                                             |                                             |                1 |              1 |
+|  ats/ec2/genblk1[4].fdiv/clkDiv_reg_0  |                                             |                                             |                1 |              1 |
+|  ats/ec2/genblk1[8].fdiv/clkDiv_reg_0  |                                             |                                             |                1 |              1 |
+|  ats/ec2/genblk1[7].fdiv/clkDiv_reg_0  |                                             |                                             |                1 |              1 |
+|  ats/ec2/genblk1[6].fdiv/clkDiv_reg_0  |                                             |                                             |                1 |              1 |
+|  ats/ec2/genblk1[5].fdiv/clkDiv_reg_0  |                                             |                                             |                1 |              1 |
+|  ats/ec2/genblk1[9].fdiv/clkDiv_reg_0  |                                             |                                             |                1 |              1 |
+|  genblk1[0].fdiv2/clkDiv_reg_0         |                                             |                                             |                1 |              1 |
+|  fdivTarget2/CLK                       |                                             |                                             |                1 |              1 |
+|  clk_IBUF_BUFG                         |                                             | ats/nolabel_line59/TxD_i_1_n_0              |                1 |              1 |
+|  genblk1[10].fdiv2/clkDiv_reg_0        |                                             |                                             |                1 |              1 |
+|  genblk1[24].fdiv2/clkDiv_reg_0        |                                             |                                             |                1 |              1 |
+|  genblk1[22].fdiv2/clkDiv_reg_0        |                                             |                                             |                1 |              1 |
+|  genblk1[20].fdiv2/clkDiv_reg_0        |                                             |                                             |                1 |              1 |
+|  genblk1[1].fdiv2/clkDiv_reg_0         |                                             |                                             |                1 |              1 |
+|  genblk1[19].fdiv2/clkDiv_reg_0        |                                             |                                             |                1 |              1 |
+|  genblk1[21].fdiv2/clkDiv_reg_0        |                                             |                                             |                1 |              1 |
+|  genblk1[23].fdiv2/clkDiv_reg_0        |                                             |                                             |                1 |              1 |
+|  genblk1[25].fdiv2/clkDiv_reg_0        |                                             |                                             |                1 |              1 |
+|  genblk1[11].fdiv2/clkDiv_reg_0        |                                             |                                             |                1 |              1 |
+|  genblk1[2].fdiv2/clkDiv_reg_0         |                                             |                                             |                1 |              1 |
+|  genblk1[3].fdiv2/clkDiv_reg_0         |                                             |                                             |                1 |              1 |
+|  genblk1[26].fdiv2/clkDiv_reg_0        |                                             |                                             |                1 |              1 |
+|  genblk1[27].fdiv2/clkDiv_reg_0        |                                             |                                             |                1 |              1 |
+|  genblk1[5].fdiv2/clkDiv_reg_0         |                                             |                                             |                1 |              1 |
+|  genblk1[6].fdiv2/clkDiv_reg_0         |                                             |                                             |                1 |              1 |
+|  genblk1[7].fdiv2/clkDiv_reg_0         |                                             |                                             |                1 |              1 |
+|  genblk1[9].fdiv2/clkDiv_reg_0         |                                             |                                             |                1 |              1 |
+|  genblk1[12].fdiv2/clkDiv_reg_0        |                                             |                                             |                1 |              1 |
+|  genblk1[4].fdiv2/clkDiv_reg_0         |                                             |                                             |                1 |              1 |
+|  genblk1[8].fdiv2/clkDiv_reg_0         |                                             |                                             |                1 |              1 |
+|  genblk1[13].fdiv2/clkDiv_reg_0        |                                             |                                             |                1 |              1 |
+|  genblk1[16].fdiv2/clkDiv_reg_0        |                                             |                                             |                1 |              1 |
+|  genblk1[14].fdiv2/clkDiv_reg_0        |                                             |                                             |                1 |              1 |
+|  genblk1[15].fdiv2/clkDiv_reg_0        |                                             |                                             |                1 |              1 |
+|  genblk1[17].fdiv2/clkDiv_reg_0        |                                             |                                             |                1 |              1 |
+|  genblk1[18].fdiv2/clkDiv_reg_0        |                                             |                                             |                1 |              1 |
+|  ats/ec1/genblk1[0].fdiv/clkDiv_reg_0  |                                             |                                             |                1 |              1 |
+|  ats/ec1/genblk1[12].fdiv/clkDiv_reg_0 |                                             |                                             |                1 |              1 |
+|  ats/ec1/genblk1[10].fdiv/clkDiv_reg_0 |                                             |                                             |                1 |              1 |
+|  ats/ec1/genblk1[11].fdiv/clkDiv_reg_0 |                                             |                                             |                1 |              1 |
+|  ats/ec1/genblk1[14].fdiv/clkDiv_reg_0 |                                             |                                             |                1 |              1 |
+|  ats/ec1/genblk1[16].fdiv/clkDiv_reg_0 |                                             |                                             |                1 |              1 |
+|  ats/ec1/genblk1[13].fdiv/clkDiv_reg_0 |                                             |                                             |                1 |              1 |
+|  ats/ec1/genblk1[15].fdiv/clkDiv_reg_0 |                                             |                                             |                1 |              1 |
+|  ats/ec1/genblk1[17].fdiv/clkDiv       |                                             |                                             |                1 |              1 |
+|  ats/ec1/genblk1[1].fdiv/clkDiv_reg_0  |                                             |                                             |                1 |              1 |
+|  ats/ec1/genblk1[6].fdiv/clkDiv_reg_0  |                                             |                                             |                1 |              1 |
+|  ats/ec1/genblk1[8].fdiv/clkDiv_reg_0  |                                             |                                             |                1 |              1 |
+|  ats/ec1/genblk1[2].fdiv/clkDiv_reg_0  |                                             |                                             |                1 |              1 |
+|  ats/ec1/genblk1[5].fdiv/clkDiv_reg_0  |                                             |                                             |                1 |              1 |
+|  ats/ec1/genblk1[4].fdiv/clkDiv_reg_0  |                                             |                                             |                1 |              1 |
+|  ats/ec1/genblk1[3].fdiv/clkDiv_reg_0  |                                             |                                             |                1 |              1 |
+|  ats/ec1/genblk1[7].fdiv/clkDiv_reg_0  |                                             |                                             |                1 |              1 |
+|  ats/ec1/genblk1[9].fdiv/clkDiv_reg_0  |                                             |                                             |                1 |              1 |
+|  ats/newpic                            |                                             |                                             |                2 |              2 |
+|  fdivTarget2/CLK                       | FSM_onehot_changeScene[2]_i_1_n_0           | ats/AS[0]                                   |                1 |              3 |
+|  clk_IBUF_BUFG                         | ats/receiver_unit/bitcounter                | ats/receiver_unit/bitcounter[3]_i_1_n_0     |                1 |              4 |
+|  clk_IBUF_BUFG                         | ats/receiver_unit/sel0[0]                   |                                             |                1 |              4 |
+|  clk_IBUF_BUFG                         | ats/nolabel_line59/bitcounter[3]_i_2__0_n_0 | ats/nolabel_line59/bitcounter[3]_i_1__0_n_0 |                1 |              4 |
+|  clk_IBUF_BUFG                         | ats/nolabel_line59/rightshiftreg            | ats/nolabel_line59/rightshiftreg[8]_i_1_n_0 |                2 |              4 |
+|  vga_sync_unit/E[0]                    |                                             |                                             |                3 |              5 |
+|  clk_IBUF_BUFG                         | ats/nolabel_line59/rightshiftreg            |                                             |                1 |              6 |
+|  ats/newpic                            | ats/y_pos[9]_i_1_n_0                        | ats/clear                                   |                3 |              9 |
+|  clk_IBUF_BUFG                         | ats/receiver_unit/rxshiftreg                |                                             |                4 |              9 |
+|  newSpeed_x_reg[0]_i_2_n_0             |                                             | ats/ec1/newSpeed_x[9]_i_1_n_0               |                3 |              9 |
+|  ats/newpic                            | ats/sel                                     | ats/clear                                   |                4 |             10 |
+|  clk_IBUF_BUFG                         | vga_sync_unit/E[0]                          |                                             |                5 |             10 |
+|  clk_IBUF_BUFG                         | vga_sync_unit/v_count_reg0                  |                                             |                4 |             10 |
+|  newHealth_reg[9]_i_2_n_0              |                                             |                                             |                3 |             10 |
+|  clk_IBUF_BUFG                         |                                             | ats/receiver_unit/counter[0]_i_1_n_0        |                4 |             14 |
+|  clk_IBUF_BUFG                         |                                             | ats/nolabel_line59/counter[0]_i_1__0_n_0    |                4 |             14 |
+|  clk_IBUF_BUFG                         | ats/counter[0]_i_1__1_n_0                   | ats/receiver_unit/sel0[0]                   |                4 |             16 |
+|  clk_IBUF_BUFG                         |                                             |                                             |               17 |             32 |
+|  newSpeed_y_reg[9]_i_2_n_0             |                                             |                                             |               12 |             32 |
+|  newSpeed_x_reg[0]_i_2_n_0             |                                             |                                             |               12 |             33 |
++----------------------------------------+---------------------------------------------+---------------------------------------------+------------------+----------------+
+
+
