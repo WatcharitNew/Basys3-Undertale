@@ -128,23 +128,11 @@ module afterTurnScene
             rgb_reg <= 12'h000;
         else if (boxLeft - boxThick <= x && x <= boxRight + boxThick && boxTop - boxThick <= y && y <= boxBottom + boxThick)
             rgb_reg <= 12'hFFF;
+            
         // gentext HP
         else if (text_pixel == 1)
             rgb_reg <= 12'hFFF;
-        //draw H
-//        else if (400 <= y && y <= 410 && boxLeft - boxThick <= x && x <= boxLeft - boxThick + 2)
-//            rgb_reg <= 12'hFFF;
-//        else if (400 <= y && y <= 410 && boxLeft - boxThick + 6 <= x && x <= boxLeft - boxThick + 8)
-//            rgb_reg <= 12'hFFF;
-//        else if (404 <= y && y <= 406 && boxLeft - boxThick <= x && x <= boxLeft - boxThick + 8)
-//            rgb_reg <= 12'hFFF;
-//        // draw P
-//        else if (400 <= y && y <= 410 && boxLeft - boxThick + 12 <= x && x <= boxLeft - boxThick + 14)
-//            rgb_reg <= 12'hFFF;
-//        else if (x>=boxLeft - boxThick + 14 && 4 >= ((x-(boxLeft - boxThick + 14))**2 + (y-403)**2))
-//            rgb_reg <= 12'h000;
-//        else if (x>=boxLeft - boxThick + 14 && 16 >= ((x-(boxLeft - boxThick + 14))**2 + (y-403)**2))
-//            rgb_reg <= 12'hFFF;
+ 
         // health bar    
         else if (400 <= y && y <= 410 && boxLeft - boxThick + 25 <= x && x <= boxRight - healthBar)
             rgb_reg <= 12'hFF0;
@@ -206,5 +194,10 @@ module afterTurnScene
             begin
                 newHealth <= newHealth-1;
             end       
+            
+            always @(posedge hitEnemy1)
+            begin
+                newHealth <= newHealth-1;
+            end
             
 endmodule
