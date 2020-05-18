@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1589778987">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1589796253">
   <File Type="PA-TCL" Name="manageScene.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="manageScene_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="manageScene_reports.tcl"/>
@@ -67,10 +67,52 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/commonPak.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VGA-Text-Generator/VGA-Text-Generator.srcs/sources_1/new/commonPak.vhd"/>
+        <Attr Name="ImportTime" Val="1589647031"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Font_Rom.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VGA-Text-Generator/VGA-Text-Generator.srcs/sources_1/new/Font_Rom.vhd"/>
+        <Attr Name="ImportTime" Val="1589647031"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Pixel_On_Text2.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VGA-Text-Generator/VGA-Text-Generator.srcs/sources_1/new/Pixel_On_Text2.vhd"/>
+        <Attr Name="ImportTime" Val="1589647031"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/manageScene.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/wrapper.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VGA-Text-Generator/VGA-Text-Generator.srcs/sources_1/new/wrapper.vhd"/>
+        <Attr Name="ImportTime" Val="1589647031"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Pixel_On_Text.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VGA-Text-Generator/VGA-Text-Generator.srcs/sources_1/new/Pixel_On_Text.vhd"/>
+        <Attr Name="ImportTime" Val="1589647031"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>

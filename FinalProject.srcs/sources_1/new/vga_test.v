@@ -99,6 +99,17 @@ module afterTurnScene
     enemyCircle ec2(clk, init_enemy2_x, init_enemy2_y, enemyRadius, speed_enemy2_x, speed_enemy2_y, x_pos, y_pos, boxTop, boxRight, boxBottom, boxLeft, 
                     oldsceneMain, enemy2_x, enemy2_y, hitEnemy2);
     
+    //init text
+    Pixel_On_Text2 #(.displayText("HP")) t1(
+                clk,
+                215, // text position.x (top left)
+                400, // text position.y (top left)
+                x, // current position.x
+                y, // current position.y
+                text_pixel  // result, 1 if current pixel is on text, 0 otherwise
+            );
+    
+    
         // rgb buffer (color)
         always @(posedge p_tick)
         //main character
@@ -117,20 +128,23 @@ module afterTurnScene
             rgb_reg <= 12'h000;
         else if (boxLeft - boxThick <= x && x <= boxRight + boxThick && boxTop - boxThick <= y && y <= boxBottom + boxThick)
             rgb_reg <= 12'hFFF;
+        // gentext HP
+        else if (text_pixel == 1)
+            rgb_reg <= 12'hFFF;
         //draw H
-        else if (400 <= y && y <= 410 && boxLeft - boxThick <= x && x <= boxLeft - boxThick + 2)
-            rgb_reg <= 12'hFFF;
-        else if (400 <= y && y <= 410 && boxLeft - boxThick + 6 <= x && x <= boxLeft - boxThick + 8)
-            rgb_reg <= 12'hFFF;
-        else if (404 <= y && y <= 406 && boxLeft - boxThick <= x && x <= boxLeft - boxThick + 8)
-            rgb_reg <= 12'hFFF;
-        // draw P
-        else if (400 <= y && y <= 410 && boxLeft - boxThick + 12 <= x && x <= boxLeft - boxThick + 14)
-            rgb_reg <= 12'hFFF;
-        else if (x>=boxLeft - boxThick + 14 && 4 >= ((x-(boxLeft - boxThick + 14))**2 + (y-403)**2))
-            rgb_reg <= 12'h000;
-        else if (x>=boxLeft - boxThick + 14 && 16 >= ((x-(boxLeft - boxThick + 14))**2 + (y-403)**2))
-            rgb_reg <= 12'hFFF;
+//        else if (400 <= y && y <= 410 && boxLeft - boxThick <= x && x <= boxLeft - boxThick + 2)
+//            rgb_reg <= 12'hFFF;
+//        else if (400 <= y && y <= 410 && boxLeft - boxThick + 6 <= x && x <= boxLeft - boxThick + 8)
+//            rgb_reg <= 12'hFFF;
+//        else if (404 <= y && y <= 406 && boxLeft - boxThick <= x && x <= boxLeft - boxThick + 8)
+//            rgb_reg <= 12'hFFF;
+//        // draw P
+//        else if (400 <= y && y <= 410 && boxLeft - boxThick + 12 <= x && x <= boxLeft - boxThick + 14)
+//            rgb_reg <= 12'hFFF;
+//        else if (x>=boxLeft - boxThick + 14 && 4 >= ((x-(boxLeft - boxThick + 14))**2 + (y-403)**2))
+//            rgb_reg <= 12'h000;
+//        else if (x>=boxLeft - boxThick + 14 && 16 >= ((x-(boxLeft - boxThick + 14))**2 + (y-403)**2))
+//            rgb_reg <= 12'hFFF;
         // health bar    
         else if (400 <= y && y <= 410 && boxLeft - boxThick + 25 <= x && x <= boxRight - healthBar)
             rgb_reg <= 12'hFF0;
