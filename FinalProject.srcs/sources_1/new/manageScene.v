@@ -85,8 +85,8 @@ module manageScene(
     
     initial begin
         changeScene = 0;
-        newScene_ats = 0;
-        newScene_ls = 0;
+        newScene_ats = 1;
+        newScene_ls = 1;
         stateScene_ats = 0;
         stateScene_ls = 0;
         rgb_reg = rgb_reg_ats;

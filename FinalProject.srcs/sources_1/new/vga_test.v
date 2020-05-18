@@ -32,13 +32,14 @@ module afterTurnScene
 		output wire RsTx,
 		output reg [9:0] newHealth
 	);
-
-    reg [9:0] x_pos,y_pos,mainRadius,boxLeft,boxRight,boxTop,boxBottom,boxThick;
-    reg [9:0] enemy1_x_pos,enemy1_y_pos,enemyRadius,enemy2_x_pos,enemy2_y_pos,enemy3_x_pos,enemy3_y_pos,enemy4_x_pos,enemy4_y_pos,enemy5_x_pos,enemy5_y_pos;    
-    reg enemyMove4,enemyMove5;
-    reg [9:0] enemyMove1_y,enemyMove2_x;
-    reg [9:0] enemyMove3_y,enemyMove3_x;
-    reg hitEnemy1,hitEnemy2,hitEnemy3,hitEnemy4,hitEnemy5;
+	
+	reg [9:0] x_pos,y_pos,mainRadius,boxLeft,boxRight,boxTop,boxBottom,boxThick;
+	
+	wire [9:0] enemy1_x, enemy1_y, enemy2_x, enemy2_y;
+    //wire [9:0] enemy_x, enemy_y;
+    wire [9:0] enemyRadius = 5; 
+    wire hitEnemy1, hitEnemy2;
+    reg oldHitEnemy [2:0];
     // move
     reg [2:0]direc;
     
@@ -57,54 +58,47 @@ module afterTurnScene
     reg [15:0]counter;
     transmitter(RsTx, clk, 0, transmit, TxData);
         
-    //clock
-    wire targetClk;
-    wire [18:0] tclk;
-    assign tclk[0]=clk;
-    genvar c;
-    generate for(c=0;c<18;c=c+1)
-    begin 
-        ClockDivider fdiv(tclk[c+1],tclk[c]);
-    end endgenerate
-    ClockDivider fdivTarget(targetClk,tclk[18]);
-        
     //initialize
     
     wire [9:0] healthBar = (maxHealth - newHealth)*36;
     
     //scene
     reg oldsceneMain;
-    reg oldsceneEnemy;
     
     initial
     begin
         direc = 0;
         x_pos = 320;
         y_pos = 240;
-        enemy1_x_pos = 250;
-        enemy1_y_pos = 190;
-        enemy2_x_pos = 230;
-        enemy2_y_pos = 300;
-        enemy3_x_pos = 230;
-        enemy3_y_pos = 220;
         mainRadius = 8;
-        enemyRadius = 5;
-        enemyMove1_y = 1;
-        enemyMove2_x = 1;
-        enemyMove3_y = 1;
-        enemyMove3_x = 1;
         boxLeft = 220;
         boxRight = 420;
         boxTop = 140;
         boxBottom = 340;
         boxThick = 5;
-        hitEnemy1 = 0;
-        hitEnemy2 = 0;
-        hitEnemy3 = 0;
         oldsceneMain = 0;
-        oldsceneEnemy = 0;
         newHealth = 6;
+        oldHitEnemy[0] = 0;
+        oldHitEnemy[1] = 0;
     end
+    
+    //enemy1
+    wire [9:0] init_enemy1_x = 250;
+    wire [9:0] init_enemy1_y = 190; 
+    wire [9:0] speed_enemy1_x = 1;
+    wire [9:0] speed_enemy1_y = 1;
+    
+    //enemy2
+    wire [9:0] init_enemy2_x = 230;
+    wire [9:0] init_enemy2_y = 150; 
+    wire [9:0] speed_enemy2_x = 0;
+    wire [9:0] speed_enemy2_y = 1;
+    
+    enemyCircle ec1(clk, init_enemy1_x, init_enemy1_y, enemyRadius, speed_enemy1_x, speed_enemy1_y, x_pos, y_pos, boxTop, boxRight, boxBottom, boxLeft, 
+                    oldsceneMain, enemy1_x, enemy1_y, hitEnemy1);
+    enemyCircle ec2(clk, init_enemy2_x, init_enemy2_y, enemyRadius, speed_enemy2_x, speed_enemy2_y, x_pos, y_pos, boxTop, boxRight, boxBottom, boxLeft, 
+                    oldsceneMain, enemy2_x, enemy2_y, hitEnemy2);
+    
         // rgb buffer (color)
         always @(posedge p_tick)
         //main character
@@ -112,14 +106,12 @@ module afterTurnScene
         if (64 > (x-x_pos)**2 + (y-y_pos)**2)
             rgb_reg <= 12'hF00;
         //enemy1
-        else if (25 > (x-enemy1_x_pos)**2 + (y-enemy1_y_pos)**2 && hitEnemy1 == 0)
+        else if (25 > (x-enemy1_x)**2 + (y-enemy1_y)**2 && hitEnemy1 == 0)
             rgb_reg <= 12'hFFF;
         //enemy2
-        else if (25 > (x-enemy2_x_pos)**2 + (y-enemy2_y_pos)**2 && hitEnemy2 == 0)
-            rgb_reg <= 12'hFFF;
-        //enemy3
-        else if (25 > (x-enemy3_x_pos)**2 + (y-enemy3_y_pos)**2 && hitEnemy3 == 0)
-            rgb_reg <= 12'hFFF;
+        else if (25 > (x-enemy2_x)**2 + (y-enemy2_y)**2 && hitEnemy2 == 0)
+            rgb_reg <= 12'h0F0;
+        
         //box
         else if (boxLeft <= x && x <= boxRight && boxTop <= y && y <= boxBottom)
             rgb_reg <= 12'h000;
@@ -196,55 +188,9 @@ module afterTurnScene
                 end
             end
             
-        //enemy
-        always @(posedge targetClk)
-        begin
-            if(oldsceneEnemy != oldsceneMain)
+            always @(posedge hitEnemy2)
             begin
-                hitEnemy1 = 0;
-                hitEnemy2 = 0;
-                hitEnemy3 = 0;
-                oldsceneEnemy <= oldsceneMain;
-            end
-            if(hitEnemy1 == 0)
-            begin
-                enemy1_y_pos <= enemy1_y_pos+enemyMove1_y;
-                if (enemy1_y_pos > boxBottom - enemyRadius)     enemyMove1_y <= -1;
-                else if (enemy1_y_pos < boxTop + enemyRadius)   enemyMove1_y <= 1;
-            end
+                newHealth <= newHealth-1;
+            end       
             
-            if(hitEnemy2 == 0)
-            begin
-                enemy2_x_pos <= enemy2_x_pos+enemyMove2_x;
-                if (enemy2_x_pos > boxRight - enemyRadius)        enemyMove2_x <= -1;
-                else if (enemy2_x_pos < boxLeft + enemyRadius)        enemyMove2_x <= 1;
-            end
-            
-            if(hitEnemy3 == 0)
-            begin
-                enemy3_x_pos <= enemy3_x_pos+enemyMove3_x;
-                enemy3_y_pos <= enemy3_y_pos+enemyMove3_y;
-                if(enemy3_x_pos > boxRight - enemyRadius)   enemyMove3_x <= -1;
-                else if(enemy3_x_pos < boxLeft + enemyRadius)   enemyMove3_x <= 1;
-                else if(enemy3_y_pos > boxBottom - enemyRadius)   enemyMove3_y <= -1;
-                else if(enemy3_y_pos < boxTop + enemyRadius)   enemyMove3_y <= 1;   
-            end
-            
-            if(((x_pos)-(enemy1_x_pos))**2 + ((y_pos)-(enemy1_y_pos))**2 <= 169 && hitEnemy1 == 0)
-                begin
-                    hitEnemy1 <= 1;
-                    newHealth <= newHealth-1;
-                end
-            else if(((x_pos)-(enemy2_x_pos))**2 + ((y_pos)-(enemy2_y_pos))**2 <= 169 && hitEnemy2 == 0)
-                begin
-                    hitEnemy2 <= 1;
-                    newHealth <= newHealth-1;
-                end
-            else if(((x_pos)-(enemy3_x_pos))**2 + ((y_pos)-(enemy3_y_pos))**2 <= 169 && hitEnemy3 == 0)
-                begin
-                    hitEnemy3 <= 1;
-                    newHealth <= newHealth-1;
-                end
-        end
-        
 endmodule
