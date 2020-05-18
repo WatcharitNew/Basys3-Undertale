@@ -190,14 +190,9 @@ module afterTurnScene
                 end
             end
             
-            always @(posedge hitEnemy2)
+            always @(posedge hitEnemy2 or hitEnemy1)
             begin
                 newHealth <= newHealth-1;
-            end       
-            
-            always @(posedge hitEnemy1)
-            begin
-                newHealth <= newHealth-1;
-            end
+            end      
             
 endmodule
