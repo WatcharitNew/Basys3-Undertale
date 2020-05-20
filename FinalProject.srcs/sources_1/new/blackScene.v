@@ -26,21 +26,10 @@ module loadingScene
 		input wire video_on,
 		input wire p_tick, 
 		input wire [9:0] x,y,
-		input wire newscene,
 		output reg [11:0] rgb_reg
 	);
 	
     reg [9:0] loadingBar;
-    //clock
-    wire targetClk;
-    wire [26:0] tclk;
-    assign tclk[0]=clk;
-    genvar c;
-    generate for(c=0;c<26;c=c+1)
-    begin 
-        ClockDivider fdiv(tclk[c+1],tclk[c]);
-    end endgenerate
-    ClockDivider fdivTarget(targetClk,tclk[26]);
 
     reg oldscene;
     initial begin
@@ -52,20 +41,9 @@ module loadingScene
     always @(posedge p_tick)
     //main character
     begin
-        if (400 <= y && y <= 410 && 220 <= x && x <= 220 + loadingBar)
+        if (400 <= y && y <= 410 && 220 <= x && x <= 420)
             rgb_reg <= 12'h0F0;
         else
         rgb_reg <= 12'h000;
     end    
-    
-    always @(posedge targetClk)
-    begin
-        if(oldscene != newscene)
-        begin
-            loadingBar <= 0;
-            oldscene <= newscene;
-        end
-        if(loadingBar > 200)    loadingBar <= 0;
-        else loadingBar <= loadingBar + 40;
-    end
 endmodule

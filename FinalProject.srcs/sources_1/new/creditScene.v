@@ -47,7 +47,7 @@ module creditScene
                 text_pixel_2  // result, 1 if current pixel is on text, 0 otherwise
             );
     
-    Pixel_On_Text2 #(.displayText("Insert Name 2")) t3(
+    Pixel_On_Text2 #(.displayText("6031054721 Watcharit Tuntayakul")) t3(
                 clk,
                 80, // text position.x (top left)
                 280, // text position.y (top left)

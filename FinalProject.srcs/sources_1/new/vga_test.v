@@ -65,6 +65,17 @@ module afterTurnScene
     //scene
     reg oldsceneMain;
     
+    //clock
+    wire targetClk;
+    wire [18:0] tclk;
+    assign tclk[0]=clk;
+    genvar c;
+    generate for(c=0;c<18;c=c+1)
+    begin 
+        ClockDivider fdiv(tclk[c+1],tclk[c]);
+    end endgenerate
+    ClockDivider fdivTarget(targetClk,tclk[18]);
+    
     initial
     begin
         direc = 0;
@@ -94,9 +105,11 @@ module afterTurnScene
     wire [9:0] speed_enemy2_x = 0;
     wire [9:0] speed_enemy2_y = 1;
     
-    enemyCircle ec1(clk, init_enemy1_x, init_enemy1_y, enemyRadius, speed_enemy1_x, speed_enemy1_y, x_pos, y_pos, boxTop, boxRight, boxBottom, boxLeft, 
+    wire text_pixel_heart,text_pixel_hp;
+    
+    enemyCircle ec1(targetClk, init_enemy1_x, init_enemy1_y, enemyRadius, speed_enemy1_x, speed_enemy1_y, text_pixel_heart, boxTop, boxRight, boxBottom, boxLeft, 
                     oldsceneMain, enemy1_x, enemy1_y, hitEnemy1);
-    enemyCircle ec2(clk, init_enemy2_x, init_enemy2_y, enemyRadius, speed_enemy2_x, speed_enemy2_y, x_pos, y_pos, boxTop, boxRight, boxBottom, boxLeft, 
+    enemyCircle ec2(targetClk, init_enemy2_x, init_enemy2_y, enemyRadius, speed_enemy2_x, speed_enemy2_y, text_pixel_heart, boxTop, boxRight, boxBottom, boxLeft, 
                     oldsceneMain, enemy2_x, enemy2_y, hitEnemy2);
     
     //init text
@@ -106,15 +119,24 @@ module afterTurnScene
                 400, // text position.y (top left)
                 x, // current position.x
                 y, // current position.y
-                text_pixel  // result, 1 if current pixel is on text, 0 otherwise
+                text_pixel_hp  // result, 1 if current pixel is on text, 0 otherwise
             );
-    
+    Pixel_On_Text2 #(.displayText("|")) heart(
+                clk,
+                x_pos, // text position.x (top left)
+                y_pos, // text position.y (top left)
+                x, // current position.x
+                y, // current position.y
+                text_pixel_heart  // result, 1 if current pixel is on text, 0 otherwise
+            );
     
         // rgb buffer (color)
         always @(posedge p_tick)
         //main character
         begin
-        if (64 > (x-x_pos)**2 + (y-y_pos)**2)
+        //if (64 > (x-x_pos)**2 + (y-y_pos)**2)
+        //    rgb_reg <= 12'hF00;
+        if (text_pixel_heart == 1)
             rgb_reg <= 12'hF00;
         //enemy1
         else if (25 > (x-enemy1_x)**2 + (y-enemy1_y)**2 && hitEnemy1 == 0)
@@ -130,9 +152,11 @@ module afterTurnScene
             rgb_reg <= 12'hFFF;
             
         // gentext HP
-        else if (text_pixel == 1)
+        else if (text_pixel_hp == 1)
             rgb_reg <= 12'hFFF;
  
+        else if (text_pixel_heart == 1)
+            rgb_reg <= 12'hF00;
         // health bar    
         else if (400 <= y && y <= 410 && boxLeft - boxThick + 25 <= x && x <= boxRight - healthBar)
             rgb_reg <= 12'hFF0;

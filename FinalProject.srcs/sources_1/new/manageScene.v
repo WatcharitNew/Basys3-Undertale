@@ -72,8 +72,6 @@ module manageScene(
     
     reg [1:0] changeScene;
     reg newScene_ats;
-    reg newScene_ls;
-    reg newScene_cred;
     
     reg [1:0] stateScene_ats;
     reg [1:0] stateScene_ls;
@@ -86,38 +84,43 @@ module manageScene(
     //health
     wire [9:0] maxHealth=6;
     wire [9:0] newHealth;
-    
+    reg [1:0] crdTime;
     initial begin
         changeScene = 0;
         newScene_ats = 1;
-        newScene_ls = 1;
-        newScene_cred = 1;
         stateScene_ats = 0;
         stateScene_ls = 0;
         rgb_reg = rgb_reg_ats;
+        crdTime = 0;
     end
     
     afterTurnScene ats(clk, video_on, p_tick, x, y, RsRx, newScene_ats, maxHealth, rgb_reg_ats, RsTx, newHealth);
-    loadingScene ls(clk,video_on, p_tick, x, y, newScene_ls, rgb_reg_ls);
+    loadingScene ls(clk,video_on, p_tick, x, y, rgb_reg_ls);
     gameOver go(clk,video_on, p_tick, x, y, rgb_reg_go);
     creditScene cred(clk, video_on, p_tick, x, y, rgb_reg_cred);
     
-    always @*
+    always @(posedge clk)
     begin
-        if (changeScene == 0)   rgb_reg = rgb_reg_ats;
+        if (changeScene == 0) rgb_reg = rgb_reg_cred;
         else if(changeScene == 1)  rgb_reg = rgb_reg_ls;
-        else if(changeScene == 2) rgb_reg = rgb_reg_go;
-        else if (changeScene == 3) rgb_reg = rgb_reg_cred;
+        else if (changeScene == 2)   rgb_reg = rgb_reg_ats;
+        else if(changeScene == 3) rgb_reg = rgb_reg_go;
     end
     
     wire isDie = (newHealth <= 1);
+    
     always @(posedge atsClk or posedge isDie)
     begin
-        if(isDie) begin changeScene = 2; end 
+        if(isDie) begin changeScene = 3; end 
 //        else if(changeScene == 0) begin newScene_ats <= ~newScene_ats; changeScene = 1; end
-//        else if (changeScene == 1) begin newScene_ls <= ~newScene_ls; changeScene = 0; end
-        else if (changeScene == 0) begin newScene_ats <= ~newScene_ats; changeScene = 3; end
-        else if (changeScene == 3) begin changeScene = 0; end
+        else if (changeScene == 0) 
+        begin 
+            crdTime <= crdTime + 1;
+            if(crdTime == 2)
+                changeScene = 1; 
+        end
+        else if (changeScene == 1) begin changeScene = 2; end
+        else if (changeScene == 2) begin newScene_ats <= ~newScene_ats; changeScene = 1; end
     end
     
     // output

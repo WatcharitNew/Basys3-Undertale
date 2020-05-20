@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Mon May 18 20:46:14 2020
-| Host             : DESKTOP-VG3SLB4 running 64-bit major release  (build 9200)
+| Date             : Wed May 20 21:45:26 2020
+| Host             : DESKTOP-KFTK1LL running 64-bit major release  (build 9200)
 | Command          : report_power -file manageScene_power_routed.rpt -pb manageScene_power_summary_routed.pb -rpx manageScene_power_routed.rpx
 | Design           : manageScene
 | Device           : xc7a35tcpg236-1
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.134        |
+| Total On-Chip Power (W)  | 0.107        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.062        |
+| Dynamic (W)              | 0.035        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 84.3         |
-| Junction Temperature (C) | 25.7         |
+| Max Ambient (C)          | 84.5         |
+| Junction Temperature (C) | 25.5         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,18 +53,18 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |     0.008 |     1701 |       --- |             --- |
-|   LUT as Logic |     0.007 |      914 |     20800 |            4.39 |
-|   CARRY4       |     0.001 |      175 |      8150 |            2.15 |
-|   Register     |    <0.001 |      306 |     41600 |            0.74 |
-|   BUFG         |    <0.001 |        3 |        32 |            9.38 |
-|   Others       |     0.000 |      178 |       --- |             --- |
-| Signals        |     0.012 |     2178 |       --- |             --- |
-| Block RAM      |     0.007 |        2 |        50 |            4.00 |
-| DSPs           |     0.030 |       31 |        90 |           34.44 |
+| Slice Logic    |     0.005 |     1406 |       --- |             --- |
+|   LUT as Logic |     0.004 |      702 |     20800 |            3.38 |
+|   CARRY4       |    <0.001 |      128 |      8150 |            1.57 |
+|   Register     |    <0.001 |      291 |     41600 |            0.70 |
+|   BUFG         |    <0.001 |        1 |        32 |            3.13 |
+|   Others       |     0.000 |      140 |       --- |             --- |
+| Signals        |     0.006 |     1358 |       --- |             --- |
+| Block RAM      |     0.008 |        2 |        50 |            4.00 |
+| DSPs           |     0.013 |       13 |        90 |           14.44 |
 | I/O            |     0.002 |       17 |       106 |           16.04 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.134 |          |           |                 |
+| Total          |     0.107 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.069 |       0.059 |      0.010 |
+| Vccint    |       1.000 |     0.042 |       0.032 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -143,20 +143,18 @@ Table of Contents
 +-----------------+-----------+
 | Name            | Power (W) |
 +-----------------+-----------+
-| manageScene     |     0.062 |
-|   ats           |     0.051 |
-|     ec1         |     0.011 |
-|     ec2         |     0.010 |
+| manageScene     |     0.035 |
+|   ats           |     0.023 |
 |     t1          |     0.002 |
 |       FontRom   |     0.002 |
-|   cred          |     0.005 |
-|     t2          |     0.002 |
+|   cred          |     0.006 |
+|     t1          |     0.002 |
 |       FontRom   |     0.002 |
-|     t4          |     0.002 |
+|     t3          |     0.002 |
 |       FontRom   |     0.002 |
-|     t6          |     0.001 |
-|       FontRom   |     0.001 |
-|   vga_sync_unit |     0.001 |
+|     t5          |     0.002 |
+|       FontRom   |     0.002 |
+|   vga_sync_unit |     0.002 |
 +-----------------+-----------+
 
 
