@@ -14,11 +14,11 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 5508 
+INFO: Helper process launched with PID 18992 
 WARNING: [Synth 8-2611] redeclaration of ansi port state is not allowed [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/receiver.v:36]
 WARNING: [Synth 8-2611] redeclaration of ansi port nextstate is not allowed [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/receiver.v:36]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 391.633 ; gain = 112.785
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 391.582 ; gain = 112.555
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'manageScene' [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:23]
 INFO: [Synth 8-6157] synthesizing module 'ClockDivider' [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/CLockDivider.v:23]
@@ -54,13 +54,12 @@ INFO: [Synth 8-6157] synthesizing module 'transmitter' [F:/HWLAB/Basys3-Undertal
 INFO: [Synth 8-226] default block is never used [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/transmitter.v:77]
 INFO: [Synth 8-6155] done synthesizing module 'transmitter' (4#1) [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/transmitter.v:23]
 INFO: [Synth 8-6157] synthesizing module 'enemyCircle' [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:23]
-WARNING: [Synth 8-6090] variable 'newEnemy_x' is written by both blocking and non-blocking assignments, entire logic could be removed [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:66]
-WARNING: [Synth 8-6090] variable 'newEnemy_y' is written by both blocking and non-blocking assignments, entire logic could be removed [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:67]
-WARNING: [Synth 8-6090] variable 'newSpeed_x' is written by both blocking and non-blocking assignments, entire logic could be removed [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:68]
-WARNING: [Synth 8-6090] variable 'newSpeed_x' is written by both blocking and non-blocking assignments, entire logic could be removed [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:69]
-WARNING: [Synth 8-6090] variable 'newSpeed_y' is written by both blocking and non-blocking assignments, entire logic could be removed [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:70]
-WARNING: [Synth 8-6090] variable 'newSpeed_y' is written by both blocking and non-blocking assignments, entire logic could be removed [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:71]
-WARNING: [Synth 8-6090] variable 'hitEnemy' is written by both blocking and non-blocking assignments, entire logic could be removed [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:75]
+WARNING: [Synth 8-6090] variable 'newEnemy_x' is written by both blocking and non-blocking assignments, entire logic could be removed [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:68]
+WARNING: [Synth 8-6090] variable 'newEnemy_y' is written by both blocking and non-blocking assignments, entire logic could be removed [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:69]
+WARNING: [Synth 8-6090] variable 'newSpeed_x' is written by both blocking and non-blocking assignments, entire logic could be removed [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:70]
+WARNING: [Synth 8-6090] variable 'newSpeed_x' is written by both blocking and non-blocking assignments, entire logic could be removed [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:71]
+WARNING: [Synth 8-6090] variable 'newSpeed_y' is written by both blocking and non-blocking assignments, entire logic could be removed [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:72]
+WARNING: [Synth 8-6090] variable 'newSpeed_y' is written by both blocking and non-blocking assignments, entire logic could be removed [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:73]
 INFO: [Synth 8-6155] done synthesizing module 'enemyCircle' (5#1) [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:23]
 INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2' [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
 	Parameter displayText bound to: HP - type: string 
@@ -154,7 +153,7 @@ WARNING: [Synth 8-3331] design loadingScene has unconnected port video_on
 WARNING: [Synth 8-3331] design afterTurnScene has unconnected port video_on
 WARNING: [Synth 8-3331] design vga_sync has unconnected port reset
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 435.898 ; gain = 157.051
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 436.168 ; gain = 157.141
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -167,10 +166,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 435.898 ; gain = 157.051
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 436.168 ; gain = 157.141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 435.898 ; gain = 157.051
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 436.168 ; gain = 157.141
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -181,30 +180,30 @@ Parsing XDC File [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basy
 Finished Parsing XDC File [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/manageScene_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/manageScene_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 781.367 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 782.016 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 781.367 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 782.016 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 781.367 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 781.367 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 782.016 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 782.016 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 781.367 ; gain = 502.520
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 782.016 ; gain = 502.988
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 781.367 ; gain = 502.520
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 782.016 ; gain = 502.988
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 781.367 ; gain = 502.520
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 782.016 ; gain = 502.988
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "shift" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "inc_bitcounter" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -224,7 +223,7 @@ INFO: [Synth 8-5544] ROM "changeScene" won't be mapped to Block RAM because addr
 INFO: [Synth 8-5544] ROM "changeScene" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "crdTime" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 781.367 ; gain = 502.520
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 782.016 ; gain = 502.988
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -238,8 +237,8 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   3 Input     33 Bit       Adders := 16    
-	   2 Input     32 Bit       Adders := 18    
-	   3 Input     32 Bit       Adders := 13    
+	   3 Input     32 Bit       Adders := 17    
+	   2 Input     32 Bit       Adders := 20    
 	   2 Input     31 Bit       Adders := 7     
 	   2 Input     10 Bit       Adders := 17    
 	   3 Input     10 Bit       Adders := 5     
@@ -260,7 +259,7 @@ Detailed RTL Component Info :
 	                2 Bit    Registers := 4     
 	                1 Bit    Registers := 80    
 +---Multipliers : 
-	                32x32  Multipliers := 4     
+	                32x32  Multipliers := 8     
 +---ROMs : 
 	                              ROMs := 8     
 +---Muxes : 
@@ -268,7 +267,7 @@ Detailed RTL Component Info :
 	   3 Input     12 Bit        Muxes := 1     
 	   8 Input     12 Bit        Muxes := 1     
 	   4 Input     12 Bit        Muxes := 1     
-	   2 Input     10 Bit        Muxes := 31    
+	   2 Input     10 Bit        Muxes := 29    
 	   2 Input      7 Bit        Muxes := 2     
 	   5 Input      7 Bit        Muxes := 1     
 	   6 Input      7 Bit        Muxes := 1     
@@ -340,13 +339,17 @@ Detailed RTL Component Info :
 Module enemyCircle 
 Detailed RTL Component Info : 
 +---Adders : 
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 1     
 	   2 Input     10 Bit       Adders := 6     
 	   3 Input     10 Bit       Adders := 2     
 +---Registers : 
 	               10 Bit    Registers := 4     
 	                1 Bit    Registers := 2     
++---Multipliers : 
+	                32x32  Multipliers := 2     
 +---Muxes : 
-	   2 Input     10 Bit        Muxes := 15    
+	   2 Input     10 Bit        Muxes := 14    
 Module Font_Rom 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -531,47 +534,47 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 INFO: [Synth 8-5546] ROM "TxData" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:142]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:142]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:145]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:145]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:83]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:83]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:83]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:83]
 INFO: [Synth 8-5544] ROM "shift" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-DSP Report: Generating DSP rgb_reg4, operation Mode is: A*B.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: Generating DSP rgb_reg4, operation Mode is: A*B.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: Generating DSP rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: Generating DSP rgb_reg4, operation Mode is: A*B.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: Generating DSP rgb_reg4, operation Mode is: A*B.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: Generating DSP rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: Generating DSP rgb_reg4, operation Mode is: A*B.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: Generating DSP rgb_reg4, operation Mode is: A*B.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: Generating DSP rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: Generating DSP rgb_reg4, operation Mode is: A*B.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: Generating DSP rgb_reg4, operation Mode is: A*B.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: Generating DSP rgb_reg4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
-DSP Report: operator rgb_reg4 is absorbed into DSP rgb_reg4.
+DSP Report: Generating DSP ec2/hitEnemy4, operation Mode is: A*B.
+DSP Report: operator ec2/hitEnemy4 is absorbed into DSP ec2/hitEnemy4.
+DSP Report: operator ec2/hitEnemy4 is absorbed into DSP ec2/hitEnemy4.
+DSP Report: Generating DSP ec2/hitEnemy4, operation Mode is: A*B.
+DSP Report: operator ec2/hitEnemy4 is absorbed into DSP ec2/hitEnemy4.
+DSP Report: operator ec2/hitEnemy4 is absorbed into DSP ec2/hitEnemy4.
+DSP Report: Generating DSP ec2/hitEnemy4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator ec2/hitEnemy4 is absorbed into DSP ec2/hitEnemy4.
+DSP Report: operator ec2/hitEnemy4 is absorbed into DSP ec2/hitEnemy4.
+DSP Report: Generating DSP ec2/hitEnemy4, operation Mode is: A*B.
+DSP Report: operator ec2/hitEnemy4 is absorbed into DSP ec2/hitEnemy4.
+DSP Report: operator ec2/hitEnemy4 is absorbed into DSP ec2/hitEnemy4.
+DSP Report: Generating DSP ec2/hitEnemy4, operation Mode is: A*B.
+DSP Report: operator ec2/hitEnemy4 is absorbed into DSP ec2/hitEnemy4.
+DSP Report: operator ec2/hitEnemy4 is absorbed into DSP ec2/hitEnemy4.
+DSP Report: Generating DSP ec2/hitEnemy4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator ec2/hitEnemy4 is absorbed into DSP ec2/hitEnemy4.
+DSP Report: operator ec2/hitEnemy4 is absorbed into DSP ec2/hitEnemy4.
+DSP Report: Generating DSP ec1/hitEnemy4, operation Mode is: A*B.
+DSP Report: operator ec1/hitEnemy4 is absorbed into DSP ec1/hitEnemy4.
+DSP Report: operator ec1/hitEnemy4 is absorbed into DSP ec1/hitEnemy4.
+DSP Report: Generating DSP ec1/hitEnemy4, operation Mode is: A*B.
+DSP Report: operator ec1/hitEnemy4 is absorbed into DSP ec1/hitEnemy4.
+DSP Report: operator ec1/hitEnemy4 is absorbed into DSP ec1/hitEnemy4.
+DSP Report: Generating DSP ec1/hitEnemy4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator ec1/hitEnemy4 is absorbed into DSP ec1/hitEnemy4.
+DSP Report: operator ec1/hitEnemy4 is absorbed into DSP ec1/hitEnemy4.
+DSP Report: Generating DSP ec1/hitEnemy4, operation Mode is: A*B.
+DSP Report: operator ec1/hitEnemy4 is absorbed into DSP ec1/hitEnemy4.
+DSP Report: operator ec1/hitEnemy4 is absorbed into DSP ec1/hitEnemy4.
+DSP Report: Generating DSP ec1/hitEnemy4, operation Mode is: A*B.
+DSP Report: operator ec1/hitEnemy4 is absorbed into DSP ec1/hitEnemy4.
+DSP Report: operator ec1/hitEnemy4 is absorbed into DSP ec1/hitEnemy4.
+DSP Report: Generating DSP ec1/hitEnemy4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator ec1/hitEnemy4 is absorbed into DSP ec1/hitEnemy4.
+DSP Report: operator ec1/hitEnemy4 is absorbed into DSP ec1/hitEnemy4.
 DSP Report: Generating DSP rgb_reg3, operation Mode is: (C:0x1a4)-A*(B:0x24).
 DSP Report: operator rgb_reg3 is absorbed into DSP rgb_reg3.
 DSP Report: operator healthBar is absorbed into DSP rgb_reg3.
@@ -625,7 +628,7 @@ INFO: [Synth 8-3886] merging instance 'rgb_reg_reg[8]' (FD) to 'rgb_reg_reg[9]'
 INFO: [Synth 8-3886] merging instance 'rgb_reg_reg[9]' (FD) to 'rgb_reg_reg[10]'
 INFO: [Synth 8-3886] merging instance 'rgb_reg_reg[10]' (FD) to 'rgb_reg_reg[11]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 781.367 ; gain = 502.520
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 782.016 ; gain = 502.988
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -691,13 +694,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 834.148 ; gain = 555.301
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 833.367 ; gain = 554.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 870.410 ; gain = 591.563
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 869.074 ; gain = 590.047
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -718,7 +721,7 @@ INFO: [Synth 8-6837] The timing for the instance cred/t3/FontRom/fontRow_reg (im
 INFO: [Synth 8-6837] The timing for the instance cred/t5/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance cred/t5/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 877.496 ; gain = 598.648
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 876.496 ; gain = 597.469
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -742,7 +745,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 877.496 ; gain = 598.648
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 876.496 ; gain = 597.469
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -755,7 +758,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 877.496 ; gain = 598.648
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 876.496 ; gain = 597.469
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -767,25 +770,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 877.496 ; gain = 598.648
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 876.496 ; gain = 597.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 877.496 ; gain = 598.648
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 876.496 ; gain = 597.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 877.496 ; gain = 598.648
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 876.496 ; gain = 597.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 877.496 ; gain = 598.648
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 876.496 ; gain = 597.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -806,15 +809,15 @@ Report Cell Usage:
 |3     |DSP48E1   |    12|
 |4     |DSP48E1_1 |     1|
 |5     |LUT1      |    92|
-|6     |LUT2      |   270|
-|7     |LUT3      |    95|
-|8     |LUT4      |   115|
-|9     |LUT5      |   112|
+|6     |LUT2      |   271|
+|7     |LUT3      |    93|
+|8     |LUT4      |    97|
+|9     |LUT5      |   120|
 |10    |LUT6      |   164|
 |11    |RAMB18E1  |     4|
 |12    |FDPE      |     2|
-|13    |FDRE      |   267|
-|14    |FDSE      |    22|
+|13    |FDRE      |   274|
+|14    |FDSE      |    16|
 |15    |IBUF      |     2|
 |16    |OBUF      |    15|
 +------+----------+------+
@@ -823,10 +826,10 @@ Report Instance Areas:
 +------+-----------------------+-------------------------------+------+
 |      |Instance               |Module                         |Cells |
 +------+-----------------------+-------------------------------+------+
-|1     |top                    |                               |  1303|
-|2     |  ats                  |afterTurnScene                 |   814|
-|3     |    ec1                |enemyCircle                    |   125|
-|4     |    ec2                |enemyCircle_30                 |   116|
+|1     |top                    |                               |  1293|
+|2     |  ats                  |afterTurnScene                 |   813|
+|3     |    ec1                |enemyCircle                    |   225|
+|4     |    ec2                |enemyCircle_30                 |   205|
 |5     |    fdivTarget         |ClockDivider_31                |     2|
 |6     |    \genblk1[0].fdiv   |ClockDivider_32                |     2|
 |7     |    \genblk1[10].fdiv  |ClockDivider_33                |     2|
@@ -846,9 +849,9 @@ Report Instance Areas:
 |21    |    \genblk1[7].fdiv   |ClockDivider_47                |     2|
 |22    |    \genblk1[8].fdiv   |ClockDivider_48                |     2|
 |23    |    \genblk1[9].fdiv   |ClockDivider_49                |     2|
-|24    |    heart              |Pixel_On_Text2__parameterized0 |    38|
+|24    |    heart              |Pixel_On_Text2__parameterized0 |    35|
 |25    |    nolabel_line59     |transmitter                    |    62|
-|26    |    receiver_unit      |receiver                       |    77|
+|26    |    receiver_unit      |receiver                       |    76|
 |27    |    t1                 |Pixel_On_Text2                 |    31|
 |28    |      FontRom          |Font_Rom_50                    |    15|
 |29    |  cred                 |creditScene                    |    44|
@@ -891,30 +894,30 @@ Report Instance Areas:
 |66    |  \genblk1[8].fdiv2    |ClockDivider_26                |     2|
 |67    |  \genblk1[9].fdiv2    |ClockDivider_27                |     2|
 |68    |  ls                   |loadingScene                   |     1|
-|69    |  vga_sync_unit        |vga_sync                       |   356|
+|69    |  vga_sync_unit        |vga_sync                       |   347|
 +------+-----------------------+-------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 877.496 ; gain = 598.648
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 876.496 ; gain = 597.469
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 877.496 ; gain = 253.180
-Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 877.496 ; gain = 598.648
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 876.496 ; gain = 251.621
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 876.496 ; gain = 597.469
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 145 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 877.496 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 876.496 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-138 Infos, 70 Warnings, 0 Critical Warnings and 0 Errors encountered.
+138 Infos, 69 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 877.496 ; gain = 610.715
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 877.496 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 876.496 ; gain = 609.859
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 876.496 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'F:/HWLAB/Basys3-Undertale/FinalProject.runs/synth_1/manageScene.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file manageScene_utilization_synth.rpt -pb manageScene_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed May 20 21:44:15 2020...
+INFO: [Common 17-206] Exiting Vivado at Wed May 20 22:05:58 2020...

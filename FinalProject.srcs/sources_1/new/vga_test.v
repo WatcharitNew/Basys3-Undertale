@@ -107,10 +107,10 @@ module afterTurnScene
     
     wire text_pixel_heart,text_pixel_hp;
     
-    enemyCircle ec1(targetClk, init_enemy1_x, init_enemy1_y, enemyRadius, speed_enemy1_x, speed_enemy1_y, text_pixel_heart, boxTop, boxRight, boxBottom, boxLeft, 
-                    oldsceneMain, enemy1_x, enemy1_y, hitEnemy1);
-    enemyCircle ec2(targetClk, init_enemy2_x, init_enemy2_y, enemyRadius, speed_enemy2_x, speed_enemy2_y, text_pixel_heart, boxTop, boxRight, boxBottom, boxLeft, 
-                    oldsceneMain, enemy2_x, enemy2_y, hitEnemy2);
+    enemyCircle ec1(clk, targetClk, init_enemy1_x, init_enemy1_y, enemyRadius, speed_enemy1_x, speed_enemy1_y, text_pixel_heart, 
+                    x, y, boxTop, boxRight, boxBottom, boxLeft, oldsceneMain, enemy1_x, enemy1_y, hitEnemy1);
+    enemyCircle ec2(clk, targetClk, init_enemy2_x, init_enemy2_y, enemyRadius, speed_enemy2_x, speed_enemy2_y, text_pixel_heart, 
+                    x, y, boxTop, boxRight, boxBottom, boxLeft, oldsceneMain, enemy2_x, enemy2_y, hitEnemy2);
     
     //init text
     Pixel_On_Text2 #(.displayText("HP")) t1(

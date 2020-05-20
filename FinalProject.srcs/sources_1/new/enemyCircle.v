@@ -21,6 +21,7 @@
 
 
 module enemyCircle(
+    input wire clk,
     input wire targetClk,
     input wire [9:0] enemy_x,
     input wire [9:0] enemy_y,
@@ -28,6 +29,8 @@ module enemyCircle(
     input wire [9:0] speed_x,
     input wire [9:0] speed_y,
     input wire text_pixel_heart,
+    input wire [9:0] x,
+    input wire [9:0] y,
     input wire [9:0] boxTop,
     input wire [9:0] boxRight,
     input wire [9:0] boxBottom,
@@ -53,7 +56,6 @@ module enemyCircle(
         begin
             if(oldScene != newScene)
             begin
-                hitEnemy = 0;
                 newEnemy_x = enemy_x;
                 newEnemy_y = enemy_y;
                 newSpeed_x = speed_x;
@@ -70,8 +72,15 @@ module enemyCircle(
                 else if(newEnemy_y >= boxBottom - radius)   newSpeed_y <= -speed_y;
                 else if(newEnemy_y <= boxTop + radius)   newSpeed_y <= speed_y;   
             end
-            
-            if(text_pixel_heart == 1)
+        end
+        
+        always @(posedge clk)
+        begin
+            if(oldScene != newScene)
+            begin
+                hitEnemy = 0;
+            end
+            if(text_pixel_heart == 1 && 25 > (x-newEnemy_x)**2 + (y-newEnemy_y)**2 && hitEnemy == 0)
                 hitEnemy <= 1;
         end
     
