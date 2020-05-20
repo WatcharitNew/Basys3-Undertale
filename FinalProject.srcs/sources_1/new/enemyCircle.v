@@ -80,7 +80,7 @@ module enemyCircle(
             begin
                 hitEnemy = 0;
             end
-            if(text_pixel_heart == 1 && 25 > (x-newEnemy_x)**2 + (y-newEnemy_y)**2 && hitEnemy == 0)
+            else if(text_pixel_heart == 1 && 25 > (x-newEnemy_x)**2 + (y-newEnemy_y)**2 && hitEnemy == 0)
                 hitEnemy <= 1;
         end
     

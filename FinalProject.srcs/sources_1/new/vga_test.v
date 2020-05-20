@@ -212,11 +212,11 @@ module afterTurnScene
                 begin
                 transmit = 0;
                 end
-            end
             
-            always @(posedge hitEnemy2)
-            begin
-                newHealth <= newHealth-1;
-            end      
+            if(hitEnemy1 == 0) begin oldHitEnemy[0] = 0; end
+            if(hitEnemy2 == 0) begin oldHitEnemy[1] = 0; end
+            if(hitEnemy2 == 1 && oldHitEnemy[1] == 0) begin newHealth <= newHealth-1; oldHitEnemy[1] <=1; end
+            else if(hitEnemy1 == 1 && oldHitEnemy[0] == 0) begin newHealth <= newHealth-1; oldHitEnemy[0] <=1; end
+            end
             
 endmodule
