@@ -65,7 +65,7 @@ module manageScene(
     reg [15:0]counter;
     transmitter(RsTx, clk, 0, transmit, TxData);
         
-    wire atsClk;
+    wire atsClk, targetClk;
     wire [28:0] tclk;
     assign tclk[0]=clk;
     genvar c;
@@ -74,6 +74,7 @@ module manageScene(
         ClockDivider fdiv2(tclk[c+1],tclk[c]);
     end endgenerate
     ClockDivider fdivTarget2(atsClk,tclk[28]);
+    ClockDivider fdivTarget(targetClk,tclk[18]);
     
     reg [2:0] changeScene;
     reg newScene_ats;
@@ -154,8 +155,7 @@ module manageScene(
     end
     
     
-    
-    afterTurnScene ats(clk, video_on, p_tick, x, y, newScene_ats, maxHealth, newpic, direc, rgb_reg_ats, newHealth);
+    afterTurnScene ats(clk, video_on, p_tick, x, y, newScene_ats, maxHealth, newpic, direc, targetClk, rgb_reg_ats, newHealth);
     loadingScene ls(clk,video_on, p_tick, x, y, rgb_reg_ls);
     gameOver go(clk,video_on, p_tick, x, y, rgb_reg_go);
     creditScene cred(clk, video_on, p_tick, x, y, rgb_reg_cred);
@@ -170,8 +170,6 @@ module manageScene(
         else if (changeScene == 2)   rgb_reg = rgb_reg_ats;
         else if(changeScene == 3) rgb_reg = rgb_reg_go;
         else if (changeScene == 4) rgb_reg = rgb_reg_menu;
-        
-        
         
     end
     

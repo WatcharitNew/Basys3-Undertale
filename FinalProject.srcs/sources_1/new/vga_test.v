@@ -29,6 +29,7 @@ module afterTurnScene
 		input wire [9:0] maxHealth,
 		input wire newpic,
 		input wire [2:0] direc,
+		input wire targetClk,
 		output reg [11:0] rgb_reg,
 		output reg [9:0] newHealth
 	);
@@ -46,17 +47,6 @@ module afterTurnScene
     
     //scene
     reg oldsceneMain;
-    
-    //clock
-    wire targetClk;
-    wire [18:0] tclk;
-    assign tclk[0]=clk;
-    genvar c;
-    generate for(c=0;c<18;c=c+1)
-    begin 
-        ClockDivider fdiv(tclk[c+1],tclk[c]);
-    end endgenerate
-    ClockDivider fdivTarget(targetClk,tclk[18]);
     
     initial
     begin
