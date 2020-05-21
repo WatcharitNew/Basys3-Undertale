@@ -14,11 +14,11 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 8664 
+INFO: Helper process launched with PID 1376 
 WARNING: [Synth 8-2611] redeclaration of ansi port state is not allowed [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/receiver.v:36]
 WARNING: [Synth 8-2611] redeclaration of ansi port nextstate is not allowed [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/receiver.v:36]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 392.215 ; gain = 113.383
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 391.324 ; gain = 112.313
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'manageScene' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:23]
 INFO: [Synth 8-6157] synthesizing module 'ClockDivider' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/CLockDivider.v:23]
@@ -52,6 +52,7 @@ INFO: [Synth 8-6155] done synthesizing module 'receiver' (3#1) [C:/Users/HP/Desk
 INFO: [Synth 8-6157] synthesizing module 'transmitter' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/transmitter.v:23]
 INFO: [Synth 8-226] default block is never used [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/transmitter.v:77]
 INFO: [Synth 8-6155] done synthesizing module 'transmitter' (4#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/transmitter.v:23]
+WARNING: [Synth 8-6090] variable 'menuGo' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:139]
 INFO: [Synth 8-6157] synthesizing module 'afterTurnScene' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:22]
 INFO: [Synth 8-6157] synthesizing module 'enemyCircle' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:23]
 WARNING: [Synth 8-6090] variable 'newEnemy_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:68]
@@ -153,7 +154,7 @@ INFO: [Synth 8-6155] done synthesizing module 'menuScene' (12#1) [C:/Users/HP/De
 WARNING: [Synth 8-5788] Register changeScene_reg in module manageScene is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:181]
 WARNING: [Synth 8-5788] Register crdTime_reg in module manageScene is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:185]
 WARNING: [Synth 8-5788] Register newScene_ats_reg in module manageScene is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:157]
-WARNING: [Synth 8-5788] Register menuWent_reg in module manageScene is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:193]
+WARNING: [Synth 8-5788] Register menuWent_reg in module manageScene is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:192]
 WARNING: [Synth 8-3848] Net RsTx_reg in module/entity manageScene does not have driver. [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:42]
 INFO: [Synth 8-6155] done synthesizing module 'manageScene' (13#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:23]
 WARNING: [Synth 8-3331] design menuScene has unconnected port video_on
@@ -186,7 +187,7 @@ WARNING: [Synth 8-3331] design loadingScene has unconnected port video_on
 WARNING: [Synth 8-3331] design afterTurnScene has unconnected port video_on
 WARNING: [Synth 8-3331] design vga_sync has unconnected port reset
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 440.375 ; gain = 161.543
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 439.770 ; gain = 160.758
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -199,10 +200,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 440.375 ; gain = 161.543
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 439.770 ; gain = 160.758
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 440.375 ; gain = 161.543
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 439.770 ; gain = 160.758
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -213,30 +214,30 @@ Parsing XDC File [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/constrs
 Finished Parsing XDC File [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/manageScene_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/manageScene_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 787.234 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 787.242 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 787.234 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 787.242 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 787.234 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 787.234 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 787.242 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 787.242 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 787.234 ; gain = 508.402
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 787.242 ; gain = 508.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 787.234 ; gain = 508.402
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 787.242 ; gain = 508.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 787.234 ; gain = 508.402
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 787.242 ; gain = 508.230
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "shift" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "inc_bitcounter" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -248,13 +249,12 @@ INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To p
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:60]
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:60]
 INFO: [Synth 8-5546] ROM "direc" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "TxData" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "selectedMenu" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "changeScene" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "changeScene" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "crdTime" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 787.234 ; gain = 508.402
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 787.242 ; gain = 508.230
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -308,14 +308,17 @@ Detailed RTL Component Info :
 	   2 Input      6 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 81    
 	   2 Input      4 Bit        Muxes := 3     
-	   2 Input      3 Bit        Muxes := 10    
+	   2 Input      3 Bit        Muxes := 11    
 	   4 Input      3 Bit        Muxes := 1     
 	   5 Input      3 Bit        Muxes := 1     
 	   7 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 38    
+	   2 Input      1 Bit        Muxes := 37    
 	   4 Input      1 Bit        Muxes := 1     
-	   6 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -338,12 +341,15 @@ Detailed RTL Component Info :
 	   2 Input     12 Bit        Muxes := 1     
 	   6 Input      7 Bit        Muxes := 1     
 	   2 Input      7 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 5     
 	   4 Input      3 Bit        Muxes := 1     
 	   5 Input      3 Bit        Muxes := 1     
 	   7 Input      3 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 14    
-	   6 Input      1 Bit        Muxes := 4     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+	   5 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 1     
 Module vga_sync 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -691,15 +697,11 @@ DSP Report: operator rgb_reg3 is absorbed into DSP rgb_reg3.
 DSP Report: operator healthBar is absorbed into DSP rgb_reg3.
 INFO: [Synth 8-5544] ROM "receiver_unit/shift" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "selectedMenu" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "TxData" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-3331] design menuScene has unconnected port video_on
 WARNING: [Synth 8-3331] design menuScene has unconnected port newpic
 WARNING: [Synth 8-3331] design creditScene has unconnected port video_on
 WARNING: [Synth 8-3331] design afterTurnScene has unconnected port video_on
 WARNING: [Synth 8-3331] design manageScene has unconnected port reset
-INFO: [Synth 8-3886] merging instance 'TxData_reg[5]' (FDE) to 'TxData_reg[3]'
-INFO: [Synth 8-3886] merging instance 'TxData_reg[4]' (FDE) to 'TxData_reg[1]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (menuWent_reg)
 INFO: [Synth 8-3886] merging instance 'menu/rgb_reg_reg[0]' (FDR) to 'menu/rgb_reg_reg[1]'
 INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[0]' (FDR) to 'ls/rgb_reg_reg[11]'
 INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[0]' (FDR) to 'ats/rgb_reg_reg[3]'
@@ -753,7 +755,7 @@ INFO: [Synth 8-3886] merging instance 'rgb_reg_reg[9]' (FDE) to 'rgb_reg_reg[11]
 INFO: [Synth 8-3886] merging instance 'rgb_reg_reg[10]' (FDE) to 'rgb_reg_reg[11]'
 WARNING: [Synth 8-3332] Sequential element (changeScene_reg[2]_P) is unused and will be removed from module manageScene.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 787.234 ; gain = 508.402
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 787.242 ; gain = 508.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -835,13 +837,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 848.664 ; gain = 569.832
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 849.082 ; gain = 570.070
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 882.391 ; gain = 603.559
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 882.941 ; gain = 603.930
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -870,7 +872,7 @@ INFO: [Synth 8-6837] The timing for the instance menu/fight/FontRom/fontRow_reg 
 INFO: [Synth 8-6837] The timing for the instance menu/item/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance menu/item/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 890.488 ; gain = 611.656
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 889.473 ; gain = 610.461
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -894,7 +896,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 890.488 ; gain = 611.656
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 889.473 ; gain = 610.461
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -907,7 +909,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 890.488 ; gain = 611.656
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 889.473 ; gain = 610.461
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -919,25 +921,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 890.488 ; gain = 611.656
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 889.473 ; gain = 610.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 890.488 ; gain = 611.656
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 889.473 ; gain = 610.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 890.488 ; gain = 611.656
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 889.473 ; gain = 610.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 890.488 ; gain = 611.656
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 889.473 ; gain = 610.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -958,16 +960,16 @@ Report Cell Usage:
 |3     |DSP48E1   |    12|
 |4     |DSP48E1_1 |     1|
 |5     |LUT1      |   167|
-|6     |LUT2      |   354|
-|7     |LUT3      |   114|
-|8     |LUT4      |   118|
-|9     |LUT5      |   130|
-|10    |LUT6      |   218|
+|6     |LUT2      |   357|
+|7     |LUT3      |   115|
+|8     |LUT4      |   110|
+|9     |LUT5      |   134|
+|10    |LUT6      |   227|
 |11    |MUXF7     |     1|
 |12    |RAMB18E1  |     8|
 |13    |FDCE      |     1|
 |14    |FDPE      |     2|
-|15    |FDRE      |   289|
+|15    |FDRE      |   292|
 |16    |FDSE      |    17|
 |17    |LDC       |     1|
 |18    |IBUF      |     2|
@@ -978,112 +980,112 @@ Report Instance Areas:
 +------+-----------------------+----------------------------------+------+
 |      |Instance               |Module                            |Cells |
 +------+-----------------------+----------------------------------+------+
-|1     |top                    |                                  |  1648|
-|2     |  ats                  |afterTurnScene                    |   649|
-|3     |    ec1                |enemyCircle                       |   224|
-|4     |    ec2                |enemyCircle_37                    |   203|
-|5     |    fdivTarget         |ClockDivider_38                   |     2|
-|6     |    \genblk1[0].fdiv   |ClockDivider_39                   |     2|
-|7     |    \genblk1[10].fdiv  |ClockDivider_40                   |     2|
-|8     |    \genblk1[11].fdiv  |ClockDivider_41                   |     2|
-|9     |    \genblk1[12].fdiv  |ClockDivider_42                   |     2|
-|10    |    \genblk1[13].fdiv  |ClockDivider_43                   |     2|
-|11    |    \genblk1[14].fdiv  |ClockDivider_44                   |     2|
-|12    |    \genblk1[15].fdiv  |ClockDivider_45                   |     2|
-|13    |    \genblk1[16].fdiv  |ClockDivider_46                   |     2|
-|14    |    \genblk1[17].fdiv  |ClockDivider_47                   |     2|
-|15    |    \genblk1[1].fdiv   |ClockDivider_48                   |     2|
-|16    |    \genblk1[2].fdiv   |ClockDivider_49                   |     2|
-|17    |    \genblk1[3].fdiv   |ClockDivider_50                   |     2|
-|18    |    \genblk1[4].fdiv   |ClockDivider_51                   |     2|
-|19    |    \genblk1[5].fdiv   |ClockDivider_52                   |     2|
-|20    |    \genblk1[6].fdiv   |ClockDivider_53                   |     2|
-|21    |    \genblk1[7].fdiv   |ClockDivider_54                   |     2|
-|22    |    \genblk1[8].fdiv   |ClockDivider_55                   |     2|
-|23    |    \genblk1[9].fdiv   |ClockDivider_56                   |     2|
-|24    |    heart              |Pixel_On_Text2__parameterized0_57 |    38|
-|25    |    t1                 |Pixel_On_Text2                    |    34|
-|26    |      FontRom          |Font_Rom_58                       |    18|
-|27    |  cred                 |creditScene                       |    44|
-|28    |    t1                 |Pixel_On_Text2__parameterized1    |    10|
-|29    |      FontRom          |Font_Rom_36                       |     6|
-|30    |    t2                 |Pixel_On_Text2__parameterized2    |     3|
-|31    |    t3                 |Pixel_On_Text2__parameterized3    |    11|
-|32    |      FontRom          |Font_Rom_35                       |     7|
-|33    |    t4                 |Pixel_On_Text2__parameterized4    |     3|
-|34    |    t5                 |Pixel_On_Text2__parameterized5    |    10|
-|35    |      FontRom          |Font_Rom_34                       |     6|
-|36    |    t6                 |Pixel_On_Text2__parameterized6    |     3|
-|37    |  fdivTarget2          |ClockDivider                      |     2|
-|38    |  \genblk1[0].fdiv2    |ClockDivider_0                    |     2|
-|39    |  \genblk1[10].fdiv2   |ClockDivider_1                    |     2|
-|40    |  \genblk1[11].fdiv2   |ClockDivider_2                    |     2|
-|41    |  \genblk1[12].fdiv2   |ClockDivider_3                    |     2|
-|42    |  \genblk1[13].fdiv2   |ClockDivider_4                    |     2|
-|43    |  \genblk1[14].fdiv2   |ClockDivider_5                    |     2|
-|44    |  \genblk1[15].fdiv2   |ClockDivider_6                    |     2|
-|45    |  \genblk1[16].fdiv2   |ClockDivider_7                    |     2|
-|46    |  \genblk1[17].fdiv2   |ClockDivider_8                    |     2|
-|47    |  \genblk1[18].fdiv2   |ClockDivider_9                    |     2|
-|48    |  \genblk1[19].fdiv2   |ClockDivider_10                   |     2|
-|49    |  \genblk1[1].fdiv2    |ClockDivider_11                   |     2|
-|50    |  \genblk1[20].fdiv2   |ClockDivider_12                   |     2|
-|51    |  \genblk1[21].fdiv2   |ClockDivider_13                   |     2|
-|52    |  \genblk1[22].fdiv2   |ClockDivider_14                   |     2|
-|53    |  \genblk1[23].fdiv2   |ClockDivider_15                   |     2|
-|54    |  \genblk1[24].fdiv2   |ClockDivider_16                   |     2|
-|55    |  \genblk1[25].fdiv2   |ClockDivider_17                   |     2|
-|56    |  \genblk1[26].fdiv2   |ClockDivider_18                   |     2|
-|57    |  \genblk1[27].fdiv2   |ClockDivider_19                   |     2|
-|58    |  \genblk1[2].fdiv2    |ClockDivider_20                   |     2|
-|59    |  \genblk1[3].fdiv2    |ClockDivider_21                   |     2|
-|60    |  \genblk1[4].fdiv2    |ClockDivider_22                   |     2|
-|61    |  \genblk1[5].fdiv2    |ClockDivider_23                   |     2|
-|62    |  \genblk1[6].fdiv2    |ClockDivider_24                   |     2|
-|63    |  \genblk1[7].fdiv2    |ClockDivider_25                   |     2|
-|64    |  \genblk1[8].fdiv2    |ClockDivider_26                   |     2|
-|65    |  \genblk1[9].fdiv2    |ClockDivider_27                   |     2|
-|66    |  ls                   |loadingScene                      |     2|
-|67    |  menu                 |menuScene                         |    50|
-|68    |    act                |Pixel_On_Text2__parameterized8    |     4|
-|69    |    fight              |Pixel_On_Text2__parameterized7    |     7|
-|70    |      FontRom          |Font_Rom_33                       |     3|
-|71    |    h1                 |Pixel_On_Text2__parameterized0    |     8|
-|72    |      FontRom          |Font_Rom_32                       |     7|
-|73    |    h2                 |Pixel_On_Text2__parameterized0_28 |     1|
-|74    |    h3                 |Pixel_On_Text2__parameterized0_29 |     8|
-|75    |      FontRom          |Font_Rom_31                       |     7|
-|76    |    h4                 |Pixel_On_Text2__parameterized0_30 |     1|
-|77    |    item               |Pixel_On_Text2__parameterized9    |    10|
-|78    |      FontRom          |Font_Rom                          |     5|
-|79    |    spare              |Pixel_On_Text2__parameterized10   |     4|
+|1     |top                    |                                  |  1660|
+|2     |  menu                 |menuScene                         |    47|
+|3     |    act                |Pixel_On_Text2__parameterized8    |     4|
+|4     |    fight              |Pixel_On_Text2__parameterized7    |     7|
+|5     |      FontRom          |Font_Rom_33                       |     3|
+|6     |    h1                 |Pixel_On_Text2__parameterized0    |     8|
+|7     |      FontRom          |Font_Rom_32                       |     7|
+|8     |    h2                 |Pixel_On_Text2__parameterized0_28 |     1|
+|9     |    h3                 |Pixel_On_Text2__parameterized0_29 |     8|
+|10    |      FontRom          |Font_Rom_31                       |     7|
+|11    |    h4                 |Pixel_On_Text2__parameterized0_30 |     1|
+|12    |    item               |Pixel_On_Text2__parameterized9    |    10|
+|13    |      FontRom          |Font_Rom                          |     5|
+|14    |    spare              |Pixel_On_Text2__parameterized10   |     4|
+|15    |  ats                  |afterTurnScene                    |   655|
+|16    |    ec1                |enemyCircle                       |   224|
+|17    |    ec2                |enemyCircle_37                    |   203|
+|18    |    fdivTarget         |ClockDivider_38                   |     2|
+|19    |    \genblk1[0].fdiv   |ClockDivider_39                   |     2|
+|20    |    \genblk1[10].fdiv  |ClockDivider_40                   |     2|
+|21    |    \genblk1[11].fdiv  |ClockDivider_41                   |     2|
+|22    |    \genblk1[12].fdiv  |ClockDivider_42                   |     2|
+|23    |    \genblk1[13].fdiv  |ClockDivider_43                   |     2|
+|24    |    \genblk1[14].fdiv  |ClockDivider_44                   |     2|
+|25    |    \genblk1[15].fdiv  |ClockDivider_45                   |     2|
+|26    |    \genblk1[16].fdiv  |ClockDivider_46                   |     2|
+|27    |    \genblk1[17].fdiv  |ClockDivider_47                   |     2|
+|28    |    \genblk1[1].fdiv   |ClockDivider_48                   |     2|
+|29    |    \genblk1[2].fdiv   |ClockDivider_49                   |     2|
+|30    |    \genblk1[3].fdiv   |ClockDivider_50                   |     2|
+|31    |    \genblk1[4].fdiv   |ClockDivider_51                   |     2|
+|32    |    \genblk1[5].fdiv   |ClockDivider_52                   |     2|
+|33    |    \genblk1[6].fdiv   |ClockDivider_53                   |     2|
+|34    |    \genblk1[7].fdiv   |ClockDivider_54                   |     2|
+|35    |    \genblk1[8].fdiv   |ClockDivider_55                   |     2|
+|36    |    \genblk1[9].fdiv   |ClockDivider_56                   |     2|
+|37    |    heart              |Pixel_On_Text2__parameterized0_57 |    38|
+|38    |    t1                 |Pixel_On_Text2                    |    34|
+|39    |      FontRom          |Font_Rom_58                       |    18|
+|40    |  cred                 |creditScene                       |    45|
+|41    |    t1                 |Pixel_On_Text2__parameterized1    |    10|
+|42    |      FontRom          |Font_Rom_36                       |     6|
+|43    |    t2                 |Pixel_On_Text2__parameterized2    |     3|
+|44    |    t3                 |Pixel_On_Text2__parameterized3    |    11|
+|45    |      FontRom          |Font_Rom_35                       |     7|
+|46    |    t4                 |Pixel_On_Text2__parameterized4    |     3|
+|47    |    t5                 |Pixel_On_Text2__parameterized5    |    10|
+|48    |      FontRom          |Font_Rom_34                       |     6|
+|49    |    t6                 |Pixel_On_Text2__parameterized6    |     3|
+|50    |  fdivTarget2          |ClockDivider                      |     2|
+|51    |  \genblk1[0].fdiv2    |ClockDivider_0                    |     2|
+|52    |  \genblk1[10].fdiv2   |ClockDivider_1                    |     2|
+|53    |  \genblk1[11].fdiv2   |ClockDivider_2                    |     2|
+|54    |  \genblk1[12].fdiv2   |ClockDivider_3                    |     2|
+|55    |  \genblk1[13].fdiv2   |ClockDivider_4                    |     2|
+|56    |  \genblk1[14].fdiv2   |ClockDivider_5                    |     2|
+|57    |  \genblk1[15].fdiv2   |ClockDivider_6                    |     2|
+|58    |  \genblk1[16].fdiv2   |ClockDivider_7                    |     2|
+|59    |  \genblk1[17].fdiv2   |ClockDivider_8                    |     2|
+|60    |  \genblk1[18].fdiv2   |ClockDivider_9                    |     2|
+|61    |  \genblk1[19].fdiv2   |ClockDivider_10                   |     2|
+|62    |  \genblk1[1].fdiv2    |ClockDivider_11                   |     2|
+|63    |  \genblk1[20].fdiv2   |ClockDivider_12                   |     2|
+|64    |  \genblk1[21].fdiv2   |ClockDivider_13                   |     2|
+|65    |  \genblk1[22].fdiv2   |ClockDivider_14                   |     2|
+|66    |  \genblk1[23].fdiv2   |ClockDivider_15                   |     2|
+|67    |  \genblk1[24].fdiv2   |ClockDivider_16                   |     2|
+|68    |  \genblk1[25].fdiv2   |ClockDivider_17                   |     2|
+|69    |  \genblk1[26].fdiv2   |ClockDivider_18                   |     2|
+|70    |  \genblk1[27].fdiv2   |ClockDivider_19                   |     2|
+|71    |  \genblk1[2].fdiv2    |ClockDivider_20                   |     2|
+|72    |  \genblk1[3].fdiv2    |ClockDivider_21                   |     2|
+|73    |  \genblk1[4].fdiv2    |ClockDivider_22                   |     2|
+|74    |  \genblk1[5].fdiv2    |ClockDivider_23                   |     2|
+|75    |  \genblk1[6].fdiv2    |ClockDivider_24                   |     2|
+|76    |  \genblk1[7].fdiv2    |ClockDivider_25                   |     2|
+|77    |  \genblk1[8].fdiv2    |ClockDivider_26                   |     2|
+|78    |  \genblk1[9].fdiv2    |ClockDivider_27                   |     2|
+|79    |  ls                   |loadingScene                      |     1|
 |80    |  nolabel_line66       |transmitter                       |    65|
-|81    |  receiver_unit        |receiver                          |    83|
-|82    |  vga_sync_unit        |vga_sync                          |   625|
+|81    |  receiver_unit        |receiver                          |    85|
+|82    |  vga_sync_unit        |vga_sync                          |   627|
 +------+-----------------------+----------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 890.488 ; gain = 611.656
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 889.473 ; gain = 610.461
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:47 ; elapsed = 00:00:53 . Memory (MB): peak = 890.488 ; gain = 264.797
-Synthesis Optimization Complete : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 890.488 ; gain = 611.656
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 889.473 ; gain = 262.988
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 889.473 ; gain = 610.461
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 219 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 890.488 ; gain = 0.000
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 889.473 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
-  LDC => LDCE: 1 instances
+  LDC => LDCE (inverted pins: G): 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-171 Infos, 91 Warnings, 0 Critical Warnings and 0 Errors encountered.
+166 Infos, 92 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 890.488 ; gain = 623.910
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 890.488 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 889.473 ; gain = 623.090
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 889.473 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.runs/synth_1/manageScene.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file manageScene_utilization_synth.rpt -pb manageScene_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu May 21 17:13:33 2020...
+INFO: [Common 17-206] Exiting Vivado at Thu May 21 18:18:49 2020...
