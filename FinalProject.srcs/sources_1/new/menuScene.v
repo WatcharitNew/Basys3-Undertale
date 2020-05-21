@@ -26,10 +26,9 @@ module menuScene
 		input wire video_on,
 		input wire p_tick, 
 		input wire [9:0] x,y,
-		input wire RsRx,
-		output reg [1:0] selectedMenu,
-		output reg [11:0] rgb_reg,
-		output wire RsTx
+		input wire newpic,
+		input wire [1:0] selectedMenu,
+		output reg [11:0] rgb_reg
 	);
 
 
@@ -37,34 +36,9 @@ module menuScene
     //multiplexed heart (current menu)
     reg currentHeart;
     
-    //tell whether this is a new picture
-    reg newpic;
-    
-    //Receiver
-    wire [7:0]RxData;
-    wire state;
-    wire nextstate;
-    receiver receiver_unit(RxData, state, nextstate, clk, 0, RsRx);
-    
-    //Transmitter
-    reg [7:0]TxData;
-    reg transmit;
-    reg [15:0]counter;
-    transmitter(RsTx, clk, 0, transmit, TxData);
-        
-
-
-
     //scene
     reg oldsceneMain;
 
-    
-    initial
-    begin
-        selectedMenu = 0;
-    end
-
-    
     wire heart1, heart2, heart3, heart4,
         text_pixel_fight, text_pixel_act, text_pixel_spare, text_pixel_item;
     
@@ -158,35 +132,5 @@ module menuScene
         else
             rgb_reg <= 12'b0;
         end
-        
-
-
-        //newpic oscillator
-        always @(posedge p_tick)
-        if (x==0 && y==0)
-            newpic=1;
-        else
-            newpic=0;
-        
-        //UART
-        always @(posedge clk)
-            begin
-            if (state==1 && nextstate==0)
-                begin
-                case (RxData)
-                "a": begin selectedMenu = selectedMenu+1; TxData="A"; end
-                "d": begin selectedMenu = selectedMenu-1; TxData="D"; end
-                default: begin TxData=RxData; end
-                endcase 
-                transmit = 1;
-                counter = 0;
-                end
-            else if (transmit==1 && counter<=10415)
-                counter=counter+1;
-            else
-                begin
-                transmit = 0;
-                end
-            end
             
 endmodule
