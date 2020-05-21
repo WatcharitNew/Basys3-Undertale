@@ -25,11 +25,11 @@ module afterTurnScene
 		input wire video_on,
 		input wire p_tick, 
 		input wire [9:0] x,y,
-		input wire RsRx,
 		input wire newscene,
 		input wire [9:0] maxHealth,
+		input wire newpic,
+		input wire [2:0] direc,
 		output reg [11:0] rgb_reg,
-		output wire RsTx,
 		output reg [9:0] newHealth
 	);
 	
@@ -40,26 +40,8 @@ module afterTurnScene
     wire [9:0] enemyRadius = 5; 
     wire hitEnemy1, hitEnemy2;
     reg oldHitEnemy [2:0];
-    // move
-    reg [2:0]direc;
-    
-    //tell whether this is a new picture
-    reg newpic;
-    
-    //Receiver
-    wire [7:0]RxData;
-    wire state;
-    wire nextstate;
-    receiver receiver_unit(RxData, state, nextstate, clk, 0, RsRx);
-    
-    //Transmitter
-    reg [7:0]TxData;
-    reg transmit;
-    reg [15:0]counter;
-    transmitter(RsTx, clk, 0, transmit, TxData);
         
     //initialize
-    
     wire [9:0] healthBar = (maxHealth - newHealth)*36;
     
     //scene
@@ -78,7 +60,6 @@ module afterTurnScene
     
     initial
     begin
-        direc = 0;
         x_pos = 320;
         y_pos = 240;
         mainRadius = 8;
@@ -134,8 +115,6 @@ module afterTurnScene
         always @(posedge p_tick)
         //main character
         begin
-        //if (64 > (x-x_pos)**2 + (y-y_pos)**2)
-        //    rgb_reg <= 12'hF00;
         if (text_pixel_heart == 1)
             rgb_reg <= 12'hF00;
         //enemy1
@@ -163,13 +142,6 @@ module afterTurnScene
         else
             rgb_reg <= 0;
         end
-        //newpic oscillator
-        always @(posedge p_tick)
-        if (x==0 && y==0)
-            newpic=1;
-        else
-            newpic=0;
-        
         
         //move
         always @(posedge newpic)
@@ -193,26 +165,6 @@ module afterTurnScene
         //UART
         always @(posedge clk)
             begin
-            if (newpic==1 && direc!=0) direc=0;
-            if (state==1 && nextstate==0)
-                begin
-                case (RxData)
-                "w": begin direc=1; TxData="W"; end
-                "a": begin direc=2; TxData="A"; end
-                "s": begin direc=3; TxData="S"; end
-                "d": begin direc=4; TxData="D"; end
-                default: begin TxData=""; end
-                endcase 
-                transmit = 1;
-                counter = 0;
-                end
-            else if (transmit==1 && counter<=10415)
-                counter=counter+1;
-            else
-                begin
-                transmit = 0;
-                end
-            
             if(hitEnemy1 == 0) begin oldHitEnemy[0] = 0; end
             if(hitEnemy2 == 0) begin oldHitEnemy[1] = 0; end
             if(hitEnemy2 == 1 && oldHitEnemy[1] == 0) begin newHealth <= newHealth-1; oldHitEnemy[1] <=1; end

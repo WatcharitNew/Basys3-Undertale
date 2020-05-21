@@ -53,7 +53,7 @@ module manageScene(
     vga_sync vga_sync_unit (.clk(clk), .reset(reset), .hsync(Hsync), .vsync(Vsync),
                                 .video_on(video_on), .p_tick(p_tick), .x(x), .y(y));
     
-   /* //Receiver
+    //Receiver
     wire [7:0]RxData;
     wire state;
     wire nextstate;
@@ -63,7 +63,7 @@ module manageScene(
     reg [7:0]TxData;
     reg transmit;
     reg [15:0]counter;
-    transmitter(RsTx, clk, 0, transmit, TxData);*/
+    transmitter(RsTx, clk, 0, transmit, TxData);
         
     wire atsClk;
     wire [28:0] tclk;
@@ -90,6 +90,12 @@ module manageScene(
     wire [9:0] maxHealth=6;
     wire [9:0] newHealth;
     reg [1:0] crdTime;
+    // move
+    reg [2:0]direc;
+    //tell whether this is a new picture
+    reg newpic;
+    
+    reg [1:0] selectedMenu;
     initial begin
         changeScene = 0;
         newScene_ats = 1;
@@ -97,13 +103,55 @@ module manageScene(
         stateScene_ls = 0;
         rgb_reg = rgb_reg_ats;
         crdTime = 0;
+        direc = 0;
+        selectedMenu = 0;
     end
     
-    afterTurnScene ats(clk, video_on, p_tick, x, y, RsRx, newScene_ats, maxHealth, rgb_reg_ats, RsTx_ats, newHealth);
+    
+    
+    
+    //newpic oscillator
+    always @(posedge p_tick)
+    begin
+        if (x==0 && y==0)
+            newpic=1;
+        else
+            newpic=0;
+    end
+    
+    always @(posedge clk)
+    begin
+        if (newpic==1 && direc!=0) direc=0;
+            if (state==1 && nextstate==0)
+                begin
+                case (RxData)
+                "w": begin direc=1; TxData="W"; end
+                "a": begin direc=2; selectedMenu <= selectedMenu+1;TxData="A"; end
+                "s": begin direc=3; TxData="S"; end
+                "d": begin direc=4; selectedMenu <= selectedMenu-1;TxData="D"; end
+                " ": begin TxData="z"; end
+                default: begin TxData=""; end
+                endcase 
+                transmit = 1;
+                counter = 0;
+                end
+            else if (transmit==1 && counter<=10415)
+                counter=counter+1;
+            else
+                begin
+                transmit = 0;
+                end
+    end
+    
+    
+    
+    afterTurnScene ats(clk, video_on, p_tick, x, y, newScene_ats, maxHealth, newpic, direc, rgb_reg_ats, newHealth);
     loadingScene ls(clk,video_on, p_tick, x, y, rgb_reg_ls);
     gameOver go(clk,video_on, p_tick, x, y, rgb_reg_go);
     creditScene cred(clk, video_on, p_tick, x, y, rgb_reg_cred);
-    menuScene menu(clk, video_on, p_tick, x, y, RsRx, selectedMenu, rgb_reg_menu, RsTx_menu);
+    menuScene menu(clk, video_on, p_tick, x, y, newpic, selectedMenu, rgb_reg_menu);
+    
+    
     
     always @(posedge clk)
     begin
@@ -113,8 +161,8 @@ module manageScene(
         else if(changeScene == 3) rgb_reg = rgb_reg_menu;
         else if (changeScene == 4) rgb_reg = rgb_reg_menu;
         
-        if (changeScene == 2) RsTx_reg = RsTx_ats;
-        else if (changeScene == 4) RsTx_reg = RsTx_menu;
+        
+        
     end
     
     wire isDie = (newHealth <= 1);
