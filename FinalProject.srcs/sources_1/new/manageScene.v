@@ -97,6 +97,7 @@ module manageScene(
     
     //menu scene state
     reg [1:0] selectedMenu;
+    reg isSelect;
     
     initial begin
         changeScene = 0;
@@ -107,6 +108,7 @@ module manageScene(
         crdTime = 0;
         direc = 0;
         selectedMenu = 0;
+        isSelect = 0;
     end
     
     
@@ -123,7 +125,10 @@ module manageScene(
     
     always @(posedge clk)
     begin
-        if (newpic==1 && direc!=0) direc=0;
+        if (newpic==1 && direc!=0) begin
+            direc=0;
+            isSelect=0;
+        end
             if (state==1 && nextstate==0)
                 begin
                 case (RxData)
@@ -132,6 +137,7 @@ module manageScene(
                 "s": begin direc=3; TxData="S"; end
                 "d": begin direc=4; selectedMenu <= selectedMenu-1;TxData="D"; end
                 " ": begin
+                    isSelect=1;
                     TxData = "z";
                 end
                 default: begin TxData=""; end
@@ -171,10 +177,10 @@ module manageScene(
     
     wire isDie = (newHealth <= 1);
     
-    always @(posedge atsClk or posedge isDie)
+    always @(posedge atsClk or posedge isDie or posedge isSelect)
     begin
         if(isDie) begin changeScene = 3; end 
-//        else if(changeScene == 0) begin newScene_ats <= ~newScene_ats; changeScene = 1; end
+        else if(isSelect && changeScene == 4) begin changeScene = 2; end
         else if (changeScene == 0) 
         begin 
             crdTime <= crdTime + 1;
@@ -183,14 +189,6 @@ module manageScene(
         end
         else if (changeScene == 1) begin changeScene = 2; end
         else if (changeScene == 2) begin newScene_ats <= ~newScene_ats; changeScene = 4; end
-        else if (changeScene == 4) begin
-                    case (selectedMenu)
-                        0: changeScene <= 1;
-                        1: changeScene <= 1;
-                        2: changeScene <= 1;
-                        3: changeScene <= 1;
-                    endcase
-        end
     end
     
     // output

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Thu May 21 18:19:50 2020
+| Date         : Thu May 21 22:32:30 2020
 | Host         : DESKTOP-VG3SLB4 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file manageScene_control_sets_placed.rpt
 | Design       : manageScene
@@ -24,7 +24,7 @@ Table of Contents
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
 | Number of unique control sets                            |    71 |
-| Unused register locations in slices containing registers |   431 |
+| Unused register locations in slices containing registers |   436 |
 +----------------------------------------------------------+-------+
 
 
@@ -35,12 +35,12 @@ Table of Contents
 | Fanout | Control Sets |
 +--------+--------------+
 |      1 |           49 |
-|      2 |            1 |
+|      2 |            2 |
 |      3 |            1 |
 |      4 |            2 |
 |      5 |            1 |
 |      6 |            1 |
-|      7 |            2 |
+|      7 |            1 |
 |      8 |            1 |
 |      9 |            3 |
 |     10 |            4 |
@@ -55,11 +55,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             158 |          103 |
+| No           | No                    | No                     |             157 |          104 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              52 |           18 |
-| Yes          | No                    | No                     |              73 |           30 |
-| Yes          | No                    | Yes                    |               3 |            1 |
+| No           | Yes                   | No                     |              52 |           17 |
+| Yes          | No                    | No                     |              69 |           34 |
+| Yes          | No                    | Yes                    |               3 |            2 |
 | Yes          | Yes                   | No                     |              43 |           13 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -70,77 +70,77 @@ Table of Contents
 +------------------------------------+------------------------------+-----------------------------------------+------------------+----------------+
 |            Clock Signal            |         Enable Signal        |             Set/Reset Signal            | Slice Load Count | Bel Load Count |
 +------------------------------------+------------------------------+-----------------------------------------+------------------+----------------+
-|  genblk1[19].fdiv2/clkDiv_reg_0    |                              |                                         |                1 |              1 |
-|  vga_sync_unit/CLK                 |                              | menu/p_0_out__0                         |                1 |              1 |
+| ~ats/crdTime[1]_i_2_n_0            |                              | ats/changeScene_reg[0]_P                |                1 |              1 |
 |  genblk1[0].fdiv2/clkDiv_reg_0     |                              |                                         |                1 |              1 |
+|  ats/genblk1[9].fdiv/clkDiv_reg_0  |                              |                                         |                1 |              1 |
+|  clk_IBUF_BUFG                     |                              | nolabel_line66/TxD_i_1_n_0              |                1 |              1 |
+|  fdivTarget2/clkDiv                | changeScene[2]_i_1_n_0       | ats/isDie                               |                1 |              1 |
 |  genblk1[10].fdiv2/clkDiv_reg_0    |                              |                                         |                1 |              1 |
-|  genblk1[22].fdiv2/clkDiv_reg_0    |                              |                                         |                1 |              1 |
 |  genblk1[20].fdiv2/clkDiv_reg_0    |                              |                                         |                1 |              1 |
 |  genblk1[23].fdiv2/clkDiv_reg_0    |                              |                                         |                1 |              1 |
-|  genblk1[1].fdiv2/clkDiv_reg_0     |                              |                                         |                1 |              1 |
-|  genblk1[24].fdiv2/clkDiv_reg_0    |                              |                                         |                1 |              1 |
 |  genblk1[21].fdiv2/clkDiv_reg_0    |                              |                                         |                1 |              1 |
-|  genblk1[3].fdiv2/clkDiv_reg_0     |                              |                                         |                1 |              1 |
+|  genblk1[1].fdiv2/clkDiv_reg_0     |                              |                                         |                1 |              1 |
+|  genblk1[19].fdiv2/clkDiv_reg_0    |                              |                                         |                1 |              1 |
+|  genblk1[22].fdiv2/clkDiv_reg_0    |                              |                                         |                1 |              1 |
 |  genblk1[26].fdiv2/clkDiv_reg_0    |                              |                                         |                1 |              1 |
-|  genblk1[2].fdiv2/clkDiv_reg_0     |                              |                                         |                1 |              1 |
 |  genblk1[11].fdiv2/clkDiv_reg_0    |                              |                                         |                1 |              1 |
+|  genblk1[24].fdiv2/clkDiv_reg_0    |                              |                                         |                1 |              1 |
 |  genblk1[25].fdiv2/clkDiv_reg_0    |                              |                                         |                1 |              1 |
+|  genblk1[3].fdiv2/clkDiv_reg_0     |                              |                                         |                1 |              1 |
 |  genblk1[27].fdiv2/clkDiv_reg_0    |                              |                                         |                1 |              1 |
-|  clk_IBUF_BUFG                     |                              | nolabel_line66/TxD_i_1_n_0              |                1 |              1 |
-|  genblk1[9].fdiv2/clkDiv_reg_0     |                              |                                         |                1 |              1 |
+|  genblk1[2].fdiv2/clkDiv_reg_0     |                              |                                         |                1 |              1 |
 |  genblk1[4].fdiv2/clkDiv_reg_0     |                              |                                         |                1 |              1 |
 |  genblk1[5].fdiv2/clkDiv_reg_0     |                              |                                         |                1 |              1 |
-|  genblk1[7].fdiv2/clkDiv_reg_0     |                              |                                         |                1 |              1 |
+|  genblk1[9].fdiv2/clkDiv_reg_0     |                              |                                         |                1 |              1 |
 |  genblk1[6].fdiv2/clkDiv_reg_0     |                              |                                         |                1 |              1 |
 |  genblk1[8].fdiv2/clkDiv_reg_0     |                              |                                         |                1 |              1 |
-|  genblk1[13].fdiv2/clkDiv_reg_0    |                              |                                         |                1 |              1 |
-|  genblk1[12].fdiv2/clkDiv_reg_0    |                              |                                         |                1 |              1 |
-|  genblk1[17].fdiv2/clkDiv_reg_0    |                              |                                         |                1 |              1 |
-|  genblk1[15].fdiv2/clkDiv_reg_0    |                              |                                         |                1 |              1 |
+|  genblk1[7].fdiv2/clkDiv_reg_0     |                              |                                         |                1 |              1 |
 |  genblk1[14].fdiv2/clkDiv_reg_0    |                              |                                         |                1 |              1 |
+|  genblk1[15].fdiv2/clkDiv_reg_0    |                              |                                         |                1 |              1 |
+|  genblk1[13].fdiv2/clkDiv_reg_0    |                              |                                         |                1 |              1 |
 |  genblk1[16].fdiv2/clkDiv_reg_0    |                              |                                         |                1 |              1 |
+|  genblk1[17].fdiv2/clkDiv_reg_0    |                              |                                         |                1 |              1 |
+|  genblk1[12].fdiv2/clkDiv_reg_0    |                              |                                         |                1 |              1 |
 |  genblk1[18].fdiv2/clkDiv_reg_0    |                              |                                         |                1 |              1 |
 |  ats/genblk1[11].fdiv/clkDiv_reg_0 |                              |                                         |                1 |              1 |
-|  ats/genblk1[10].fdiv/clkDiv_reg_0 |                              |                                         |                1 |              1 |
-|  ats/genblk1[12].fdiv/clkDiv_reg_0 |                              |                                         |                1 |              1 |
 |  ats/genblk1[0].fdiv/clkDiv_reg_0  |                              |                                         |                1 |              1 |
-|  ats/genblk1[17].fdiv/clkDiv       |                              |                                         |                1 |              1 |
+|  ats/genblk1[12].fdiv/clkDiv_reg_0 |                              |                                         |                1 |              1 |
+|  ats/genblk1[10].fdiv/clkDiv_reg_0 |                              |                                         |                1 |              1 |
 |  ats/genblk1[13].fdiv/clkDiv_reg_0 |                              |                                         |                1 |              1 |
-|  ats/genblk1[16].fdiv/clkDiv_reg_0 |                              |                                         |                1 |              1 |
-|  ats/genblk1[14].fdiv/clkDiv_reg_0 |                              |                                         |                1 |              1 |
 |  ats/genblk1[1].fdiv/clkDiv_reg_0  |                              |                                         |                1 |              1 |
+|  ats/genblk1[14].fdiv/clkDiv_reg_0 |                              |                                         |                1 |              1 |
 |  ats/genblk1[15].fdiv/clkDiv_reg_0 |                              |                                         |                1 |              1 |
+|  ats/genblk1[16].fdiv/clkDiv_reg_0 |                              |                                         |                1 |              1 |
+|  ats/genblk1[17].fdiv/clkDiv       |                              |                                         |                1 |              1 |
+|  ats/genblk1[7].fdiv/clkDiv_reg_0  |                              |                                         |                1 |              1 |
 |  ats/genblk1[4].fdiv/clkDiv_reg_0  |                              |                                         |                1 |              1 |
 |  ats/genblk1[3].fdiv/clkDiv_reg_0  |                              |                                         |                1 |              1 |
-|  ats/genblk1[6].fdiv/clkDiv_reg_0  |                              |                                         |                1 |              1 |
 |  ats/genblk1[5].fdiv/clkDiv_reg_0  |                              |                                         |                1 |              1 |
 |  ats/genblk1[2].fdiv/clkDiv_reg_0  |                              |                                         |                1 |              1 |
-|  ats/genblk1[7].fdiv/clkDiv_reg_0  |                              |                                         |                1 |              1 |
+|  ats/genblk1[6].fdiv/clkDiv_reg_0  |                              |                                         |                1 |              1 |
 |  ats/genblk1[8].fdiv/clkDiv_reg_0  |                              |                                         |                1 |              1 |
-|  ats/genblk1[9].fdiv/clkDiv_reg_0  |                              |                                         |                1 |              1 |
-| ~ats/crdTime[1]_i_3_n_0            |                              |                                         |                1 |              1 |
-|  newpic                            |                              |                                         |                1 |              2 |
-|  fdivTarget2/clkDiv                | changeScene[0]_i_1_n_0       | ats/isDie                               |                1 |              3 |
+|  fdivTarget2/clkDiv                | changeScene[2]_i_1_n_0       | ats/changeScene_reg[0]_P_0              |                1 |              2 |
+|  newpic                            |                              |                                         |                2 |              2 |
+|  fdivTarget2/clkDiv                |                              |                                         |                2 |              3 |
 |  clk_IBUF_BUFG                     | receiver_unit/bitcounter     | receiver_unit/bitcounter[3]_i_1_n_0     |                1 |              4 |
 |  clk_IBUF_BUFG                     | nolabel_line66/bitcounter    | nolabel_line66/bitcounter[3]_i_1__0_n_0 |                1 |              4 |
-|  fdivTarget2/clkDiv                |                              |                                         |                2 |              5 |
-|  newSpeed_y_reg[9]_i_3_n_0         |                              | ats/ec2/newSpeed_y[9]_i_1_n_0           |                1 |              6 |
-|  vga_sync_unit/CLK                 |                              |                                         |                4 |              7 |
-|  newSpeed_y_reg[9]_i_3_n_0         |                              | ats/ec1/newSpeed_y[9]_i_1_n_0           |                3 |              7 |
-|  clk_IBUF_BUFG                     | receiver_unit/E[0]           |                                         |                4 |              8 |
+|  clk_IBUF_BUFG                     | receiver_unit/direc16_out    |                                         |                2 |              5 |
+|  newSpeed_y_reg[9]_i_3_n_0         |                              | ats/ec2/newSpeed_y[9]_i_1_n_0           |                2 |              6 |
+|  newSpeed_y_reg[9]_i_3_n_0         |                              | ats/ec1/newSpeed_y[9]_i_1_n_0           |                2 |              7 |
+|  vga_sync_unit/p_tick              |                              |                                         |                5 |              8 |
+|  clk_IBUF_BUFG                     | receiver_unit/rxshiftreg     |                                         |                4 |              9 |
 |  newpic                            | ats/x_pos[9]_i_1_n_0         | ats/clear                               |                3 |              9 |
-|  clk_IBUF_BUFG                     | receiver_unit/rxshiftreg     |                                         |                2 |              9 |
-|  newSpeed_y_reg[9]_i_3_n_0         |                              | ats/ec1/newSpeed_x[9]_i_1_n_0           |                4 |              9 |
+|  newSpeed_y_reg[9]_i_3_n_0         |                              | ats/ec1/newSpeed_x[9]_i_1_n_0           |                3 |              9 |
 |  clk_IBUF_BUFG                     | ats/ec2/E[0]                 |                                         |                4 |             10 |
 |  clk_IBUF_BUFG                     | nolabel_line66/rightshiftreg |                                         |                2 |             10 |
-|  clk_IBUF_BUFG                     | vga_sync_unit/CLK            |                                         |                6 |             10 |
+|  clk_IBUF_BUFG                     | vga_sync_unit/p_tick         |                                         |                6 |             10 |
 |  newpic                            | ats/y_pos[9]_i_2_n_0         | ats/clear                               |                4 |             10 |
 |  clk_IBUF_BUFG                     |                              | receiver_unit/counter[0]_i_1_n_0        |                4 |             14 |
 |  clk_IBUF_BUFG                     |                              | nolabel_line66/counter[0]_i_1__0_n_0    |                4 |             14 |
-|  clk_IBUF_BUFG                     | transmit1                    | receiver_unit/E[0]                      |                4 |             16 |
-|  clk_IBUF_BUFG                     | vga_sync_unit/v_count_reg0   |                                         |               12 |             26 |
-|  newSpeed_y_reg[9]_i_3_n_0         |                              |                                         |               18 |             48 |
-|  clk_IBUF_BUFG                     |                              |                                         |               31 |             49 |
+|  clk_IBUF_BUFG                     | transmit1                    | receiver_unit/direc16_out               |                4 |             16 |
+|  clk_IBUF_BUFG                     | vga_sync_unit/v_count_reg0   |                                         |               16 |             25 |
+|  newSpeed_y_reg[9]_i_3_n_0         |                              |                                         |               17 |             48 |
+|  clk_IBUF_BUFG                     |                              |                                         |               32 |             50 |
 +------------------------------------+------------------------------+-----------------------------------------+------------------+----------------+
 
 

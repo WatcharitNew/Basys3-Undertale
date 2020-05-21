@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Thu May 21 18:20:21 2020
+| Date             : Thu May 21 22:33:00 2020
 | Host             : DESKTOP-VG3SLB4 running 64-bit major release  (build 9200)
 | Command          : report_power -file manageScene_power_routed.rpt -pb manageScene_power_summary_routed.pb -rpx manageScene_power_routed.rpx
 | Design           : manageScene
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.111        |
+| Total On-Chip Power (W)  | 0.110        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.039        |
+| Dynamic (W)              | 0.038        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.4         |
@@ -53,19 +53,19 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |     0.004 |     1804 |       --- |             --- |
-|   LUT as Logic |     0.003 |      931 |     20800 |            4.48 |
+| Slice Logic    |     0.004 |     1792 |       --- |             --- |
+|   LUT as Logic |     0.003 |      926 |     20800 |            4.45 |
 |   CARRY4       |    <0.001 |      196 |      8150 |            2.40 |
-|   Register     |    <0.001 |      329 |     41600 |            0.79 |
+|   Register     |    <0.001 |      324 |     41600 |            0.78 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
 |   F7/F8 Muxes  |    <0.001 |        1 |     32600 |           <0.01 |
 |   Others       |     0.000 |      170 |       --- |             --- |
-| Signals        |     0.006 |     1669 |       --- |             --- |
+| Signals        |     0.006 |     1659 |       --- |             --- |
 | Block RAM      |     0.015 |        4 |        50 |            8.00 |
 | DSPs           |     0.011 |       13 |        90 |           14.44 |
 | I/O            |    <0.001 |       17 |       106 |           16.04 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.111 |          |           |                 |
+| Total          |     0.110 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -144,9 +144,9 @@ Table of Contents
 +-----------------+-----------+
 | Name            | Power (W) |
 +-----------------+-----------+
-| manageScene     |     0.039 |
-|   ats           |     0.020 |
-|     ec1         |     0.009 |
+| manageScene     |     0.038 |
+|   ats           |     0.019 |
+|     ec1         |     0.008 |
 |     ec2         |     0.008 |
 |     t1          |     0.002 |
 |       FontRom   |     0.002 |

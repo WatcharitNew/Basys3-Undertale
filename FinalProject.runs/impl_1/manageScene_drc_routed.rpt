@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Thu May 21 18:20:18 2020
+| Date         : Thu May 21 22:32:58 2020
 | Host         : DESKTOP-VG3SLB4 running 64-bit major release  (build 9200)
 | Command      : report_drc -file manageScene_drc_routed.rpt -pb manageScene_drc_routed.pb -rpx manageScene_drc_routed.rpx
 | Design       : manageScene
@@ -308,12 +308,12 @@ Related violations: <none>
 
 PDRC-153#1 Warning
 Gated clock check  
-Net ats/crdTime[1]_i_3_n_0 is a gated clock net sourced by a combinational pin ats/crdTime[1]_i_3/O, cell ats/crdTime[1]_i_3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net ats/crdTime[1]_i_2_n_0 is a gated clock net sourced by a combinational pin ats/crdTime[1]_i_2/O, cell ats/crdTime[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#2 Warning
 Gated clock check  
-Net vga_sync_unit/CLK is a gated clock net sourced by a combinational pin vga_sync_unit/rgb_reg[11]_i_2/O, cell vga_sync_unit/rgb_reg[11]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net vga_sync_unit/p_tick is a gated clock net sourced by a combinational pin vga_sync_unit/rgb_reg[11]_i_2/O, cell vga_sync_unit/rgb_reg[11]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PLHOLDVIO-2#1 Warning
