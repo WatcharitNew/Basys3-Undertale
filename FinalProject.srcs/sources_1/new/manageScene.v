@@ -36,6 +36,11 @@ module manageScene(
 	wire [11:0] rgb_reg_ls;
 	wire [11:0] rgb_reg_go;
 	wire [11:0] rgb_reg_cred;
+	wire [11:0] rgb_reg_menu;
+	
+	// for multiplexing RsTx from multiple scene
+	reg RsTx_reg;
+	wire RsTx_ats, RsTx_menu;
 	
 	// video status output from vga_sync to tell when to route out rgb signal to DAC
 	wire video_on;
@@ -70,7 +75,7 @@ module manageScene(
     end endgenerate
     ClockDivider fdivTarget2(atsClk,tclk[28]);
     
-    reg [1:0] changeScene;
+    reg [2:0] changeScene;
     reg newScene_ats;
     
     reg [1:0] stateScene_ats;
@@ -94,17 +99,22 @@ module manageScene(
         crdTime = 0;
     end
     
-    afterTurnScene ats(clk, video_on, p_tick, x, y, RsRx, newScene_ats, maxHealth, rgb_reg_ats, RsTx, newHealth);
+    afterTurnScene ats(clk, video_on, p_tick, x, y, RsRx, newScene_ats, maxHealth, rgb_reg_ats, RsTx_ats, newHealth);
     loadingScene ls(clk,video_on, p_tick, x, y, rgb_reg_ls);
     gameOver go(clk,video_on, p_tick, x, y, rgb_reg_go);
     creditScene cred(clk, video_on, p_tick, x, y, rgb_reg_cred);
+    menuScene menu(clk, video_on, p_tick, x, y, RsRx, selectedMenu, rgb_reg_menu, RsTx_menu);
     
     always @(posedge clk)
     begin
         if (changeScene == 0) rgb_reg = rgb_reg_cred;
         else if(changeScene == 1)  rgb_reg = rgb_reg_ls;
         else if (changeScene == 2)   rgb_reg = rgb_reg_ats;
-        else if(changeScene == 3) rgb_reg = rgb_reg_go;
+        else if(changeScene == 3) rgb_reg = rgb_reg_menu;
+        else if (changeScene == 4) rgb_reg = rgb_reg_menu;
+        
+        if (changeScene == 2) RsTx_reg = RsTx_ats;
+        else if (changeScene == 4) RsTx_reg = RsTx_menu;
     end
     
     wire isDie = (newHealth <= 1);
@@ -120,9 +130,11 @@ module manageScene(
                 changeScene = 1; 
         end
         else if (changeScene == 1) begin changeScene = 2; end
-        else if (changeScene == 2) begin newScene_ats <= ~newScene_ats; changeScene = 1; end
+        else if (changeScene == 2) begin newScene_ats <= ~newScene_ats; changeScene = 4; end
+        else if (changeScene == 4) begin changeScene = 2; end
     end
     
     // output
     assign {vgaRed,vgaGreen,vgaBlue} = (video_on) ? rgb_reg : 12'b0;
+    assign RsTx = RsTx_reg;
 endmodule

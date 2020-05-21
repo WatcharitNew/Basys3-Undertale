@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Wed May 20 23:02:34 2020
-| Host         : DESKTOP-KFTK1LL running 64-bit major release  (build 9200)
+| Date         : Thu May 21 05:09:26 2020
+| Host         : DESKTOP-VG3SLB4 running 64-bit major release  (build 9200)
 | Command      : report_drc -file manageScene_drc_opted.rpt -pb manageScene_drc_opted.pb -rpx manageScene_drc_opted.rpx
 | Design       : manageScene
 | Device       : xc7a35tcpg236-1
@@ -307,8 +307,8 @@ Related violations: <none>
 
 PLHOLDVIO-2#1 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT vga_sync_unit/newpic_i_2 is driving clock pin of 6 cells. This could lead to large hold time violations. Involved cells are:
-ats/newpic_reg, ats/rgb_reg_reg[11], ats/rgb_reg_reg[3], ats/rgb_reg_reg[7], cred/rgb_reg_reg[0], ls/rgb_reg_reg[7]
+A LUT vga_sync_unit/newpic_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. Involved cells are:
+ats/newpic_reg, ats/rgb_reg_reg[11], ats/rgb_reg_reg[3], ats/rgb_reg_reg[7], cred/rgb_reg_reg[0], ls/rgb_reg_reg[7], menu/rgb_reg_reg[11], menu/rgb_reg_reg[7]
 Related violations: <none>
 
 
