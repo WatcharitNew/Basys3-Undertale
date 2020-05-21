@@ -95,7 +95,10 @@ module manageScene(
     //tell whether this is a new picture
     reg newpic;
     
+    //menu scene state
     reg [1:0] selectedMenu;
+    reg menuGo, menuWent;
+    
     initial begin
         changeScene = 0;
         newScene_ats = 1;
@@ -105,6 +108,8 @@ module manageScene(
         crdTime = 0;
         direc = 0;
         selectedMenu = 0;
+        menuGo = 0;
+        menuWent = 0;
     end
     
     
@@ -121,6 +126,7 @@ module manageScene(
     
     always @(posedge clk)
     begin
+        if (menuGo == 1 && menuWent == 1) menuGo <= 0;
         if (newpic==1 && direc!=0) direc=0;
             if (state==1 && nextstate==0)
                 begin
@@ -129,7 +135,10 @@ module manageScene(
                 "a": begin direc=2; selectedMenu <= selectedMenu+1;TxData="A"; end
                 "s": begin direc=3; TxData="S"; end
                 "d": begin direc=4; selectedMenu <= selectedMenu-1;TxData="D"; end
-                " ": begin TxData="z"; end
+                " ": begin
+                    TxData="z";
+                    if (menuGo == 0) menuGo <= 1;
+                end
                 default: begin TxData=""; end
                 endcase 
                 transmit = 1;
@@ -158,7 +167,7 @@ module manageScene(
         if (changeScene == 0) rgb_reg = rgb_reg_cred;
         else if(changeScene == 1)  rgb_reg = rgb_reg_ls;
         else if (changeScene == 2)   rgb_reg = rgb_reg_ats;
-        else if(changeScene == 3) rgb_reg = rgb_reg_menu;
+        else if(changeScene == 3) rgb_reg = rgb_reg_go;
         else if (changeScene == 4) rgb_reg = rgb_reg_menu;
         
         
@@ -167,7 +176,7 @@ module manageScene(
     
     wire isDie = (newHealth <= 1);
     
-    always @(posedge atsClk or posedge isDie)
+    always @(posedge atsClk or posedge isDie or posedge menuGo)
     begin
         if(isDie) begin changeScene = 3; end 
 //        else if(changeScene == 0) begin newScene_ats <= ~newScene_ats; changeScene = 1; end
@@ -175,11 +184,22 @@ module manageScene(
         begin 
             crdTime <= crdTime + 1;
             if(crdTime == 2)
-                changeScene = 1; 
+                changeScene = 4; 
         end
         else if (changeScene == 1) begin changeScene = 2; end
         else if (changeScene == 2) begin newScene_ats <= ~newScene_ats; changeScene = 4; end
-        else if (changeScene == 4) begin changeScene = 2; end
+        else if (changeScene == 4) begin
+               if (menuGo == 1) begin 
+                    if (menuWent == 1) menuWent <= 0;
+                    case (selectedMenu)
+                        0: changeScene <= 1;
+                        1: changeScene <= 1;
+                        2: changeScene <= 1;
+                        3: changeScene <= 1;
+                    endcase
+                    menuWent <= 1;
+               end
+        end
     end
     
     // output

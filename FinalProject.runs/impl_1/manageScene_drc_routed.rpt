@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Thu May 21 14:17:09 2020
-| Host         : DESKTOP-KFTK1LL running 64-bit major release  (build 9200)
+| Date         : Thu May 21 17:15:24 2020
+| Host         : DESKTOP-VG3SLB4 running 64-bit major release  (build 9200)
 | Command      : report_drc -file manageScene_drc_routed.rpt -pb manageScene_drc_routed.pb -rpx manageScene_drc_routed.rpx
 | Design       : manageScene
 | Device       : xc7a35tcpg236-1
@@ -24,7 +24,7 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 54
+             Violations found: 55
 +-------------+----------+-------------------------------------------------------------+------------+
 | Rule        | Severity | Description                                                 | Violations |
 +-------------+----------+-------------------------------------------------------------+------------+
@@ -32,7 +32,7 @@ Table of Contents
 | DPIP-1      | Warning  | Input pipelining                                            | 25         |
 | DPOP-1      | Warning  | PREG Output pipelining                                      | 13         |
 | DPOP-2      | Warning  | MREG Output pipelining                                      | 13         |
-| PDRC-153    | Warning  | Gated clock check                                           | 1          |
+| PDRC-153    | Warning  | Gated clock check                                           | 2          |
 | PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
 +-------------+----------+-------------------------------------------------------------+------------+
 
@@ -307,6 +307,11 @@ DSP ats/rgb_reg3 multiplier stage ats/rgb_reg3/P[47:0] is not pipelined (MREG=0)
 Related violations: <none>
 
 PDRC-153#1 Warning
+Gated clock check  
+Net ats/isDie is a gated clock net sourced by a combinational pin ats/changeScene[0]_i_2/O, cell ats/changeScene[0]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
 Gated clock check  
 Net vga_sync_unit/CLK is a gated clock net sourced by a combinational pin vga_sync_unit/rgb_reg[11]_i_2/O, cell vga_sync_unit/rgb_reg[11]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>

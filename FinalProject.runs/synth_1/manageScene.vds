@@ -2,12 +2,12 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Thu May 21 14:14:13 2020
-# Process ID: 11396
-# Current directory: F:/HWLAB/Basys3-Undertale/FinalProject.runs/synth_1
+# Start of session at: Thu May 21 17:12:21 2020
+# Process ID: 15836
+# Current directory: C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.runs/synth_1
 # Command line: vivado.exe -log manageScene.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source manageScene.tcl
-# Log file: F:/HWLAB/Basys3-Undertale/FinalProject.runs/synth_1/manageScene.vds
-# Journal file: F:/HWLAB/Basys3-Undertale/FinalProject.runs/synth_1\vivado.jou
+# Log file: C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.runs/synth_1/manageScene.vds
+# Journal file: C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source manageScene.tcl -notrace
 Command: synth_design -top manageScene -part xc7a35tcpg236-1
@@ -15,17 +15,17 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 20156 
-WARNING: [Synth 8-2611] redeclaration of ansi port state is not allowed [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/receiver.v:36]
-WARNING: [Synth 8-2611] redeclaration of ansi port nextstate is not allowed [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/receiver.v:36]
+INFO: Helper process launched with PID 8664 
+WARNING: [Synth 8-2611] redeclaration of ansi port state is not allowed [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/receiver.v:36]
+WARNING: [Synth 8-2611] redeclaration of ansi port nextstate is not allowed [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/receiver.v:36]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 392.191 ; gain = 113.152
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 392.215 ; gain = 113.383
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'manageScene' [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:23]
-INFO: [Synth 8-6157] synthesizing module 'ClockDivider' [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/CLockDivider.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'ClockDivider' (1#1) [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/CLockDivider.v:23]
-WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:104]
-INFO: [Synth 8-6157] synthesizing module 'vga_sync' [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_sync.v:23]
+INFO: [Synth 8-6157] synthesizing module 'manageScene' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ClockDivider' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/CLockDivider.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClockDivider' (1#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/CLockDivider.v:23]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:107]
+INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_sync.v:23]
 	Parameter H_DISPLAY bound to: 640 - type: integer 
 	Parameter H_L_BORDER bound to: 48 - type: integer 
 	Parameter H_R_BORDER bound to: 16 - type: integer 
@@ -40,121 +40,123 @@ INFO: [Synth 8-6157] synthesizing module 'vga_sync' [F:/HWLAB/Basys3-Undertale/F
 	Parameter V_MAX bound to: 524 - type: integer 
 	Parameter START_V_RETRACE bound to: 513 - type: integer 
 	Parameter END_V_RETRACE bound to: 514 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (2#1) [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_sync.v:23]
-INFO: [Synth 8-6157] synthesizing module 'receiver' [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/receiver.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (2#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_sync.v:23]
+INFO: [Synth 8-6157] synthesizing module 'receiver' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/receiver.v:23]
 	Parameter clk_freq bound to: 100000000 - type: integer 
 	Parameter baud_rate bound to: 9600 - type: integer 
 	Parameter div_sample bound to: 4 - type: integer 
 	Parameter div_counter bound to: 2604 - type: integer 
 	Parameter mid_sample bound to: 2 - type: integer 
 	Parameter div_bit bound to: 10 - type: integer 
-INFO: [Synth 8-226] default block is never used [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/receiver.v:82]
-INFO: [Synth 8-6155] done synthesizing module 'receiver' (3#1) [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/receiver.v:23]
-INFO: [Synth 8-6157] synthesizing module 'transmitter' [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/transmitter.v:23]
-INFO: [Synth 8-226] default block is never used [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/transmitter.v:77]
-INFO: [Synth 8-6155] done synthesizing module 'transmitter' (4#1) [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/transmitter.v:23]
-INFO: [Synth 8-6157] synthesizing module 'afterTurnScene' [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:22]
-INFO: [Synth 8-6157] synthesizing module 'enemyCircle' [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:23]
-WARNING: [Synth 8-6090] variable 'newEnemy_x' is written by both blocking and non-blocking assignments, entire logic could be removed [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:68]
-WARNING: [Synth 8-6090] variable 'newEnemy_y' is written by both blocking and non-blocking assignments, entire logic could be removed [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:69]
-WARNING: [Synth 8-6090] variable 'newSpeed_x' is written by both blocking and non-blocking assignments, entire logic could be removed [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:70]
-WARNING: [Synth 8-6090] variable 'newSpeed_x' is written by both blocking and non-blocking assignments, entire logic could be removed [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:71]
-WARNING: [Synth 8-6090] variable 'newSpeed_y' is written by both blocking and non-blocking assignments, entire logic could be removed [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:72]
-WARNING: [Synth 8-6090] variable 'newSpeed_y' is written by both blocking and non-blocking assignments, entire logic could be removed [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:73]
-INFO: [Synth 8-6155] done synthesizing module 'enemyCircle' (5#1) [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:23]
-INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2' [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-226] default block is never used [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/receiver.v:82]
+INFO: [Synth 8-6155] done synthesizing module 'receiver' (3#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/receiver.v:23]
+INFO: [Synth 8-6157] synthesizing module 'transmitter' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/transmitter.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/transmitter.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'transmitter' (4#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/transmitter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'afterTurnScene' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:22]
+INFO: [Synth 8-6157] synthesizing module 'enemyCircle' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:23]
+WARNING: [Synth 8-6090] variable 'newEnemy_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:68]
+WARNING: [Synth 8-6090] variable 'newEnemy_y' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:69]
+WARNING: [Synth 8-6090] variable 'newSpeed_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:70]
+WARNING: [Synth 8-6090] variable 'newSpeed_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:71]
+WARNING: [Synth 8-6090] variable 'newSpeed_y' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:72]
+WARNING: [Synth 8-6090] variable 'newSpeed_y' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'enemyCircle' (5#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:23]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
 	Parameter displayText bound to: HP - type: string 
-INFO: [Synth 8-638] synthesizing module 'Font_Rom' [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Font_Rom.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'Font_Rom' (6#1) [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Font_Rom.vhd:40]
-WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
-WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
-WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2' (7#1) [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
-INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized0' [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Font_Rom' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Font_Rom.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Font_Rom' (6#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Font_Rom.vhd:40]
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2' (7#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized0' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
 	Parameter displayText bound to: | - type: string 
-WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
-WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
-WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized0' (7#1) [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
-WARNING: [Synth 8-6090] variable 'y_pos' is written by both blocking and non-blocking assignments, entire logic could be removed [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:156]
-WARNING: [Synth 8-6090] variable 'x_pos' is written by both blocking and non-blocking assignments, entire logic could be removed [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:158]
-WARNING: [Synth 8-6090] variable 'y_pos' is written by both blocking and non-blocking assignments, entire logic could be removed [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:160]
-WARNING: [Synth 8-6090] variable 'x_pos' is written by both blocking and non-blocking assignments, entire logic could be removed [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:162]
-WARNING: [Synth 8-6090] variable 'oldHitEnemy' is written by both blocking and non-blocking assignments, entire logic could be removed [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:170]
-WARNING: [Synth 8-6090] variable 'oldHitEnemy' is written by both blocking and non-blocking assignments, entire logic could be removed [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:171]
-INFO: [Synth 8-6155] done synthesizing module 'afterTurnScene' (8#1) [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:22]
-INFO: [Synth 8-6157] synthesizing module 'loadingScene' [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/blackScene.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'loadingScene' (9#1) [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/blackScene.v:23]
-INFO: [Synth 8-6157] synthesizing module 'gameOver' [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/gameOver.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'gameOver' (10#1) [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/gameOver.v:23]
-INFO: [Synth 8-6157] synthesizing module 'creditScene' [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/creditScene.v:22]
-INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized1' [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized0' (7#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-6090] variable 'y_pos' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:156]
+WARNING: [Synth 8-6090] variable 'x_pos' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:158]
+WARNING: [Synth 8-6090] variable 'y_pos' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:160]
+WARNING: [Synth 8-6090] variable 'x_pos' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:162]
+WARNING: [Synth 8-6090] variable 'oldHitEnemy' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:170]
+WARNING: [Synth 8-6090] variable 'oldHitEnemy' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:171]
+INFO: [Synth 8-6155] done synthesizing module 'afterTurnScene' (8#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v:22]
+INFO: [Synth 8-6157] synthesizing module 'loadingScene' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/blackScene.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'loadingScene' (9#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/blackScene.v:23]
+INFO: [Synth 8-6157] synthesizing module 'gameOver' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/gameOver.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'gameOver' (10#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/gameOver.v:23]
+INFO: [Synth 8-6157] synthesizing module 'creditScene' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/creditScene.v:22]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized1' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
 	Parameter displayText bound to: CREDIT - type: string 
-WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
-WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
-WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized1' (10#1) [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
-INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized2' [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized1' (10#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized2' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
 	Parameter displayText bound to: 6030124821 Chavin Chuangchaichatchavarn - type: string 
-WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
-WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
-WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized2' (10#1) [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
-INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized3' [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized2' (10#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized3' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
 	Parameter displayText bound to: 6031054721 Watcharit Tuntayakul - type: string 
-WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
-WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
-WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized3' (10#1) [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
-INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized4' [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized3' (10#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized4' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
 	Parameter displayText bound to: Insert Name 3 - type: string 
-WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
-WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
-WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized4' (10#1) [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
-INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized5' [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized4' (10#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized5' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
 	Parameter displayText bound to: Insert Name 4 - type: string 
-WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
-WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
-WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized5' (10#1) [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
-INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized6' [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized5' (10#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized6' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
 	Parameter displayText bound to: Insert Name 5 - type: string 
-WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
-WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
-WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized6' (10#1) [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
-INFO: [Synth 8-6155] done synthesizing module 'creditScene' (11#1) [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/creditScene.v:22]
-INFO: [Synth 8-6157] synthesizing module 'menuScene' [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/menuScene.v:23]
-INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized7' [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized6' (10#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-6155] done synthesizing module 'creditScene' (11#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/creditScene.v:22]
+INFO: [Synth 8-6157] synthesizing module 'menuScene' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/menuScene.v:23]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized7' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
 	Parameter displayText bound to: fight - type: string 
-WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
-WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
-WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized7' (11#1) [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
-INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized8' [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized7' (11#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized8' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
 	Parameter displayText bound to: act - type: string 
-WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
-WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
-WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized8' (11#1) [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
-INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized9' [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized8' (11#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized9' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
 	Parameter displayText bound to: item - type: string 
-WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
-WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
-WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized9' (11#1) [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
-INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized10' [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized9' (11#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized10' [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
 	Parameter displayText bound to: spare - type: string 
-WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
-WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
-WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized10' (11#1) [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
-INFO: [Synth 8-6155] done synthesizing module 'menuScene' (12#1) [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/menuScene.v:23]
-WARNING: [Synth 8-5788] Register crdTime_reg in module manageScene is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:176]
-WARNING: [Synth 8-5788] Register newScene_ats_reg in module manageScene is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:148]
-WARNING: [Synth 8-3848] Net RsTx_reg in module/entity manageScene does not have driver. [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:42]
-INFO: [Synth 8-6155] done synthesizing module 'manageScene' (13#1) [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:23]
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized10' (11#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-6155] done synthesizing module 'menuScene' (12#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/menuScene.v:23]
+WARNING: [Synth 8-5788] Register changeScene_reg in module manageScene is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:181]
+WARNING: [Synth 8-5788] Register crdTime_reg in module manageScene is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:185]
+WARNING: [Synth 8-5788] Register newScene_ats_reg in module manageScene is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:157]
+WARNING: [Synth 8-5788] Register menuWent_reg in module manageScene is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:193]
+WARNING: [Synth 8-3848] Net RsTx_reg in module/entity manageScene does not have driver. [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'manageScene' (13#1) [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:23]
 WARNING: [Synth 8-3331] design menuScene has unconnected port video_on
 WARNING: [Synth 8-3331] design menuScene has unconnected port newpic
 WARNING: [Synth 8-3331] design creditScene has unconnected port video_on
@@ -185,7 +187,7 @@ WARNING: [Synth 8-3331] design loadingScene has unconnected port video_on
 WARNING: [Synth 8-3331] design afterTurnScene has unconnected port video_on
 WARNING: [Synth 8-3331] design vga_sync has unconnected port reset
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 439.891 ; gain = 160.852
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 440.375 ; gain = 161.543
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -198,63 +200,62 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 439.891 ; gain = 160.852
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 440.375 ; gain = 161.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 439.891 ; gain = 160.852
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 440.375 ; gain = 161.543
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc]
-Finished Parsing XDC File [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/manageScene_propImpl.xdc].
+Parsing XDC File [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/manageScene_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/manageScene_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 785.230 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 787.234 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 785.234 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 787.234 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 785.234 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 785.234 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 787.234 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 787.234 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 785.234 ; gain = 506.195
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 787.234 ; gain = 508.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 785.234 ; gain = 506.195
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 787.234 ; gain = 508.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 785.234 ; gain = 506.195
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 787.234 ; gain = 508.402
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "shift" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "inc_bitcounter" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "rgb_reg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:60]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:60]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:60]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:60]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:60]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:60]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:60]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:60]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:60]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:60]
 INFO: [Synth 8-5546] ROM "direc" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "TxData" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "selectedMenu" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5544] ROM "rgb_reg" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "changeScene" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "changeScene" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "crdTime" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "p_0_in" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 785.234 ; gain = 506.195
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 787.234 ; gain = 508.402
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -288,7 +289,7 @@ Detailed RTL Component Info :
 	                4 Bit    Registers := 2     
 	                3 Bit    Registers := 2     
 	                2 Bit    Registers := 4     
-	                1 Bit    Registers := 91    
+	                1 Bit    Registers := 93    
 +---Multipliers : 
 	                32x32  Multipliers := 8     
 +---ROMs : 
@@ -308,13 +309,14 @@ Detailed RTL Component Info :
 	   2 Input      6 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 81    
 	   2 Input      4 Bit        Muxes := 3     
-	   2 Input      3 Bit        Muxes := 7     
+	   2 Input      3 Bit        Muxes := 10    
 	   4 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
 	   7 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 34    
-	   4 Input      1 Bit        Muxes := 4     
-	   6 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 38    
+	   4 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 4     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -331,18 +333,18 @@ Detailed RTL Component Info :
 	                8 Bit    Registers := 1     
 	                3 Bit    Registers := 2     
 	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
 +---Muxes : 
 	   4 Input     12 Bit        Muxes := 1     
 	   2 Input     12 Bit        Muxes := 1     
 	   6 Input      7 Bit        Muxes := 1     
 	   2 Input      7 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
 	   4 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
 	   7 Input      3 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 10    
-	   4 Input      1 Bit        Muxes := 3     
-	   6 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 14    
+	   6 Input      1 Bit        Muxes := 4     
 Module vga_sync 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -645,10 +647,10 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:83]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:83]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:83]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [F:/HWLAB/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:83]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:83]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:83]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:83]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:83]
 DSP Report: Generating DSP ec2/hitEnemy4, operation Mode is: A*B.
 DSP Report: operator ec2/hitEnemy4 is absorbed into DSP ec2/hitEnemy4.
 DSP Report: operator ec2/hitEnemy4 is absorbed into DSP ec2/hitEnemy4.
@@ -689,7 +691,6 @@ DSP Report: Generating DSP rgb_reg3, operation Mode is: (C:0x1a4)-A*(B:0x24).
 DSP Report: operator rgb_reg3 is absorbed into DSP rgb_reg3.
 DSP Report: operator healthBar is absorbed into DSP rgb_reg3.
 INFO: [Synth 8-5544] ROM "receiver_unit/shift" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "changeScene" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "selectedMenu" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "TxData" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-3331] design menuScene has unconnected port video_on
@@ -699,36 +700,49 @@ WARNING: [Synth 8-3331] design afterTurnScene has unconnected port video_on
 WARNING: [Synth 8-3331] design manageScene has unconnected port reset
 INFO: [Synth 8-3886] merging instance 'TxData_reg[5]' (FDE) to 'TxData_reg[3]'
 INFO: [Synth 8-3886] merging instance 'TxData_reg[4]' (FDE) to 'TxData_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (menuWent_reg)
+INFO: [Synth 8-3886] merging instance 'menu/rgb_reg_reg[0]' (FDR) to 'menu/rgb_reg_reg[1]'
 INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[0]' (FDR) to 'ls/rgb_reg_reg[11]'
 INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[0]' (FDR) to 'ats/rgb_reg_reg[3]'
-INFO: [Synth 8-3886] merging instance 'menu/rgb_reg_reg[0]' (FDR) to 'menu/rgb_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'go/rgb_reg_reg[0]' (FD) to 'go/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'menu/rgb_reg_reg[1]' (FDR) to 'menu/rgb_reg_reg[2]'
 INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[1]' (FDR) to 'ls/rgb_reg_reg[11]'
 INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[1]' (FDR) to 'ats/rgb_reg_reg[3]'
-INFO: [Synth 8-3886] merging instance 'menu/rgb_reg_reg[1]' (FDR) to 'menu/rgb_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'go/rgb_reg_reg[1]' (FD) to 'go/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'menu/rgb_reg_reg[2]' (FDR) to 'menu/rgb_reg_reg[3]'
 INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[2]' (FDR) to 'ls/rgb_reg_reg[11]'
 INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[2]' (FDR) to 'ats/rgb_reg_reg[3]'
-INFO: [Synth 8-3886] merging instance 'menu/rgb_reg_reg[2]' (FDR) to 'menu/rgb_reg_reg[3]'
-INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[3]' (FDR) to 'ls/rgb_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'go/rgb_reg_reg[2]' (FD) to 'go/rgb_reg_reg[7]'
 INFO: [Synth 8-3886] merging instance 'menu/rgb_reg_reg[3]' (FDR) to 'menu/rgb_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[3]' (FDR) to 'ls/rgb_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'go/rgb_reg_reg[3]' (FD) to 'go/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'menu/rgb_reg_reg[4]' (FDR) to 'menu/rgb_reg_reg[5]'
 INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[4]' (FDS) to 'ls/rgb_reg_reg[7]'
 INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[4]' (FDR) to 'ats/rgb_reg_reg[7]'
-INFO: [Synth 8-3886] merging instance 'menu/rgb_reg_reg[4]' (FDR) to 'menu/rgb_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'go/rgb_reg_reg[4]' (FD) to 'go/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'menu/rgb_reg_reg[5]' (FDR) to 'menu/rgb_reg_reg[6]'
 INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[5]' (FDS) to 'ls/rgb_reg_reg[7]'
 INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[5]' (FDR) to 'ats/rgb_reg_reg[7]'
-INFO: [Synth 8-3886] merging instance 'menu/rgb_reg_reg[5]' (FDR) to 'menu/rgb_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'go/rgb_reg_reg[5]' (FD) to 'go/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'menu/rgb_reg_reg[6]' (FDR) to 'menu/rgb_reg_reg[7]'
 INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[6]' (FDS) to 'ls/rgb_reg_reg[7]'
 INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[6]' (FDR) to 'ats/rgb_reg_reg[7]'
-INFO: [Synth 8-3886] merging instance 'menu/rgb_reg_reg[6]' (FDR) to 'menu/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'go/rgb_reg_reg[6]' (FD) to 'go/rgb_reg_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\go/rgb_reg_reg[7] )
+INFO: [Synth 8-3886] merging instance 'menu/rgb_reg_reg[8]' (FDS) to 'menu/rgb_reg_reg[9]'
 INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[8]' (FDR) to 'ls/rgb_reg_reg[11]'
 INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[8]' (FDS) to 'ats/rgb_reg_reg[9]'
-INFO: [Synth 8-3886] merging instance 'menu/rgb_reg_reg[8]' (FDS) to 'menu/rgb_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'go/rgb_reg_reg[8]' (FD) to 'go/rgb_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'menu/rgb_reg_reg[9]' (FDS) to 'menu/rgb_reg_reg[10]'
 INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[9]' (FDR) to 'ls/rgb_reg_reg[11]'
 INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[9]' (FDS) to 'ats/rgb_reg_reg[10]'
-INFO: [Synth 8-3886] merging instance 'menu/rgb_reg_reg[9]' (FDS) to 'menu/rgb_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'go/rgb_reg_reg[9]' (FD) to 'go/rgb_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'menu/rgb_reg_reg[10]' (FDS) to 'menu/rgb_reg_reg[11]'
 INFO: [Synth 8-3886] merging instance 'ls/rgb_reg_reg[10]' (FDR) to 'ls/rgb_reg_reg[11]'
 INFO: [Synth 8-3886] merging instance 'ats/rgb_reg_reg[10]' (FDS) to 'ats/rgb_reg_reg[11]'
-INFO: [Synth 8-3886] merging instance 'menu/rgb_reg_reg[10]' (FDS) to 'menu/rgb_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'go/rgb_reg_reg[10]' (FD) to 'go/rgb_reg_reg[11]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ls/rgb_reg_reg[11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\go/rgb_reg_reg[11] )
 INFO: [Synth 8-3886] merging instance 'rgb_reg_reg[0]' (FDE) to 'rgb_reg_reg[3]'
 INFO: [Synth 8-3886] merging instance 'rgb_reg_reg[1]' (FDE) to 'rgb_reg_reg[3]'
 INFO: [Synth 8-3886] merging instance 'rgb_reg_reg[2]' (FDE) to 'rgb_reg_reg[3]'
@@ -738,8 +752,9 @@ INFO: [Synth 8-3886] merging instance 'rgb_reg_reg[6]' (FDE) to 'rgb_reg_reg[7]'
 INFO: [Synth 8-3886] merging instance 'rgb_reg_reg[8]' (FDE) to 'rgb_reg_reg[11]'
 INFO: [Synth 8-3886] merging instance 'rgb_reg_reg[9]' (FDE) to 'rgb_reg_reg[11]'
 INFO: [Synth 8-3886] merging instance 'rgb_reg_reg[10]' (FDE) to 'rgb_reg_reg[11]'
+WARNING: [Synth 8-3332] Sequential element (changeScene_reg[2]_P) is unused and will be removed from module manageScene.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 785.234 ; gain = 506.195
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 787.234 ; gain = 508.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -821,13 +836,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 848.930 ; gain = 569.891
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 848.664 ; gain = 569.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 883.250 ; gain = 604.211
+Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 882.391 ; gain = 603.559
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -856,7 +871,7 @@ INFO: [Synth 8-6837] The timing for the instance menu/fight/FontRom/fontRow_reg 
 INFO: [Synth 8-6837] The timing for the instance menu/item/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance menu/item/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 890.816 ; gain = 611.777
+Finished Technology Mapping : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 890.488 ; gain = 611.656
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -880,7 +895,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 890.816 ; gain = 611.777
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 890.488 ; gain = 611.656
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -893,7 +908,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 890.816 ; gain = 611.777
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 890.488 ; gain = 611.656
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -905,25 +920,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 890.816 ; gain = 611.777
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 890.488 ; gain = 611.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 890.816 ; gain = 611.777
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 890.488 ; gain = 611.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 890.816 ; gain = 611.777
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 890.488 ; gain = 611.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 890.816 ; gain = 611.777
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 890.488 ; gain = 611.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -944,27 +959,28 @@ Report Cell Usage:
 |3     |DSP48E1   |    12|
 |4     |DSP48E1_1 |     1|
 |5     |LUT1      |   167|
-|6     |LUT2      |   356|
-|7     |LUT3      |   113|
-|8     |LUT4      |   112|
-|9     |LUT5      |   128|
-|10    |LUT6      |   222|
+|6     |LUT2      |   354|
+|7     |LUT3      |   114|
+|8     |LUT4      |   118|
+|9     |LUT5      |   130|
+|10    |LUT6      |   218|
 |11    |MUXF7     |     1|
 |12    |RAMB18E1  |     8|
 |13    |FDCE      |     1|
 |14    |FDPE      |     2|
-|15    |FDRE      |   287|
+|15    |FDRE      |   289|
 |16    |FDSE      |    17|
-|17    |IBUF      |     2|
-|18    |OBUF      |    15|
+|17    |LDC       |     1|
+|18    |IBUF      |     2|
+|19    |OBUF      |    15|
 +------+----------+------+
 
 Report Instance Areas: 
 +------+-----------------------+----------------------------------+------+
 |      |Instance               |Module                            |Cells |
 +------+-----------------------+----------------------------------+------+
-|1     |top                    |                                  |  1642|
-|2     |  ats                  |afterTurnScene                    |   646|
+|1     |top                    |                                  |  1648|
+|2     |  ats                  |afterTurnScene                    |   649|
 |3     |    ec1                |enemyCircle                       |   224|
 |4     |    ec2                |enemyCircle_37                    |   203|
 |5     |    fdivTarget         |ClockDivider_38                   |     2|
@@ -989,7 +1005,7 @@ Report Instance Areas:
 |24    |    heart              |Pixel_On_Text2__parameterized0_57 |    38|
 |25    |    t1                 |Pixel_On_Text2                    |    34|
 |26    |      FontRom          |Font_Rom_58                       |    18|
-|27    |  cred                 |creditScene                       |    46|
+|27    |  cred                 |creditScene                       |    44|
 |28    |    t1                 |Pixel_On_Text2__parameterized1    |    10|
 |29    |      FontRom          |Font_Rom_36                       |     6|
 |30    |    t2                 |Pixel_On_Text2__parameterized2    |     3|
@@ -1029,7 +1045,7 @@ Report Instance Areas:
 |64    |  \genblk1[8].fdiv2    |ClockDivider_26                   |     2|
 |65    |  \genblk1[9].fdiv2    |ClockDivider_27                   |     2|
 |66    |  ls                   |loadingScene                      |     2|
-|67    |  menu                 |menuScene                         |    48|
+|67    |  menu                 |menuScene                         |    50|
 |68    |    act                |Pixel_On_Text2__parameterized8    |     4|
 |69    |    fight              |Pixel_On_Text2__parameterized7    |     7|
 |70    |      FontRom          |Font_Rom_33                       |     3|
@@ -1043,31 +1059,32 @@ Report Instance Areas:
 |78    |      FontRom          |Font_Rom                          |     5|
 |79    |    spare              |Pixel_On_Text2__parameterized10   |     4|
 |80    |  nolabel_line66       |transmitter                       |    65|
-|81    |  receiver_unit        |receiver                          |    81|
-|82    |  vga_sync_unit        |vga_sync                          |   627|
+|81    |  receiver_unit        |receiver                          |    83|
+|82    |  vga_sync_unit        |vga_sync                          |   625|
 +------+-----------------------+----------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 890.816 ; gain = 611.777
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 890.488 ; gain = 611.656
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 890.816 ; gain = 266.434
-Synthesis Optimization Complete : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 890.816 ; gain = 611.777
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:47 ; elapsed = 00:00:53 . Memory (MB): peak = 890.488 ; gain = 264.797
+Synthesis Optimization Complete : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 890.488 ; gain = 611.656
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 218 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 219 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 890.816 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 890.488 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 1 instances were transformed.
+  LDC => LDCE: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-160 Infos, 88 Warnings, 0 Critical Warnings and 0 Errors encountered.
+171 Infos, 91 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 890.816 ; gain = 624.227
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 890.816 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 890.488 ; gain = 623.910
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 890.488 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'F:/HWLAB/Basys3-Undertale/FinalProject.runs/synth_1/manageScene.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.runs/synth_1/manageScene.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file manageScene_utilization_synth.rpt -pb manageScene_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu May 21 14:15:17 2020...
+INFO: [Common 17-206] Exiting Vivado at Thu May 21 17:13:33 2020...
