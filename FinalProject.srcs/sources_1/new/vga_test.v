@@ -25,7 +25,7 @@ module afterTurnScene
 		input wire video_on,
 		input wire p_tick, 
 		input wire [9:0] x,y,
-		input wire newscene,
+		input wire onScene,
 		input wire [9:0] maxHealth,
 		input wire newpic,
 		input wire [2:0] direc,
@@ -44,9 +44,6 @@ module afterTurnScene
         
     //initialize
     wire [9:0] healthBar = (maxHealth - newHealth)*36;
-    
-    //scene
-    reg oldsceneMain;
     reg canGoUp, canGoDown, canGoLeft, canGoRight;
     initial
     begin
@@ -57,7 +54,6 @@ module afterTurnScene
         boxTop = 140;
         boxBottom = 340;
         boxThick = 5;
-        oldsceneMain = 0;
         newHealth = 6;
         oldHitEnemy[0] = 0;
         oldHitEnemy[1] = 0;
@@ -82,9 +78,9 @@ module afterTurnScene
     wire text_pixel_heart,text_pixel_hp;
     
     enemyCircle ec1(clk, targetClk, init_enemy1_x, init_enemy1_y, enemyRadius, speed_enemy1_x, speed_enemy1_y, text_pixel_heart, 
-                    x, y, boxTop, boxRight, boxBottom, boxLeft, oldsceneMain, enemy1_x, enemy1_y, hitEnemy1);
+                    x, y, boxTop, boxRight, boxBottom, boxLeft, onScene, enemy1_x, enemy1_y, hitEnemy1);
     enemyCircle ec2(clk, targetClk, init_enemy2_x, init_enemy2_y, enemyRadius, speed_enemy2_x, speed_enemy2_y, text_pixel_heart, 
-                    x, y, boxTop, boxRight, boxBottom, boxLeft, oldsceneMain, enemy2_x, enemy2_y, hitEnemy2);
+                    x, y, boxTop, boxRight, boxBottom, boxLeft, onScene, enemy2_x, enemy2_y, hitEnemy2);
     
     //init text
     Pixel_On_Text2 #(.displayText("HP")) t1(
@@ -140,11 +136,10 @@ module afterTurnScene
         //move
         always @(posedge newpic)
         begin
-        if(oldsceneMain != newscene)
+        if(onScene == 0)
         begin
             x_pos <= 320;
             y_pos <= 240;
-            oldsceneMain <= newscene;
         end
         
         if (direc==1 && y_pos >= boxTop) y_pos=y_pos-3;

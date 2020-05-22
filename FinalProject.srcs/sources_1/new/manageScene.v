@@ -85,6 +85,7 @@ module manageScene(
     //menu scene state
     reg [1:0] selectedMenu;
     reg isSelect;
+    reg [1:0] crdClk;
     
     initial begin
         changeScene = 0;
@@ -97,19 +98,19 @@ module manageScene(
         onScene_ats = 0;
         onScene_credit = 1;
         onScene_menu = 0;
+        crdClk = 0;
     end
     
     //clk
-    wire atsClk, targetClk, crdClk;
+    wire atsClk, targetClk;
     wire [30:0] tclk;
-    assign tclk[0] = (onScene_ats || onScene_credit==1)?clk:0;
+    assign tclk[0] = ((onScene_ats || onScene_credit)==1)?clk:0;
     genvar c;
     generate for(c=0;c<30;c=c+1)
     begin 
         ClockDivider fdiv2(tclk[c+1],tclk[c]);
     end endgenerate
     ClockDivider fdivTarget2(atsClk,tclk[28]);
-    ClockDivider fdivTarget3(crdClk,tclk[30]);
     ClockDivider fdivTarget(targetClk,tclk[18]);
     
     //newpic oscillator
@@ -123,8 +124,8 @@ module manageScene(
     
     always @(posedge clk)
     begin
-        if (newpic==1 && direc!=0) begin
-            direc=0;
+        if (newpic==1) begin
+            if (direc!=0) direc=0;
             isSelect=0;
         end
             if (state==1 && nextstate==0)
@@ -152,33 +153,35 @@ module manageScene(
     end
     
     
-    afterTurnScene ats(clk, video_on, p_tick, x, y, newScene_ats, maxHealth, newpic, direc, targetClk, rgb_reg_ats, newHealth);
+    afterTurnScene ats(clk, video_on, p_tick, x, y, onScene_ats, maxHealth, newpic, direc, targetClk, rgb_reg_ats, newHealth);
     loadingScene ls(clk,video_on, p_tick, x, y, rgb_reg_ls);
     gameOver go(clk,video_on, p_tick, x, y, rgb_reg_go);
     creditScene cred(clk, video_on, p_tick, x, y, rgb_reg_cred);
     menuScene menu(clk, video_on, p_tick, x, y, newpic, selectedMenu, rgb_reg_menu);
     
     
-    
     always @(posedge clk)
     begin
         if (onScene_credit) rgb_reg = rgb_reg_cred;
-        else if(changeScene == 1)  rgb_reg = rgb_reg_ls;
-        else if (onScene_ats)   rgb_reg = rgb_reg_ats;
+        //else if(changeScene == 1)  rgb_reg =S rgb_reg_ls;
         else if (onScene_menu) rgb_reg = rgb_reg_menu;
+        else if (onScene_ats)   rgb_reg = rgb_reg_ats;
     end
     
     wire isDie = (newHealth <= 1);
     
-    always @(posedge atsClk or posedge isDie or posedge isSelect or posedge crdClk)
+    always @(posedge atsClk or posedge isDie or posedge isSelect)
     begin
         if(isDie) begin onScene_ats=0; onScene_menu=1; end 
-        else if(isSelect && onScene_menu) begin onScene_ats = 1; onScene_menu=0;end
-        else if (onScene_credit && crdClk) 
+        else if(isSelect) begin if(onScene_menu) begin onScene_menu=0; onScene_ats = 1;end end
+        else if (onScene_credit) 
         begin 
-            onScene_credit = 0;
-            onScene_menu = 1;
-            changeScene = 4; 
+            crdClk <= crdClk + 1;
+            if(crdClk == 2)
+            begin
+                onScene_credit = 0;
+                onScene_menu = 1;
+            end 
         end
         //else if (changeScene == 1) begin changeScene = 2; end
         else if (onScene_ats) begin onScene_ats = 0; onScene_menu=1; end
