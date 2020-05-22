@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Thu May 21 23:05:24 2020
+| Date         : Fri May 22 10:08:08 2020
 | Host         : DESKTOP-KFTK1LL running 64-bit major release  (build 9200)
 | Command      : report_utilization -file manageScene_utilization_synth.rpt -pb manageScene_utilization_synth.pb
 | Design       : manageScene
@@ -30,13 +30,13 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  915 |     0 |     20800 |  4.40 |
-|   LUT as Logic          |  915 |     0 |     20800 |  4.40 |
+| Slice LUTs*             |  912 |     0 |     20800 |  4.38 |
+|   LUT as Logic          |  912 |     0 |     20800 |  4.38 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
-| Slice Registers         |  290 |     0 |     41600 |  0.70 |
-|   Register as Flip Flop |  289 |     0 |     41600 |  0.69 |
+| Slice Registers         |  289 |     0 |     41600 |  0.69 |
+|   Register as Flip Flop |  288 |     0 |     41600 |  0.69 |
 |   Register as Latch     |    1 |     0 |     41600 | <0.01 |
-| F7 Muxes                |    1 |     0 |     16300 | <0.01 |
+| F7 Muxes                |    0 |     0 |     16300 |  0.00 |
 | F8 Muxes                |    0 |     0 |      8150 |  0.00 |
 +-------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -56,8 +56,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 2     |          Yes |           - |          Set |
 | 2     |          Yes |           - |        Reset |
-| 20    |          Yes |         Set |            - |
-| 266   |          Yes |       Reset |            - |
+| 34    |          Yes |         Set |            - |
+| 251   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -151,22 +151,21 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT2     |  356 |                 LUT |
-| FDRE     |  266 |        Flop & Latch |
-| LUT6     |  233 |                 LUT |
+| LUT2     |  370 |                 LUT |
+| FDRE     |  251 |        Flop & Latch |
+| LUT6     |  219 |                 LUT |
 | CARRY4   |  196 |          CarryLogic |
-| LUT1     |  148 |                 LUT |
-| LUT5     |  129 |                 LUT |
-| LUT3     |  111 |                 LUT |
-| LUT4     |  109 |                 LUT |
-| FDSE     |   20 |        Flop & Latch |
+| LUT1     |  146 |                 LUT |
+| LUT5     |  125 |                 LUT |
+| LUT4     |  123 |                 LUT |
+| LUT3     |  108 |                 LUT |
+| FDSE     |   34 |        Flop & Latch |
 | OBUF     |   15 |                  IO |
 | DSP48E1  |   13 |    Block Arithmetic |
 | RAMB18E1 |    8 |        Block Memory |
 | IBUF     |    2 |                  IO |
 | FDPE     |    2 |        Flop & Latch |
 | BUFG     |    2 |               Clock |
-| MUXF7    |    1 |               MuxFx |
 | LDCE     |    1 |        Flop & Latch |
 | FDCE     |    1 |        Flop & Latch |
 +----------+------+---------------------+

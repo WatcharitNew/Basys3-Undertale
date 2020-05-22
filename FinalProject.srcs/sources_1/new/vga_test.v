@@ -34,7 +34,7 @@ module afterTurnScene
 		output reg [9:0] newHealth
 	);
 	
-	reg [9:0] x_pos,y_pos,mainRadius,boxLeft,boxRight,boxTop,boxBottom,boxThick;
+	reg [9:0] x_pos,y_pos,boxLeft,boxRight,boxTop,boxBottom,boxThick;
 	
 	wire [9:0] enemy1_x, enemy1_y, enemy2_x, enemy2_y;
     //wire [9:0] enemy_x, enemy_y;
@@ -47,12 +47,11 @@ module afterTurnScene
     
     //scene
     reg oldsceneMain;
-    
+    reg canGoUp, canGoDown, canGoLeft, canGoRight;
     initial
     begin
         x_pos = 320;
         y_pos = 240;
-        mainRadius = 8;
         boxLeft = 220;
         boxRight = 420;
         boxTop = 140;
@@ -62,6 +61,10 @@ module afterTurnScene
         newHealth = 6;
         oldHitEnemy[0] = 0;
         oldHitEnemy[1] = 0;
+        canGoUp = 1;
+        canGoDown = 1;
+        canGoLeft = 1;
+        canGoRight = 1;
     end
     
     //enemy1
@@ -100,6 +103,7 @@ module afterTurnScene
                 y, // current position.y
                 text_pixel_heart  // result, 1 if current pixel is on text, 0 otherwise
             );
+    
     
         // rgb buffer (color)
         always @(posedge p_tick)
@@ -142,14 +146,11 @@ module afterTurnScene
             y_pos <= 240;
             oldsceneMain <= newscene;
         end
-        if (direc==1 && y_pos>=boxTop + mainRadius)
-            y_pos=y_pos-3;
-        else if (direc==2 && x_pos>=boxLeft + mainRadius)
-            x_pos=x_pos-3;
-        else if (direc==3 && y_pos<=boxBottom - mainRadius)
-            y_pos=y_pos+3;
-        else if (direc==4 && x_pos<=boxRight - mainRadius)
-            x_pos=x_pos+3;
+        
+        if (direc==1 && y_pos >= boxTop) y_pos=y_pos-3;
+        else if (direc==2 && x_pos >= boxLeft+3) x_pos=x_pos-3;
+        else if (direc==3 && y_pos <= boxBottom - 15) y_pos=y_pos+3;
+        else if (direc==4 && x_pos <= boxRight - 10) x_pos=x_pos+3;
         end
         
         //UART

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Thu May 21 23:07:08 2020
+| Date             : Fri May 22 10:09:54 2020
 | Host             : DESKTOP-KFTK1LL running 64-bit major release  (build 9200)
 | Command          : report_power -file manageScene_power_routed.rpt -pb manageScene_power_summary_routed.pb -rpx manageScene_power_routed.rpx
 | Design           : manageScene
@@ -36,8 +36,8 @@ Table of Contents
 | Dynamic (W)              | 0.038        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 84.5         |
-| Junction Temperature (C) | 25.5         |
+| Max Ambient (C)          | 84.4         |
+| Junction Temperature (C) | 25.6         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,14 +53,13 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |     0.003 |     1712 |       --- |             --- |
+| Slice Logic    |     0.004 |     1727 |       --- |             --- |
 |   LUT as Logic |     0.003 |      912 |     20800 |            4.38 |
 |   CARRY4       |    <0.001 |      196 |      8150 |            2.40 |
-|   Register     |    <0.001 |      299 |     41600 |            0.72 |
+|   Register     |    <0.001 |      307 |     41600 |            0.74 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
-|   F7/F8 Muxes  |    <0.001 |        1 |     32600 |           <0.01 |
 |   Others       |     0.000 |      132 |       --- |             --- |
-| Signals        |     0.005 |     1636 |       --- |             --- |
+| Signals        |     0.006 |     1653 |       --- |             --- |
 | Block RAM      |     0.015 |        4 |        50 |            8.00 |
 | DSPs           |     0.011 |       13 |        90 |           14.44 |
 | I/O            |    <0.001 |       17 |       106 |           16.04 |
@@ -75,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.046 |       0.036 |      0.010 |
+| Vccint    |       1.000 |     0.047 |       0.037 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
