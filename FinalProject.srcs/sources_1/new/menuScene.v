@@ -30,10 +30,13 @@ module menuScene
 		input wire [1:0] selectedMenu,
 		input wire [9:0] maxHealth,
 		input wire [9:0] newHealth,
+		input wire [9:0] maxEnemyHealth,
+		input wire [9:0] newEnemyHealth,
 		output reg [11:0] rgb_reg
 	);
 
     wire [9:0] healthBar = (maxHealth - newHealth)*36;
+    wire [9:0] enemyHealthBar = (maxEnemyHealth - newEnemyHealth)*36;
     
     //multiplexed heart (current menu)
     reg currentHeart;
@@ -124,7 +127,14 @@ module menuScene
                 y, // current position.y
                 text_pixel_hp  // result, 1 if current pixel is on text, 0 otherwise
             );
-    
+    Pixel_On_Text2 #(.displayText("ENEMY HP")) t2(
+                clk,
+                165, // text position.x (top left)
+                420, // text position.y (top left)
+                x, // current position.x
+                y, // current position.y
+                text_pixel_enemy  // result, 1 if current pixel is on text, 0 otherwise
+            );
         // rgb buffer (color)
         always @(posedge p_tick)
         //main character
@@ -137,11 +147,17 @@ module menuScene
         
         if (currentHeart == 1)
             rgb_reg <= 12'hF00;
-        else if (text_pixel_fight == 1 | text_pixel_act == 1 | text_pixel_item == 1 | text_pixel_spare == 1 | text_pixel_hp == 1)
+        else if (text_pixel_fight == 1 | text_pixel_act == 1 | text_pixel_item == 1 | text_pixel_spare == 1 | text_pixel_hp == 1 | text_pixel_enemy == 1)
             rgb_reg <= 12'hFFF;
-        else if (400 <= y && y <= 410 && 250 <= x && x <= 420 - healthBar)
+        //health
+        else if (400 <= y && y <= 410 && 240 <= x && x <= 420 - healthBar)
             rgb_reg <= 12'hFF0;
         else if (400 <= y && y <= 410 && 420 - healthBar < x && x <= 420)
+            rgb_reg <= 12'hF00;
+        //enemy health
+        else if (420 <= y && y <= 430 && 240 <= x && x <= 420 - enemyHealthBar)
+            rgb_reg <= 12'h0F0;
+        else if (420 <= y && y <= 430 && 420 - enemyHealthBar < x && x <= 420)
             rgb_reg <= 12'hF00;
         else
             rgb_reg <= 12'b0;

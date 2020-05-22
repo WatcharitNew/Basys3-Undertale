@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Fri May 22 21:56:41 2020
+| Date             : Fri May 22 23:23:12 2020
 | Host             : DESKTOP-KFTK1LL running 64-bit major release  (build 9200)
 | Command          : report_power -file manageScene_power_routed.rpt -pb manageScene_power_summary_routed.pb -rpx manageScene_power_routed.rpx
 | Design           : manageScene
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.110        |
+| Total On-Chip Power (W)  | 0.113        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.038        |
+| Dynamic (W)              | 0.041        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 84.5         |
-| Junction Temperature (C) | 25.5         |
+| Max Ambient (C)          | 84.4         |
+| Junction Temperature (C) | 25.6         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,18 +53,18 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |     0.003 |     1758 |       --- |             --- |
-|   LUT as Logic |     0.003 |      973 |     20800 |            4.68 |
-|   CARRY4       |    <0.001 |      223 |      8150 |            2.74 |
-|   Register     |    <0.001 |      273 |     41600 |            0.66 |
+| Slice Logic    |     0.003 |     2072 |       --- |             --- |
+|   LUT as Logic |     0.003 |     1172 |     20800 |            5.63 |
+|   CARRY4       |    <0.001 |      275 |      8150 |            3.37 |
+|   Register     |    <0.001 |      286 |     41600 |            0.69 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
-|   Others       |     0.000 |      137 |       --- |             --- |
-| Signals        |     0.005 |     1703 |       --- |             --- |
-| Block RAM      |     0.016 |      4.5 |        50 |            9.00 |
-| DSPs           |     0.011 |       15 |        90 |           16.67 |
+|   Others       |     0.000 |      143 |       --- |             --- |
+| Signals        |     0.006 |     1895 |       --- |             --- |
+| Block RAM      |     0.019 |        5 |        50 |           10.00 |
+| DSPs           |     0.010 |       17 |        90 |           18.89 |
 | I/O            |    <0.001 |       17 |       106 |           16.04 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.110 |          |           |                 |
+| Total          |     0.113 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.046 |       0.036 |      0.010 |
+| Vccint    |       1.000 |     0.049 |       0.039 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -143,29 +143,31 @@ Table of Contents
 +-----------------+-----------+
 | Name            | Power (W) |
 +-----------------+-----------+
-| manageScene     |     0.038 |
-|   ats           |     0.018 |
+| manageScene     |     0.041 |
+|   ats           |     0.020 |
 |     ec1         |     0.007 |
 |     ec2         |     0.008 |
 |     t1          |     0.002 |
 |       FontRom   |     0.002 |
-|   cred          |     0.007 |
-|     t1          |     0.002 |
+|     t2          |     0.002 |
 |       FontRom   |     0.002 |
-|     t3          |     0.002 |
+|   cred          |     0.006 |
+|     t2          |     0.002 |
 |       FontRom   |     0.002 |
-|     t5          |     0.002 |
+|     t4          |     0.002 |
+|       FontRom   |     0.002 |
+|     t6          |     0.002 |
 |       FontRom   |     0.002 |
 |   menu          |     0.009 |
 |     act         |     0.002 |
 |       FontRom   |     0.002 |
-|     h1          |     0.002 |
+|     h2          |     0.002 |
 |       FontRom   |     0.002 |
-|     h3          |     0.002 |
+|     h4          |     0.002 |
 |       FontRom   |     0.002 |
 |     spare       |     0.001 |
 |       FontRom   |     0.001 |
-|     t1          |     0.002 |
+|     t2          |     0.002 |
 |       FontRom   |     0.002 |
 |   vga_sync_unit |     0.002 |
 +-----------------+-----------+

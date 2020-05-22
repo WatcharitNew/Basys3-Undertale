@@ -76,7 +76,11 @@ module manageScene(
     //health
     wire [9:0] maxHealth=6;
     wire [9:0] newHealth;
-    reg [1:0] crdTime;
+    
+    //enemy health
+    wire [9:0] maxEnemyHealth=6;
+    reg [9:0] newEnemyHealth;
+    
     // move
     reg [2:0]direc;
     //tell whether this is a new picture
@@ -87,11 +91,11 @@ module manageScene(
     reg isSelect;
     reg [1:0] crdClk;
     
+    
     initial begin
         changeScene = 0;
         newScene_ats = 0;
         rgb_reg = rgb_reg_ats;
-        crdTime = 0;
         direc = 0;
         selectedMenu = 0;
         isSelect = 0;
@@ -99,6 +103,7 @@ module manageScene(
         onScene_credit = 1;
         onScene_menu = 0;
         crdClk = 0;
+        newEnemyHealth = 6;
     end
     
     //clk
@@ -126,6 +131,10 @@ module manageScene(
     begin
         if (newpic==1) begin
             if (direc!=0) direc=0;
+            if (isSelect==1 && selectedMenu == 0 && onScene_menu)
+            begin  
+                if(newEnemyHealth > 1)  newEnemyHealth <= newEnemyHealth -1;
+            end
             isSelect=0;
         end
             if (state==1 && nextstate==0)
@@ -153,11 +162,11 @@ module manageScene(
     end
     
     
-    afterTurnScene ats(clk, video_on, p_tick, x, y, onScene_ats, maxHealth, newpic, direc, targetClk, rgb_reg_ats, newHealth);
+    afterTurnScene ats(clk, video_on, p_tick, x, y, onScene_ats, maxHealth, newpic, direc, targetClk, maxEnemyHealth, newEnemyHealth, rgb_reg_ats, newHealth);
     loadingScene ls(clk,video_on, p_tick, x, y, rgb_reg_ls);
     gameOver go(clk,video_on, p_tick, x, y, rgb_reg_go);
     creditScene cred(clk, video_on, p_tick, x, y, rgb_reg_cred);
-    menuScene menu(clk, video_on, p_tick, x, y, newpic, selectedMenu, maxHealth,newHealth,rgb_reg_menu);
+    menuScene menu(clk, video_on, p_tick, x, y, newpic, selectedMenu, maxHealth,newHealth, maxEnemyHealth, newEnemyHealth,rgb_reg_menu);
     
     
     always @(posedge clk)
@@ -173,7 +182,14 @@ module manageScene(
     always @(posedge atsClk or posedge isDie or posedge isSelect)
     begin
         if(isDie) begin onScene_ats=0; onScene_menu=1; end 
-        else if(isSelect) begin if(onScene_menu) begin onScene_menu=0; onScene_ats = 1;end end
+        else if(isSelect) 
+        begin 
+            if(onScene_menu && selectedMenu != 0) 
+            begin
+                onScene_menu=0; 
+                onScene_ats = 1;
+            end 
+        end
         else if (onScene_credit) 
         begin 
             crdClk <= crdClk + 1;

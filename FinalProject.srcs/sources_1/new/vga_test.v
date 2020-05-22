@@ -30,6 +30,8 @@ module afterTurnScene
 		input wire newpic,
 		input wire [2:0] direc,
 		input wire targetClk,
+		input wire [9:0] maxEnemyHealth,
+		input wire [9:0] newEnemyHealth,
 		output reg [11:0] rgb_reg,
 		output reg [9:0] newHealth
 	);
@@ -44,6 +46,8 @@ module afterTurnScene
         
     //initialize
     wire [9:0] healthBar = (maxHealth - newHealth)*36;
+    wire [9:0] enemyHealthBar = (maxEnemyHealth - newEnemyHealth)*36;
+    
     reg canGoUp, canGoDown, canGoLeft, canGoRight;
     initial
     begin
@@ -99,7 +103,14 @@ module afterTurnScene
                 y, // current position.y
                 text_pixel_heart  // result, 1 if current pixel is on text, 0 otherwise
             );
-    
+    Pixel_On_Text2 #(.displayText("ENEMY HP")) t2(
+                clk,
+                165, // text position.x (top left)
+                420, // text position.y (top left)
+                x, // current position.x
+                y, // current position.y
+                text_pixel_enemy  // result, 1 if current pixel is on text, 0 otherwise
+            );
     
         // rgb buffer (color)
         always @(posedge p_tick)
@@ -112,7 +123,7 @@ module afterTurnScene
             rgb_reg <= 12'hFFF;
         //enemy2
         else if (25 > (x-enemy2_x)**2 + (y-enemy2_y)**2 && hitEnemy2 == 0)
-            rgb_reg <= 12'h0F0;
+            rgb_reg <= 12'hFFF;
         
         //box
         else if (boxLeft <= x && x <= boxRight && boxTop <= y && y <= boxBottom)
@@ -123,13 +134,17 @@ module afterTurnScene
         // gentext HP
         else if (text_pixel_hp == 1)
             rgb_reg <= 12'hFFF;
- 
-        else if (text_pixel_heart == 1)
-            rgb_reg <= 12'hF00;
+        else if (text_pixel_enemy == 1)
+            rgb_reg <= 12'hFFF;
+        
         // health bar    
         else if (400 <= y && y <= 410 && boxLeft - boxThick + 25 <= x && x <= boxRight - healthBar)
             rgb_reg <= 12'hFF0;
         else if (400 <= y && y <= 410 && 420 - healthBar < x && x <= 420)
+            rgb_reg <= 12'hF00;
+        else if (420 <= y && y <= 430 && 240 <= x && x <= 420 - enemyHealthBar)
+            rgb_reg <= 12'h0F0;
+        else if (420 <= y && y <= 430 && 420 - enemyHealthBar < x && x <= 420)
             rgb_reg <= 12'hF00;
         else
             rgb_reg <= 0;

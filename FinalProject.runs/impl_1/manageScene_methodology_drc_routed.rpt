@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Fri May 22 21:56:40 2020
+| Date         : Fri May 22 23:23:11 2020
 | Host         : DESKTOP-KFTK1LL running 64-bit major release  (build 9200)
 | Command      : report_methodology -file manageScene_methodology_drc_routed.rpt -pb manageScene_methodology_drc_routed.pb -rpx manageScene_methodology_drc_routed.rpx
 | Design       : manageScene
@@ -23,12 +23,12 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 138
+             Violations found: 140
 +-----------+----------+--------------------------------------------+------------+
 | Rule      | Severity | Description                                | Violations |
 +-----------+----------+--------------------------------------------+------------+
 | LUTAR-1   | Warning  | LUT drives async reset alert               | 2          |
-| SYNTH-6   | Warning  | Timing of a block RAM might be sub-optimal | 7          |
+| SYNTH-6   | Warning  | Timing of a block RAM might be sub-optimal | 9          |
 | SYNTH-10  | Warning  | Wide multiplier                            | 12         |
 | TIMING-14 | Warning  | LUT on the clock tree                      | 1          |
 | TIMING-16 | Warning  | Large setup violation                      | 2          |
@@ -56,32 +56,42 @@ Related violations: <none>
 
 SYNTH-6#2 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance cred/t1/FontRom/fontRow_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance ats/t2/FontRom/fontRow_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#3 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance cred/t3/FontRom/fontRow_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance cred/t2/FontRom/fontRow_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#4 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance cred/t5/FontRom/fontRow_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance cred/t4/FontRom/fontRow_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#5 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance menu/act/FontRom/fontRow_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance cred/t6/FontRom/fontRow_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#6 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance menu/spare/FontRom/fontRow_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance menu/act/FontRom/fontRow_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#7 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance menu/t1/FontRom/fontRow_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance menu/h4/FontRom/fontRow_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#8 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance menu/spare/FontRom/fontRow_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#9 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance menu/t2/FontRom/fontRow_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-10#1 Warning
@@ -151,12 +161,12 @@ Related violations: <none>
 
 TIMING-16#1 Warning
 Large setup violation  
-There is a large setup violation of -4.625 ns between vga_sync_unit/v_count_reg_reg[1]_replica/C (clocked by sys_clk_pin) and ats/ec2/hitEnemy_reg/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.014 ns between vga_sync_unit/v_count_reg_reg[1]_replica/C (clocked by sys_clk_pin) and ats/ec2/hitEnemy_reg/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#2 Warning
 Large setup violation  
-There is a large setup violation of -4.664 ns between vga_sync_unit/v_count_reg_reg[0]_replica/C (clocked by sys_clk_pin) and ats/ec1/hitEnemy_reg/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.165 ns between vga_sync_unit/h_count_reg_reg[1]/C (clocked by sys_clk_pin) and ats/ec1/hitEnemy_reg/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-17#1 Warning
