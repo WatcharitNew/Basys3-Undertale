@@ -129,6 +129,8 @@ module afterTurnScene
         // health bar    
         else if (400 <= y && y <= 410 && boxLeft - boxThick + 25 <= x && x <= boxRight - healthBar)
             rgb_reg <= 12'hFF0;
+        else if (400 <= y && y <= 410 && 420 - healthBar < x && x <= 420)
+            rgb_reg <= 12'hF00;
         else
             rgb_reg <= 0;
         end

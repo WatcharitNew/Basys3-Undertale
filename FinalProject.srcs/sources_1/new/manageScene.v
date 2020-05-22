@@ -157,7 +157,7 @@ module manageScene(
     loadingScene ls(clk,video_on, p_tick, x, y, rgb_reg_ls);
     gameOver go(clk,video_on, p_tick, x, y, rgb_reg_go);
     creditScene cred(clk, video_on, p_tick, x, y, rgb_reg_cred);
-    menuScene menu(clk, video_on, p_tick, x, y, newpic, selectedMenu, rgb_reg_menu);
+    menuScene menu(clk, video_on, p_tick, x, y, newpic, selectedMenu, maxHealth,newHealth,rgb_reg_menu);
     
     
     always @(posedge clk)
