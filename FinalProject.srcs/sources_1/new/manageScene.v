@@ -64,28 +64,14 @@ module manageScene(
     reg transmit;
     reg [15:0]counter;
     transmitter(RsTx, clk, 0, transmit, TxData);
-        
-    wire atsClk, targetClk;
-    wire [28:0] tclk;
-    assign tclk[0]=clk;
-    genvar c;
-    generate for(c=0;c<28;c=c+1)
-    begin 
-        ClockDivider fdiv2(tclk[c+1],tclk[c]);
-    end endgenerate
-    ClockDivider fdivTarget2(atsClk,tclk[28]);
-    ClockDivider fdivTarget(targetClk,tclk[18]);
     
     reg [2:0] changeScene;
     reg newScene_ats;
     
-    reg [1:0] stateScene_ats;
-    reg [1:0] stateScene_ls;
-    reg [1:0] stateScene_cred;
-    
-    reg [1:0] nextStateScene_ats;
-    reg [1:0] nextStateScene_ls;
-    reg [1:0] nextStateScene_cred;
+    //scene
+    reg onScene_ats;
+    reg onScene_credit;
+    reg onScene_menu;
     
     //health
     wire [9:0] maxHealth=6;
@@ -102,18 +88,29 @@ module manageScene(
     
     initial begin
         changeScene = 0;
-        newScene_ats = 1;
-        stateScene_ats = 0;
-        stateScene_ls = 0;
+        newScene_ats = 0;
         rgb_reg = rgb_reg_ats;
         crdTime = 0;
         direc = 0;
         selectedMenu = 0;
         isSelect = 0;
+        onScene_ats = 0;
+        onScene_credit = 1;
+        onScene_menu = 0;
     end
     
-    
-    
+    //clk
+    wire atsClk, targetClk, crdClk;
+    wire [30:0] tclk;
+    assign tclk[0] = (onScene_ats || onScene_credit==1)?clk:0;
+    genvar c;
+    generate for(c=0;c<30;c=c+1)
+    begin 
+        ClockDivider fdiv2(tclk[c+1],tclk[c]);
+    end endgenerate
+    ClockDivider fdivTarget2(atsClk,tclk[28]);
+    ClockDivider fdivTarget3(crdClk,tclk[30]);
+    ClockDivider fdivTarget(targetClk,tclk[18]);
     
     //newpic oscillator
     always @(posedge p_tick)
@@ -133,10 +130,10 @@ module manageScene(
             if (state==1 && nextstate==0)
                 begin
                 case (RxData)
-                "w": begin direc=1; TxData="W"; end
-                "a": begin direc=2; selectedMenu <= selectedMenu+1;TxData="A"; end
-                "s": begin direc=3; TxData="S"; end
-                "d": begin direc=4; selectedMenu <= selectedMenu-1;TxData="D"; end
+                "w": begin if(onScene_ats) direc=1; TxData="W"; end
+                "a": begin if(onScene_ats) direc=2; if(onScene_menu) selectedMenu <= selectedMenu+1;TxData="A"; end
+                "s": begin if(onScene_ats) direc=3; TxData="S"; end
+                "d": begin if(onScene_ats) direc=4; if(onScene_menu) selectedMenu <= selectedMenu-1;TxData="D"; end
                 " ": begin
                     isSelect=1;
                     TxData = "z";
@@ -165,28 +162,26 @@ module manageScene(
     
     always @(posedge clk)
     begin
-        if (changeScene == 0) rgb_reg = rgb_reg_cred;
+        if (onScene_credit) rgb_reg = rgb_reg_cred;
         else if(changeScene == 1)  rgb_reg = rgb_reg_ls;
-        else if (changeScene == 2)   rgb_reg = rgb_reg_ats;
-        else if(changeScene == 3) rgb_reg = rgb_reg_go;
-        else if (changeScene == 4) rgb_reg = rgb_reg_menu;
-        
+        else if (onScene_ats)   rgb_reg = rgb_reg_ats;
+        else if (onScene_menu) rgb_reg = rgb_reg_menu;
     end
     
     wire isDie = (newHealth <= 1);
     
-    always @(posedge atsClk or posedge isDie or posedge isSelect)
+    always @(posedge atsClk or posedge isDie or posedge isSelect or posedge crdClk)
     begin
-        if(isDie) begin changeScene = 3; end 
-        else if(isSelect && changeScene == 4) begin changeScene = 2; end
-        else if (changeScene == 0) 
+        if(isDie) begin onScene_ats=0; onScene_menu=1; end 
+        else if(isSelect && onScene_menu) begin onScene_ats = 1; onScene_menu=0;end
+        else if (onScene_credit && crdClk) 
         begin 
-            crdTime <= crdTime + 1;
-            if(crdTime == 2)
-                changeScene = 4; 
+            onScene_credit = 0;
+            onScene_menu = 1;
+            changeScene = 4; 
         end
-        else if (changeScene == 1) begin changeScene = 2; end
-        else if (changeScene == 2) begin newScene_ats <= ~newScene_ats; changeScene = 4; end
+        //else if (changeScene == 1) begin changeScene = 2; end
+        else if (onScene_ats) begin onScene_ats = 0; onScene_menu=1; end
     end
     
     // output
