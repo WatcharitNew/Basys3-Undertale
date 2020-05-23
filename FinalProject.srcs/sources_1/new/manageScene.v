@@ -37,6 +37,8 @@ module manageScene(
 	wire [11:0] rgb_reg_go;
 	wire [11:0] rgb_reg_cred;
 	wire [11:0] rgb_reg_menu;
+	wire [11:0] rgb_reg_act;
+	wire [11:0] rgb_reg_spare;
 	
 	// for multiplexing RsTx from multiple scene
 	reg RsTx_reg;
@@ -65,13 +67,14 @@ module manageScene(
     reg [15:0]counter;
     transmitter(RsTx, clk, 0, transmit, TxData);
     
-    reg [2:0] changeScene;
     reg newScene_ats;
     
     //scene
     reg onScene_ats;
     reg onScene_credit;
     reg onScene_menu;
+    reg onScene_act;
+    reg onScene_spare;
     
     //health
     wire [9:0] maxHealth=6;
@@ -91,9 +94,10 @@ module manageScene(
     reg isSelect;
     reg [1:0] crdClk;
     
+    //act-spare state
+    reg acted;
     
     initial begin
-        changeScene = 0;
         newScene_ats = 0;
         rgb_reg = rgb_reg_ats;
         direc = 0;
@@ -102,6 +106,9 @@ module manageScene(
         onScene_ats = 0;
         onScene_credit = 1;
         onScene_menu = 0;
+        onScene_act = 0;
+        onScene_spare = 0;
+        acted = 0;
         crdClk = 0;
         newEnemyHealth = 6;
     end
@@ -109,7 +116,7 @@ module manageScene(
     //clk
     wire atsClk, targetClk;
     wire [30:0] tclk;
-    assign tclk[0] = ((onScene_ats || onScene_credit)==1)?clk:0;
+    assign tclk[0] = ((onScene_ats || onScene_credit || onScene_act || onScene_spare)==1)?clk:0;
     genvar c;
     generate for(c=0;c<30;c=c+1)
     begin 
@@ -131,9 +138,22 @@ module manageScene(
     begin
         if (newpic==1) begin
             if (direc!=0) direc=0;
-            if (isSelect==1 && selectedMenu == 0 && onScene_menu)
-            begin  
-                if(newEnemyHealth > 1)  newEnemyHealth <= newEnemyHealth -1;
+            if (isSelect==1 && onScene_menu)
+            begin
+                case (selectedMenu)
+                    0: begin
+                        if (newEnemyHealth > 1) newEnemyHealth <= newEnemyHealth -1;
+                    end
+                    1: begin
+                       acted = 1; 
+                    end
+                    2: begin
+                    
+                    end
+                    3: begin
+                    
+                    end
+                endcase
             end
             isSelect=0;
         end
@@ -167,14 +187,16 @@ module manageScene(
     gameOver go(clk,video_on, p_tick, x, y, rgb_reg_go);
     creditScene cred(clk, video_on, p_tick, x, y, rgb_reg_cred);
     menuScene menu(clk, video_on, p_tick, x, y, newpic, selectedMenu, maxHealth,newHealth, maxEnemyHealth, newEnemyHealth,rgb_reg_menu);
-    
+    actScene act(clk, video_on, p_tick, x, y, rgb_reg_act);
+    spareScene spare(clk, video_on, p_tick, x, y, acted, rgb_reg_spare);
     
     always @(posedge clk)
     begin
         if (onScene_credit) rgb_reg = rgb_reg_cred;
-        //else if(changeScene == 1)  rgb_reg =S rgb_reg_ls;
         else if (onScene_menu) rgb_reg = rgb_reg_menu;
         else if (onScene_ats)   rgb_reg = rgb_reg_ats;
+        else if (onScene_act) rgb_reg = rgb_reg_act;
+        else if (onScene_spare) rgb_reg = rgb_reg_spare;
     end
     
     wire isDie = (newHealth <= 1);
@@ -186,8 +208,24 @@ module manageScene(
         begin 
             if(onScene_menu && selectedMenu != 0) 
             begin
-                onScene_menu=0; 
-                onScene_ats = 1;
+                onScene_menu=0;
+                case (selectedMenu)
+                    1: begin
+                        onScene_spare <= 0;
+                        onScene_ats <= 0;
+                        onScene_act <= 1;
+                    end
+                    2: begin
+                        onScene_spare <= 0;
+                        onScene_ats <= 1;
+                        onScene_act <= 0;
+                    end
+                    3: begin
+                        onScene_spare <= 1;
+                        onScene_ats <= 0;
+                        onScene_act <= 0;
+                    end
+                endcase
             end 
         end
         else if (onScene_credit) 
@@ -199,7 +237,6 @@ module manageScene(
                 onScene_menu = 1;
             end 
         end
-        //else if (changeScene == 1) begin changeScene = 2; end
         else if (onScene_ats) begin onScene_ats = 0; onScene_menu=1; end
     end
     
