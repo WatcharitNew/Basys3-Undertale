@@ -84,7 +84,7 @@ module manageScene(
     
     //enemy health
     wire [9:0] maxEnemyHealth=6;
-    reg [9:0] newEnemyHealth;
+    wire [9:0] newEnemyHealth;
     
     // move
     reg [2:0]direc;
@@ -117,7 +117,7 @@ module manageScene(
         acted = 0;
         stop = 0;
         crdClk = 0;
-        newEnemyHealth = 6;
+        //newEnemyHealth = 6;
     end
     
     //clk
@@ -196,7 +196,7 @@ module manageScene(
     menuScene menu(clk, video_on, p_tick, x, y, newpic, selectedMenu, maxHealth,newHealth, maxEnemyHealth, newEnemyHealth,rgb_reg_menu);
     actScene act(clk, video_on, p_tick, x, y, rgb_reg_act);
     spareScene spare(clk, video_on, p_tick, x, y, acted, rgb_reg_spare);
-    fightScene fight(clk, video_on, p_tick, x, y, stop, newpic, onScene_fight, targetClk, rgb_reg_fight);
+    fightScene fight(clk, video_on, p_tick, x, y, stop, newpic, onScene_fight, targetClk, maxHealth, maxEnemyHealth, newHealth, rgb_reg_fight, newEnemyHealth);
     always @(posedge clk)
     begin
         if (onScene_credit) rgb_reg = rgb_reg_cred;

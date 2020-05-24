@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Mon May 25 02:22:09 2020
+| Date         : Mon May 25 04:23:06 2020
 | Host         : MSI-IT running 64-bit major release  (build 9200)
 | Command      : report_drc -file manageScene_drc_routed.rpt -pb manageScene_drc_routed.pb -rpx manageScene_drc_routed.rpx
 | Design       : manageScene
@@ -24,14 +24,14 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 71
+             Violations found: 82
 +-------------+----------+-------------------------------------------------------------+------------+
 | Rule        | Severity | Description                                                 | Violations |
 +-------------+----------+-------------------------------------------------------------+------------+
 | CFGBVS-1    | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties         | 1          |
-| DPIP-1      | Warning  | Input pipelining                                            | 27         |
-| DPOP-1      | Warning  | PREG Output pipelining                                      | 17         |
-| DPOP-2      | Warning  | MREG Output pipelining                                      | 17         |
+| DPIP-1      | Warning  | Input pipelining                                            | 32         |
+| DPOP-1      | Warning  | PREG Output pipelining                                      | 20         |
+| DPOP-2      | Warning  | MREG Output pipelining                                      | 20         |
 | PDRC-153    | Warning  | Gated clock check                                           | 7          |
 | PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 2          |
 +-------------+----------+-------------------------------------------------------------+------------+
@@ -173,15 +173,40 @@ Related violations: <none>
 
 DPIP-1#25 Warning
 Input pipelining  
-DSP ats/healthBar input ats/healthBar/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP ats/enemyHealthBar input ats/enemyHealthBar/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#26 Warning
 Input pipelining  
-DSP ats/rgb_reg3 input ats/rgb_reg3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP ats/healthBar input ats/healthBar/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#27 Warning
+Input pipelining  
+DSP ats/rgb_reg3 input ats/rgb_reg3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#28 Warning
+Input pipelining  
+DSP fight/enemyHealthBar input fight/enemyHealthBar/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#29 Warning
+Input pipelining  
+DSP fight/healthBar input fight/healthBar/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#30 Warning
+Input pipelining  
+DSP fight/rgb_reg3 input fight/rgb_reg3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#31 Warning
+Input pipelining  
+DSP menu/enemyHealthBar input menu/enemyHealthBar/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#32 Warning
 Input pipelining  
 DSP menu/healthBar input menu/healthBar/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
@@ -263,10 +288,25 @@ Related violations: <none>
 
 DPOP-1#16 Warning
 PREG Output pipelining  
-DSP menu/enemyHealthBar output menu/enemyHealthBar/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP fight/enemyHealthBar output fight/enemyHealthBar/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#17 Warning
+PREG Output pipelining  
+DSP fight/healthBar output fight/healthBar/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#18 Warning
+PREG Output pipelining  
+DSP fight/rgb_reg3 output fight/rgb_reg3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#19 Warning
+PREG Output pipelining  
+DSP menu/enemyHealthBar output menu/enemyHealthBar/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#20 Warning
 PREG Output pipelining  
 DSP menu/healthBar output menu/healthBar/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
@@ -348,10 +388,25 @@ Related violations: <none>
 
 DPOP-2#16 Warning
 MREG Output pipelining  
-DSP menu/enemyHealthBar multiplier stage menu/enemyHealthBar/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP fight/enemyHealthBar multiplier stage fight/enemyHealthBar/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 DPOP-2#17 Warning
+MREG Output pipelining  
+DSP fight/healthBar multiplier stage fight/healthBar/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#18 Warning
+MREG Output pipelining  
+DSP fight/rgb_reg3 multiplier stage fight/rgb_reg3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#19 Warning
+MREG Output pipelining  
+DSP menu/enemyHealthBar multiplier stage menu/enemyHealthBar/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#20 Warning
 MREG Output pipelining  
 DSP menu/healthBar multiplier stage menu/healthBar/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
@@ -363,22 +418,22 @@ Related violations: <none>
 
 PDRC-153#2 Warning
 Gated clock check  
-Net ats/selectedMenu_reg[0] is a gated clock net sourced by a combinational pin ats/onScene_ats_reg_LDC_i_1/O, cell ats/onScene_ats_reg_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net ats/selectedMenu_reg[0]_0 is a gated clock net sourced by a combinational pin ats/onScene_ats_reg_LDC_i_1/O, cell ats/onScene_ats_reg_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#3 Warning
 Gated clock check  
-Net ats/selectedMenu_reg[0]_0 is a gated clock net sourced by a combinational pin ats/onScene_act_reg_LDC_i_1/O, cell ats/onScene_act_reg_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net ats/selectedMenu_reg[0]_1 is a gated clock net sourced by a combinational pin ats/onScene_act_reg_LDC_i_1/O, cell ats/onScene_act_reg_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#4 Warning
 Gated clock check  
-Net ats/selectedMenu_reg[0]_2 is a gated clock net sourced by a combinational pin ats/onScene_fight_reg_LDC_i_1/O, cell ats/onScene_fight_reg_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net ats/selectedMenu_reg[1]_0 is a gated clock net sourced by a combinational pin ats/onScene_fight_reg_LDC_i_1/O, cell ats/onScene_fight_reg_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#5 Warning
 Gated clock check  
-Net ats/selectedMenu_reg[0]_4 is a gated clock net sourced by a combinational pin ats/onScene_spare_reg_LDC_i_1/O, cell ats/onScene_spare_reg_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net ats/selectedMenu_reg[1]_3 is a gated clock net sourced by a combinational pin ats/onScene_spare_reg_LDC_i_1/O, cell ats/onScene_spare_reg_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#6 Warning
@@ -388,7 +443,7 @@ Related violations: <none>
 
 PDRC-153#7 Warning
 Gated clock check  
-Net vga_sync_unit/pixel_reg_reg[0]_0 is a gated clock net sourced by a combinational pin vga_sync_unit/h_count_reg[9]_i_2/O, cell vga_sync_unit/h_count_reg[9]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net vga_sync_unit/p_tick is a gated clock net sourced by a combinational pin vga_sync_unit/rgb_reg[11]_i_2__2/O, cell vga_sync_unit/rgb_reg[11]_i_2__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PLHOLDVIO-2#1 Warning
@@ -399,8 +454,8 @@ Related violations: <none>
 
 PLHOLDVIO-2#2 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT vga_sync_unit/h_count_reg[9]_i_2 is driving clock pin of 12 cells. This could lead to large hold time violations. Involved cells are:
-act/rgb_reg_reg[0], ats/rgb_reg_reg[11], ats/rgb_reg_reg[3], ats/rgb_reg_reg[7], cred/rgb_reg_reg[0], fight/rgb_reg_reg[11], fight/rgb_reg_reg[7], menu/rgb_reg_reg[11], menu/rgb_reg_reg[3], menu/rgb_reg_reg[7], newpic_reg, spare/rgb_reg_reg[11]
+A LUT vga_sync_unit/rgb_reg[11]_i_2__2 is driving clock pin of 13 cells. This could lead to large hold time violations. Involved cells are:
+act/rgb_reg_reg[0], ats/rgb_reg_reg[11], ats/rgb_reg_reg[3], ats/rgb_reg_reg[7], cred/rgb_reg_reg[0], fight/rgb_reg_reg[11], fight/rgb_reg_reg[3], fight/rgb_reg_reg[7], menu/rgb_reg_reg[11], menu/rgb_reg_reg[3], menu/rgb_reg_reg[7], newpic_reg, spare/rgb_reg_reg[11]
 Related violations: <none>
 
 
