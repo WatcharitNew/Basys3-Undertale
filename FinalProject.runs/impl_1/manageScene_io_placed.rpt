@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date                      : Sat May 23 20:16:43 2020
-| Host                      : DESKTOP-VG3SLB4 running 64-bit major release  (build 9200)
+| Date                      : Mon May 25 02:21:38 2020
+| Host                      : MSI-IT running 64-bit major release  (build 9200)
 | Command                   : report_io -file manageScene_io_placed.rpt
 | Design                    : manageScene
 | Device                    : xc7a35t

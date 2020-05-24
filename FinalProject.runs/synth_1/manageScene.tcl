@@ -23,32 +23,33 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.cache/wt [current_project]
-set_property parent.project_path C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.cache/wt [current_project]
+set_property parent.project_path C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
-set_property ip_output_repo c:/Users/HP/Desktop/Basys3-Undertale/FinalProject.cache/ip [current_project]
+set_property ip_output_repo c:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/CLockDivider.v
-  C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/actScene.v
-  C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/blackScene.v
-  C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/creditScene.v
-  C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v
-  C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/gameOver.v
-  C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/menuScene.v
-  C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/receiver.v
-  C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/spareScene.v
-  C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/transmitter.v
-  C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_sync.v
-  C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v
-  C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v
+  C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/CLockDivider.v
+  C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/actScene.v
+  C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/blackScene.v
+  C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/creditScene.v
+  C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v
+  C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/fightScene.v
+  C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/gameOver.v
+  C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/menuScene.v
+  C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/receiver.v
+  C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/spareScene.v
+  C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/transmitter.v
+  C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_sync.v
+  C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_test.v
+  C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v
 }
 read_vhdl -library xil_defaultlib {
-  C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/commonPak.vhd
-  C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Font_Rom.vhd
-  C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd
+  C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/commonPak.vhd
+  C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Font_Rom.vhd
+  C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -58,8 +59,8 @@ read_vhdl -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc
-set_property used_in_implementation false [get_files C:/Users/HP/Desktop/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc]
+read_xdc C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc
+set_property used_in_implementation false [get_files C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

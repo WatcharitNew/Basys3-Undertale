@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sat May 23 20:17:19 2020
-| Host         : DESKTOP-VG3SLB4 running 64-bit major release  (build 9200)
+| Date         : Mon May 25 02:22:13 2020
+| Host         : MSI-IT running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file manageScene_timing_summary_routed.rpt -pb manageScene_timing_summary_routed.pb -rpx manageScene_timing_summary_routed.rpx -warn_on_violation
 | Design       : manageScene
 | Device       : 7a35t-cpg236
@@ -52,27 +52,27 @@ Table of Contents
 
 1. checking no_clock
 --------------------
- There are 4 register/latch pins with no clock driven by root clock pin: ats/newHealth_reg[1]/Q (HIGH)
+ There are 5 register/latch pins with no clock driven by root clock pin: ats/newHealth_reg[1]/Q (HIGH)
 
- There are 4 register/latch pins with no clock driven by root clock pin: ats/newHealth_reg[2]/Q (HIGH)
+ There are 5 register/latch pins with no clock driven by root clock pin: ats/newHealth_reg[2]/Q (HIGH)
 
- There are 4 register/latch pins with no clock driven by root clock pin: ats/newHealth_reg[3]/Q (HIGH)
+ There are 5 register/latch pins with no clock driven by root clock pin: ats/newHealth_reg[3]/Q (HIGH)
 
- There are 4 register/latch pins with no clock driven by root clock pin: ats/newHealth_reg[4]/Q (HIGH)
+ There are 5 register/latch pins with no clock driven by root clock pin: ats/newHealth_reg[4]/Q (HIGH)
 
- There are 4 register/latch pins with no clock driven by root clock pin: ats/newHealth_reg[5]/Q (HIGH)
+ There are 5 register/latch pins with no clock driven by root clock pin: ats/newHealth_reg[5]/Q (HIGH)
 
- There are 4 register/latch pins with no clock driven by root clock pin: ats/newHealth_reg[6]/Q (HIGH)
+ There are 5 register/latch pins with no clock driven by root clock pin: ats/newHealth_reg[6]/Q (HIGH)
 
- There are 4 register/latch pins with no clock driven by root clock pin: ats/newHealth_reg[7]/Q (HIGH)
+ There are 5 register/latch pins with no clock driven by root clock pin: ats/newHealth_reg[7]/Q (HIGH)
 
- There are 4 register/latch pins with no clock driven by root clock pin: ats/newHealth_reg[8]/Q (HIGH)
+ There are 5 register/latch pins with no clock driven by root clock pin: ats/newHealth_reg[8]/Q (HIGH)
 
- There are 4 register/latch pins with no clock driven by root clock pin: ats/newHealth_reg[9]/Q (HIGH)
+ There are 5 register/latch pins with no clock driven by root clock pin: ats/newHealth_reg[9]/Q (HIGH)
 
- There are 34 register/latch pins with no clock driven by root clock pin: fdivTarget/clkDiv_reg/Q (HIGH)
+ There are 45 register/latch pins with no clock driven by root clock pin: fdivTarget/clkDiv_reg/Q (HIGH)
 
- There are 11 register/latch pins with no clock driven by root clock pin: fdivTarget2/clkDiv_reg/Q (HIGH)
+ There are 13 register/latch pins with no clock driven by root clock pin: fdivTarget2/clkDiv_reg/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: genblk1[0].fdiv2/clkDiv_reg/Q (HIGH)
 
@@ -128,23 +128,23 @@ Table of Contents
 
  There is 1 register/latch pin with no clock driven by root clock pin: genblk1[9].fdiv2/clkDiv_reg/Q (HIGH)
 
- There are 3 register/latch pins with no clock driven by root clock pin: isSelect_reg/Q (HIGH)
+ There are 4 register/latch pins with no clock driven by root clock pin: isSelect_reg/Q (HIGH)
 
  There are 20 register/latch pins with no clock driven by root clock pin: newpic_reg/Q (HIGH)
 
- There are 3 register/latch pins with no clock driven by root clock pin: onScene_menu_reg_C/Q (HIGH)
+ There are 4 register/latch pins with no clock driven by root clock pin: onScene_menu_reg_C/Q (HIGH)
 
- There are 3 register/latch pins with no clock driven by root clock pin: onScene_menu_reg_LDC/Q (HIGH)
+ There are 4 register/latch pins with no clock driven by root clock pin: onScene_menu_reg_LDC/Q (HIGH)
 
- There are 3 register/latch pins with no clock driven by root clock pin: onScene_menu_reg_P/Q (HIGH)
+ There are 4 register/latch pins with no clock driven by root clock pin: onScene_menu_reg_P/Q (HIGH)
 
- There are 3 register/latch pins with no clock driven by root clock pin: selectedMenu_reg[0]/Q (HIGH)
+ There are 4 register/latch pins with no clock driven by root clock pin: selectedMenu_reg[0]/Q (HIGH)
 
- There are 3 register/latch pins with no clock driven by root clock pin: selectedMenu_reg[1]/Q (HIGH)
+ There are 4 register/latch pins with no clock driven by root clock pin: selectedMenu_reg[1]/Q (HIGH)
 
- There are 10 register/latch pins with no clock driven by root clock pin: vga_sync_unit/pixel_reg_reg[0]/Q (HIGH)
+ There are 12 register/latch pins with no clock driven by root clock pin: vga_sync_unit/pixel_reg_reg[0]/Q (HIGH)
 
- There are 10 register/latch pins with no clock driven by root clock pin: vga_sync_unit/pixel_reg_reg[1]/Q (HIGH)
+ There are 12 register/latch pins with no clock driven by root clock pin: vga_sync_unit/pixel_reg_reg[1]/Q (HIGH)
 
 
 2. checking constant_clock
@@ -159,7 +159,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 214 pins that are not constrained for maximum delay. (HIGH)
+ There are 252 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
@@ -218,7 +218,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-     -4.450       -9.269                      6                  617        0.098        0.000                      0                  617        4.500        0.000                       0                   217  
+     -4.128       -8.842                      8                  612        0.126        0.000                      0                  612        4.500        0.000                       0                   215  
 
 
 Timing constraints are not met.
@@ -241,7 +241,7 @@ sys_clk_pin  {0.000 5.000}      10.000          100.000
 
 Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-sys_clk_pin        -4.450       -9.269                      6                  617        0.098        0.000                      0                  617        4.500        0.000                       0                   217  
+sys_clk_pin        -4.128       -8.842                      8                  612        0.126        0.000                      0                  612        4.500        0.000                       0                   215  
 
 
 ------------------------------------------------------------------------------------------------
@@ -272,15 +272,105 @@ Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing 
 From Clock:  sys_clk_pin
   To Clock:  sys_clk_pin
 
-Setup :            6  Failing Endpoints,  Worst Slack       -4.450ns,  Total Violation       -9.269ns
-Hold  :            0  Failing Endpoints,  Worst Slack        0.098ns,  Total Violation        0.000ns
+Setup :            8  Failing Endpoints,  Worst Slack       -4.128ns,  Total Violation       -8.842ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.126ns,  Total Violation        0.000ns
 PW    :            0  Failing Endpoints,  Worst Slack        4.500ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack (VIOLATED) :        -4.450ns  (required time - arrival time)
+Slack (VIOLATED) :        -4.128ns  (required time - arrival time)
+  Source:                 vga_sync_unit/h_count_reg_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ats/ec2/hitEnemy_reg/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        14.078ns  (logic 9.637ns (68.452%)  route 4.441ns (31.548%))
+  Logic Levels:           13  (CARRY4=7 DSP48E1=2 LUT2=2 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.045ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.774ns = ( 14.774 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.079ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=2, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=213, routed)         1.558     5.079    vga_sync_unit/clk_IBUF_BUFG
+    SLICE_X10Y31         FDRE                                         r  vga_sync_unit/h_count_reg_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X10Y31         FDRE (Prop_fdre_C_Q)         0.518     5.597 r  vga_sync_unit/h_count_reg_reg[0]/Q
+                         net (fo=144, routed)         0.723     6.320    ats/ec2/x[0]
+    SLICE_X10Y27         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.550     6.870 r  ats/ec2/hitEnemy6_inferred__0/i__carry/CO[3]
+                         net (fo=1, routed)           0.000     6.870    ats/ec2/hitEnemy6_inferred__0/i__carry_n_0
+    SLICE_X10Y28         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     6.987 r  ats/ec2/hitEnemy6_inferred__0/i__carry__0/CO[3]
+                         net (fo=1, routed)           0.000     6.987    ats/ec2/hitEnemy6_inferred__0/i__carry__0_n_0
+    SLICE_X10Y29         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239     7.226 r  ats/ec2/hitEnemy6_inferred__0/i__carry__1/O[2]
+                         net (fo=71, routed)          0.809     8.035    ats/ec2/rgb_reg5[31]
+    DSP48_X0Y11          DSP48E1 (Prop_dsp48e1_A[10]_PCOUT[47])
+                                                      4.213    12.248 r  ats/ec2/hitEnemy5__3/PCOUT[47]
+                         net (fo=1, routed)           0.002    12.250    ats/ec2/hitEnemy5__3_n_106
+    DSP48_X0Y12          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[4])
+                                                      1.518    13.768 r  ats/ec2/hitEnemy5__4/P[4]
+                         net (fo=2, routed)           1.021    14.789    ats/ec2/hitEnemy5__4_n_101
+    SLICE_X11Y24         LUT2 (Prop_lut2_I0_O)        0.124    14.913 r  ats/ec2/hitEnemy4_carry__0_i_3/O
+                         net (fo=1, routed)           0.000    14.913    ats/ec2/hitEnemy4_carry__0_i_3_n_0
+    SLICE_X11Y24         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    15.463 r  ats/ec2/hitEnemy4_carry__0/CO[3]
+                         net (fo=1, routed)           0.009    15.472    ats/ec2/hitEnemy4_carry__0_n_0
+    SLICE_X11Y25         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    15.806 r  ats/ec2/hitEnemy4_carry__1/O[1]
+                         net (fo=2, routed)           0.674    16.480    ats/ec2/hitEnemy50_in[25]
+    SLICE_X10Y25         LUT2 (Prop_lut2_I0_O)        0.303    16.783 r  ats/ec2/hitEnemy4__89_carry__5_i_3/O
+                         net (fo=1, routed)           0.000    16.783    ats/ec2/hitEnemy4__89_carry__5_i_3_n_0
+    SLICE_X10Y25         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    17.316 r  ats/ec2/hitEnemy4__89_carry__5/CO[3]
+                         net (fo=1, routed)           0.000    17.316    ats/ec2/hitEnemy4__89_carry__5_n_0
+    SLICE_X10Y26         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    17.535 f  ats/ec2/hitEnemy4__89_carry__6/O[0]
+                         net (fo=1, routed)           0.789    18.324    ats/ec2/rgb_reg3__0[28]
+    SLICE_X9Y25          LUT6 (Prop_lut6_I3_O)        0.295    18.619 r  ats/ec2/hitEnemy_i_2/O
+                         net (fo=4, routed)           0.415    19.034    ats/ec2/hitEnemy_i_2_n_0
+    SLICE_X9Y25          LUT5 (Prop_lut5_I0_O)        0.124    19.158 r  ats/ec2/hitEnemy_i_1/O
+                         net (fo=1, routed)           0.000    19.158    ats/ec2/hitEnemy_i_1_n_0
+    SLICE_X9Y25          FDRE                                         r  ats/ec2/hitEnemy_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=2, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=213, routed)         1.433    14.774    ats/ec2/clk_IBUF_BUFG
+    SLICE_X9Y25          FDRE                                         r  ats/ec2/hitEnemy_reg/C
+                         clock pessimism              0.260    15.034    
+                         clock uncertainty           -0.035    14.999    
+    SLICE_X9Y25          FDRE (Setup_fdre_C_D)        0.031    15.030    ats/ec2/hitEnemy_reg
+  -------------------------------------------------------------------
+                         required time                         15.030    
+                         arrival time                         -19.158    
+  -------------------------------------------------------------------
+                         slack                                 -4.128    
+
+Slack (VIOLATED) :        -3.910ns  (required time - arrival time)
   Source:                 vga_sync_unit/v_count_reg_reg[0]_replica/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            ats/ec1/hitEnemy_reg/D
@@ -288,197 +378,10 @@ Slack (VIOLATED) :        -4.450ns  (required time - arrival time)
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        14.465ns  (logic 9.852ns (68.109%)  route 4.613ns (31.891%))
-  Logic Levels:           14  (CARRY4=8 DSP48E1=2 LUT2=2 LUT5=1 LUT6=1)
-  Clock Path Skew:        -0.027ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.789ns = ( 14.789 - 10.000 ) 
-    Source Clock Delay      (SCD):    5.076ns
-    Clock Pessimism Removal (CPR):    0.260ns
-  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter     (TSJ):    0.071ns
-    Total Input Jitter      (TIJ):    0.000ns
-    Discrete Jitter          (DJ):    0.000ns
-    Phase Error              (PE):    0.000ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    W5                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
-                         net (fo=2, routed)           1.967     3.425    clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         1.555     5.076    vga_sync_unit/clk_IBUF_BUFG
-    SLICE_X11Y21         FDRE                                         r  vga_sync_unit/v_count_reg_reg[0]_replica/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X11Y21         FDRE (Prop_fdre_C_Q)         0.456     5.532 r  vga_sync_unit/v_count_reg_reg[0]_replica/Q
-                         net (fo=20, routed)          0.780     6.312    vga_sync_unit/y[0]_repN
-    SLICE_X11Y14         LUT2 (Prop_lut2_I0_O)        0.124     6.436 r  vga_sync_unit/hitEnemy6_carry_i_4__0/O
-                         net (fo=1, routed)           0.000     6.436    ats/ec1/hitEnemy5__1_0[0]
-    SLICE_X11Y14         CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.532     6.968 r  ats/ec1/hitEnemy6_carry/CO[3]
-                         net (fo=1, routed)           0.000     6.968    ats/ec1/hitEnemy6_carry_n_0
-    SLICE_X11Y15         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114     7.082 r  ats/ec1/hitEnemy6_carry__0/CO[3]
-                         net (fo=1, routed)           0.000     7.082    ats/ec1/hitEnemy6_carry__0_n_0
-    SLICE_X11Y16         CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.334     7.416 r  ats/ec1/hitEnemy6_carry__1/O[1]
-                         net (fo=4, routed)           0.840     8.256    ats/ec1/hitEnemy6_carry__1_n_6
-    DSP48_X0Y5           DSP48E1 (Prop_dsp48e1_A[9]_PCOUT[47])
-                                                      4.215    12.471 r  ats/ec1/hitEnemy5__0/PCOUT[47]
-                         net (fo=1, routed)           0.002    12.473    ats/ec1/hitEnemy5__0_n_106
-    DSP48_X0Y6           DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
-                                                      1.518    13.991 r  ats/ec1/hitEnemy5__1/P[0]
-                         net (fo=2, routed)           1.044    15.035    ats/ec1/hitEnemy5__1_n_105
-    SLICE_X12Y10         CARRY4 (Prop_carry4_DI[1]_CO[3])
-                                                      0.520    15.555 r  ats/ec1/hitEnemy4__44_carry/CO[3]
-                         net (fo=1, routed)           0.000    15.555    ats/ec1/hitEnemy4__44_carry_n_0
-    SLICE_X12Y11         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117    15.672 r  ats/ec1/hitEnemy4__44_carry__0/CO[3]
-                         net (fo=1, routed)           0.000    15.672    ats/ec1/hitEnemy4__44_carry__0_n_0
-    SLICE_X12Y12         CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.323    15.995 r  ats/ec1/hitEnemy4__44_carry__1/O[1]
-                         net (fo=1, routed)           0.552    16.547    ats/ec1/hitEnemy5__5[25]
-    SLICE_X13Y11         LUT2 (Prop_lut2_I1_O)        0.306    16.853 r  ats/ec1/hitEnemy4__89_carry__5_i_3__0/O
-                         net (fo=1, routed)           0.000    16.853    ats/ec1/hitEnemy4__89_carry__5_i_3__0_n_0
-    SLICE_X13Y11         CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.550    17.403 r  ats/ec1/hitEnemy4__89_carry__5/CO[3]
-                         net (fo=1, routed)           0.000    17.403    ats/ec1/hitEnemy4__89_carry__5_n_0
-    SLICE_X13Y12         CARRY4 (Prop_carry4_CI_O[3])
-                                                      0.313    17.716 f  ats/ec1/hitEnemy4__89_carry__6/O[3]
-                         net (fo=1, routed)           0.958    18.673    ats/ec1/rgb_reg33_out[31]
-    SLICE_X15Y10         LUT6 (Prop_lut6_I1_O)        0.306    18.979 r  ats/ec1/hitEnemy_i_2__0/O
-                         net (fo=4, routed)           0.438    19.417    ats/ec1/hitEnemy_i_5__0_0
-    SLICE_X14Y10         LUT5 (Prop_lut5_I0_O)        0.124    19.541 r  ats/ec1/hitEnemy_i_1__0/O
-                         net (fo=1, routed)           0.000    19.541    ats/ec1/hitEnemy_i_1__0_n_0
-    SLICE_X14Y10         FDRE                                         r  ats/ec1/hitEnemy_reg/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin rise edge)
-                                                     10.000    10.000 r  
-    W5                                                0.000    10.000 r  clk (IN)
-                         net (fo=0)                   0.000    10.000    clk
-    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
-                         net (fo=2, routed)           1.862    13.250    clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         1.448    14.789    ats/ec1/clk_IBUF_BUFG
-    SLICE_X14Y10         FDRE                                         r  ats/ec1/hitEnemy_reg/C
-                         clock pessimism              0.260    15.049    
-                         clock uncertainty           -0.035    15.014    
-    SLICE_X14Y10         FDRE (Setup_fdre_C_D)        0.077    15.091    ats/ec1/hitEnemy_reg
-  -------------------------------------------------------------------
-                         required time                         15.091    
-                         arrival time                         -19.541    
-  -------------------------------------------------------------------
-                         slack                                 -4.450    
-
-Slack (VIOLATED) :        -4.382ns  (required time - arrival time)
-  Source:                 vga_sync_unit/v_count_reg_reg[4]/C
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            ats/ec2/hitEnemy_reg/D
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        14.391ns  (logic 9.822ns (68.249%)  route 4.569ns (31.751%))
-  Logic Levels:           15  (CARRY4=7 DSP48E1=2 LUT2=3 LUT5=1 LUT6=2)
-  Clock Path Skew:        -0.036ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.780ns = ( 14.780 - 10.000 ) 
-    Source Clock Delay      (SCD):    5.076ns
-    Clock Pessimism Removal (CPR):    0.260ns
-  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter     (TSJ):    0.071ns
-    Total Input Jitter      (TIJ):    0.000ns
-    Discrete Jitter          (DJ):    0.000ns
-    Phase Error              (PE):    0.000ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    W5                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
-                         net (fo=2, routed)           1.967     3.425    clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         1.555     5.076    vga_sync_unit/clk_IBUF_BUFG
-    SLICE_X9Y21          FDRE                                         r  vga_sync_unit/v_count_reg_reg[4]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X9Y21          FDRE (Prop_fdre_C_Q)         0.456     5.532 r  vga_sync_unit/v_count_reg_reg[4]/Q
-                         net (fo=116, routed)         0.814     6.346    vga_sync_unit/y[3]
-    SLICE_X11Y25         LUT2 (Prop_lut2_I0_O)        0.124     6.470 r  vga_sync_unit/hitEnemy6_carry__0_i_4/O
-                         net (fo=1, routed)           0.000     6.470    ats/ec2/hitEnemy5__1_1[0]
-    SLICE_X11Y25         CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.532     7.002 r  ats/ec2/hitEnemy6_carry__0/CO[3]
-                         net (fo=1, routed)           0.000     7.002    ats/ec2/hitEnemy6_carry__0_n_0
-    SLICE_X11Y26         CARRY4 (Prop_carry4_CI_O[2])
-                                                      0.239     7.241 r  ats/ec2/hitEnemy6_carry__1/O[2]
-                         net (fo=71, routed)          0.833     8.075    ats/ec2/hitEnemy6_carry__1_n_5
-    DSP48_X0Y11          DSP48E1 (Prop_dsp48e1_A[12]_PCOUT[47])
-                                                      4.214    12.289 r  ats/ec2/hitEnemy5__0/PCOUT[47]
-                         net (fo=1, routed)           0.002    12.291    ats/ec2/hitEnemy5__0_n_106
-    DSP48_X0Y12          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
-                                                      1.518    13.809 r  ats/ec2/hitEnemy5__1/P[0]
-                         net (fo=2, routed)           0.943    14.752    ats/ec2/hitEnemy5__1_n_105
-    SLICE_X12Y25         LUT2 (Prop_lut2_I0_O)        0.124    14.876 r  ats/ec2/hitEnemy4__44_carry_i_3/O
-                         net (fo=1, routed)           0.000    14.876    ats/ec2/hitEnemy4__44_carry_i_3_n_0
-    SLICE_X12Y25         CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.533    15.409 r  ats/ec2/hitEnemy4__44_carry/CO[3]
-                         net (fo=1, routed)           0.000    15.409    ats/ec2/hitEnemy4__44_carry_n_0
-    SLICE_X12Y26         CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.323    15.732 r  ats/ec2/hitEnemy4__44_carry__0/O[1]
-                         net (fo=1, routed)           0.686    16.418    ats/ec2/hitEnemy5__5[21]
-    SLICE_X13Y22         LUT2 (Prop_lut2_I1_O)        0.306    16.724 r  ats/ec2/hitEnemy4__89_carry__4_i_3/O
-                         net (fo=1, routed)           0.000    16.724    ats/ec2/hitEnemy4__89_carry__4_i_3_n_0
-    SLICE_X13Y22         CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.550    17.274 r  ats/ec2/hitEnemy4__89_carry__4/CO[3]
-                         net (fo=1, routed)           0.000    17.274    ats/ec2/hitEnemy4__89_carry__4_n_0
-    SLICE_X13Y23         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114    17.388 r  ats/ec2/hitEnemy4__89_carry__5/CO[3]
-                         net (fo=1, routed)           0.000    17.388    ats/ec2/hitEnemy4__89_carry__5_n_0
-    SLICE_X13Y24         CARRY4 (Prop_carry4_CI_O[2])
-                                                      0.239    17.627 f  ats/ec2/hitEnemy4__89_carry__6/O[2]
-                         net (fo=1, routed)           0.813    18.440    ats/ec2/rgb_reg3__0[30]
-    SLICE_X12Y18         LUT6 (Prop_lut6_I0_O)        0.302    18.742 f  ats/ec2/hitEnemy_i_8/O
-                         net (fo=1, routed)           0.161    18.903    ats/ec2/hitEnemy_i_8_n_0
-    SLICE_X12Y18         LUT6 (Prop_lut6_I1_O)        0.124    19.027 f  ats/ec2/hitEnemy_i_3/O
-                         net (fo=4, routed)           0.317    19.344    ats/ec2/hitEnemy_i_3_n_0
-    SLICE_X12Y19         LUT5 (Prop_lut5_I1_O)        0.124    19.468 r  ats/ec2/hitEnemy_i_1/O
-                         net (fo=1, routed)           0.000    19.468    ats/ec2/hitEnemy_i_1_n_0
-    SLICE_X12Y19         FDRE                                         r  ats/ec2/hitEnemy_reg/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin rise edge)
-                                                     10.000    10.000 r  
-    W5                                                0.000    10.000 r  clk (IN)
-                         net (fo=0)                   0.000    10.000    clk
-    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
-                         net (fo=2, routed)           1.862    13.250    clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         1.439    14.780    ats/ec2/clk_IBUF_BUFG
-    SLICE_X12Y19         FDRE                                         r  ats/ec2/hitEnemy_reg/C
-                         clock pessimism              0.260    15.040    
-                         clock uncertainty           -0.035    15.005    
-    SLICE_X12Y19         FDRE (Setup_fdre_C_D)        0.081    15.086    ats/ec2/hitEnemy_reg
-  -------------------------------------------------------------------
-                         required time                         15.086    
-                         arrival time                         -19.468    
-  -------------------------------------------------------------------
-                         slack                                 -4.382    
-
-Slack (VIOLATED) :        -0.164ns  (required time - arrival time)
-  Source:                 vga_sync_unit/h_count_reg_reg[6]/C
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            cred/t2/FontRom/fontRow_reg/ADDRBWRADDR[12]
-                            (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        9.386ns  (logic 1.749ns (18.635%)  route 7.637ns (81.365%))
-  Logic Levels:           5  (CARRY4=2 LUT2=1 LUT5=2)
-  Clock Path Skew:        0.006ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.834ns = ( 14.834 - 10.000 ) 
+  Data Path Delay:        13.906ns  (logic 9.897ns (71.171%)  route 4.009ns (28.829%))
+  Logic Levels:           14  (CARRY4=7 DSP48E1=2 LUT2=3 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.048ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.779ns = ( 14.779 - 10.000 ) 
     Source Clock Delay      (SCD):    5.087ns
     Clock Pessimism Removal (CPR):    0.260ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
@@ -496,24 +399,49 @@ Slack (VIOLATED) :        -0.164ns  (required time - arrival time)
     W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
                          net (fo=2, routed)           1.967     3.425    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         1.566     5.087    vga_sync_unit/clk_IBUF_BUFG
-    SLICE_X11Y11         FDRE                                         r  vga_sync_unit/h_count_reg_reg[6]/C
+                         net (fo=213, routed)         1.566     5.087    vga_sync_unit/clk_IBUF_BUFG
+    SLICE_X11Y11         FDRE                                         r  vga_sync_unit/v_count_reg_reg[0]_replica/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X11Y11         FDRE (Prop_fdre_C_Q)         0.456     5.543 r  vga_sync_unit/h_count_reg_reg[6]/Q
-                         net (fo=140, routed)         4.940    10.483    vga_sync_unit/x[6]
-    SLICE_X7Y40          LUT5 (Prop_lut5_I0_O)        0.152    10.635 r  vga_sync_unit/g0_b0_i_4/O
-                         net (fo=14, routed)          1.355    11.990    vga_sync_unit/g0_b0_i_4_n_0
-    SLICE_X7Y43          LUT5 (Prop_lut5_I3_O)        0.326    12.316 r  vga_sync_unit/g0_b1__0/O
-                         net (fo=3, routed)           0.525    12.841    vga_sync_unit/v_count_reg_reg[9]_7[0]
-    SLICE_X6Y42          LUT2 (Prop_lut2_I0_O)        0.124    12.965 r  vga_sync_unit/fontAddress_carry_i_1__12/O
-                         net (fo=1, routed)           0.000    12.965    cred/t3/S[3]
-    SLICE_X6Y42          CARRY4 (Prop_carry4_S[3]_CO[3])
-                                                      0.376    13.341 r  cred/t3/fontAddress_carry/CO[3]
-                         net (fo=1, routed)           0.000    13.341    cred/t3/fontAddress_carry_n_0
-    SLICE_X6Y43          CARRY4 (Prop_carry4_CI_O[3])
-                                                      0.315    13.656 r  cred/t3/fontAddress_carry__0/O[3]
-                         net (fo=1, routed)           0.817    14.473    cred/t2/FontRom/ADDRBWRADDR[6]
-    RAMB18_X0Y18         RAMB18E1                                     r  cred/t2/FontRom/fontRow_reg/ADDRBWRADDR[12]
+    SLICE_X11Y11         FDRE (Prop_fdre_C_Q)         0.456     5.543 r  vga_sync_unit/v_count_reg_reg[0]_replica/Q
+                         net (fo=44, routed)          0.744     6.287    vga_sync_unit/y[0]_repN
+    SLICE_X11Y16         LUT2 (Prop_lut2_I0_O)        0.124     6.411 r  vga_sync_unit/hitEnemy6_carry_i_4__0/O
+                         net (fo=1, routed)           0.000     6.411    ats/ec1/hitEnemy5__1_0[0]
+    SLICE_X11Y16         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     6.943 r  ats/ec1/hitEnemy6_carry/CO[3]
+                         net (fo=1, routed)           0.000     6.943    ats/ec1/hitEnemy6_carry_n_0
+    SLICE_X11Y17         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.057 r  ats/ec1/hitEnemy6_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     7.057    ats/ec1/hitEnemy6_carry__0_n_0
+    SLICE_X11Y18         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     7.391 r  ats/ec1/hitEnemy6_carry__1/O[1]
+                         net (fo=4, routed)           0.626     8.017    ats/ec1/hitEnemy6_carry__1_n_6
+    DSP48_X0Y7           DSP48E1 (Prop_dsp48e1_A[9]_PCOUT[47])
+                                                      4.215    12.232 r  ats/ec1/hitEnemy5__0/PCOUT[47]
+                         net (fo=1, routed)           0.002    12.234    ats/ec1/hitEnemy5__0_n_106
+    DSP48_X0Y8           DSP48E1 (Prop_dsp48e1_PCIN[47]_P[4])
+                                                      1.518    13.752 r  ats/ec1/hitEnemy5__1/P[4]
+                         net (fo=2, routed)           1.039    14.792    ats/ec1/hitEnemy5__1_n_101
+    SLICE_X11Y28         LUT2 (Prop_lut2_I0_O)        0.124    14.916 r  ats/ec1/hitEnemy4__44_carry__0_i_3__0/O
+                         net (fo=1, routed)           0.000    14.916    ats/ec1/hitEnemy4__44_carry__0_i_3__0_n_0
+    SLICE_X11Y28         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    15.466 r  ats/ec1/hitEnemy4__44_carry__0/CO[3]
+                         net (fo=1, routed)           0.000    15.466    ats/ec1/hitEnemy4__44_carry__0_n_0
+    SLICE_X11Y29         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    15.800 r  ats/ec1/hitEnemy4__44_carry__1/O[1]
+                         net (fo=1, routed)           0.558    16.358    ats/ec1/hitEnemy5__5[25]
+    SLICE_X13Y29         LUT2 (Prop_lut2_I1_O)        0.303    16.661 r  ats/ec1/hitEnemy4__89_carry__5_i_3__0/O
+                         net (fo=1, routed)           0.000    16.661    ats/ec1/hitEnemy4__89_carry__5_i_3__0_n_0
+    SLICE_X13Y29         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    17.211 r  ats/ec1/hitEnemy4__89_carry__5/CO[3]
+                         net (fo=1, routed)           0.000    17.211    ats/ec1/hitEnemy4__89_carry__5_n_0
+    SLICE_X13Y30         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313    17.524 f  ats/ec1/hitEnemy4__89_carry__6/O[3]
+                         net (fo=1, routed)           0.743    18.267    ats/ec1/rgb_reg33_out[31]
+    SLICE_X14Y28         LUT6 (Prop_lut6_I1_O)        0.306    18.573 r  ats/ec1/hitEnemy_i_2__0/O
+                         net (fo=4, routed)           0.296    18.869    ats/ec1/hitEnemy_i_5__0_0
+    SLICE_X14Y28         LUT5 (Prop_lut5_I0_O)        0.124    18.993 r  ats/ec1/hitEnemy_i_1__0/O
+                         net (fo=1, routed)           0.000    18.993    ats/ec1/hitEnemy_i_1__0_n_0
+    SLICE_X14Y28         FDRE                                         r  ats/ec1/hitEnemy_reg/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -523,31 +451,30 @@ Slack (VIOLATED) :        -0.164ns  (required time - arrival time)
     W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
                          net (fo=2, routed)           1.862    13.250    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         1.493    14.834    cred/t2/FontRom/clk_IBUF_BUFG
-    RAMB18_X0Y18         RAMB18E1                                     r  cred/t2/FontRom/fontRow_reg/CLKBWRCLK
-                         clock pessimism              0.260    15.094    
-                         clock uncertainty           -0.035    15.058    
-    RAMB18_X0Y18         RAMB18E1 (Setup_ramb18e1_CLKBWRCLK_ADDRBWRADDR[12])
-                                                     -0.749    14.309    cred/t2/FontRom/fontRow_reg
+                         net (fo=213, routed)         1.438    14.779    ats/ec1/clk_IBUF_BUFG
+    SLICE_X14Y28         FDRE                                         r  ats/ec1/hitEnemy_reg/C
+                         clock pessimism              0.260    15.039    
+                         clock uncertainty           -0.035    15.004    
+    SLICE_X14Y28         FDRE (Setup_fdre_C_D)        0.079    15.083    ats/ec1/hitEnemy_reg
   -------------------------------------------------------------------
-                         required time                         14.309    
-                         arrival time                         -14.473    
+                         required time                         15.083    
+                         arrival time                         -18.993    
   -------------------------------------------------------------------
-                         slack                                 -0.164    
+                         slack                                 -3.910    
 
-Slack (VIOLATED) :        -0.158ns  (required time - arrival time)
-  Source:                 vga_sync_unit/h_count_reg_reg[6]/C
+Slack (VIOLATED) :        -0.305ns  (required time - arrival time)
+  Source:                 vga_sync_unit/h_count_reg_reg[0]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            cred/t2/FontRom/fontRow_reg/ADDRBWRADDR[13]
                             (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        9.392ns  (logic 1.790ns (19.058%)  route 7.602ns (80.942%))
-  Logic Levels:           5  (CARRY4=2 LUT3=1 LUT5=2)
-  Clock Path Skew:        0.006ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.834ns = ( 14.834 - 10.000 ) 
-    Source Clock Delay      (SCD):    5.087ns
+  Data Path Delay:        9.548ns  (logic 2.045ns (21.417%)  route 7.503ns (78.583%))
+  Logic Levels:           6  (CARRY4=2 LUT4=1 LUT5=2 LUT6=1)
+  Clock Path Skew:        0.015ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.835ns = ( 14.835 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.079ns
     Clock Pessimism Removal (CPR):    0.260ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -564,24 +491,26 @@ Slack (VIOLATED) :        -0.158ns  (required time - arrival time)
     W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
                          net (fo=2, routed)           1.967     3.425    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         1.566     5.087    vga_sync_unit/clk_IBUF_BUFG
-    SLICE_X11Y11         FDRE                                         r  vga_sync_unit/h_count_reg_reg[6]/C
+                         net (fo=213, routed)         1.558     5.079    vga_sync_unit/clk_IBUF_BUFG
+    SLICE_X10Y31         FDRE                                         r  vga_sync_unit/h_count_reg_reg[0]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X11Y11         FDRE (Prop_fdre_C_Q)         0.456     5.543 r  vga_sync_unit/h_count_reg_reg[6]/Q
-                         net (fo=140, routed)         4.940    10.483    vga_sync_unit/x[6]
-    SLICE_X7Y40          LUT5 (Prop_lut5_I0_O)        0.152    10.635 r  vga_sync_unit/g0_b0_i_4/O
-                         net (fo=14, routed)          1.355    11.990    vga_sync_unit/g0_b0_i_4_n_0
-    SLICE_X7Y43          LUT5 (Prop_lut5_I3_O)        0.326    12.316 r  vga_sync_unit/g0_b1__0/O
-                         net (fo=3, routed)           0.578    12.894    vga_sync_unit/v_count_reg_reg[9]_7[0]
-    SLICE_X6Y43          LUT3 (Prop_lut3_I2_O)        0.124    13.018 r  vga_sync_unit/fontAddress_carry__0_i_7__2/O
-                         net (fo=1, routed)           0.000    13.018    cred/t3/fontRow_reg_0[0]
-    SLICE_X6Y43          CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.513    13.531 r  cred/t3/fontAddress_carry__0/CO[3]
-                         net (fo=1, routed)           0.000    13.531    cred/t3/fontAddress_carry__0_n_0
-    SLICE_X6Y44          CARRY4 (Prop_carry4_CI_O[0])
-                                                      0.219    13.750 r  cred/t3/fontAddress_carry__1/O[0]
-                         net (fo=1, routed)           0.729    14.480    cred/t2/FontRom/ADDRBWRADDR[7]
-    RAMB18_X0Y18         RAMB18E1                                     r  cred/t2/FontRom/fontRow_reg/ADDRBWRADDR[13]
+    SLICE_X10Y31         FDRE (Prop_fdre_C_Q)         0.518     5.597 f  vga_sync_unit/h_count_reg_reg[0]/Q
+                         net (fo=144, routed)         4.357     9.954    vga_sync_unit/x[0]
+    SLICE_X6Y2           LUT6 (Prop_lut6_I3_O)        0.124    10.078 r  vga_sync_unit/g0_b0_i_7/O
+                         net (fo=31, routed)          0.617    10.695    vga_sync_unit/g0_b0_i_7_n_0
+    SLICE_X6Y2           LUT5 (Prop_lut5_I2_O)        0.116    10.811 r  vga_sync_unit/g0_b0_i_1/O
+                         net (fo=14, routed)          1.031    11.841    vga_sync_unit/g0_b0_i_1_n_0
+    SLICE_X4Y4           LUT5 (Prop_lut5_I0_O)        0.356    12.197 r  vga_sync_unit/g0_b4__0/O
+                         net (fo=2, routed)           0.684    12.881    vga_sync_unit/cred/t3/fontAddress0[8]
+    SLICE_X6Y5           LUT4 (Prop_lut4_I2_O)        0.332    13.213 r  vga_sync_unit/fontAddress_carry__0_i_5__2/O
+                         net (fo=1, routed)           0.000    13.213    cred/t3/fontRow_reg_0[2]
+    SLICE_X6Y5           CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.380    13.593 r  cred/t3/fontAddress_carry__0/CO[3]
+                         net (fo=1, routed)           0.000    13.593    cred/t3/fontAddress_carry__0_n_0
+    SLICE_X6Y6           CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    13.812 r  cred/t3/fontAddress_carry__1/O[0]
+                         net (fo=1, routed)           0.815    14.628    cred/t2/FontRom/ADDRBWRADDR[7]
+    RAMB18_X0Y1          RAMB18E1                                     r  cred/t2/FontRom/fontRow_reg/ADDRBWRADDR[13]
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -591,31 +520,31 @@ Slack (VIOLATED) :        -0.158ns  (required time - arrival time)
     W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
                          net (fo=2, routed)           1.862    13.250    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         1.493    14.834    cred/t2/FontRom/clk_IBUF_BUFG
-    RAMB18_X0Y18         RAMB18E1                                     r  cred/t2/FontRom/fontRow_reg/CLKBWRCLK
-                         clock pessimism              0.260    15.094    
-                         clock uncertainty           -0.035    15.058    
-    RAMB18_X0Y18         RAMB18E1 (Setup_ramb18e1_CLKBWRCLK_ADDRBWRADDR[13])
-                                                     -0.737    14.321    cred/t2/FontRom/fontRow_reg
+                         net (fo=213, routed)         1.494    14.835    cred/t2/FontRom/clk_IBUF_BUFG
+    RAMB18_X0Y1          RAMB18E1                                     r  cred/t2/FontRom/fontRow_reg/CLKBWRCLK
+                         clock pessimism              0.260    15.095    
+                         clock uncertainty           -0.035    15.059    
+    RAMB18_X0Y1          RAMB18E1 (Setup_ramb18e1_CLKBWRCLK_ADDRBWRADDR[13])
+                                                     -0.737    14.322    cred/t2/FontRom/fontRow_reg
   -------------------------------------------------------------------
-                         required time                         14.321    
-                         arrival time                         -14.480    
+                         required time                         14.322    
+                         arrival time                         -14.628    
   -------------------------------------------------------------------
-                         slack                                 -0.158    
+                         slack                                 -0.305    
 
-Slack (VIOLATED) :        -0.070ns  (required time - arrival time)
-  Source:                 vga_sync_unit/h_count_reg_reg[6]/C
+Slack (VIOLATED) :        -0.180ns  (required time - arrival time)
+  Source:                 vga_sync_unit/h_count_reg_reg[0]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            cred/t2/FontRom/fontRow_reg/ADDRBWRADDR[9]
+  Destination:            cred/t2/FontRom/fontRow_reg/ADDRARDADDR[12]
                             (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        9.304ns  (logic 1.653ns (17.766%)  route 7.651ns (82.234%))
-  Logic Levels:           5  (CARRY4=2 LUT2=1 LUT5=2)
-  Clock Path Skew:        0.006ns (DCD - SCD + CPR)
+  Data Path Delay:        9.414ns  (logic 1.942ns (20.629%)  route 7.472ns (79.371%))
+  Logic Levels:           6  (CARRY4=2 LUT4=1 LUT5=1 LUT6=2)
+  Clock Path Skew:        0.014ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    4.834ns = ( 14.834 - 10.000 ) 
-    Source Clock Delay      (SCD):    5.087ns
+    Source Clock Delay      (SCD):    5.079ns
     Clock Pessimism Removal (CPR):    0.260ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -632,24 +561,26 @@ Slack (VIOLATED) :        -0.070ns  (required time - arrival time)
     W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
                          net (fo=2, routed)           1.967     3.425    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         1.566     5.087    vga_sync_unit/clk_IBUF_BUFG
-    SLICE_X11Y11         FDRE                                         r  vga_sync_unit/h_count_reg_reg[6]/C
+                         net (fo=213, routed)         1.558     5.079    vga_sync_unit/clk_IBUF_BUFG
+    SLICE_X10Y31         FDRE                                         r  vga_sync_unit/h_count_reg_reg[0]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X11Y11         FDRE (Prop_fdre_C_Q)         0.456     5.543 r  vga_sync_unit/h_count_reg_reg[6]/Q
-                         net (fo=140, routed)         4.940    10.483    vga_sync_unit/x[6]
-    SLICE_X7Y40          LUT5 (Prop_lut5_I0_O)        0.152    10.635 r  vga_sync_unit/g0_b0_i_4/O
-                         net (fo=14, routed)          1.355    11.990    vga_sync_unit/g0_b0_i_4_n_0
-    SLICE_X7Y43          LUT5 (Prop_lut5_I3_O)        0.326    12.316 r  vga_sync_unit/g0_b1__0/O
-                         net (fo=3, routed)           0.525    12.841    vga_sync_unit/v_count_reg_reg[9]_7[0]
-    SLICE_X6Y42          LUT2 (Prop_lut2_I0_O)        0.124    12.965 r  vga_sync_unit/fontAddress_carry_i_1__12/O
-                         net (fo=1, routed)           0.000    12.965    cred/t3/S[3]
-    SLICE_X6Y42          CARRY4 (Prop_carry4_S[3]_CO[3])
-                                                      0.376    13.341 r  cred/t3/fontAddress_carry/CO[3]
-                         net (fo=1, routed)           0.000    13.341    cred/t3/fontAddress_carry_n_0
-    SLICE_X6Y43          CARRY4 (Prop_carry4_CI_O[0])
-                                                      0.219    13.560 r  cred/t3/fontAddress_carry__0/O[0]
-                         net (fo=1, routed)           0.831    14.392    cred/t2/FontRom/ADDRBWRADDR[3]
-    RAMB18_X0Y18         RAMB18E1                                     r  cred/t2/FontRom/fontRow_reg/ADDRBWRADDR[9]
+    SLICE_X10Y31         FDRE (Prop_fdre_C_Q)         0.518     5.597 f  vga_sync_unit/h_count_reg_reg[0]/Q
+                         net (fo=144, routed)         4.357     9.954    vga_sync_unit/x[0]
+    SLICE_X6Y2           LUT6 (Prop_lut6_I3_O)        0.124    10.078 r  vga_sync_unit/g0_b0_i_7/O
+                         net (fo=31, routed)          0.509    10.587    vga_sync_unit/g0_b0_i_7_n_0
+    SLICE_X6Y3           LUT5 (Prop_lut5_I1_O)        0.116    10.703 r  vga_sync_unit/g0_b0_i_4/O
+                         net (fo=14, routed)          1.110    11.813    vga_sync_unit/g0_b0_i_4_n_0
+    SLICE_X4Y1           LUT6 (Prop_lut6_I3_O)        0.328    12.141 r  vga_sync_unit/g0_b1/O
+                         net (fo=3, routed)           0.819    12.959    vga_sync_unit/cred/t2/fontAddress0[5]
+    SLICE_X4Y2           LUT4 (Prop_lut4_I1_O)        0.124    13.083 r  vga_sync_unit/fontAddress_carry_i_5__2/O
+                         net (fo=1, routed)           0.000    13.083    cred/t2/fontRow_reg_2[2]
+    SLICE_X4Y2           CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398    13.481 r  cred/t2/fontAddress_carry/CO[3]
+                         net (fo=1, routed)           0.000    13.481    cred/t2/fontAddress_carry_n_0
+    SLICE_X4Y3           CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    13.815 r  cred/t2/fontAddress_carry__0/O[1]
+                         net (fo=1, routed)           0.678    14.493    cred/t2/FontRom/ADDRARDADDR[9]
+    RAMB18_X0Y1          RAMB18E1                                     r  cred/t2/FontRom/fontRow_reg/ADDRARDADDR[12]
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -659,31 +590,31 @@ Slack (VIOLATED) :        -0.070ns  (required time - arrival time)
     W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
                          net (fo=2, routed)           1.862    13.250    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         1.493    14.834    cred/t2/FontRom/clk_IBUF_BUFG
-    RAMB18_X0Y18         RAMB18E1                                     r  cred/t2/FontRom/fontRow_reg/CLKBWRCLK
+                         net (fo=213, routed)         1.493    14.834    cred/t2/FontRom/clk_IBUF_BUFG
+    RAMB18_X0Y1          RAMB18E1                                     r  cred/t2/FontRom/fontRow_reg/CLKARDCLK
                          clock pessimism              0.260    15.094    
                          clock uncertainty           -0.035    15.058    
-    RAMB18_X0Y18         RAMB18E1 (Setup_ramb18e1_CLKBWRCLK_ADDRBWRADDR[9])
-                                                     -0.737    14.321    cred/t2/FontRom/fontRow_reg
+    RAMB18_X0Y1          RAMB18E1 (Setup_ramb18e1_CLKARDCLK_ADDRARDADDR[12])
+                                                     -0.745    14.313    cred/t2/FontRom/fontRow_reg
   -------------------------------------------------------------------
-                         required time                         14.321    
-                         arrival time                         -14.392    
+                         required time                         14.313    
+                         arrival time                         -14.493    
   -------------------------------------------------------------------
-                         slack                                 -0.070    
+                         slack                                 -0.180    
 
-Slack (VIOLATED) :        -0.045ns  (required time - arrival time)
-  Source:                 vga_sync_unit/h_count_reg_reg[6]/C
+Slack (VIOLATED) :        -0.175ns  (required time - arrival time)
+  Source:                 vga_sync_unit/h_count_reg_reg[0]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            cred/t2/FontRom/fontRow_reg/ADDRBWRADDR[10]
+  Destination:            cred/t2/FontRom/fontRow_reg/ADDRBWRADDR[12]
                             (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        9.268ns  (logic 1.757ns (18.958%)  route 7.511ns (81.042%))
-  Logic Levels:           5  (CARRY4=2 LUT2=1 LUT5=2)
-  Clock Path Skew:        0.006ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.834ns = ( 14.834 - 10.000 ) 
-    Source Clock Delay      (SCD):    5.087ns
+  Data Path Delay:        9.406ns  (logic 1.853ns (19.701%)  route 7.553ns (80.299%))
+  Logic Levels:           5  (CARRY4=1 LUT4=1 LUT5=2 LUT6=1)
+  Clock Path Skew:        0.015ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.835ns = ( 14.835 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.079ns
     Clock Pessimism Removal (CPR):    0.260ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -700,24 +631,23 @@ Slack (VIOLATED) :        -0.045ns  (required time - arrival time)
     W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
                          net (fo=2, routed)           1.967     3.425    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         1.566     5.087    vga_sync_unit/clk_IBUF_BUFG
-    SLICE_X11Y11         FDRE                                         r  vga_sync_unit/h_count_reg_reg[6]/C
+                         net (fo=213, routed)         1.558     5.079    vga_sync_unit/clk_IBUF_BUFG
+    SLICE_X10Y31         FDRE                                         r  vga_sync_unit/h_count_reg_reg[0]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X11Y11         FDRE (Prop_fdre_C_Q)         0.456     5.543 r  vga_sync_unit/h_count_reg_reg[6]/Q
-                         net (fo=140, routed)         4.940    10.483    vga_sync_unit/x[6]
-    SLICE_X7Y40          LUT5 (Prop_lut5_I0_O)        0.152    10.635 r  vga_sync_unit/g0_b0_i_4/O
-                         net (fo=14, routed)          1.355    11.990    vga_sync_unit/g0_b0_i_4_n_0
-    SLICE_X7Y43          LUT5 (Prop_lut5_I3_O)        0.326    12.316 r  vga_sync_unit/g0_b1__0/O
-                         net (fo=3, routed)           0.525    12.841    vga_sync_unit/v_count_reg_reg[9]_7[0]
-    SLICE_X6Y42          LUT2 (Prop_lut2_I0_O)        0.124    12.965 r  vga_sync_unit/fontAddress_carry_i_1__12/O
-                         net (fo=1, routed)           0.000    12.965    cred/t3/S[3]
-    SLICE_X6Y42          CARRY4 (Prop_carry4_S[3]_CO[3])
-                                                      0.376    13.341 r  cred/t3/fontAddress_carry/CO[3]
-                         net (fo=1, routed)           0.000    13.341    cred/t3/fontAddress_carry_n_0
-    SLICE_X6Y43          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.323    13.664 r  cred/t3/fontAddress_carry__0/O[1]
-                         net (fo=1, routed)           0.691    14.355    cred/t2/FontRom/ADDRBWRADDR[4]
-    RAMB18_X0Y18         RAMB18E1                                     r  cred/t2/FontRom/fontRow_reg/ADDRBWRADDR[10]
+    SLICE_X10Y31         FDRE (Prop_fdre_C_Q)         0.518     5.597 f  vga_sync_unit/h_count_reg_reg[0]/Q
+                         net (fo=144, routed)         4.357     9.954    vga_sync_unit/x[0]
+    SLICE_X6Y2           LUT6 (Prop_lut6_I3_O)        0.124    10.078 r  vga_sync_unit/g0_b0_i_7/O
+                         net (fo=31, routed)          0.617    10.695    vga_sync_unit/g0_b0_i_7_n_0
+    SLICE_X6Y2           LUT5 (Prop_lut5_I2_O)        0.116    10.811 r  vga_sync_unit/g0_b0_i_1/O
+                         net (fo=14, routed)          1.038    11.849    vga_sync_unit/g0_b0_i_1_n_0
+    SLICE_X4Y4           LUT5 (Prop_lut5_I0_O)        0.328    12.177 r  vga_sync_unit/g0_b2__0/O
+                         net (fo=3, routed)           0.672    12.848    vga_sync_unit/cred/t3/fontAddress0[6]
+    SLICE_X6Y5           LUT4 (Prop_lut4_I0_O)        0.124    12.972 r  vga_sync_unit/fontAddress_carry__0_i_6__1/O
+                         net (fo=1, routed)           0.000    12.972    cred/t3/fontRow_reg_0[1]
+    SLICE_X6Y5           CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.643    13.615 r  cred/t3/fontAddress_carry__0/O[3]
+                         net (fo=1, routed)           0.870    14.485    cred/t2/FontRom/ADDRBWRADDR[6]
+    RAMB18_X0Y1          RAMB18E1                                     r  cred/t2/FontRom/fontRow_reg/ADDRBWRADDR[12]
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -727,31 +657,31 @@ Slack (VIOLATED) :        -0.045ns  (required time - arrival time)
     W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
                          net (fo=2, routed)           1.862    13.250    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         1.493    14.834    cred/t2/FontRom/clk_IBUF_BUFG
-    RAMB18_X0Y18         RAMB18E1                                     r  cred/t2/FontRom/fontRow_reg/CLKBWRCLK
-                         clock pessimism              0.260    15.094    
-                         clock uncertainty           -0.035    15.058    
-    RAMB18_X0Y18         RAMB18E1 (Setup_ramb18e1_CLKBWRCLK_ADDRBWRADDR[10])
-                                                     -0.748    14.310    cred/t2/FontRom/fontRow_reg
+                         net (fo=213, routed)         1.494    14.835    cred/t2/FontRom/clk_IBUF_BUFG
+    RAMB18_X0Y1          RAMB18E1                                     r  cred/t2/FontRom/fontRow_reg/CLKBWRCLK
+                         clock pessimism              0.260    15.095    
+                         clock uncertainty           -0.035    15.059    
+    RAMB18_X0Y1          RAMB18E1 (Setup_ramb18e1_CLKBWRCLK_ADDRBWRADDR[12])
+                                                     -0.749    14.310    cred/t2/FontRom/fontRow_reg
   -------------------------------------------------------------------
                          required time                         14.310    
-                         arrival time                         -14.355    
+                         arrival time                         -14.485    
   -------------------------------------------------------------------
-                         slack                                 -0.045    
+                         slack                                 -0.175    
 
-Slack (MET) :             0.002ns  (required time - arrival time)
-  Source:                 vga_sync_unit/h_count_reg_reg[5]/C
+Slack (VIOLATED) :        -0.077ns  (required time - arrival time)
+  Source:                 vga_sync_unit/h_count_reg_reg[0]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            cred/t2/FontRom/fontRow_reg/ADDRARDADDR[13]
                             (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        9.226ns  (logic 1.608ns (17.429%)  route 7.618ns (82.571%))
-  Logic Levels:           4  (CARRY4=1 LUT4=1 LUT5=1 LUT6=1)
-  Clock Path Skew:        0.007ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.835ns = ( 14.835 - 10.000 ) 
-    Source Clock Delay      (SCD):    5.087ns
+  Data Path Delay:        9.312ns  (logic 1.847ns (19.834%)  route 7.465ns (80.166%))
+  Logic Levels:           6  (CARRY4=2 LUT4=1 LUT5=1 LUT6=2)
+  Clock Path Skew:        0.014ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.834ns = ( 14.834 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.079ns
     Clock Pessimism Removal (CPR):    0.260ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -768,21 +698,26 @@ Slack (MET) :             0.002ns  (required time - arrival time)
     W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
                          net (fo=2, routed)           1.967     3.425    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         1.566     5.087    vga_sync_unit/clk_IBUF_BUFG
-    SLICE_X11Y11         FDRE                                         r  vga_sync_unit/h_count_reg_reg[5]/C
+                         net (fo=213, routed)         1.558     5.079    vga_sync_unit/clk_IBUF_BUFG
+    SLICE_X10Y31         FDRE                                         r  vga_sync_unit/h_count_reg_reg[0]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X11Y11         FDRE (Prop_fdre_C_Q)         0.456     5.543 r  vga_sync_unit/h_count_reg_reg[5]/Q
-                         net (fo=159, routed)         4.992    10.535    vga_sync_unit/x[5]
-    SLICE_X7Y40          LUT5 (Prop_lut5_I1_O)        0.149    10.684 r  vga_sync_unit/g0_b0_i_3/O
-                         net (fo=14, routed)          0.974    11.659    vga_sync_unit/g0_b0_i_3_n_0
-    SLICE_X5Y41          LUT6 (Prop_lut6_I2_O)        0.332    11.991 r  vga_sync_unit/g0_b3/O
-                         net (fo=2, routed)           0.643    12.634    vga_sync_unit/cred/t2/fontAddress0[7]
-    SLICE_X4Y41          LUT4 (Prop_lut4_I3_O)        0.124    12.758 r  vga_sync_unit/fontAddress_carry__0_i_5__1/O
-                         net (fo=1, routed)           0.000    12.758    cred/t2/fontRow_reg_4[0]
-    SLICE_X4Y41          CARRY4 (Prop_carry4_S[0]_O[2])
-                                                      0.547    13.305 r  cred/t2/fontAddress_carry__0/O[2]
-                         net (fo=1, routed)           1.008    14.313    cred/t2/FontRom/ADDRARDADDR[10]
-    RAMB18_X0Y18         RAMB18E1                                     r  cred/t2/FontRom/fontRow_reg/ADDRARDADDR[13]
+    SLICE_X10Y31         FDRE (Prop_fdre_C_Q)         0.518     5.597 f  vga_sync_unit/h_count_reg_reg[0]/Q
+                         net (fo=144, routed)         4.357     9.954    vga_sync_unit/x[0]
+    SLICE_X6Y2           LUT6 (Prop_lut6_I3_O)        0.124    10.078 r  vga_sync_unit/g0_b0_i_7/O
+                         net (fo=31, routed)          0.509    10.587    vga_sync_unit/g0_b0_i_7_n_0
+    SLICE_X6Y3           LUT5 (Prop_lut5_I1_O)        0.116    10.703 r  vga_sync_unit/g0_b0_i_4/O
+                         net (fo=14, routed)          1.110    11.813    vga_sync_unit/g0_b0_i_4_n_0
+    SLICE_X4Y1           LUT6 (Prop_lut6_I3_O)        0.328    12.141 r  vga_sync_unit/g0_b1/O
+                         net (fo=3, routed)           0.819    12.959    vga_sync_unit/cred/t2/fontAddress0[5]
+    SLICE_X4Y2           LUT4 (Prop_lut4_I1_O)        0.124    13.083 r  vga_sync_unit/fontAddress_carry_i_5__2/O
+                         net (fo=1, routed)           0.000    13.083    cred/t2/fontRow_reg_2[2]
+    SLICE_X4Y2           CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398    13.481 r  cred/t2/fontAddress_carry/CO[3]
+                         net (fo=1, routed)           0.000    13.481    cred/t2/fontAddress_carry_n_0
+    SLICE_X4Y3           CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    13.720 r  cred/t2/fontAddress_carry__0/O[2]
+                         net (fo=1, routed)           0.671    14.392    cred/t2/FontRom/ADDRARDADDR[10]
+    RAMB18_X0Y1          RAMB18E1                                     r  cred/t2/FontRom/fontRow_reg/ADDRARDADDR[13]
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -792,31 +727,31 @@ Slack (MET) :             0.002ns  (required time - arrival time)
     W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
                          net (fo=2, routed)           1.862    13.250    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         1.494    14.835    cred/t2/FontRom/clk_IBUF_BUFG
-    RAMB18_X0Y18         RAMB18E1                                     r  cred/t2/FontRom/fontRow_reg/CLKARDCLK
-                         clock pessimism              0.260    15.095    
-                         clock uncertainty           -0.035    15.059    
-    RAMB18_X0Y18         RAMB18E1 (Setup_ramb18e1_CLKARDCLK_ADDRARDADDR[13])
-                                                     -0.744    14.315    cred/t2/FontRom/fontRow_reg
+                         net (fo=213, routed)         1.493    14.834    cred/t2/FontRom/clk_IBUF_BUFG
+    RAMB18_X0Y1          RAMB18E1                                     r  cred/t2/FontRom/fontRow_reg/CLKARDCLK
+                         clock pessimism              0.260    15.094    
+                         clock uncertainty           -0.035    15.058    
+    RAMB18_X0Y1          RAMB18E1 (Setup_ramb18e1_CLKARDCLK_ADDRARDADDR[13])
+                                                     -0.744    14.314    cred/t2/FontRom/fontRow_reg
   -------------------------------------------------------------------
-                         required time                         14.315    
-                         arrival time                         -14.313    
+                         required time                         14.314    
+                         arrival time                         -14.392    
   -------------------------------------------------------------------
-                         slack                                  0.002    
+                         slack                                 -0.077    
 
-Slack (MET) :             0.008ns  (required time - arrival time)
-  Source:                 vga_sync_unit/h_count_reg_reg[6]/C
+Slack (VIOLATED) :        -0.047ns  (required time - arrival time)
+  Source:                 vga_sync_unit/h_count_reg_reg[0]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            cred/t2/FontRom/fontRow_reg/ADDRBWRADDR[11]
                             (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        9.221ns  (logic 1.673ns (18.144%)  route 7.548ns (81.856%))
-  Logic Levels:           5  (CARRY4=2 LUT2=1 LUT5=2)
-  Clock Path Skew:        0.006ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.834ns = ( 14.834 - 10.000 ) 
-    Source Clock Delay      (SCD):    5.087ns
+  Data Path Delay:        9.284ns  (logic 1.788ns (19.258%)  route 7.496ns (80.742%))
+  Logic Levels:           5  (CARRY4=1 LUT4=1 LUT5=2 LUT6=1)
+  Clock Path Skew:        0.015ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.835ns = ( 14.835 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.079ns
     Clock Pessimism Removal (CPR):    0.260ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -833,24 +768,23 @@ Slack (MET) :             0.008ns  (required time - arrival time)
     W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
                          net (fo=2, routed)           1.967     3.425    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         1.566     5.087    vga_sync_unit/clk_IBUF_BUFG
-    SLICE_X11Y11         FDRE                                         r  vga_sync_unit/h_count_reg_reg[6]/C
+                         net (fo=213, routed)         1.558     5.079    vga_sync_unit/clk_IBUF_BUFG
+    SLICE_X10Y31         FDRE                                         r  vga_sync_unit/h_count_reg_reg[0]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X11Y11         FDRE (Prop_fdre_C_Q)         0.456     5.543 r  vga_sync_unit/h_count_reg_reg[6]/Q
-                         net (fo=140, routed)         4.940    10.483    vga_sync_unit/x[6]
-    SLICE_X7Y40          LUT5 (Prop_lut5_I0_O)        0.152    10.635 r  vga_sync_unit/g0_b0_i_4/O
-                         net (fo=14, routed)          1.355    11.990    vga_sync_unit/g0_b0_i_4_n_0
-    SLICE_X7Y43          LUT5 (Prop_lut5_I3_O)        0.326    12.316 r  vga_sync_unit/g0_b1__0/O
-                         net (fo=3, routed)           0.525    12.841    vga_sync_unit/v_count_reg_reg[9]_7[0]
-    SLICE_X6Y42          LUT2 (Prop_lut2_I0_O)        0.124    12.965 r  vga_sync_unit/fontAddress_carry_i_1__12/O
-                         net (fo=1, routed)           0.000    12.965    cred/t3/S[3]
-    SLICE_X6Y42          CARRY4 (Prop_carry4_S[3]_CO[3])
-                                                      0.376    13.341 r  cred/t3/fontAddress_carry/CO[3]
-                         net (fo=1, routed)           0.000    13.341    cred/t3/fontAddress_carry_n_0
-    SLICE_X6Y43          CARRY4 (Prop_carry4_CI_O[2])
-                                                      0.239    13.580 r  cred/t3/fontAddress_carry__0/O[2]
-                         net (fo=1, routed)           0.727    14.308    cred/t2/FontRom/ADDRBWRADDR[5]
-    RAMB18_X0Y18         RAMB18E1                                     r  cred/t2/FontRom/fontRow_reg/ADDRBWRADDR[11]
+    SLICE_X10Y31         FDRE (Prop_fdre_C_Q)         0.518     5.597 f  vga_sync_unit/h_count_reg_reg[0]/Q
+                         net (fo=144, routed)         4.357     9.954    vga_sync_unit/x[0]
+    SLICE_X6Y2           LUT6 (Prop_lut6_I3_O)        0.124    10.078 r  vga_sync_unit/g0_b0_i_7/O
+                         net (fo=31, routed)          0.617    10.695    vga_sync_unit/g0_b0_i_7_n_0
+    SLICE_X6Y2           LUT5 (Prop_lut5_I2_O)        0.116    10.811 r  vga_sync_unit/g0_b0_i_1/O
+                         net (fo=14, routed)          1.038    11.849    vga_sync_unit/g0_b0_i_1_n_0
+    SLICE_X4Y4           LUT5 (Prop_lut5_I0_O)        0.328    12.177 r  vga_sync_unit/g0_b2__0/O
+                         net (fo=3, routed)           0.672    12.848    vga_sync_unit/cred/t3/fontAddress0[6]
+    SLICE_X6Y5           LUT4 (Prop_lut4_I0_O)        0.124    12.972 r  vga_sync_unit/fontAddress_carry__0_i_6__1/O
+                         net (fo=1, routed)           0.000    12.972    cred/t3/fontRow_reg_0[1]
+    SLICE_X6Y5           CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.578    13.550 r  cred/t3/fontAddress_carry__0/O[2]
+                         net (fo=1, routed)           0.813    14.364    cred/t2/FontRom/ADDRBWRADDR[5]
+    RAMB18_X0Y1          RAMB18E1                                     r  cred/t2/FontRom/fontRow_reg/ADDRBWRADDR[11]
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -860,31 +794,31 @@ Slack (MET) :             0.008ns  (required time - arrival time)
     W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
                          net (fo=2, routed)           1.862    13.250    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         1.493    14.834    cred/t2/FontRom/clk_IBUF_BUFG
-    RAMB18_X0Y18         RAMB18E1                                     r  cred/t2/FontRom/fontRow_reg/CLKBWRCLK
-                         clock pessimism              0.260    15.094    
-                         clock uncertainty           -0.035    15.058    
-    RAMB18_X0Y18         RAMB18E1 (Setup_ramb18e1_CLKBWRCLK_ADDRBWRADDR[11])
-                                                     -0.743    14.315    cred/t2/FontRom/fontRow_reg
+                         net (fo=213, routed)         1.494    14.835    cred/t2/FontRom/clk_IBUF_BUFG
+    RAMB18_X0Y1          RAMB18E1                                     r  cred/t2/FontRom/fontRow_reg/CLKBWRCLK
+                         clock pessimism              0.260    15.095    
+                         clock uncertainty           -0.035    15.059    
+    RAMB18_X0Y1          RAMB18E1 (Setup_ramb18e1_CLKBWRCLK_ADDRBWRADDR[11])
+                                                     -0.743    14.316    cred/t2/FontRom/fontRow_reg
   -------------------------------------------------------------------
-                         required time                         14.315    
-                         arrival time                         -14.308    
+                         required time                         14.316    
+                         arrival time                         -14.364    
   -------------------------------------------------------------------
-                         slack                                  0.008    
+                         slack                                 -0.047    
 
-Slack (MET) :             0.039ns  (required time - arrival time)
-  Source:                 vga_sync_unit/h_count_reg_reg[6]/C
+Slack (VIOLATED) :        -0.020ns  (required time - arrival time)
+  Source:                 vga_sync_unit/h_count_reg_reg[2]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            spare/m2/FontRom/fontRow_reg/ADDRARDADDR[13]
+  Destination:            menu/spare/FontRom/fontRow_reg/ADDRBWRADDR[13]
                             (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        9.176ns  (logic 2.119ns (23.093%)  route 7.057ns (76.907%))
-  Logic Levels:           6  (CARRY4=1 LUT4=1 LUT5=2 LUT6=2)
-  Clock Path Skew:        -0.006ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.822ns = ( 14.822 - 10.000 ) 
-    Source Clock Delay      (SCD):    5.087ns
+  Data Path Delay:        9.252ns  (logic 2.122ns (22.936%)  route 7.130ns (77.064%))
+  Logic Levels:           6  (CARRY4=1 LUT3=1 LUT4=1 LUT5=3)
+  Clock Path Skew:        0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.829ns = ( 14.829 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.077ns
     Clock Pessimism Removal (CPR):    0.260ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -901,25 +835,25 @@ Slack (MET) :             0.039ns  (required time - arrival time)
     W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
                          net (fo=2, routed)           1.967     3.425    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         1.566     5.087    vga_sync_unit/clk_IBUF_BUFG
-    SLICE_X11Y11         FDRE                                         r  vga_sync_unit/h_count_reg_reg[6]/C
+                         net (fo=213, routed)         1.556     5.077    vga_sync_unit/clk_IBUF_BUFG
+    SLICE_X11Y29         FDRE                                         r  vga_sync_unit/h_count_reg_reg[2]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X11Y11         FDRE (Prop_fdre_C_Q)         0.456     5.543 f  vga_sync_unit/h_count_reg_reg[6]/Q
-                         net (fo=140, routed)         3.262     8.806    vga_sync_unit/x[6]
-    SLICE_X4Y26          LUT6 (Prop_lut6_I0_O)        0.124     8.930 r  vga_sync_unit/g0_b0__1_i_6/O
-                         net (fo=7, routed)           0.849     9.779    vga_sync_unit/g0_b0__1_i_6_n_0
-    SLICE_X4Y27          LUT5 (Prop_lut5_I0_O)        0.152     9.931 r  vga_sync_unit/g0_b0__1_i_8/O
-                         net (fo=1, routed)           0.441    10.372    vga_sync_unit/g0_b0__1_i_8_n_0
-    SLICE_X4Y27          LUT6 (Prop_lut6_I0_O)        0.326    10.698 r  vga_sync_unit/g0_b0__1_i_5/O
-                         net (fo=14, routed)          1.001    11.698    vga_sync_unit/g0_b0__1_i_5_n_0
-    SLICE_X5Y28          LUT5 (Prop_lut5_I4_O)        0.149    11.847 r  vga_sync_unit/g0_b4__4/O
-                         net (fo=4, routed)           0.816    12.663    vga_sync_unit/spare/m2/fontAddress0[8]
-    SLICE_X7Y27          LUT4 (Prop_lut4_I0_O)        0.332    12.995 r  vga_sync_unit/fontAddress_carry__0_i_4__11/O
-                         net (fo=1, routed)           0.000    12.995    spare/m2/fontRow_reg_3[1]
-    SLICE_X7Y27          CARRY4 (Prop_carry4_S[1]_O[2])
-                                                      0.580    13.575 r  spare/m2/fontAddress_carry__0/O[2]
-                         net (fo=1, routed)           0.688    14.263    spare/m2/FontRom/ADDRARDADDR[10]
-    RAMB18_X0Y11         RAMB18E1                                     r  spare/m2/FontRom/fontRow_reg/ADDRARDADDR[13]
+    SLICE_X11Y29         FDRE (Prop_fdre_C_Q)         0.456     5.533 f  vga_sync_unit/h_count_reg_reg[2]/Q
+                         net (fo=152, routed)         1.819     7.353    vga_sync_unit/x[2]
+    SLICE_X8Y20          LUT3 (Prop_lut3_I1_O)        0.124     7.477 f  vga_sync_unit/g0_b0_i_8/O
+                         net (fo=9, routed)           1.212     8.689    vga_sync_unit/g0_b0_i_8_n_0
+    SLICE_X3Y18          LUT5 (Prop_lut5_I1_O)        0.154     8.843 r  vga_sync_unit/g0_b0__0_i_8/O
+                         net (fo=2, routed)           0.821     9.664    vga_sync_unit/g0_b0__0_i_8_n_0
+    SLICE_X3Y18          LUT5 (Prop_lut5_I0_O)        0.327     9.991 r  vga_sync_unit/g0_b0__0_i_5/O
+                         net (fo=14, routed)          1.732    11.723    vga_sync_unit/g0_b0__0_i_5_n_0
+    SLICE_X5Y35          LUT5 (Prop_lut5_I4_O)        0.154    11.877 r  vga_sync_unit/g0_b5__1/O
+                         net (fo=2, routed)           0.570    12.447    vga_sync_unit/act/m1/fontAddress0[9]
+    SLICE_X5Y34          LUT4 (Prop_lut4_I3_O)        0.327    12.774 r  vga_sync_unit/fontAddress_carry__0_i_4__8/O
+                         net (fo=1, routed)           0.000    12.774    act/m1/fontRow_reg_0[1]
+    SLICE_X5Y34          CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.580    13.354 r  act/m1/fontAddress_carry__0/O[2]
+                         net (fo=1, routed)           0.975    14.329    menu/spare/FontRom/ADDRBWRADDR[7]
+    RAMB18_X0Y15         RAMB18E1                                     r  menu/spare/FontRom/fontRow_reg/ADDRBWRADDR[13]
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -929,31 +863,31 @@ Slack (MET) :             0.039ns  (required time - arrival time)
     W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
                          net (fo=2, routed)           1.862    13.250    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         1.481    14.822    spare/m2/FontRom/clk_IBUF_BUFG
-    RAMB18_X0Y11         RAMB18E1                                     r  spare/m2/FontRom/fontRow_reg/CLKARDCLK
-                         clock pessimism              0.260    15.082    
-                         clock uncertainty           -0.035    15.046    
-    RAMB18_X0Y11         RAMB18E1 (Setup_ramb18e1_CLKARDCLK_ADDRARDADDR[13])
-                                                     -0.744    14.302    spare/m2/FontRom/fontRow_reg
+                         net (fo=213, routed)         1.488    14.829    menu/spare/FontRom/clk_IBUF_BUFG
+    RAMB18_X0Y15         RAMB18E1                                     r  menu/spare/FontRom/fontRow_reg/CLKBWRCLK
+                         clock pessimism              0.260    15.089    
+                         clock uncertainty           -0.035    15.053    
+    RAMB18_X0Y15         RAMB18E1 (Setup_ramb18e1_CLKBWRCLK_ADDRBWRADDR[13])
+                                                     -0.744    14.309    menu/spare/FontRom/fontRow_reg
   -------------------------------------------------------------------
-                         required time                         14.302    
-                         arrival time                         -14.263    
+                         required time                         14.309    
+                         arrival time                         -14.329    
   -------------------------------------------------------------------
-                         slack                                  0.039    
+                         slack                                 -0.020    
 
-Slack (MET) :             0.072ns  (required time - arrival time)
-  Source:                 vga_sync_unit/h_count_reg_reg[6]/C
+Slack (MET) :             0.047ns  (required time - arrival time)
+  Source:                 vga_sync_unit/h_count_reg_reg[0]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            act/m2/FontRom/fontRow_reg/ADDRARDADDR[11]
+  Destination:            cred/t6/FontRom/fontRow_reg/ADDRARDADDR[13]
                             (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        9.148ns  (logic 1.988ns (21.731%)  route 7.160ns (78.269%))
-  Logic Levels:           5  (CARRY4=1 LUT4=2 LUT5=2)
-  Clock Path Skew:        -0.001ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.827ns = ( 14.827 - 10.000 ) 
-    Source Clock Delay      (SCD):    5.087ns
+  Data Path Delay:        9.188ns  (logic 1.468ns (15.977%)  route 7.720ns (84.023%))
+  Logic Levels:           4  (CARRY4=1 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.833ns = ( 14.833 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.079ns
     Clock Pessimism Removal (CPR):    0.260ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -970,23 +904,21 @@ Slack (MET) :             0.072ns  (required time - arrival time)
     W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
                          net (fo=2, routed)           1.967     3.425    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         1.566     5.087    vga_sync_unit/clk_IBUF_BUFG
-    SLICE_X11Y11         FDRE                                         r  vga_sync_unit/h_count_reg_reg[6]/C
+                         net (fo=213, routed)         1.558     5.079    vga_sync_unit/clk_IBUF_BUFG
+    SLICE_X10Y31         FDRE                                         r  vga_sync_unit/h_count_reg_reg[0]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X11Y11         FDRE (Prop_fdre_C_Q)         0.456     5.543 r  vga_sync_unit/h_count_reg_reg[6]/Q
-                         net (fo=140, routed)         3.496     9.039    vga_sync_unit/x[6]
-    SLICE_X5Y30          LUT5 (Prop_lut5_I2_O)        0.152     9.191 r  vga_sync_unit/g0_b0__0_i_7/O
-                         net (fo=1, routed)           0.816    10.007    vga_sync_unit/g0_b0__0_i_7_n_0
-    SLICE_X6Y30          LUT4 (Prop_lut4_I2_O)        0.326    10.333 r  vga_sync_unit/g0_b0__0_i_3/O
-                         net (fo=14, routed)          1.017    11.350    vga_sync_unit/g0_b0__0_i_3_n_0
-    SLICE_X6Y31          LUT5 (Prop_lut5_I2_O)        0.146    11.496 r  vga_sync_unit/g0_b2__2/O
-                         net (fo=3, routed)           0.871    12.367    vga_sync_unit/act/m2/fontAddress0[6]
-    SLICE_X7Y31          LUT4 (Prop_lut4_I0_O)        0.328    12.695 r  vga_sync_unit/fontAddress_carry__0_i_6__5/O
-                         net (fo=1, routed)           0.000    12.695    act/m2/fontRow_reg_3[1]
-    SLICE_X7Y31          CARRY4 (Prop_carry4_S[1]_O[2])
-                                                      0.580    13.275 r  act/m2/fontAddress_carry__0/O[2]
-                         net (fo=1, routed)           0.961    14.235    act/m2/FontRom/ADDRARDADDR[8]
-    RAMB18_X0Y13         RAMB18E1                                     r  act/m2/FontRom/fontRow_reg/ADDRARDADDR[11]
+    SLICE_X10Y31         FDRE (Prop_fdre_C_Q)         0.518     5.597 f  vga_sync_unit/h_count_reg_reg[0]/Q
+                         net (fo=144, routed)         4.357     9.954    vga_sync_unit/x[0]
+    SLICE_X6Y2           LUT6 (Prop_lut6_I3_O)        0.124    10.078 r  vga_sync_unit/g0_b0_i_7/O
+                         net (fo=31, routed)          1.279    11.357    vga_sync_unit/g0_b0_i_7_n_0
+    SLICE_X6Y11          LUT5 (Prop_lut5_I3_O)        0.124    11.481 r  vga_sync_unit/fontAddress_carry__0_i_8/O
+                         net (fo=3, routed)           1.119    12.601    vga_sync_unit/fontAddress_carry__0_i_8_n_0
+    SLICE_X8Y3           LUT3 (Prop_lut3_I2_O)        0.124    12.725 r  vga_sync_unit/fontAddress_carry__0_i_3__4/O
+                         net (fo=1, routed)           0.000    12.725    cred/t6/fontRow_reg_5[1]
+    SLICE_X8Y3           CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.578    13.303 r  cred/t6/fontAddress_carry__0/O[2]
+                         net (fo=1, routed)           0.964    14.267    cred/t6/FontRom/ADDRARDADDR[10]
+    RAMB18_X0Y2          RAMB18E1                                     r  cred/t6/FontRom/fontRow_reg/ADDRARDADDR[13]
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -996,17 +928,85 @@ Slack (MET) :             0.072ns  (required time - arrival time)
     W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
                          net (fo=2, routed)           1.862    13.250    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         1.486    14.827    act/m2/FontRom/clk_IBUF_BUFG
-    RAMB18_X0Y13         RAMB18E1                                     r  act/m2/FontRom/fontRow_reg/CLKARDCLK
-                         clock pessimism              0.260    15.087    
-                         clock uncertainty           -0.035    15.051    
-    RAMB18_X0Y13         RAMB18E1 (Setup_ramb18e1_CLKARDCLK_ADDRARDADDR[11])
-                                                     -0.744    14.307    act/m2/FontRom/fontRow_reg
+                         net (fo=213, routed)         1.492    14.833    cred/t6/FontRom/clk_IBUF_BUFG
+    RAMB18_X0Y2          RAMB18E1                                     r  cred/t6/FontRom/fontRow_reg/CLKARDCLK
+                         clock pessimism              0.260    15.093    
+                         clock uncertainty           -0.035    15.057    
+    RAMB18_X0Y2          RAMB18E1 (Setup_ramb18e1_CLKARDCLK_ADDRARDADDR[13])
+                                                     -0.743    14.314    cred/t6/FontRom/fontRow_reg
   -------------------------------------------------------------------
-                         required time                         14.307    
-                         arrival time                         -14.235    
+                         required time                         14.314    
+                         arrival time                         -14.267    
   -------------------------------------------------------------------
-                         slack                                  0.072    
+                         slack                                  0.047    
+
+Slack (MET) :             0.049ns  (required time - arrival time)
+  Source:                 vga_sync_unit/h_count_reg_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            cred/t4/FontRom/fontRow_reg/ADDRBWRADDR[13]
+                            (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        9.186ns  (logic 1.662ns (18.093%)  route 7.524ns (81.907%))
+  Logic Levels:           5  (CARRY4=2 LUT3=1 LUT6=2)
+  Clock Path Skew:        0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.831ns = ( 14.831 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.079ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=2, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=213, routed)         1.558     5.079    vga_sync_unit/clk_IBUF_BUFG
+    SLICE_X10Y31         FDRE                                         r  vga_sync_unit/h_count_reg_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X10Y31         FDRE (Prop_fdre_C_Q)         0.518     5.597 f  vga_sync_unit/h_count_reg_reg[0]/Q
+                         net (fo=144, routed)         4.357     9.954    vga_sync_unit/x[0]
+    SLICE_X6Y2           LUT6 (Prop_lut6_I3_O)        0.124    10.078 r  vga_sync_unit/g0_b0_i_7/O
+                         net (fo=31, routed)          1.532    11.610    vga_sync_unit/g0_b0_i_7_n_0
+    SLICE_X6Y8           LUT6 (Prop_lut6_I3_O)        0.124    11.734 r  vga_sync_unit/fontAddress_carry__0_i_3__2/O
+                         net (fo=3, routed)           0.817    12.551    vga_sync_unit/h_count_reg_reg[5]_4[1]
+    SLICE_X7Y9           LUT3 (Prop_lut3_I0_O)        0.124    12.675 r  vga_sync_unit/fontAddress_carry__0_i_4__0/O
+                         net (fo=1, routed)           0.000    12.675    cred/t5/fontRow_reg_0[1]
+    SLICE_X7Y9           CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    13.225 r  cred/t5/fontAddress_carry__0/CO[3]
+                         net (fo=1, routed)           0.000    13.225    cred/t5/fontAddress_carry__0_n_0
+    SLICE_X7Y10          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222    13.447 r  cred/t5/fontAddress_carry__1/O[0]
+                         net (fo=1, routed)           0.818    14.265    cred/t4/FontRom/ADDRBWRADDR[8]
+    RAMB18_X0Y4          RAMB18E1                                     r  cred/t4/FontRom/fontRow_reg/ADDRBWRADDR[13]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=2, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=213, routed)         1.490    14.831    cred/t4/FontRom/clk_IBUF_BUFG
+    RAMB18_X0Y4          RAMB18E1                                     r  cred/t4/FontRom/fontRow_reg/CLKBWRCLK
+                         clock pessimism              0.260    15.091    
+                         clock uncertainty           -0.035    15.055    
+    RAMB18_X0Y4          RAMB18E1 (Setup_ramb18e1_CLKBWRCLK_ADDRBWRADDR[13])
+                                                     -0.741    14.314    cred/t4/FontRom/fontRow_reg
+  -------------------------------------------------------------------
+                         required time                         14.314    
+                         arrival time                         -14.265    
+  -------------------------------------------------------------------
+                         slack                                  0.049    
 
 
 
@@ -1014,19 +1014,19 @@ Slack (MET) :             0.072ns  (required time - arrival time)
 
 Min Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             0.098ns  (arrival time - required time)
-  Source:                 vga_sync_unit/v_count_reg_reg[2]_replica_4/C
+Slack (MET) :             0.126ns  (arrival time - required time)
+  Source:                 vga_sync_unit/v_count_reg_reg[2]_replica_6/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            menu/act/FontRom/fontRow_reg/ADDRARDADDR[5]
+  Destination:            ats/t1/FontRom/fontRow_reg/ADDRARDADDR[5]
                             (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.338ns  (logic 0.164ns (48.592%)  route 0.174ns (51.408%))
+  Data Path Delay:        0.368ns  (logic 0.141ns (38.366%)  route 0.227ns (61.634%))
   Logic Levels:           0  
-  Clock Path Skew:        0.056ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    1.997ns
-    Source Clock Delay      (SCD):    1.442ns
+  Clock Path Skew:        0.058ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.005ns
+    Source Clock Delay      (SCD):    1.448ns
     Clock Pessimism Removal (CPR):    0.498ns
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -1038,64 +1038,12 @@ Slack (MET) :             0.098ns  (arrival time - required time)
     W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
                          net (fo=2, routed)           0.631     0.858    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         0.559     1.442    vga_sync_unit/clk_IBUF_BUFG
-    SLICE_X8Y18          FDRE                                         r  vga_sync_unit/v_count_reg_reg[2]_replica_4/C
+                         net (fo=213, routed)         0.565     1.448    vga_sync_unit/clk_IBUF_BUFG
+    SLICE_X9Y9           FDRE                                         r  vga_sync_unit/v_count_reg_reg[2]_replica_6/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X8Y18          FDRE (Prop_fdre_C_Q)         0.164     1.606 r  vga_sync_unit/v_count_reg_reg[2]_replica_4/Q
-                         net (fo=28, routed)          0.174     1.780    menu/act/FontRom/v_count_reg_reg[4]_0[0]_repN_4_alias
-    RAMB18_X0Y7          RAMB18E1                                     r  menu/act/FontRom/fontRow_reg/ADDRARDADDR[5]
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    W5                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
-                         net (fo=2, routed)           0.685     1.099    clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         0.869     1.997    menu/act/FontRom/clk_IBUF_BUFG
-    RAMB18_X0Y7          RAMB18E1                                     r  menu/act/FontRom/fontRow_reg/CLKARDCLK
-                         clock pessimism             -0.498     1.499    
-    RAMB18_X0Y7          RAMB18E1 (Hold_ramb18e1_CLKARDCLK_ADDRARDADDR[5])
-                                                      0.183     1.682    menu/act/FontRom/fontRow_reg
-  -------------------------------------------------------------------
-                         required time                         -1.682    
-                         arrival time                           1.780    
-  -------------------------------------------------------------------
-                         slack                                  0.098    
-
-Slack (MET) :             0.163ns  (arrival time - required time)
-  Source:                 receiver_unit/rxshiftreg_reg[1]/C
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            TxData_reg[0]/D
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.296ns  (logic 0.186ns (62.765%)  route 0.110ns (37.235%))
-  Logic Levels:           1  (LUT6=1)
-  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    1.992ns
-    Source Clock Delay      (SCD):    1.477ns
-    Clock Pessimism Removal (CPR):    0.502ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    W5                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
-                         net (fo=2, routed)           0.631     0.858    clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         0.594     1.477    receiver_unit/clk_IBUF_BUFG
-    SLICE_X3Y8           FDRE                                         r  receiver_unit/rxshiftreg_reg[1]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X3Y8           FDRE (Prop_fdre_C_Q)         0.141     1.618 r  receiver_unit/rxshiftreg_reg[1]/Q
-                         net (fo=10, routed)          0.110     1.728    receiver_unit/RxData[0]
-    SLICE_X2Y8           LUT6 (Prop_lut6_I5_O)        0.045     1.773 r  receiver_unit/TxData[0]_i_1/O
-                         net (fo=1, routed)           0.000     1.773    receiver_unit_n_10
-    SLICE_X2Y8           FDRE                                         r  TxData_reg[0]/D
+    SLICE_X9Y9           FDRE (Prop_fdre_C_Q)         0.141     1.589 r  vga_sync_unit/v_count_reg_reg[2]_replica_6/Q
+                         net (fo=7, routed)           0.227     1.816    ats/t1/FontRom/v_count_reg_reg[4]_0[0]_repN_6_alias
+    RAMB18_X0Y3          RAMB18E1                                     r  ats/t1/FontRom/fontRow_reg/ADDRARDADDR[5]
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -1105,80 +1053,30 @@ Slack (MET) :             0.163ns  (arrival time - required time)
     W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
                          net (fo=2, routed)           0.685     1.099    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         0.865     1.992    clk_IBUF_BUFG
-    SLICE_X2Y8           FDRE                                         r  TxData_reg[0]/C
-                         clock pessimism             -0.502     1.490    
-    SLICE_X2Y8           FDRE (Hold_fdre_C_D)         0.120     1.610    TxData_reg[0]
+                         net (fo=213, routed)         0.877     2.005    ats/t1/FontRom/clk_IBUF_BUFG
+    RAMB18_X0Y3          RAMB18E1                                     r  ats/t1/FontRom/fontRow_reg/CLKARDCLK
+                         clock pessimism             -0.498     1.507    
+    RAMB18_X0Y3          RAMB18E1 (Hold_ramb18e1_CLKARDCLK_ADDRARDADDR[5])
+                                                      0.183     1.690    ats/t1/FontRom/fontRow_reg
   -------------------------------------------------------------------
-                         required time                         -1.610    
-                         arrival time                           1.773    
+                         required time                         -1.690    
+                         arrival time                           1.816    
   -------------------------------------------------------------------
-                         slack                                  0.163    
+                         slack                                  0.126    
 
-Slack (MET) :             0.166ns  (arrival time - required time)
-  Source:                 receiver_unit/rxshiftreg_reg[1]/C
+Slack (MET) :             0.126ns  (arrival time - required time)
+  Source:                 vga_sync_unit/v_count_reg_reg[2]_replica_6/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            TxData_reg[1]/D
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.300ns  (logic 0.186ns (61.929%)  route 0.114ns (38.071%))
-  Logic Levels:           1  (LUT6=1)
-  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    1.992ns
-    Source Clock Delay      (SCD):    1.477ns
-    Clock Pessimism Removal (CPR):    0.502ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    W5                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
-                         net (fo=2, routed)           0.631     0.858    clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         0.594     1.477    receiver_unit/clk_IBUF_BUFG
-    SLICE_X3Y8           FDRE                                         r  receiver_unit/rxshiftreg_reg[1]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X3Y8           FDRE (Prop_fdre_C_Q)         0.141     1.618 r  receiver_unit/rxshiftreg_reg[1]/Q
-                         net (fo=10, routed)          0.114     1.732    receiver_unit/RxData[0]
-    SLICE_X2Y8           LUT6 (Prop_lut6_I1_O)        0.045     1.777 r  receiver_unit/TxData[1]_i_1/O
-                         net (fo=1, routed)           0.000     1.777    receiver_unit_n_9
-    SLICE_X2Y8           FDRE                                         r  TxData_reg[1]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    W5                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
-                         net (fo=2, routed)           0.685     1.099    clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         0.865     1.992    clk_IBUF_BUFG
-    SLICE_X2Y8           FDRE                                         r  TxData_reg[1]/C
-                         clock pessimism             -0.502     1.490    
-    SLICE_X2Y8           FDRE (Hold_fdre_C_D)         0.121     1.611    TxData_reg[1]
-  -------------------------------------------------------------------
-                         required time                         -1.611    
-                         arrival time                           1.777    
-  -------------------------------------------------------------------
-                         slack                                  0.166    
-
-Slack (MET) :             0.172ns  (arrival time - required time)
-  Source:                 vga_sync_unit/v_count_reg_reg[0]_replica_3/C
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            menu/act/FontRom/fontRow_reg/ADDRARDADDR[3]
+  Destination:            cred/t6/FontRom/fontRow_reg/ADDRARDADDR[5]
                             (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.409ns  (logic 0.164ns (40.131%)  route 0.245ns (59.869%))
+  Data Path Delay:        0.368ns  (logic 0.141ns (38.366%)  route 0.227ns (61.634%))
   Logic Levels:           0  
-  Clock Path Skew:        0.053ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    1.997ns
-    Source Clock Delay      (SCD):    1.445ns
+  Clock Path Skew:        0.058ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.005ns
+    Source Clock Delay      (SCD):    1.448ns
     Clock Pessimism Removal (CPR):    0.498ns
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -1190,64 +1088,12 @@ Slack (MET) :             0.172ns  (arrival time - required time)
     W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
                          net (fo=2, routed)           0.631     0.858    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         0.562     1.445    vga_sync_unit/clk_IBUF_BUFG
-    SLICE_X8Y15          FDRE                                         r  vga_sync_unit/v_count_reg_reg[0]_replica_3/C
+                         net (fo=213, routed)         0.565     1.448    vga_sync_unit/clk_IBUF_BUFG
+    SLICE_X9Y9           FDRE                                         r  vga_sync_unit/v_count_reg_reg[2]_replica_6/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X8Y15          FDRE (Prop_fdre_C_Q)         0.164     1.609 r  vga_sync_unit/v_count_reg_reg[0]_replica_3/Q
-                         net (fo=23, routed)          0.245     1.854    menu/act/FontRom/y[0]_repN_3_alias
-    RAMB18_X0Y7          RAMB18E1                                     r  menu/act/FontRom/fontRow_reg/ADDRARDADDR[3]
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    W5                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
-                         net (fo=2, routed)           0.685     1.099    clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         0.869     1.997    menu/act/FontRom/clk_IBUF_BUFG
-    RAMB18_X0Y7          RAMB18E1                                     r  menu/act/FontRom/fontRow_reg/CLKARDCLK
-                         clock pessimism             -0.498     1.499    
-    RAMB18_X0Y7          RAMB18E1 (Hold_ramb18e1_CLKARDCLK_ADDRARDADDR[3])
-                                                      0.183     1.682    menu/act/FontRom/fontRow_reg
-  -------------------------------------------------------------------
-                         required time                         -1.682    
-                         arrival time                           1.854    
-  -------------------------------------------------------------------
-                         slack                                  0.172    
-
-Slack (MET) :             0.185ns  (arrival time - required time)
-  Source:                 receiver_unit/rxshiftreg_reg[2]/C
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            TxData_reg[6]/D
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.319ns  (logic 0.186ns (58.310%)  route 0.133ns (41.690%))
-  Logic Levels:           1  (LUT6=1)
-  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    1.992ns
-    Source Clock Delay      (SCD):    1.477ns
-    Clock Pessimism Removal (CPR):    0.502ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    W5                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
-                         net (fo=2, routed)           0.631     0.858    clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         0.594     1.477    receiver_unit/clk_IBUF_BUFG
-    SLICE_X3Y8           FDRE                                         r  receiver_unit/rxshiftreg_reg[2]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X3Y8           FDRE (Prop_fdre_C_Q)         0.141     1.618 r  receiver_unit/rxshiftreg_reg[2]/Q
-                         net (fo=11, routed)          0.133     1.751    receiver_unit/RxData[1]
-    SLICE_X2Y8           LUT6 (Prop_lut6_I2_O)        0.045     1.796 r  receiver_unit/TxData[6]_i_2/O
-                         net (fo=1, routed)           0.000     1.796    receiver_unit_n_6
-    SLICE_X2Y8           FDRE                                         r  TxData_reg[6]/D
+    SLICE_X9Y9           FDRE (Prop_fdre_C_Q)         0.141     1.589 r  vga_sync_unit/v_count_reg_reg[2]_replica_6/Q
+                         net (fo=7, routed)           0.227     1.816    cred/t6/FontRom/v_count_reg_reg[4]_0[0]_repN_6_alias
+    RAMB18_X0Y2          RAMB18E1                                     r  cred/t6/FontRom/fontRow_reg/ADDRARDADDR[5]
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -1257,129 +1103,30 @@ Slack (MET) :             0.185ns  (arrival time - required time)
     W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
                          net (fo=2, routed)           0.685     1.099    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         0.865     1.992    clk_IBUF_BUFG
-    SLICE_X2Y8           FDRE                                         r  TxData_reg[6]/C
-                         clock pessimism             -0.502     1.490    
-    SLICE_X2Y8           FDRE (Hold_fdre_C_D)         0.121     1.611    TxData_reg[6]
+                         net (fo=213, routed)         0.877     2.005    cred/t6/FontRom/clk_IBUF_BUFG
+    RAMB18_X0Y2          RAMB18E1                                     r  cred/t6/FontRom/fontRow_reg/CLKARDCLK
+                         clock pessimism             -0.498     1.507    
+    RAMB18_X0Y2          RAMB18E1 (Hold_ramb18e1_CLKARDCLK_ADDRARDADDR[5])
+                                                      0.183     1.690    cred/t6/FontRom/fontRow_reg
   -------------------------------------------------------------------
-                         required time                         -1.611    
-                         arrival time                           1.796    
+                         required time                         -1.690    
+                         arrival time                           1.816    
   -------------------------------------------------------------------
-                         slack                                  0.185    
+                         slack                                  0.126    
 
-Slack (MET) :             0.187ns  (arrival time - required time)
-  Source:                 receiver_unit/rxshiftreg_reg[2]/C
+Slack (MET) :             0.147ns  (arrival time - required time)
+  Source:                 vga_sync_unit/v_count_reg_reg[0]_replica/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            TxData_reg[2]/D
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            cred/t4/FontRom/fontRow_reg/ADDRARDADDR[3]
+                            (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.321ns  (logic 0.186ns (57.946%)  route 0.135ns (42.054%))
-  Logic Levels:           1  (LUT6=1)
-  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    1.992ns
-    Source Clock Delay      (SCD):    1.477ns
-    Clock Pessimism Removal (CPR):    0.502ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    W5                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
-                         net (fo=2, routed)           0.631     0.858    clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         0.594     1.477    receiver_unit/clk_IBUF_BUFG
-    SLICE_X3Y8           FDRE                                         r  receiver_unit/rxshiftreg_reg[2]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X3Y8           FDRE (Prop_fdre_C_Q)         0.141     1.618 r  receiver_unit/rxshiftreg_reg[2]/Q
-                         net (fo=11, routed)          0.135     1.753    receiver_unit/RxData[1]
-    SLICE_X2Y8           LUT6 (Prop_lut6_I2_O)        0.045     1.798 r  receiver_unit/TxData[2]_i_1/O
-                         net (fo=1, routed)           0.000     1.798    receiver_unit_n_8
-    SLICE_X2Y8           FDRE                                         r  TxData_reg[2]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    W5                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
-                         net (fo=2, routed)           0.685     1.099    clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         0.865     1.992    clk_IBUF_BUFG
-    SLICE_X2Y8           FDRE                                         r  TxData_reg[2]/C
-                         clock pessimism             -0.502     1.490    
-    SLICE_X2Y8           FDRE (Hold_fdre_C_D)         0.121     1.611    TxData_reg[2]
-  -------------------------------------------------------------------
-                         required time                         -1.611    
-                         arrival time                           1.798    
-  -------------------------------------------------------------------
-                         slack                                  0.187    
-
-Slack (MET) :             0.197ns  (arrival time - required time)
-  Source:                 receiver_unit/rxshiftreg_reg[4]/C
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            receiver_unit/rxshiftreg_reg[3]/D
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.283ns  (logic 0.141ns (49.786%)  route 0.142ns (50.214%))
+  Data Path Delay:        0.406ns  (logic 0.141ns (34.759%)  route 0.265ns (65.241%))
   Logic Levels:           0  
-  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    1.992ns
-    Source Clock Delay      (SCD):    1.477ns
-    Clock Pessimism Removal (CPR):    0.499ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    W5                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
-                         net (fo=2, routed)           0.631     0.858    clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         0.594     1.477    receiver_unit/clk_IBUF_BUFG
-    SLICE_X3Y9           FDRE                                         r  receiver_unit/rxshiftreg_reg[4]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X3Y9           FDRE (Prop_fdre_C_Q)         0.141     1.618 r  receiver_unit/rxshiftreg_reg[4]/Q
-                         net (fo=4, routed)           0.142     1.760    receiver_unit/RxData[3]
-    SLICE_X3Y8           FDRE                                         r  receiver_unit/rxshiftreg_reg[3]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    W5                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
-                         net (fo=2, routed)           0.685     1.099    clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         0.865     1.992    receiver_unit/clk_IBUF_BUFG
-    SLICE_X3Y8           FDRE                                         r  receiver_unit/rxshiftreg_reg[3]/C
-                         clock pessimism             -0.499     1.493    
-    SLICE_X3Y8           FDRE (Hold_fdre_C_D)         0.070     1.563    receiver_unit/rxshiftreg_reg[3]
-  -------------------------------------------------------------------
-                         required time                         -1.563    
-                         arrival time                           1.760    
-  -------------------------------------------------------------------
-                         slack                                  0.197    
-
-Slack (MET) :             0.199ns  (arrival time - required time)
-  Source:                 receiver_unit/rxshiftreg_reg[5]/C
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            direc_reg[2]/D
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.326ns  (logic 0.186ns (56.975%)  route 0.140ns (43.025%))
-  Logic Levels:           1  (LUT6=1)
-  Clock Path Skew:        0.035ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    1.990ns
-    Source Clock Delay      (SCD):    1.477ns
+  Clock Path Skew:        0.075ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.001ns
+    Source Clock Delay      (SCD):    1.447ns
     Clock Pessimism Removal (CPR):    0.478ns
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -1391,14 +1138,12 @@ Slack (MET) :             0.199ns  (arrival time - required time)
     W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
                          net (fo=2, routed)           0.631     0.858    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         0.594     1.477    receiver_unit/clk_IBUF_BUFG
-    SLICE_X3Y9           FDRE                                         r  receiver_unit/rxshiftreg_reg[5]/C
+                         net (fo=213, routed)         0.564     1.447    vga_sync_unit/clk_IBUF_BUFG
+    SLICE_X11Y11         FDRE                                         r  vga_sync_unit/v_count_reg_reg[0]_replica/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X3Y9           FDRE (Prop_fdre_C_Q)         0.141     1.618 f  receiver_unit/rxshiftreg_reg[5]/Q
-                         net (fo=11, routed)          0.140     1.759    receiver_unit/RxData[4]
-    SLICE_X5Y8           LUT6 (Prop_lut6_I2_O)        0.045     1.804 r  receiver_unit/direc[2]_i_1/O
-                         net (fo=1, routed)           0.000     1.804    receiver_unit_n_2
-    SLICE_X5Y8           FDRE                                         r  direc_reg[2]/D
+    SLICE_X11Y11         FDRE (Prop_fdre_C_Q)         0.141     1.588 r  vga_sync_unit/v_count_reg_reg[0]_replica/Q
+                         net (fo=44, routed)          0.265     1.853    cred/t4/FontRom/y[0]_repN_alias
+    RAMB18_X0Y4          RAMB18E1                                     r  cred/t4/FontRom/fontRow_reg/ADDRARDADDR[3]
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -1408,15 +1153,167 @@ Slack (MET) :             0.199ns  (arrival time - required time)
     W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
                          net (fo=2, routed)           0.685     1.099    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         0.863     1.990    clk_IBUF_BUFG
-    SLICE_X5Y8           FDRE                                         r  direc_reg[2]/C
-                         clock pessimism             -0.478     1.512    
-    SLICE_X5Y8           FDRE (Hold_fdre_C_D)         0.092     1.604    direc_reg[2]
+                         net (fo=213, routed)         0.873     2.001    cred/t4/FontRom/clk_IBUF_BUFG
+    RAMB18_X0Y4          RAMB18E1                                     r  cred/t4/FontRom/fontRow_reg/CLKARDCLK
+                         clock pessimism             -0.478     1.523    
+    RAMB18_X0Y4          RAMB18E1 (Hold_ramb18e1_CLKARDCLK_ADDRARDADDR[3])
+                                                      0.183     1.706    cred/t4/FontRom/fontRow_reg
   -------------------------------------------------------------------
-                         required time                         -1.604    
-                         arrival time                           1.804    
+                         required time                         -1.706    
+                         arrival time                           1.853    
   -------------------------------------------------------------------
-                         slack                                  0.199    
+                         slack                                  0.147    
+
+Slack (MET) :             0.147ns  (arrival time - required time)
+  Source:                 vga_sync_unit/v_count_reg_reg[3]_replica_7/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ats/t1/FontRom/fontRow_reg/ADDRARDADDR[6]
+                            (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.389ns  (logic 0.164ns (42.164%)  route 0.225ns (57.836%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.058ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.005ns
+    Source Clock Delay      (SCD):    1.448ns
+    Clock Pessimism Removal (CPR):    0.498ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=2, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=213, routed)         0.565     1.448    vga_sync_unit/clk_IBUF_BUFG
+    SLICE_X8Y9           FDRE                                         r  vga_sync_unit/v_count_reg_reg[3]_replica_7/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X8Y9           FDRE (Prop_fdre_C_Q)         0.164     1.612 r  vga_sync_unit/v_count_reg_reg[3]_replica_7/Q
+                         net (fo=7, routed)           0.225     1.837    ats/t1/FontRom/y[2]_repN_7_alias
+    RAMB18_X0Y3          RAMB18E1                                     r  ats/t1/FontRom/fontRow_reg/ADDRARDADDR[6]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=2, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=213, routed)         0.877     2.005    ats/t1/FontRom/clk_IBUF_BUFG
+    RAMB18_X0Y3          RAMB18E1                                     r  ats/t1/FontRom/fontRow_reg/CLKARDCLK
+                         clock pessimism             -0.498     1.507    
+    RAMB18_X0Y3          RAMB18E1 (Hold_ramb18e1_CLKARDCLK_ADDRARDADDR[6])
+                                                      0.183     1.690    ats/t1/FontRom/fontRow_reg
+  -------------------------------------------------------------------
+                         required time                         -1.690    
+                         arrival time                           1.837    
+  -------------------------------------------------------------------
+                         slack                                  0.147    
+
+Slack (MET) :             0.147ns  (arrival time - required time)
+  Source:                 vga_sync_unit/v_count_reg_reg[3]_replica_7/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            cred/t6/FontRom/fontRow_reg/ADDRARDADDR[6]
+                            (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.389ns  (logic 0.164ns (42.164%)  route 0.225ns (57.836%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.058ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.005ns
+    Source Clock Delay      (SCD):    1.448ns
+    Clock Pessimism Removal (CPR):    0.498ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=2, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=213, routed)         0.565     1.448    vga_sync_unit/clk_IBUF_BUFG
+    SLICE_X8Y9           FDRE                                         r  vga_sync_unit/v_count_reg_reg[3]_replica_7/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X8Y9           FDRE (Prop_fdre_C_Q)         0.164     1.612 r  vga_sync_unit/v_count_reg_reg[3]_replica_7/Q
+                         net (fo=7, routed)           0.225     1.837    cred/t6/FontRom/y[2]_repN_7_alias
+    RAMB18_X0Y2          RAMB18E1                                     r  cred/t6/FontRom/fontRow_reg/ADDRARDADDR[6]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=2, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=213, routed)         0.877     2.005    cred/t6/FontRom/clk_IBUF_BUFG
+    RAMB18_X0Y2          RAMB18E1                                     r  cred/t6/FontRom/fontRow_reg/CLKARDCLK
+                         clock pessimism             -0.498     1.507    
+    RAMB18_X0Y2          RAMB18E1 (Hold_ramb18e1_CLKARDCLK_ADDRARDADDR[6])
+                                                      0.183     1.690    cred/t6/FontRom/fontRow_reg
+  -------------------------------------------------------------------
+                         required time                         -1.690    
+                         arrival time                           1.837    
+  -------------------------------------------------------------------
+                         slack                                  0.147    
+
+Slack (MET) :             0.176ns  (arrival time - required time)
+  Source:                 nolabel_line69/rightshiftreg_reg[8]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            nolabel_line69/rightshiftreg_reg[7]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.296ns  (logic 0.213ns (71.934%)  route 0.083ns (28.066%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.962ns
+    Source Clock Delay      (SCD):    1.448ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=2, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=213, routed)         0.565     1.448    nolabel_line69/clk_IBUF_BUFG
+    SLICE_X14Y9          FDRE                                         r  nolabel_line69/rightshiftreg_reg[8]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X14Y9          FDRE (Prop_fdre_C_Q)         0.164     1.612 r  nolabel_line69/rightshiftreg_reg[8]/Q
+                         net (fo=1, routed)           0.083     1.695    nolabel_line69/rightshiftreg_reg_n_0_[8]
+    SLICE_X15Y9          LUT3 (Prop_lut3_I0_O)        0.049     1.744 r  nolabel_line69/rightshiftreg[7]_i_1/O
+                         net (fo=1, routed)           0.000     1.744    nolabel_line69/p_0_in[7]
+    SLICE_X15Y9          FDRE                                         r  nolabel_line69/rightshiftreg_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=2, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=213, routed)         0.835     1.962    nolabel_line69/clk_IBUF_BUFG
+    SLICE_X15Y9          FDRE                                         r  nolabel_line69/rightshiftreg_reg[7]/C
+                         clock pessimism             -0.501     1.461    
+    SLICE_X15Y9          FDRE (Hold_fdre_C_D)         0.107     1.568    nolabel_line69/rightshiftreg_reg[7]
+  -------------------------------------------------------------------
+                         required time                         -1.568    
+                         arrival time                           1.744    
+  -------------------------------------------------------------------
+                         slack                                  0.176    
 
 Slack (MET) :             0.200ns  (arrival time - required time)
   Source:                 ats/oldHitEnemy_reg[1]/C
@@ -1429,9 +1326,9 @@ Slack (MET) :             0.200ns  (arrival time - required time)
   Data Path Delay:        0.320ns  (logic 0.246ns (76.992%)  route 0.074ns (23.008%))
   Logic Levels:           1  (LUT4=1)
   Clock Path Skew:        0.000ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    1.958ns
-    Source Clock Delay      (SCD):    1.445ns
-    Clock Pessimism Removal (CPR):    0.513ns
+    Destination Clock Delay (DCD):    1.951ns
+    Source Clock Delay      (SCD):    1.439ns
+    Clock Pessimism Removal (CPR):    0.512ns
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
@@ -1442,14 +1339,14 @@ Slack (MET) :             0.200ns  (arrival time - required time)
     W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
                          net (fo=2, routed)           0.631     0.858    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         0.562     1.445    ats/clk_IBUF_BUFG
-    SLICE_X14Y13         FDRE                                         r  ats/oldHitEnemy_reg[1]/C
+                         net (fo=213, routed)         0.556     1.439    ats/clk_IBUF_BUFG
+    SLICE_X14Y21         FDRE                                         r  ats/oldHitEnemy_reg[1]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X14Y13         FDRE (Prop_fdre_C_Q)         0.148     1.593 r  ats/oldHitEnemy_reg[1]/Q
-                         net (fo=2, routed)           0.074     1.667    ats/ec2/oldHitEnemy_reg[1]__0
-    SLICE_X14Y13         LUT4 (Prop_lut4_I1_O)        0.098     1.765 r  ats/ec2/oldHitEnemy[0]_i_1/O
-                         net (fo=1, routed)           0.000     1.765    ats/ec2_n_12
-    SLICE_X14Y13         FDRE                                         r  ats/oldHitEnemy_reg[0]/D
+    SLICE_X14Y21         FDRE (Prop_fdre_C_Q)         0.148     1.587 r  ats/oldHitEnemy_reg[1]/Q
+                         net (fo=2, routed)           0.074     1.661    ats/ec2/oldHitEnemy_reg[1]__0
+    SLICE_X14Y21         LUT4 (Prop_lut4_I1_O)        0.098     1.759 r  ats/ec2/oldHitEnemy[0]_i_1/O
+                         net (fo=1, routed)           0.000     1.759    ats/ec2_n_12
+    SLICE_X14Y21         FDRE                                         r  ats/oldHitEnemy_reg[0]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -1459,30 +1356,30 @@ Slack (MET) :             0.200ns  (arrival time - required time)
     W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
                          net (fo=2, routed)           0.685     1.099    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         0.831     1.958    ats/clk_IBUF_BUFG
-    SLICE_X14Y13         FDRE                                         r  ats/oldHitEnemy_reg[0]/C
-                         clock pessimism             -0.513     1.445    
-    SLICE_X14Y13         FDRE (Hold_fdre_C_D)         0.120     1.565    ats/oldHitEnemy_reg[0]
+                         net (fo=213, routed)         0.824     1.951    ats/clk_IBUF_BUFG
+    SLICE_X14Y21         FDRE                                         r  ats/oldHitEnemy_reg[0]/C
+                         clock pessimism             -0.512     1.439    
+    SLICE_X14Y21         FDRE (Hold_fdre_C_D)         0.120     1.559    ats/oldHitEnemy_reg[0]
   -------------------------------------------------------------------
-                         required time                         -1.565    
-                         arrival time                           1.765    
+                         required time                         -1.559    
+                         arrival time                           1.759    
   -------------------------------------------------------------------
                          slack                                  0.200    
 
-Slack (MET) :             0.211ns  (arrival time - required time)
-  Source:                 receiver_unit/inc_samplecounter_reg/C
+Slack (MET) :             0.209ns  (arrival time - required time)
+  Source:                 nolabel_line69/rightshiftreg_reg[7]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            receiver_unit/samplecounter_reg[1]/D
+  Destination:            nolabel_line69/rightshiftreg_reg[6]/D
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.318ns  (logic 0.232ns (73.062%)  route 0.086ns (26.938%))
-  Logic Levels:           1  (LUT5=1)
+  Data Path Delay:        0.316ns  (logic 0.230ns (72.892%)  route 0.086ns (27.108%))
+  Logic Levels:           1  (LUT3=1)
   Clock Path Skew:        0.000ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    1.993ns
-    Source Clock Delay      (SCD):    1.478ns
-    Clock Pessimism Removal (CPR):    0.515ns
+    Destination Clock Delay (DCD):    1.962ns
+    Source Clock Delay      (SCD):    1.448ns
+    Clock Pessimism Removal (CPR):    0.514ns
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
@@ -1493,14 +1390,14 @@ Slack (MET) :             0.211ns  (arrival time - required time)
     W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
                          net (fo=2, routed)           0.631     0.858    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         0.595     1.478    receiver_unit/clk_IBUF_BUFG
-    SLICE_X3Y4           FDRE                                         r  receiver_unit/inc_samplecounter_reg/C
+                         net (fo=213, routed)         0.565     1.448    nolabel_line69/clk_IBUF_BUFG
+    SLICE_X15Y9          FDRE                                         r  nolabel_line69/rightshiftreg_reg[7]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X3Y4           FDRE (Prop_fdre_C_Q)         0.128     1.606 r  receiver_unit/inc_samplecounter_reg/Q
-                         net (fo=2, routed)           0.086     1.692    receiver_unit/inc_samplecounter_reg_n_0
-    SLICE_X3Y4           LUT5 (Prop_lut5_I4_O)        0.104     1.796 r  receiver_unit/samplecounter[1]_i_1/O
-                         net (fo=1, routed)           0.000     1.796    receiver_unit/samplecounter[1]_i_1_n_0
-    SLICE_X3Y4           FDRE                                         r  receiver_unit/samplecounter_reg[1]/D
+    SLICE_X15Y9          FDRE (Prop_fdre_C_Q)         0.128     1.576 r  nolabel_line69/rightshiftreg_reg[7]/Q
+                         net (fo=1, routed)           0.086     1.662    nolabel_line69/rightshiftreg_reg_n_0_[7]
+    SLICE_X15Y9          LUT3 (Prop_lut3_I0_O)        0.102     1.764 r  nolabel_line69/rightshiftreg[6]_i_1/O
+                         net (fo=1, routed)           0.000     1.764    nolabel_line69/p_0_in[6]
+    SLICE_X15Y9          FDRE                                         r  nolabel_line69/rightshiftreg_reg[6]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -1510,15 +1407,116 @@ Slack (MET) :             0.211ns  (arrival time - required time)
     W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
                          net (fo=2, routed)           0.685     1.099    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
-                         net (fo=215, routed)         0.866     1.993    receiver_unit/clk_IBUF_BUFG
-    SLICE_X3Y4           FDRE                                         r  receiver_unit/samplecounter_reg[1]/C
-                         clock pessimism             -0.515     1.478    
-    SLICE_X3Y4           FDRE (Hold_fdre_C_D)         0.107     1.585    receiver_unit/samplecounter_reg[1]
+                         net (fo=213, routed)         0.835     1.962    nolabel_line69/clk_IBUF_BUFG
+    SLICE_X15Y9          FDRE                                         r  nolabel_line69/rightshiftreg_reg[6]/C
+                         clock pessimism             -0.514     1.448    
+    SLICE_X15Y9          FDRE (Hold_fdre_C_D)         0.107     1.555    nolabel_line69/rightshiftreg_reg[6]
   -------------------------------------------------------------------
-                         required time                         -1.585    
-                         arrival time                           1.796    
+                         required time                         -1.555    
+                         arrival time                           1.764    
+  -------------------------------------------------------------------
+                         slack                                  0.209    
+
+Slack (MET) :             0.211ns  (arrival time - required time)
+  Source:                 receiver_unit/rxshiftreg_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            stop_reg/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.316ns  (logic 0.209ns (66.048%)  route 0.107ns (33.952%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.959ns
+    Source Clock Delay      (SCD):    1.446ns
+    Clock Pessimism Removal (CPR):    0.500ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=2, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=213, routed)         0.563     1.446    receiver_unit/clk_IBUF_BUFG
+    SLICE_X12Y12         FDRE                                         r  receiver_unit/rxshiftreg_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X12Y12         FDRE (Prop_fdre_C_Q)         0.164     1.610 r  receiver_unit/rxshiftreg_reg[3]/Q
+                         net (fo=13, routed)          0.107     1.718    receiver_unit/RxData[2]
+    SLICE_X13Y12         LUT6 (Prop_lut6_I3_O)        0.045     1.763 r  receiver_unit/stop_i_1/O
+                         net (fo=1, routed)           0.000     1.763    receiver_unit_n_12
+    SLICE_X13Y12         FDRE                                         r  stop_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=2, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=213, routed)         0.832     1.959    clk_IBUF_BUFG
+    SLICE_X13Y12         FDRE                                         r  stop_reg/C
+                         clock pessimism             -0.500     1.459    
+    SLICE_X13Y12         FDRE (Hold_fdre_C_D)         0.092     1.551    stop_reg
+  -------------------------------------------------------------------
+                         required time                         -1.551    
+                         arrival time                           1.763    
   -------------------------------------------------------------------
                          slack                                  0.211    
+
+Slack (MET) :             0.215ns  (arrival time - required time)
+  Source:                 vga_sync_unit/v_count_reg_reg[0]_replica/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            cred/t4/FontRom/fontRow_reg/ADDRBWRADDR[3]
+                            (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.476ns  (logic 0.141ns (29.618%)  route 0.335ns (70.382%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.078ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.004ns
+    Source Clock Delay      (SCD):    1.447ns
+    Clock Pessimism Removal (CPR):    0.478ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=2, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=213, routed)         0.564     1.447    vga_sync_unit/clk_IBUF_BUFG
+    SLICE_X11Y11         FDRE                                         r  vga_sync_unit/v_count_reg_reg[0]_replica/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X11Y11         FDRE (Prop_fdre_C_Q)         0.141     1.588 r  vga_sync_unit/v_count_reg_reg[0]_replica/Q
+                         net (fo=44, routed)          0.335     1.923    cred/t4/FontRom/y[0]_repN_alias
+    RAMB18_X0Y4          RAMB18E1                                     r  cred/t4/FontRom/fontRow_reg/ADDRBWRADDR[3]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=2, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=213, routed)         0.876     2.004    cred/t4/FontRom/clk_IBUF_BUFG
+    RAMB18_X0Y4          RAMB18E1                                     r  cred/t4/FontRom/fontRow_reg/CLKBWRCLK
+                         clock pessimism             -0.478     1.526    
+    RAMB18_X0Y4          RAMB18E1 (Hold_ramb18e1_CLKBWRCLK_ADDRBWRADDR[3])
+                                                      0.183     1.709    cred/t4/FontRom/fontRow_reg
+  -------------------------------------------------------------------
+                         required time                         -1.709    
+                         arrival time                           1.923    
+  -------------------------------------------------------------------
+                         slack                                  0.215    
 
 
 
@@ -1532,36 +1530,36 @@ Period(ns):         10.000
 Sources:            { clk }
 
 Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location      Pin
-Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB18_X0Y13  act/m2/FontRom/fontRow_reg/CLKARDCLK
-Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.576         10.000      7.424      RAMB18_X0Y13  act/m2/FontRom/fontRow_reg/CLKBWRCLK
-Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB18_X0Y16  cred/t4/FontRom/fontRow_reg/CLKARDCLK
-Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.576         10.000      7.424      RAMB18_X0Y16  cred/t4/FontRom/fontRow_reg/CLKBWRCLK
-Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB18_X0Y17  cred/t6/FontRom/fontRow_reg/CLKARDCLK
-Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.576         10.000      7.424      RAMB18_X0Y17  cred/t6/FontRom/fontRow_reg/CLKBWRCLK
-Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB18_X0Y7   menu/act/FontRom/fontRow_reg/CLKARDCLK
-Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.576         10.000      7.424      RAMB18_X0Y7   menu/act/FontRom/fontRow_reg/CLKBWRCLK
-Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB18_X0Y14  menu/spare/FontRom/fontRow_reg/CLKARDCLK
-Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.576         10.000      7.424      RAMB18_X0Y14  menu/spare/FontRom/fontRow_reg/CLKBWRCLK
-Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X53Y13  ats/newHealth_reg[0]/C
-Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X52Y14  ats/newHealth_reg[1]/C
-Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X52Y14  ats/newHealth_reg[2]/C
-Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X52Y14  ats/newHealth_reg[3]/C
-Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X52Y14  ats/newHealth_reg[4]/C
-Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X52Y14  ats/newHealth_reg[5]/C
-Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X53Y14  ats/newHealth_reg[6]/C
-Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X53Y14  ats/newHealth_reg[7]/C
-Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X53Y14  ats/newHealth_reg[8]/C
-Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X53Y14  ats/newHealth_reg[9]/C
-High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X12Y19  ats/ec2/hitEnemy_reg/C
-High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X7Y27   act/m2/pixel_reg/C
-High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X4Y27   cred/t4/pixel_reg/C
-High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X2Y27   cred/t5/pixel_reg/C
-High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X9Y5    ats/heart/pixel_reg/C
-High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X6Y23   menu/spare/pixel_reg/C
-High Pulse Width  Fast    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X6Y24   menu/fight/pixel_reg/C
-High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X8Y43   menu/h1/pixel_reg/C
-High Pulse Width  Fast    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X6Y25   menu/h2/pixel_reg/C
-High Pulse Width  Fast    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X6Y25   menu/h3/pixel_reg/C
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB18_X0Y14  act/m2/FontRom/fontRow_reg/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.576         10.000      7.424      RAMB18_X0Y14  act/m2/FontRom/fontRow_reg/CLKBWRCLK
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB18_X0Y4   cred/t4/FontRom/fontRow_reg/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.576         10.000      7.424      RAMB18_X0Y4   cred/t4/FontRom/fontRow_reg/CLKBWRCLK
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB18_X0Y2   cred/t6/FontRom/fontRow_reg/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.576         10.000      7.424      RAMB18_X0Y2   cred/t6/FontRom/fontRow_reg/CLKBWRCLK
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB18_X0Y15  menu/spare/FontRom/fontRow_reg/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.576         10.000      7.424      RAMB18_X0Y15  menu/spare/FontRom/fontRow_reg/CLKBWRCLK
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB18_X0Y17  menu/t2/FontRom/fontRow_reg/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.576         10.000      7.424      RAMB18_X0Y17  menu/t2/FontRom/fontRow_reg/CLKBWRCLK
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X9Y13   acted_reg/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X10Y12  direc_reg[0]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X10Y13  direc_reg[1]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X10Y12  direc_reg[2]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X13Y12  isSelect_reg/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X30Y6   menu/h2/pixel_reg/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X30Y6   menu/h3/pixel_reg/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X12Y12  receiver_unit/rxshiftreg_reg[3]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X12Y12  receiver_unit/rxshiftreg_reg[4]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X13Y14  receiver_unit/rxshiftreg_reg[5]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X3Y17   act/m1/pixel_reg/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X9Y30   menu/item/pixel_reg/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X9Y25   ats/ec2/hitEnemy_reg/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X2Y16   cred/t4/pixel_reg/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X2Y16   cred/t4/pixel_reg/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X13Y3   ats/newHealth_reg[6]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X13Y3   ats/newHealth_reg[7]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X14Y4   ats/newHealth_reg[8]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X14Y4   ats/newHealth_reg[9]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X7Y15   menu/t1/pixel_reg/C
 
 
 
