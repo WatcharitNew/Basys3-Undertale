@@ -25,8 +25,8 @@ module spareScene(
 		input wire video_on,
 		input wire p_tick, 
 		input wire [9:0] x,y,
-		input wire acted,
-		output reg [11:0] rgb_reg
+		output reg [11:0] rgb_reg_fail,
+		output reg [11:0] rgb_reg_spared
     );
     
     //init text
@@ -52,13 +52,17 @@ module spareScene(
     // rgb buffer (color)
     always @(posedge p_tick)
     begin
-        //text
-        if (text_pixel_1 && acted == 0 )
-            rgb_reg <= 12'hFFF;
-        else if (text_pixel_2 && acted == 1 )
-            rgb_reg <= 12'hFFF;
+        // not acted
+        if (text_pixel_1 == 1)
+            rgb_reg_fail <= 12'hFFF;
         else
-            rgb_reg <= 12'b0;
+            rgb_reg_fail <= 12'b0;
+        
+        // acted
+        if (text_pixel_2 == 1)
+            rgb_reg_spared <= 12'hFFF;
+        else
+            rgb_reg_spared <= 12'b0;
     end 
     
 endmodule

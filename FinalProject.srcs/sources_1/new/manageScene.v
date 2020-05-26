@@ -75,6 +75,7 @@ module manageScene(
     reg onScene_menu;
     reg onScene_act;
     reg onScene_spare;
+    reg onScene_go;
     
     //health
     wire [9:0] maxHealth=6;
@@ -144,15 +145,6 @@ module manageScene(
                     0: begin
                         if (newEnemyHealth > 1) newEnemyHealth <= newEnemyHealth -1;
                     end
-                    1: begin
-                       acted = 1; 
-                    end
-                    2: begin
-                    
-                    end
-                    3: begin
-                    
-                    end
                 endcase
             end
             isSelect=0;
@@ -188,29 +180,34 @@ module manageScene(
     creditScene cred(clk, video_on, p_tick, x, y, rgb_reg_cred);
     menuScene menu(clk, video_on, p_tick, x, y, newpic, selectedMenu, maxHealth,newHealth, maxEnemyHealth, newEnemyHealth,rgb_reg_menu);
     actScene act(clk, video_on, p_tick, x, y, rgb_reg_act);
-    spareScene spare(clk, video_on, p_tick, x, y, acted, rgb_reg_spare);
+    spareScene spare(clk, video_on, p_tick, x, y, rgb_reg_spare_fail, rgb_reg_spare_complete);
     
     always @(posedge clk)
     begin
         if (onScene_credit) rgb_reg = rgb_reg_cred;
         else if (onScene_menu) rgb_reg = rgb_reg_menu;
-        else if (onScene_ats)   rgb_reg = rgb_reg_ats;
+        else if (onScene_ats) rgb_reg = rgb_reg_ats;
         else if (onScene_act) rgb_reg = rgb_reg_act;
-        else if (onScene_spare) rgb_reg = rgb_reg_spare;
+        else if (onScene_spare && !acted) rgb_reg = rgb_reg_cred;
+        else if (onScene_spare && acted) rgb_reg = rgb_reg_go;
+        else if (onScene_go) rgb_reg = rgb_reg_go;
     end
     
     wire isDie = (newHealth <= 1);
+    wire isWon = (newEnemyHealth <= 1);
     
-    always @(posedge atsClk or posedge isDie or posedge isSelect)
+    always @(posedge atsClk or posedge isDie or posedge isSelect or posedge isWon)
     begin
-        if(isDie) begin onScene_ats=0; onScene_menu=1; end 
-        else if(isSelect) 
+        if(isDie) begin onScene_ats=0; onScene_menu=0; onScene_go=1; end
+        else if (isWon) begin onScene_ats=0; onScene_menu=0; onScene_go=1; end 
+        else if (isSelect) 
         begin 
             if(onScene_menu && selectedMenu != 0) 
             begin
                 onScene_menu=0;
                 case (selectedMenu)
                     1: begin
+                        acted <= 1;
                         onScene_spare <= 0;
                         onScene_ats <= 0;
                         onScene_act <= 1;
@@ -237,7 +234,19 @@ module manageScene(
                 onScene_menu = 1;
             end 
         end
-        else if (onScene_ats) begin onScene_ats = 0; onScene_menu=1; end
+        else if (onScene_ats) begin
+            onScene_ats = 0;
+            onScene_menu=1;
+        end
+        else if (onScene_spare) begin
+            onScene_spare <= 0;
+            if (!acted) onScene_ats <= 1;
+            else onScene_go <= 1;
+        end
+        else if (onScene_act) begin
+            onScene_act <= 0;
+            onScene_ats <= 1;
+        end
     end
     
     // output

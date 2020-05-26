@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Sat May 23 20:17:19 2020
+| Date             : Sun May 24 22:56:55 2020
 | Host             : DESKTOP-VG3SLB4 running 64-bit major release  (build 9200)
 | Command          : report_power -file manageScene_power_routed.rpt -pb manageScene_power_summary_routed.pb -rpx manageScene_power_routed.rpx
 | Design           : manageScene
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.114        |
+| Total On-Chip Power (W)  | 0.116        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.042        |
+| Dynamic (W)              | 0.044        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.4         |
@@ -53,19 +53,18 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |     0.003 |     2247 |       --- |             --- |
-|   LUT as Logic |     0.002 |     1266 |     20800 |            6.09 |
-|   CARRY4       |    <0.001 |      284 |      8150 |            3.48 |
-|   Register     |    <0.001 |      299 |     41600 |            0.72 |
+| Slice Logic    |     0.003 |     2170 |       --- |             --- |
+|   LUT as Logic |     0.003 |     1222 |     20800 |            5.88 |
+|   CARRY4       |    <0.001 |      280 |      8150 |            3.44 |
+|   Register     |    <0.001 |      297 |     41600 |            0.71 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
-|   F7/F8 Muxes  |    <0.001 |        1 |     32600 |           <0.01 |
-|   Others       |     0.000 |      159 |       --- |             --- |
-| Signals        |     0.004 |     2064 |       --- |             --- |
-| Block RAM      |     0.022 |        6 |        50 |           12.00 |
-| DSPs           |     0.009 |       17 |        90 |           18.89 |
-| I/O            |    <0.001 |       17 |       106 |           16.04 |
+|   Others       |     0.000 |      151 |       --- |             --- |
+| Signals        |     0.006 |     1995 |       --- |             --- |
+| Block RAM      |     0.020 |      5.5 |        50 |           11.00 |
+| DSPs           |     0.011 |       17 |        90 |           18.89 |
+| I/O            |     0.001 |       17 |       106 |           16.04 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.114 |          |           |                 |
+| Total          |     0.116 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.050 |       0.040 |      0.010 |
+| Vccint    |       1.000 |     0.051 |       0.042 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -144,12 +143,12 @@ Table of Contents
 +-----------------+-----------+
 | Name            | Power (W) |
 +-----------------+-----------+
-| manageScene     |     0.042 |
-|   act           |     0.002 |
-|     m2          |     0.002 |
-|       FontRom   |     0.002 |
-|   ats           |     0.017 |
-|     ec1         |     0.005 |
+| manageScene     |     0.044 |
+|   act           |     0.001 |
+|     m2          |     0.001 |
+|       FontRom   |     0.001 |
+|   ats           |     0.021 |
+|     ec1         |     0.008 |
 |     ec2         |     0.008 |
 |     t1          |     0.002 |
 |       FontRom   |     0.002 |
@@ -173,9 +172,6 @@ Table of Contents
 |       FontRom   |     0.002 |
 |     t2          |     0.002 |
 |       FontRom   |     0.002 |
-|   spare         |     0.001 |
-|     m2          |     0.001 |
-|       FontRom   |     0.001 |
 |   vga_sync_unit |     0.002 |
 +-----------------+-----------+
 
