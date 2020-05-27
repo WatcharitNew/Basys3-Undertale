@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sun May 24 22:55:45 2020
+| Date         : Wed May 27 23:49:55 2020
 | Host         : DESKTOP-VG3SLB4 running 64-bit major release  (build 9200)
 | Command      : report_drc -file manageScene_drc_opted.rpt -pb manageScene_drc_opted.pb -rpx manageScene_drc_opted.rpx
 | Design       : manageScene
@@ -373,8 +373,8 @@ Related violations: <none>
 
 PLHOLDVIO-2#2 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT vga_sync_unit/h_count_reg[9]_i_2 is driving clock pin of 9 cells. This could lead to large hold time violations. Involved cells are:
-act/rgb_reg_reg[0], ats/rgb_reg_reg[11], ats/rgb_reg_reg[3], ats/rgb_reg_reg[7], cred/rgb_reg_reg[0], menu/rgb_reg_reg[11], menu/rgb_reg_reg[3], menu/rgb_reg_reg[7], newpic_reg
+A LUT vga_sync_unit/h_count_reg[9]_i_2 is driving clock pin of 12 cells. This could lead to large hold time violations. Involved cells are:
+act/rgb_reg_reg[0], ats/rgb_reg_reg[11], ats/rgb_reg_reg[3], ats/rgb_reg_reg[7], cred/rgb_reg_reg[0], go/rgb_reg_reg[7], menu/rgb_reg_reg[11], menu/rgb_reg_reg[3], menu/rgb_reg_reg[7], newpic_reg, spare/rgb_reg_fail_reg[0], spare/rgb_reg_spared_reg[0]
 Related violations: <none>
 
 

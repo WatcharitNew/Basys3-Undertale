@@ -31,7 +31,7 @@ module actScene(
     //init text
     Pixel_On_Text2 #(.displayText("you acted on enemy.")) m1(
                 clk,
-                320, // text position.x (top left)
+                280, // text position.x (top left)
                 240, // text position.y (top left)
                 x, // current position.x
                 y, // current position.y
@@ -41,7 +41,7 @@ module actScene(
     //init text
     Pixel_On_Text2 #(.displayText("you can now spare it")) m2(
                 clk,
-                320, // text position.x (top left)
+                280, // text position.x (top left)
                 280, // text position.y (top left)
                 x, // current position.x
                 y, // current position.y

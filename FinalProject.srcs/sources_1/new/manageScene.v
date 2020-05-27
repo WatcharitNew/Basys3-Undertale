@@ -38,7 +38,8 @@ module manageScene(
 	wire [11:0] rgb_reg_cred;
 	wire [11:0] rgb_reg_menu;
 	wire [11:0] rgb_reg_act;
-	wire [11:0] rgb_reg_spare;
+	wire [11:0] rgb_reg_spare_fail;
+	wire [11:0] rgb_reg_spare_complete;
 	
 	// for multiplexing RsTx from multiple scene
 	reg RsTx_reg;
@@ -147,7 +148,7 @@ module manageScene(
                     end
                 endcase
             end
-            isSelect=0;
+            isSelect = 0;
         end
             if (state==1 && nextstate==0)
                 begin
@@ -157,7 +158,8 @@ module manageScene(
                 "s": begin if(onScene_ats) direc=3; TxData="S"; end
                 "d": begin if(onScene_ats) direc=4; if(onScene_menu) selectedMenu <= selectedMenu-1;TxData="D"; end
                 " ": begin
-                    isSelect=1;
+                    if (selectedMenu != 2) isSelect=1;
+                    if (selectedMenu == 1) acted = 1;
                     TxData = "z";
                 end
                 default: begin TxData=""; end
@@ -188,8 +190,8 @@ module manageScene(
         else if (onScene_menu) rgb_reg = rgb_reg_menu;
         else if (onScene_ats) rgb_reg = rgb_reg_ats;
         else if (onScene_act) rgb_reg = rgb_reg_act;
-        else if (onScene_spare && !acted) rgb_reg = rgb_reg_cred;
-        else if (onScene_spare && acted) rgb_reg = rgb_reg_go;
+        else if (onScene_spare && !acted) rgb_reg = rgb_reg_spare_fail;
+        else if (onScene_spare && acted) rgb_reg = rgb_reg_spare_complete;
         else if (onScene_go) rgb_reg = rgb_reg_go;
     end
     
@@ -198,7 +200,7 @@ module manageScene(
     
     always @(posedge atsClk or posedge isDie or posedge isSelect or posedge isWon)
     begin
-        if(isDie) begin onScene_ats=0; onScene_menu=0; onScene_go=1; end
+        if (isDie) begin onScene_ats=0; onScene_menu=0; onScene_go=1; end
         else if (isWon) begin onScene_ats=0; onScene_menu=0; onScene_go=1; end 
         else if (isSelect) 
         begin 
@@ -206,17 +208,13 @@ module manageScene(
             begin
                 onScene_menu=0;
                 case (selectedMenu)
+                    // act
                     1: begin
-                        acted <= 1;
                         onScene_spare <= 0;
                         onScene_ats <= 0;
                         onScene_act <= 1;
                     end
-                    2: begin
-                        onScene_spare <= 0;
-                        onScene_ats <= 1;
-                        onScene_act <= 0;
-                    end
+                    // spare
                     3: begin
                         onScene_spare <= 1;
                         onScene_ats <= 0;

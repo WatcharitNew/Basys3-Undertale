@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sun May 24 22:56:52 2020
+| Date         : Wed May 27 23:50:56 2020
 | Host         : DESKTOP-VG3SLB4 running 64-bit major release  (build 9200)
 | Command      : report_drc -file manageScene_drc_routed.rpt -pb manageScene_drc_routed.pb -rpx manageScene_drc_routed.rpx
 | Design       : manageScene
@@ -24,7 +24,7 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 71
+             Violations found: 70
 +-------------+----------+-------------------------------------------------------------+------------+
 | Rule        | Severity | Description                                                 | Violations |
 +-------------+----------+-------------------------------------------------------------+------------+
@@ -32,7 +32,7 @@ Table of Contents
 | DPIP-1      | Warning  | Input pipelining                                            | 29         |
 | DPOP-1      | Warning  | PREG Output pipelining                                      | 17         |
 | DPOP-2      | Warning  | MREG Output pipelining                                      | 17         |
-| PDRC-153    | Warning  | Gated clock check                                           | 5          |
+| PDRC-153    | Warning  | Gated clock check                                           | 4          |
 | PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 2          |
 +-------------+----------+-------------------------------------------------------------+------------+
 
@@ -368,25 +368,20 @@ Related violations: <none>
 
 PDRC-153#1 Warning
 Gated clock check  
-Net ats/onScene_menu_reg_0 is a gated clock net sourced by a combinational pin ats/onScene_act_reg_LDC_i_1/O, cell ats/onScene_act_reg_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net ats/isSelect_reg_0 is a gated clock net sourced by a combinational pin ats/onScene_act_reg_LDC_i_1/O, cell ats/onScene_act_reg_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#2 Warning
 Gated clock check  
-Net ats/onScene_menu_reg_2 is a gated clock net sourced by a combinational pin ats/onScene_ats_reg_LDC_i_1/O, cell ats/onScene_ats_reg_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net ats/selectedMenu_reg[1] is a gated clock net sourced by a combinational pin ats/onScene_act_reg_LDC_i_2/O, cell ats/onScene_act_reg_LDC_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#3 Warning
 Gated clock check  
-Net ats/onScene_menu_reg_3 is a gated clock net sourced by a combinational pin ats/onScene_spare_reg_LDC_i_1/O, cell ats/onScene_spare_reg_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#4 Warning
-Gated clock check  
 Net genblk1[0].fdiv2/tclk_0 is a gated clock net sourced by a combinational pin genblk1[0].fdiv2/clkDiv_i_2/O, cell genblk1[0].fdiv2/clkDiv_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
-PDRC-153#5 Warning
+PDRC-153#4 Warning
 Gated clock check  
 Net vga_sync_unit/p_tick is a gated clock net sourced by a combinational pin vga_sync_unit/h_count_reg[9]_i_2/O, cell vga_sync_unit/h_count_reg[9]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
@@ -399,8 +394,8 @@ Related violations: <none>
 
 PLHOLDVIO-2#2 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT vga_sync_unit/h_count_reg[9]_i_2 is driving clock pin of 9 cells. This could lead to large hold time violations. Involved cells are:
-act/rgb_reg_reg[0], ats/rgb_reg_reg[11], ats/rgb_reg_reg[3], ats/rgb_reg_reg[7], cred/rgb_reg_reg[0], menu/rgb_reg_reg[11], menu/rgb_reg_reg[3], menu/rgb_reg_reg[7], newpic_reg
+A LUT vga_sync_unit/h_count_reg[9]_i_2 is driving clock pin of 12 cells. This could lead to large hold time violations. Involved cells are:
+act/rgb_reg_reg[0], ats/rgb_reg_reg[11], ats/rgb_reg_reg[3], ats/rgb_reg_reg[7], cred/rgb_reg_reg[0], go/rgb_reg_reg[7], menu/rgb_reg_reg[11], menu/rgb_reg_reg[3], menu/rgb_reg_reg[7], newpic_reg, spare/rgb_reg_fail_reg[0], spare/rgb_reg_spared_reg[0]
 Related violations: <none>
 
 
