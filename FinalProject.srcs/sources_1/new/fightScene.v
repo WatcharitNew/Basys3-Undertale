@@ -33,16 +33,17 @@ module fightScene(
         input wire [9:0] maxEnemyHealth,
 		input wire [9:0] newHealth,
         output reg [11:0] rgb_reg,
-        output reg [9:0] newEnemyHealth
+        output reg [9:0] newEnemyHealth,
+        output reg [1:0] onHitEnemy
     );
     /// line is vertical line
     reg [9:0] x_pos,y_pos,lineThick,speed_bar,lineHeight,boxLeft,boxRight,boxTop,boxBottom,boxThick;
-    reg [1:0] onHitEnemy;
+    
      //initialize
     wire [9:0] healthBar = (maxHealth - newHealth)*36;
     wire [9:0] enemyHealthBar = (maxEnemyHealth - newEnemyHealth)*36;
     /// 0 goRight , 1 goLeft
-    reg direct,onSelect;
+    reg direct;
     initial
     begin
         x_pos = 300;
@@ -51,7 +52,6 @@ module fightScene(
         lineHeight = 15;
         speed_bar = 1;
         direct = 0;
-        onSelect = 0;
         boxLeft = 220;
         boxRight = 420;
         boxTop = 140;
@@ -97,13 +97,13 @@ module fightScene(
         
     /// line1
     else if(x>=350 && x<=350+lineThick && y>=y_pos && y <= y_pos+lineHeight)
-        rgb_reg <= 12'hFF0;
+        rgb_reg <= 12'hFFF;
     /// line2
-    else if(x>=400 && x<=400+lineThick && y>=y_pos && y <= y_pos+lineHeight)
+    else if(x>=400 && x<=400+lineThick && y>=y_pos-10 && y <= y_pos+lineHeight+10)
         rgb_reg <= 12'hFF0;
     /// line3
     else if(x>=450 && x<=450+lineThick && y>=y_pos && y <= y_pos+lineHeight)
-        rgb_reg <= 12'hFF0;
+        rgb_reg <= 12'hFFF;
         
     // gentext HP
     else if (text_pixel_hp == 1)
@@ -131,8 +131,8 @@ module fightScene(
         begin
             x_pos <= 300;
             y_pos <= 240;
-            onSelect <=0;
             onHitEnemy <=0;
+            direct <=0 ;
         end
         else
         begin
@@ -140,12 +140,12 @@ module fightScene(
             begin    
                 if(x_pos+speed_bar > 500 && direct == 0)
                     direct <=1;
-                else if(x_pos-speed_bar < 300 && direct == 1)
-                    direct <=0;
+               // else if(x_pos-speed_bar < 300 && direct == 1)
+               //     direct <=0;
                 if(direct==0)
                     x_pos = x_pos+speed_bar;
                 else if(direct==1)
-                    x_pos = x_pos-speed_bar;
+                    onHitEnemy=2;
             end
             else
             begin
@@ -160,10 +160,9 @@ module fightScene(
     begin
         if(onHitEnemy==1)
         begin
-           if(x_pos == 350 || x_pos == 400 || x_pos == 450) newEnemyHealth <= newEnemyHealth-2;
-                else if((x_pos < 350 && x_pos > 340) || (x_pos > 350 && x_pos < 360) ||
-                (x_pos < 400 && x_pos > 390) || (x_pos > 400 && x_pos < 410) ||
-                (x_pos < 450 && x_pos > 440) || (x_pos > 450 && x_pos < 460)) newEnemyHealth <= newEnemyHealth-1;
+           if(x_pos >= 390 && x_pos <= 410) newEnemyHealth <= newEnemyHealth-3;
+           else if((x_pos < 390 && x_pos >= 350) || (x_pos > 410 && x_pos <= 450)) newEnemyHealth <= newEnemyHealth-2;
+           else newEnemyHealth <= newEnemyHealth-1;  
                 ///else newEnemyHealth <= newEnemyHealth-1;
         end
     end
