@@ -1,8 +1,13 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+<<<<<<< HEAD
 | Date         : Mon May 25 04:21:25 2020
 | Host         : MSI-IT running 64-bit major release  (build 9200)
+=======
+| Date         : Wed May 27 23:49:21 2020
+| Host         : DESKTOP-VG3SLB4 running 64-bit major release  (build 9200)
+>>>>>>> feat/act-spare
 | Command      : report_utilization -file manageScene_utilization_synth.rpt -pb manageScene_utilization_synth.pb
 | Design       : manageScene
 | Device       : 7a35tcpg236-1
@@ -30,6 +35,7 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
+<<<<<<< HEAD
 | Slice LUTs*             | 1386 |     0 |     20800 |  6.66 |
 |   LUT as Logic          | 1386 |     0 |     20800 |  6.66 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
@@ -37,6 +43,15 @@ Table of Contents
 |   Register as Flip Flop |  298 |     0 |     41600 |  0.72 |
 |   Register as Latch     |    5 |     0 |     41600 |  0.01 |
 | F7 Muxes                |    0 |     0 |     16300 |  0.00 |
+=======
+| Slice LUTs*             | 1300 |     0 |     20800 |  6.25 |
+|   LUT as Logic          | 1300 |     0 |     20800 |  6.25 |
+|   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
+| Slice Registers         |  279 |     0 |     41600 |  0.67 |
+|   Register as Flip Flop |  277 |     0 |     41600 |  0.67 |
+|   Register as Latch     |    2 |     0 |     41600 | <0.01 |
+| F7 Muxes                |    1 |     0 |     16300 | <0.01 |
+>>>>>>> feat/act-spare
 | F8 Muxes                |    0 |     0 |      8150 |  0.00 |
 +-------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -54,10 +69,17 @@ Table of Contents
 | 0     |            _ |         Set |            - |
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
+<<<<<<< HEAD
 | 5     |          Yes |           - |          Set |
 | 10    |          Yes |           - |        Reset |
 | 27    |          Yes |         Set |            - |
 | 261   |          Yes |       Reset |            - |
+=======
+| 2     |          Yes |           - |          Set |
+| 6     |          Yes |           - |        Reset |
+| 23    |          Yes |         Set |            - |
+| 248   |          Yes |       Reset |            - |
+>>>>>>> feat/act-spare
 +-------+--------------+-------------+--------------+
 
 
@@ -151,6 +173,7 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
+<<<<<<< HEAD
 | LUT2     |  452 |                 LUT |
 | LUT6     |  388 |                 LUT |
 | LUT5     |  343 |                 LUT |
@@ -166,7 +189,24 @@ Table of Contents
 | LDCE     |    5 |        Flop & Latch |
 | FDPE     |    5 |        Flop & Latch |
 | FDCE     |    5 |        Flop & Latch |
+=======
+| LUT2     |  466 |                 LUT |
+| LUT6     |  333 |                 LUT |
+| CARRY4   |  286 |          CarryLogic |
+| LUT5     |  272 |                 LUT |
+| FDRE     |  248 |        Flop & Latch |
+| LUT1     |  235 |                 LUT |
+| LUT4     |  150 |                 LUT |
+| LUT3     |   83 |                 LUT |
+| FDSE     |   23 |        Flop & Latch |
+| DSP48E1  |   17 |    Block Arithmetic |
+| OBUF     |   15 |                  IO |
+| RAMB18E1 |   12 |        Block Memory |
+| FDCE     |    4 |        Flop & Latch |
+| LDCE     |    2 |        Flop & Latch |
+>>>>>>> feat/act-spare
 | IBUF     |    2 |                  IO |
+| FDPE     |    2 |        Flop & Latch |
 | BUFG     |    2 |               Clock |
 +----------+------+---------------------+
 

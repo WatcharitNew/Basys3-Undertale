@@ -29,11 +29,23 @@ module gameOver
 		output reg [11:0] rgb_reg
 	);
 	
+	Pixel_On_Text2 #(.displayText("Game Over")) t1(
+                clk,
+                280, // text position.x (top left)
+                240, // text position.y (top left)
+                x, // current position.x
+                y, // current position.y
+                text_pixel  // result, 1 if current pixel is on text, 0 otherwise
+            );
+	
     // rgb buffer (color)
     always @(posedge p_tick)
     //main character
     begin
-        rgb_reg <= 12'hF00;
+        if (text_pixel) 
+            rgb_reg <= 12'hF00;
+        else
+            rgb_reg <= 12'hFFF;
     end    
     
 endmodule
