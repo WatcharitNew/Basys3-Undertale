@@ -33,7 +33,7 @@ module fightScene(
         input wire [9:0] maxEnemyHealth,
 		input wire [9:0] newHealth,
         output reg [11:0] rgb_reg,
-        output reg [9:0] newEnemyHealth,
+        output reg signed [9:0] newEnemyHealth,
         output reg [1:0] onHitEnemy
     );
     /// line is vertical line
@@ -94,6 +94,19 @@ module fightScene(
     /// bar movement
     if(x>=x_pos && x<=x_pos+lineThick && y>=y_pos && y <= y_pos+lineHeight)
         rgb_reg <= 12'hF00;
+    
+    /// start line
+    else if(x>=195 && x<=195+lineThick && y>=y_pos-30 && y <= y_pos+lineHeight+30)
+        rgb_reg <= 12'h00F;
+    /// end line
+    else if(x>=410 && x<=410+lineThick && y>=y_pos-30 && y <= y_pos+lineHeight+30)
+        rgb_reg <= 12'h00F;
+    /// top line
+    else if(x>=195 && x<=410+lineThick && y>=y_pos-30 && y <= y_pos-25)
+        rgb_reg <= 12'h00F;
+    /// bottom line
+    else if(x>=195 && x<=410+lineThick && y>=y_pos+lineHeight+30 && y <= y_pos+lineHeight+35)
+        rgb_reg <= 12'h00F;
         
     /// line1
     else if(x>=250 && x<=250+lineThick && y>=y_pos && y <= y_pos+lineHeight)
@@ -160,9 +173,9 @@ module fightScene(
     begin
         if(onHitEnemy==1)
         begin
-           if(x_pos >= 290 && x_pos <= 310) newEnemyHealth <= newEnemyHealth-3;
-           else if((x_pos < 290 && x_pos >= 250) || (x_pos > 310 && x_pos <= 350)) newEnemyHealth <= newEnemyHealth-2;
-           else newEnemyHealth <= newEnemyHealth-1;  
+           if(x_pos >= 290 && x_pos <= 310) newEnemyHealth <= $signed(newEnemyHealth)-3;
+           else if((x_pos < 290 && x_pos >= 250) || (x_pos > 310 && x_pos <= 350)) newEnemyHealth <= $signed(newEnemyHealth)-2;
+           else newEnemyHealth <= $signed(newEnemyHealth)-1;  
                 ///else newEnemyHealth <= newEnemyHealth-1;
         end
     end

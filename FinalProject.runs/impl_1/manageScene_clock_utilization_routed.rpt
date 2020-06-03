@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Wed Jun  3 18:46:15 2020
+| Date         : Thu Jun  4 02:22:27 2020
 | Host         : MSI-IT running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file manageScene_clock_utilization_routed.rpt
 | Design       : manageScene
@@ -46,8 +46,8 @@ Table of Contents
 +-----------+-----------+-----------------+------------+---------------+--------------+-------------------+-------------+-----------------+--------------+-------------+-----------------------+----------------+
 | Global Id | Source Id | Driver Type/Pin | Constraint | Site          | Clock Region | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock       | Driver Pin            | Net            |
 +-----------+-----------+-----------------+------------+---------------+--------------+-------------------+-------------+-----------------+--------------+-------------+-----------------------+----------------+
-| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y0 | n/a          |                 2 |         219 |               0 |       10.000 | sys_clk_pin | clk_IBUF_BUFG_inst/O  | clk_IBUF_BUFG  |
-| g1        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y1 | n/a          |                 1 |          47 |               0 |              |             | targetClk_BUFG_inst/O | targetClk_BUFG |
+| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y0 | n/a          |                 2 |         247 |               0 |       10.000 | sys_clk_pin | clk_IBUF_BUFG_inst/O  | clk_IBUF_BUFG  |
+| g1        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y1 | n/a          |                 2 |          47 |               0 |              |             | targetClk_BUFG_inst/O | targetClk_BUFG |
 +-----------+-----------+-----------------+------------+---------------+--------------+-------------------+-------------+-----------------+--------------+-------------+-----------------------+----------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
@@ -60,7 +60,7 @@ Table of Contents
 | Source Id | Global Id | Driver Type/Pin | Constraint | Site         | Clock Region | Clock Loads | Non-Clock Loads | Source Clock Period | Source Clock | Driver Pin              | Net                  |
 +-----------+-----------+-----------------+------------+--------------+--------------+-------------+-----------------+---------------------+--------------+-------------------------+----------------------+
 | src0      | g0        | IBUF/O          | IOB_X1Y26  | IOB_X1Y26    | X1Y0         |           1 |               1 |              10.000 | sys_clk_pin  | clk_IBUF_inst/O         | clk_IBUF             |
-| src1      | g1        | FDRE/Q          | None       | SLICE_X29Y46 | X0Y0         |           1 |               1 |                     |              | fdivTarget/clkDiv_reg/Q | fdivTarget/targetClk |
+| src1      | g1        | FDRE/Q          | None       | SLICE_X28Y42 | X0Y0         |           1 |               1 |                     |              | fdivTarget/clkDiv_reg/Q | fdivTarget/targetClk |
 +-----------+-----------+-----------------+------------+--------------+--------------+-------------+-----------------+---------------------+--------------+-------------------------+----------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
@@ -72,36 +72,36 @@ Table of Contents
 +----------+-----------------+------------+------------------+--------------+-------------+-----------------+--------------+-------+--------------------------------+--------------------------------+
 | Local Id | Driver Type/Pin | Constraint | Site/BEL         | Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock | Driver Pin                     | Net                            |
 +----------+-----------------+------------+------------------+--------------+-------------+-----------------+--------------+-------+--------------------------------+--------------------------------||
-| 0        | FDRE/Q          | None       | SLICE_X7Y23/AFF  | X0Y0         |          20 |               3 |              |       | newpic_reg/Q                   | newpic_reg_n_0                 - Static -
-| 1        | FDRE/Q          | None       | SLICE_X11Y16/AFF | X0Y0         |          14 |               1 |              |       | fdivTarget2/clkDiv_reg/Q       | fdivTarget2/clkDiv_reg_0       - Static -
-| 2        | FDRE/Q          | None       | SLICE_X12Y16/AFF | X0Y0         |          10 |               4 |              |       | fight/onHitEnemy_reg[0]/Q      | fight/endFightScene[0]         - Static -
-| 3        | FDRE/Q          | None       | SLICE_X15Y19/AFF | X0Y0         |           1 |               1 |              |       | genblk1[0].fdiv2/clkDiv_reg/Q  | genblk1[0].fdiv2/clkDiv_reg_0  - Static -
-| 4        | FDRE/Q          | None       | SLICE_X10Y26/AFF | X0Y0         |           1 |               1 |              |       | genblk1[10].fdiv2/clkDiv_reg/Q | genblk1[10].fdiv2/clkDiv_reg_0 - Static -
-| 5        | FDRE/Q          | None       | SLICE_X8Y27/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[11].fdiv2/clkDiv_reg/Q | genblk1[11].fdiv2/clkDiv_reg_0 - Static -
-| 6        | FDRE/Q          | None       | SLICE_X8Y28/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[12].fdiv2/clkDiv_reg/Q | genblk1[12].fdiv2/clkDiv_reg_0 - Static -
-| 7        | FDRE/Q          | None       | SLICE_X8Y29/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[13].fdiv2/clkDiv_reg/Q | genblk1[13].fdiv2/clkDiv_reg_0 - Static -
-| 8        | FDRE/Q          | None       | SLICE_X8Y32/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[14].fdiv2/clkDiv_reg/Q | genblk1[14].fdiv2/clkDiv_reg_0 - Static -
-| 9        | FDRE/Q          | None       | SLICE_X9Y36/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[15].fdiv2/clkDiv_reg/Q | genblk1[15].fdiv2/clkDiv_reg_0 - Static -
-| 10       | FDRE/Q          | None       | SLICE_X13Y44/AFF | X0Y0         |           1 |               1 |              |       | genblk1[16].fdiv2/clkDiv_reg/Q | genblk1[16].fdiv2/clkDiv_reg_0 - Static -
-| 11       | FDRE/Q          | None       | SLICE_X14Y45/AFF | X0Y0         |           1 |               1 |              |       | genblk1[17].fdiv2/clkDiv_reg/Q | genblk1[17].fdiv2/clkDiv       - Static -
-| 12       | FDRE/Q          | None       | SLICE_X4Y15/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[19].fdiv2/clkDiv_reg/Q | genblk1[19].fdiv2/clkDiv_reg_0 - Static -
-| 13       | FDRE/Q          | None       | SLICE_X14Y19/AFF | X0Y0         |           1 |               1 |              |       | genblk1[1].fdiv2/clkDiv_reg/Q  | genblk1[1].fdiv2/clkDiv_reg_0  - Static -
-| 14       | FDRE/Q          | None       | SLICE_X1Y13/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[20].fdiv2/clkDiv_reg/Q | genblk1[20].fdiv2/clkDiv_reg_0 - Static -
-| 15       | FDRE/Q          | None       | SLICE_X2Y12/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[21].fdiv2/clkDiv_reg/Q | genblk1[21].fdiv2/clkDiv_reg_0 - Static -
-| 16       | FDRE/Q          | None       | SLICE_X5Y12/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[22].fdiv2/clkDiv_reg/Q | genblk1[22].fdiv2/clkDiv_reg_0 - Static -
-| 17       | FDRE/Q          | None       | SLICE_X6Y12/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[23].fdiv2/clkDiv_reg/Q | genblk1[23].fdiv2/clkDiv_reg_0 - Static -
-| 18       | FDRE/Q          | None       | SLICE_X6Y13/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[24].fdiv2/clkDiv_reg/Q | genblk1[24].fdiv2/clkDiv_reg_0 - Static -
-| 19       | FDRE/Q          | None       | SLICE_X6Y14/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[25].fdiv2/clkDiv_reg/Q | genblk1[25].fdiv2/clkDiv_reg_0 - Static -
-| 20       | FDRE/Q          | None       | SLICE_X6Y15/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[26].fdiv2/clkDiv_reg/Q | genblk1[26].fdiv2/clkDiv_reg_0 - Static -
-| 21       | FDRE/Q          | None       | SLICE_X6Y16/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[27].fdiv2/clkDiv_reg/Q | genblk1[27].fdiv2/clkDiv_reg_0 - Static -
-| 22       | FDRE/Q          | None       | SLICE_X14Y20/AFF | X0Y0         |           1 |               1 |              |       | genblk1[2].fdiv2/clkDiv_reg/Q  | genblk1[2].fdiv2/clkDiv_reg_0  - Static -
-| 23       | FDRE/Q          | None       | SLICE_X15Y20/AFF | X0Y0         |           1 |               1 |              |       | genblk1[3].fdiv2/clkDiv_reg/Q  | genblk1[3].fdiv2/clkDiv_reg_0  - Static -
-| 24       | FDRE/Q          | None       | SLICE_X15Y21/AFF | X0Y0         |           1 |               1 |              |       | genblk1[4].fdiv2/clkDiv_reg/Q  | genblk1[4].fdiv2/clkDiv_reg_0  - Static -
-| 25       | FDRE/Q          | None       | SLICE_X15Y26/AFF | X0Y0         |           1 |               1 |              |       | genblk1[5].fdiv2/clkDiv_reg/Q  | genblk1[5].fdiv2/clkDiv_reg_0  - Static -
-| 26       | FDRE/Q          | None       | SLICE_X15Y27/AFF | X0Y0         |           1 |               1 |              |       | genblk1[6].fdiv2/clkDiv_reg/Q  | genblk1[6].fdiv2/clkDiv_reg_0  - Static -
-| 27       | FDRE/Q          | None       | SLICE_X14Y27/AFF | X0Y0         |           1 |               1 |              |       | genblk1[7].fdiv2/clkDiv_reg/Q  | genblk1[7].fdiv2/clkDiv_reg_0  - Static -
-| 28       | FDRE/Q          | None       | SLICE_X14Y26/AFF | X0Y0         |           1 |               1 |              |       | genblk1[8].fdiv2/clkDiv_reg/Q  | genblk1[8].fdiv2/clkDiv_reg_0  - Static -
-| 29       | FDRE/Q          | None       | SLICE_X13Y26/AFF | X0Y0         |           1 |               1 |              |       | genblk1[9].fdiv2/clkDiv_reg/Q  | genblk1[9].fdiv2/clkDiv_reg_0  - Static -
+| 0        | FDRE/Q          | None       | SLICE_X5Y28/AFF  | X0Y0         |          20 |               3 |              |       | newpic_reg/Q                   | newpic_reg_n_0                 - Static -
+| 1        | FDRE/Q          | None       | SLICE_X4Y22/AFF  | X0Y0         |          15 |               1 |              |       | fdivTarget2/clkDiv_reg/Q       | fdivTarget2/clkDiv_reg_0       - Static -
+| 2        | FDRE/Q          | None       | SLICE_X15Y20/AFF | X0Y0         |          10 |               4 |              |       | fight/onHitEnemy_reg[0]/Q      | fight/endFightScene[0]         - Static -
+| 3        | FDRE/Q          | None       | SLICE_X15Y31/AFF | X0Y0         |           1 |               1 |              |       | genblk1[0].fdiv2/clkDiv_reg/Q  | genblk1[0].fdiv2/clkDiv_reg_0  - Static -
+| 4        | FDRE/Q          | None       | SLICE_X14Y37/AFF | X0Y0         |           1 |               1 |              |       | genblk1[10].fdiv2/clkDiv_reg/Q | genblk1[10].fdiv2/clkDiv_reg_0 - Static -
+| 5        | FDRE/Q          | None       | SLICE_X15Y37/AFF | X0Y0         |           1 |               1 |              |       | genblk1[11].fdiv2/clkDiv_reg/Q | genblk1[11].fdiv2/clkDiv_reg_0 - Static -
+| 6        | FDRE/Q          | None       | SLICE_X15Y36/AFF | X0Y0         |           1 |               1 |              |       | genblk1[12].fdiv2/clkDiv_reg/Q | genblk1[12].fdiv2/clkDiv_reg_0 - Static -
+| 7        | FDRE/Q          | None       | SLICE_X13Y35/AFF | X0Y0         |           1 |               1 |              |       | genblk1[13].fdiv2/clkDiv_reg/Q | genblk1[13].fdiv2/clkDiv_reg_0 - Static -
+| 8        | FDRE/Q          | None       | SLICE_X12Y37/AFF | X0Y0         |           1 |               1 |              |       | genblk1[14].fdiv2/clkDiv_reg/Q | genblk1[14].fdiv2/clkDiv_reg_0 - Static -
+| 9        | FDRE/Q          | None       | SLICE_X12Y39/AFF | X0Y0         |           1 |               1 |              |       | genblk1[15].fdiv2/clkDiv_reg/Q | genblk1[15].fdiv2/clkDiv_reg_0 - Static -
+| 10       | FDRE/Q          | None       | SLICE_X14Y40/AFF | X0Y0         |           1 |               1 |              |       | genblk1[16].fdiv2/clkDiv_reg/Q | genblk1[16].fdiv2/clkDiv_reg_0 - Static -
+| 11       | FDRE/Q          | None       | SLICE_X14Y42/AFF | X0Y0         |           1 |               1 |              |       | genblk1[17].fdiv2/clkDiv_reg/Q | genblk1[17].fdiv2/clkDiv       - Static -
+| 12       | FDRE/Q          | None       | SLICE_X0Y20/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[19].fdiv2/clkDiv_reg/Q | genblk1[19].fdiv2/clkDiv_reg_0 - Static -
+| 13       | FDRE/Q          | None       | SLICE_X15Y32/AFF | X0Y0         |           1 |               1 |              |       | genblk1[1].fdiv2/clkDiv_reg/Q  | genblk1[1].fdiv2/clkDiv_reg_0  - Static -
+| 14       | FDRE/Q          | None       | SLICE_X0Y21/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[20].fdiv2/clkDiv_reg/Q | genblk1[20].fdiv2/clkDiv_reg_0 - Static -
+| 15       | FDRE/Q          | None       | SLICE_X0Y22/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[21].fdiv2/clkDiv_reg/Q | genblk1[21].fdiv2/clkDiv_reg_0 - Static -
+| 16       | FDRE/Q          | None       | SLICE_X1Y24/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[22].fdiv2/clkDiv_reg/Q | genblk1[22].fdiv2/clkDiv_reg_0 - Static -
+| 17       | FDRE/Q          | None       | SLICE_X0Y24/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[23].fdiv2/clkDiv_reg/Q | genblk1[23].fdiv2/clkDiv_reg_0 - Static -
+| 18       | FDRE/Q          | None       | SLICE_X0Y25/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[24].fdiv2/clkDiv_reg/Q | genblk1[24].fdiv2/clkDiv_reg_0 - Static -
+| 19       | FDRE/Q          | None       | SLICE_X0Y23/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[25].fdiv2/clkDiv_reg/Q | genblk1[25].fdiv2/clkDiv_reg_0 - Static -
+| 20       | FDRE/Q          | None       | SLICE_X1Y23/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[26].fdiv2/clkDiv_reg/Q | genblk1[26].fdiv2/clkDiv_reg_0 - Static -
+| 21       | FDRE/Q          | None       | SLICE_X1Y22/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[27].fdiv2/clkDiv_reg/Q | genblk1[27].fdiv2/clkDiv_reg_0 - Static -
+| 22       | FDRE/Q          | None       | SLICE_X15Y33/AFF | X0Y0         |           1 |               1 |              |       | genblk1[2].fdiv2/clkDiv_reg/Q  | genblk1[2].fdiv2/clkDiv_reg_0  - Static -
+| 23       | FDRE/Q          | None       | SLICE_X14Y33/AFF | X0Y0         |           1 |               1 |              |       | genblk1[3].fdiv2/clkDiv_reg/Q  | genblk1[3].fdiv2/clkDiv_reg_0  - Static -
+| 24       | FDRE/Q          | None       | SLICE_X14Y32/AFF | X0Y0         |           1 |               1 |              |       | genblk1[4].fdiv2/clkDiv_reg/Q  | genblk1[4].fdiv2/clkDiv_reg_0  - Static -
+| 25       | FDRE/Q          | None       | SLICE_X14Y34/AFF | X0Y0         |           1 |               1 |              |       | genblk1[5].fdiv2/clkDiv_reg/Q  | genblk1[5].fdiv2/clkDiv_reg_0  - Static -
+| 26       | FDRE/Q          | None       | SLICE_X15Y34/AFF | X0Y0         |           1 |               1 |              |       | genblk1[6].fdiv2/clkDiv_reg/Q  | genblk1[6].fdiv2/clkDiv_reg_0  - Static -
+| 27       | FDRE/Q          | None       | SLICE_X15Y35/AFF | X0Y0         |           1 |               1 |              |       | genblk1[7].fdiv2/clkDiv_reg/Q  | genblk1[7].fdiv2/clkDiv_reg_0  - Static -
+| 28       | FDRE/Q          | None       | SLICE_X14Y35/AFF | X0Y0         |           1 |               1 |              |       | genblk1[8].fdiv2/clkDiv_reg/Q  | genblk1[8].fdiv2/clkDiv_reg_0  - Static -
+| 29       | FDRE/Q          | None       | SLICE_X14Y36/AFF | X0Y0         |           1 |               1 |              |       | genblk1[9].fdiv2/clkDiv_reg/Q  | genblk1[9].fdiv2/clkDiv_reg_0  - Static -
 +----------+-----------------+------------+------------------+--------------+-------------+-----------------+--------------+-------+--------------------------------+--------------------------------||
 * Local Clocks in this context represents only clocks driven by non-global buffers
 ** Clock Loads column represents the clock pin loads (pin count)
@@ -116,8 +116,8 @@ Table of Contents
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
-| X0Y0              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  313 |  1200 |  114 |   400 |    4 |    20 |    0 |    10 |    0 |    20 |
-| X1Y0              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  1500 |    0 |   450 |    1 |    40 |    0 |    20 |    0 |    20 |
+| X0Y0              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  316 |  1200 |  143 |   400 |    7 |    20 |    0 |    10 |    0 |    20 |
+| X1Y0              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   22 |  1500 |    3 |   450 |    0 |    40 |    0 |    20 |    0 |    20 |
 | X0Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  1200 |    0 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
 | X1Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  1500 |    0 |   450 |    0 |    40 |    0 |    20 |    0 |    20 |
 | X0Y2              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  1800 |    0 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
@@ -135,7 +135,7 @@ All Modules
 +----+----+----+
 | Y2 |  0 |  0 |
 | Y1 |  0 |  0 |
-| Y0 |  2 |  1 |
+| Y0 |  2 |  2 |
 +----+----+----+
 
 
@@ -145,7 +145,7 @@ All Modules
 +-----------+-----------------+-------------------+-------------+-------------+---------------+-------------+----------+----------------+----------+---------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock       | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net           |
 +-----------+-----------------+-------------------+-------------+-------------+---------------+-------------+----------+----------------+----------+---------------+
-| g0        | BUFG/O          | n/a               | sys_clk_pin |      10.000 | {0.000 5.000} |         207 |        0 |              0 |        0 | clk_IBUF_BUFG |
+| g0        | BUFG/O          | n/a               | sys_clk_pin |      10.000 | {0.000 5.000} |         233 |        0 |              0 |        0 | clk_IBUF_BUFG |
 +-----------+-----------------+-------------------+-------------+-------------+---------------+-------------+----------+----------------+----------+---------------+
 * Logic Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
@@ -153,13 +153,13 @@ All Modules
 **** GT Loads column represents load cell count of GT types
 
 
-+----+------+----+
-|    | X0   | X1 |
-+----+------+----+
-| Y2 |    0 |  0 |
-| Y1 |    0 |  0 |
-| Y0 |  204 |  3 |
-+----+------+----+
++----+------+-----+
+|    | X0   | X1  |
++----+------+-----+
+| Y2 |    0 |   0 |
+| Y1 |    0 |   0 |
+| Y0 |  222 |  11 |
++----+------+-----+
 
 
 8. Device Cell Placement Summary for Global Clock g1
@@ -176,13 +176,13 @@ All Modules
 **** GT Loads column represents load cell count of GT types
 
 
-+----+-----+----+
-|    | X0  | X1 |
-+----+-----+----+
-| Y2 |   0 |  0 |
-| Y1 |   0 |  0 |
-| Y0 |  47 |  0 |
-+----+-----+----+
++----+-----+-----+
+|    | X0  | X1  |
++----+-----+-----+
+| Y2 |   0 |   0 |
+| Y1 |   0 |   0 |
+| Y0 |  36 |  11 |
++----+-----+-----+
 
 
 9. Clock Region Cell Placement per Global Clock: Region X0Y0
@@ -191,8 +191,8 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+----------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net            |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+----------------+
-| g0        | n/a   | BUFG/O          | None       |         204 |               0 | 195 |      0 |    4 |   0 |  0 |    0 |   0 |       0 | clk_IBUF_BUFG  |
-| g1        | n/a   | BUFG/O          | None       |          47 |               0 |  47 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | targetClk_BUFG |
+| g0        | n/a   | BUFG/O          | None       |         222 |               0 | 208 |      0 |    7 |   0 |  0 |    0 |   0 |       0 | clk_IBUF_BUFG  |
+| g1        | n/a   | BUFG/O          | None       |          36 |               0 |  36 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | targetClk_BUFG |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+----------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
@@ -202,11 +202,12 @@ All Modules
 10. Clock Region Cell Placement per Global Clock: Region X1Y0
 -------------------------------------------------------------
 
-+-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+---------------+
-| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net           |
-+-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+---------------+
-| g0        | n/a   | BUFG/O          | None       |           3 |               0 |  0 |      0 |    1 |   0 |  0 |    0 |   0 |       0 | clk_IBUF_BUFG |
-+-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+---------------+
++-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+----------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net            |
++-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+----------------+
+| g0        | n/a   | BUFG/O          | None       |          11 |               0 | 11 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | clk_IBUF_BUFG  |
+| g1        | n/a   | BUFG/O          | None       |          11 |               0 | 11 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | targetClk_BUFG |
++-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+----------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
@@ -226,7 +227,7 @@ set_property LOC IOB_X1Y26 [get_ports clk]
 #startgroup
 create_pblock {CLKAG_targetClk_BUFG}
 add_cells_to_pblock [get_pblocks  {CLKAG_targetClk_BUFG}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="targetClk_BUFG"}]]]
-resize_pblock [get_pblocks {CLKAG_targetClk_BUFG}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+resize_pblock [get_pblocks {CLKAG_targetClk_BUFG}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
 #endgroup
 
 # Clock net "clk_IBUF_BUFG" driven by instance "clk_IBUF_BUFG_inst" located at site "BUFGCTRL_X0Y0"

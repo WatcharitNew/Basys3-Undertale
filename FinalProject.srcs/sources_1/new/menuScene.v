@@ -59,7 +59,7 @@ module menuScene
     
     Pixel_On_Text2 #(.displayText("act")) act(
                 clk,
-                240, // text position.x (top left)
+                200, // text position.x (top left)
                 360, // text position.y (top left)
                 x, // current position.x
                 y, // current position.y
@@ -68,7 +68,7 @@ module menuScene
             
     Pixel_On_Text2 #(.displayText("item")) item(
                 clk,
-                420, // text position.x (top left)
+                320, // text position.x (top left)
                 360, // text position.y (top left)
                 x, // current position.x
                 y, // current position.y
@@ -77,7 +77,7 @@ module menuScene
             
     Pixel_On_Text2 #(.displayText("spare")) spare(
                 clk,
-                600, // text position.x (top left)
+                440, // text position.x (top left)
                 360, // text position.y (top left)
                 x, // current position.x
                 y, // current position.y
@@ -95,7 +95,7 @@ module menuScene
        
      Pixel_On_Text2 #(.displayText("|")) h2(
                 clk,
-                230, // text position.x (top left)
+                190, // text position.x (top left)
                 360, // text position.y (top left)
                 x, // current position.x
                 y, // current position.y
@@ -104,7 +104,7 @@ module menuScene
             
      Pixel_On_Text2 #(.displayText("|")) h3(
                 clk,
-                410, // text position.x (top left)
+                310, // text position.x (top left)
                 360, // text position.y (top left)
                 x, // current position.x
                 y, // current position.y
@@ -113,7 +113,7 @@ module menuScene
             
      Pixel_On_Text2 #(.displayText("|")) h4(
                 clk,
-                590, // text position.x (top left)
+                430, // text position.x (top left)
                 360, // text position.y (top left)
                 x, // current position.x
                 y, // current position.y

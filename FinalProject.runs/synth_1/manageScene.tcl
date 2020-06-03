@@ -39,6 +39,7 @@ read_verilog -library xil_defaultlib {
   C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/fightScene.v
   C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/gameOver.v
   C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/gameWin.v
+  C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/healScene.v
   C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/menuScene.v
   C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/receiver.v
   C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/spareScene.v

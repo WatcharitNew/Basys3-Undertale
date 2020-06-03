@@ -32,8 +32,10 @@ module afterTurnScene
 		input wire targetClk,
 		input wire [9:0] maxEnemyHealth,
 		input wire [9:0] newEnemyHealth,
+		input wire heal,
 		output reg [11:0] rgb_reg,
-		output reg [9:0] newHealth
+		output reg signed [9:0] newHealth,
+		output reg isHealed
 	);
 	
 	reg [9:0] x_pos,y_pos,boxLeft,boxRight,boxTop,boxBottom,boxThick;
@@ -43,7 +45,7 @@ module afterTurnScene
     wire [9:0] enemyRadius = 5; 
     wire hitEnemy1, hitEnemy2;
     reg oldHitEnemy [2:0];
-        
+    
     //initialize
     wire [9:0] healthBar = (maxHealth - newHealth)*36;
     wire [9:0] enemyHealthBar = (maxEnemyHealth - newEnemyHealth)*36;
@@ -65,6 +67,7 @@ module afterTurnScene
         canGoDown = 1;
         canGoLeft = 1;
         canGoRight = 1;
+        isHealed = 0;
     end
     
     //enemy1
@@ -168,10 +171,15 @@ module afterTurnScene
         //UART
         always @(posedge clk)
             begin
+            isHealed <=0 ;
             if(hitEnemy1 == 0) begin oldHitEnemy[0] = 0; end
             if(hitEnemy2 == 0) begin oldHitEnemy[1] = 0; end
             if(hitEnemy2 == 1 && oldHitEnemy[1] == 0) begin newHealth <= newHealth-1; oldHitEnemy[1] <=1; end
             else if(hitEnemy1 == 1 && oldHitEnemy[0] == 0) begin newHealth <= newHealth-1; oldHitEnemy[0] <=1; end
+            if(heal)
+                begin
+                    if(newHealth <= 5) begin newHealth <= newHealth+1; isHealed <=1; end
+                    else isHealed <=0;
+                end
             end
-            
 endmodule

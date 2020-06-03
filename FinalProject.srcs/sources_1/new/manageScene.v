@@ -43,6 +43,7 @@ module manageScene(
     wire [11:0] rgb_reg_gw;
 	wire [11:0] rgb_reg_spare_fail;
 	wire [11:0] rgb_reg_spare_complete;
+	wire [11:0] rgb_reg_heal;
 	
 	// for multiplexing RsTx from multiple scene
 	reg RsTx_reg;
@@ -82,7 +83,7 @@ module manageScene(
     reg onScene_fight;
     reg onScene_go;
     reg onScene_gw;
-    
+    reg onScene_heal;
     //health
     wire [9:0] maxHealth=6;
     wire [9:0] newHealth;
@@ -108,6 +109,10 @@ module manageScene(
     reg stop;
     wire [1:0] endFightScene;
     
+    //heal signal
+    wire heal;
+    wire isHealed;
+    
     initial begin
         newScene_ats = 0;
         rgb_reg = rgb_reg_ats;
@@ -122,6 +127,7 @@ module manageScene(
         onScene_fight = 0;
         onScene_gw = 0;
         onScene_go = 0;
+        onScene_heal =0;
         acted = 0;
         stop = 0;
         crdClk = 0;
@@ -131,7 +137,7 @@ module manageScene(
     //clk
     wire atsClk, targetClk;
     wire [30:0] tclk;
-    assign tclk[0] = ((onScene_ats || onScene_credit || onScene_act || onScene_spare || onScene_fight)==1)?clk:0;
+    assign tclk[0] = ((onScene_ats || onScene_credit || onScene_act || onScene_spare || onScene_fight || onScene_heal)==1)?clk:0;
     genvar c;
     generate for(c=0;c<30;c=c+1)
     begin 
@@ -153,14 +159,6 @@ module manageScene(
     begin
         if (newpic==1) begin
             if (direc!=0) direc=0;
-            if (isSelect==1 && onScene_menu)
-            begin
-                case (selectedMenu)
-                    0: begin
-                        //if (newEnemyHealth > 1) newEnemyHealth <= newEnemyHealth -1;
-                    end
-                endcase
-            end
             if (onScene_fight == 0) stop<=0;
             isSelect = 0;
         end
@@ -174,7 +172,7 @@ module manageScene(
                 "z": begin if(onScene_fight) stop<=1; TxData="Z"; end
                 " ": begin
                     if(onScene_menu) isSelect=1;
-                    if (selectedMenu != 2) isSelect=1;
+                    //if (selectedMenu != 2) isSelect=1;
                     if (selectedMenu == 1) acted = 1;
                     TxData = "B";
                 end
@@ -192,7 +190,7 @@ module manageScene(
     end
     
     fightScene fight(clk, video_on, p_tick, x, y, stop, newpic, onScene_fight, targetClk, maxHealth, maxEnemyHealth, newHealth, rgb_reg_fight, newEnemyHealth, endFightScene);
-    afterTurnScene ats(clk, video_on, p_tick, x, y, onScene_ats, maxHealth, newpic, direc, targetClk, maxEnemyHealth, newEnemyHealth, rgb_reg_ats, newHealth);
+    afterTurnScene ats(clk, video_on, p_tick, x, y, onScene_ats, maxHealth, newpic, direc, targetClk, maxEnemyHealth, newEnemyHealth, heal, rgb_reg_ats, newHealth, isHealed);
     loadingScene ls(clk,video_on, p_tick, x, y, rgb_reg_ls);
     gameOver go(clk,video_on, p_tick, x, y, rgb_reg_go);
     gameWin gw(clk,video_on, p_tick, x, y, rgb_reg_gw);
@@ -200,7 +198,8 @@ module manageScene(
     menuScene menu(clk, video_on, p_tick, x, y, newpic, selectedMenu, maxHealth,newHealth, maxEnemyHealth, newEnemyHealth,rgb_reg_menu);
     actScene act(clk, video_on, p_tick, x, y, rgb_reg_act);
     spareScene spare(clk, video_on, p_tick, x, y, rgb_reg_spare_fail, rgb_reg_spare_complete );
-    
+    healScene h(clk, video_on, p_tick, x, y, isHealed, onScene_heal, targetClk, rgb_reg_heal, heal);
+
     always @(posedge clk)
     begin
         if (onScene_credit) rgb_reg = rgb_reg_cred;
@@ -213,10 +212,11 @@ module manageScene(
         else if (onScene_spare && acted) rgb_reg = rgb_reg_spare_complete;
         else if (onScene_go) rgb_reg = rgb_reg_go;
         else if (onScene_gw) rgb_reg = rgb_reg_gw;
+        else if (onScene_heal)  rgb_reg =  rgb_reg_heal;
     end
     
-    wire isDie = (newHealth <= 1);
-    wire isWon = (newEnemyHealth <=1 );
+    wire isDie = ($signed(newHealth) <= 1 );
+    wire isWon = ($signed(newEnemyHealth) <=1  );
     always @(posedge atsClk or posedge isDie or posedge isSelect or posedge isWon)
     begin
         if (isDie) begin onScene_ats<=0; onScene_menu<=0; onScene_go<=1; end
@@ -230,42 +230,46 @@ module manageScene(
                     0: begin
                         onScene_fight <= 1;
                         onScene_spare <= 0;
-                        onScene_ats <= 0;
                         onScene_act <= 0;
+                        onScene_heal <= 0;
                     end
                     1: begin
                         onScene_fight <= 0;
                         onScene_spare <= 0;
-                        onScene_ats <= 0;
                         onScene_act <= 1;
+                        onScene_heal <= 0;
                     end
                     2: begin
                         onScene_fight <= 0;
                         onScene_spare <= 0;
-                        onScene_ats <= 1;
                         onScene_act <= 0;
+                        onScene_heal <= 1;
                     end
                     3: begin
                         onScene_fight <= 0;
                         onScene_spare <= 1;
-                        onScene_ats <= 0;
                         onScene_act <= 0;
+                        onScene_heal <= 0;
                     end
                 endcase
             end 
+        end
+        else if (onScene_heal) begin
+            onScene_heal <= 0;
+            onScene_ats <= 1;
         end
         else if (onScene_credit) 
         begin 
             crdClk <= crdClk + 1;
             if(crdClk == 2)
             begin
-                onScene_credit = 0;
-                onScene_menu = 1;
+                onScene_credit <= 0;
+                onScene_menu <= 1;
             end 
         end
         else if (onScene_ats) begin
-            onScene_ats = 0;
-            onScene_menu = 1;
+            onScene_ats <= 0;
+            onScene_menu <= 1;
         end
         else if (onScene_spare) begin
             onScene_spare <= 0;
@@ -280,6 +284,7 @@ module manageScene(
             onScene_fight <= 0;
             onScene_ats <= 1;
         end
+       
     end
     
     // output
