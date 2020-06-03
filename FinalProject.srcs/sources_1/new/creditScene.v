@@ -56,7 +56,7 @@ module creditScene
                 text_pixel_3  // result, 1 if current pixel is on text, 0 otherwise
             );
             
-    Pixel_On_Text2 #(.displayText("Insert Name 3")) t4(
+    Pixel_On_Text2 #(.displayText("6031062721 Itthithee Leelachutipong")) t4(
                 clk,
                 80, // text position.x (top left)
                 320, // text position.y (top left)
@@ -65,7 +65,7 @@ module creditScene
                 text_pixel_4  // result, 1 if current pixel is on text, 0 otherwise
             );
             
-     Pixel_On_Text2 #(.displayText("Insert Name 4")) t5(
+     Pixel_On_Text2 #(.displayText("6031059921 Setthanan Nakaphan")) t5(
                 clk,
                 80, // text position.x (top left)
                 360, // text position.y (top left)
@@ -74,7 +74,7 @@ module creditScene
                 text_pixel_5  // result, 1 if current pixel is on text, 0 otherwise
             );
             
-     Pixel_On_Text2 #(.displayText("Insert Name 5")) t6(
+     Pixel_On_Text2 #(.displayText("6031001421 Kanokphat Jinanarong")) t6(
                 clk,
                 80, // text position.x (top left)
                 400, // text position.y (top left)

@@ -46,7 +46,7 @@ module fightScene(
     reg direct;
     initial
     begin
-        x_pos = 300;
+        x_pos = 200;
         y_pos = 240;
         lineThick = 5;
         lineHeight = 15;
@@ -96,13 +96,13 @@ module fightScene(
         rgb_reg <= 12'hF00;
         
     /// line1
-    else if(x>=350 && x<=350+lineThick && y>=y_pos && y <= y_pos+lineHeight)
+    else if(x>=250 && x<=250+lineThick && y>=y_pos && y <= y_pos+lineHeight)
         rgb_reg <= 12'hFFF;
     /// line2
-    else if(x>=400 && x<=400+lineThick && y>=y_pos-10 && y <= y_pos+lineHeight+10)
+    else if(x>=300 && x<=300+lineThick && y>=y_pos-10 && y <= y_pos+lineHeight+10)
         rgb_reg <= 12'hFF0;
     /// line3
-    else if(x>=450 && x<=450+lineThick && y>=y_pos && y <= y_pos+lineHeight)
+    else if(x>=350 && x<=350+lineThick && y>=y_pos && y <= y_pos+lineHeight)
         rgb_reg <= 12'hFFF;
         
     // gentext HP
@@ -124,12 +124,12 @@ module fightScene(
     else
         rgb_reg <= 0;
     end
-    /// x_min = 300, x_max = 500
+    /// x_min = 200, x_max = 400
     always@(posedge targetClk)
     begin
         if(onScene == 0)
         begin
-            x_pos <= 300;
+            x_pos <= 200;
             y_pos <= 240;
             onHitEnemy <=0;
             direct <=0 ;
@@ -138,7 +138,7 @@ module fightScene(
         begin
             if(!stop)
             begin    
-                if(x_pos+speed_bar > 500 && direct == 0)
+                if(x_pos+speed_bar > 400 && direct == 0)
                     direct <=1;
                // else if(x_pos-speed_bar < 300 && direct == 1)
                //     direct <=0;
@@ -160,8 +160,8 @@ module fightScene(
     begin
         if(onHitEnemy==1)
         begin
-           if(x_pos >= 390 && x_pos <= 410) newEnemyHealth <= newEnemyHealth-3;
-           else if((x_pos < 390 && x_pos >= 350) || (x_pos > 410 && x_pos <= 450)) newEnemyHealth <= newEnemyHealth-2;
+           if(x_pos >= 290 && x_pos <= 310) newEnemyHealth <= newEnemyHealth-3;
+           else if((x_pos < 290 && x_pos >= 250) || (x_pos > 310 && x_pos <= 350)) newEnemyHealth <= newEnemyHealth-2;
            else newEnemyHealth <= newEnemyHealth-1;  
                 ///else newEnemyHealth <= newEnemyHealth-1;
         end

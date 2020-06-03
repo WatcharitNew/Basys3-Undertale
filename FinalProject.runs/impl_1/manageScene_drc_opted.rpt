@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sat May 30 03:03:57 2020
+| Date         : Wed Jun  3 18:45:10 2020
 | Host         : MSI-IT running 64-bit major release  (build 9200)
 | Command      : report_drc -file manageScene_drc_opted.rpt -pb manageScene_drc_opted.pb -rpx manageScene_drc_opted.rpx
 | Design       : manageScene
@@ -418,8 +418,8 @@ Related violations: <none>
 
 PLHOLDVIO-2#2 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT vga_sync_unit/rgb_reg[0]_i_1 is driving clock pin of 15 cells. This could lead to large hold time violations. Involved cells are:
-act/rgb_reg_reg[0], ats/rgb_reg_reg[11], ats/rgb_reg_reg[3], ats/rgb_reg_reg[7], cred/rgb_reg_reg[0], fight/rgb_reg_reg[11], fight/rgb_reg_reg[3], fight/rgb_reg_reg[7], go/rgb_reg_reg[7], menu/rgb_reg_reg[11], menu/rgb_reg_reg[3], menu/rgb_reg_reg[7], newpic_reg, spare/rgb_reg_fail_reg[0], spare/rgb_reg_spared_reg[0] (the first 15 of 15 listed)
+A LUT vga_sync_unit/rgb_reg[11]_i_2__2 is driving clock pin of 16 cells. This could lead to large hold time violations. Involved cells are:
+act/rgb_reg_reg[0], ats/rgb_reg_reg[11], ats/rgb_reg_reg[3], ats/rgb_reg_reg[7], cred/rgb_reg_reg[0], fight/rgb_reg_reg[11], fight/rgb_reg_reg[3], fight/rgb_reg_reg[7], go/rgb_reg_reg[7], gw/rgb_reg_reg[7], menu/rgb_reg_reg[11], menu/rgb_reg_reg[3], menu/rgb_reg_reg[7], newpic_reg, spare/rgb_reg_fail_reg[0] (the first 15 of 16 listed)
 Related violations: <none>
 
 

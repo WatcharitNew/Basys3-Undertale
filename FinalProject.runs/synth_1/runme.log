@@ -14,14 +14,14 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 12568 
+INFO: Helper process launched with PID 11352 
 WARNING: [Synth 8-2611] redeclaration of ansi port state is not allowed [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/receiver.v:36]
 WARNING: [Synth 8-2611] redeclaration of ansi port nextstate is not allowed [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/receiver.v:36]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 392.441 ; gain = 113.094
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 392.672 ; gain = 113.629
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'manageScene' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:23]
-WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:112]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:113]
 INFO: [Synth 8-6157] synthesizing module 'ClockDivider' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/CLockDivider.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'ClockDivider' (1#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/CLockDivider.v:23]
 INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/vga_sync.v:23]
@@ -52,7 +52,7 @@ INFO: [Synth 8-6155] done synthesizing module 'receiver' (3#1) [C:/Users/pooml/D
 INFO: [Synth 8-6157] synthesizing module 'transmitter' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/transmitter.v:23]
 INFO: [Synth 8-226] default block is never used [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/transmitter.v:77]
 INFO: [Synth 8-6155] done synthesizing module 'transmitter' (4#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/transmitter.v:23]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:155]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:158]
 INFO: [Synth 8-6157] synthesizing module 'fightScene' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/fightScene.v:23]
 INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
 	Parameter displayText bound to: HP - type: string 
@@ -95,110 +95,120 @@ WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:
 WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
 INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized2' (10#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
 INFO: [Synth 8-6155] done synthesizing module 'gameOver' (11#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/gameOver.v:23]
-INFO: [Synth 8-6157] synthesizing module 'creditScene' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/creditScene.v:22]
+INFO: [Synth 8-6157] synthesizing module 'gameWin' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/gameWin.v:23]
 INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized3' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
-	Parameter displayText bound to: CREDIT - type: string 
+	Parameter displayText bound to: Game Win - type: string 
 WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
 WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
 WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
 INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized3' (11#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-6155] done synthesizing module 'gameWin' (12#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/gameWin.v:23]
+INFO: [Synth 8-6157] synthesizing module 'creditScene' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/creditScene.v:22]
 INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized4' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: CREDIT - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized4' (12#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized5' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
 	Parameter displayText bound to: 6030124821 Chavin Chuangchaichatchavarn - type: string 
 WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
 WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
 WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized4' (11#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
-INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized5' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized5' (12#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized6' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
 	Parameter displayText bound to: 6031054721 Watcharit Tuntayakul - type: string 
 WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
 WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
 WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized5' (11#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
-INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized6' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
-	Parameter displayText bound to: Insert Name 3 - type: string 
-WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
-WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
-WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized6' (11#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized6' (12#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
 INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized7' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
-	Parameter displayText bound to: Insert Name 4 - type: string 
+	Parameter displayText bound to: 6031062721 Itthithee Leelachutipong - type: string 
 WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
 WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
 WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized7' (11#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized7' (12#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
 INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized8' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
-	Parameter displayText bound to: Insert Name 5 - type: string 
+	Parameter displayText bound to: 6031059921 Setthanan Nakaphan - type: string 
 WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
 WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
 WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized8' (11#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
-INFO: [Synth 8-6155] done synthesizing module 'creditScene' (12#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/creditScene.v:22]
-INFO: [Synth 8-6157] synthesizing module 'menuScene' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/menuScene.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized8' (12#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
 INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized9' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
-	Parameter displayText bound to: fight - type: string 
+	Parameter displayText bound to: 6031001421 Kanokphat Jinanarong - type: string 
 WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
 WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
 WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
 INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized9' (12#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-6155] done synthesizing module 'creditScene' (13#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/creditScene.v:22]
+INFO: [Synth 8-6157] synthesizing module 'menuScene' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/menuScene.v:23]
 INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized10' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: fight - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized10' (13#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized11' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
 	Parameter displayText bound to: act - type: string 
 WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
 WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
 WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized10' (12#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
-INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized11' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized11' (13#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized12' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
 	Parameter displayText bound to: item - type: string 
 WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
 WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
 WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized11' (12#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
-INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized12' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized12' (13#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized13' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
 	Parameter displayText bound to: spare - type: string 
 WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
 WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
 WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized12' (12#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
-INFO: [Synth 8-6155] done synthesizing module 'menuScene' (13#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/menuScene.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized13' (13#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-6155] done synthesizing module 'menuScene' (14#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/menuScene.v:23]
 INFO: [Synth 8-6157] synthesizing module 'actScene' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/actScene.v:23]
-INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized13' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized14' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
 	Parameter displayText bound to: you acted on enemy. - type: string 
 WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
 WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
 WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized13' (13#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
-INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized14' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized14' (14#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized15' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
 	Parameter displayText bound to: you can now spare it - type: string 
 WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
 WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
 WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized14' (13#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
-INFO: [Synth 8-6155] done synthesizing module 'actScene' (14#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/actScene.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized15' (14#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-6155] done synthesizing module 'actScene' (15#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/actScene.v:23]
 INFO: [Synth 8-6157] synthesizing module 'spareScene' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/spareScene.v:23]
-INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized15' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized16' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
 	Parameter displayText bound to: cannot spare, act first. - type: string 
 WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
 WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
 WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized15' (14#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
-INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized16' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized16' (15#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized17' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
 	Parameter displayText bound to: you spared the enemy - type: string 
 WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
 WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
 WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized16' (14#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
-INFO: [Synth 8-6155] done synthesizing module 'spareScene' (15#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/spareScene.v:23]
-WARNING: [Synth 8-5788] Register onScene_fight_reg in module manageScene is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:218]
-WARNING: [Synth 8-5788] Register onScene_spare_reg in module manageScene is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:227]
-WARNING: [Synth 8-5788] Register onScene_act_reg in module manageScene is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:229]
-WARNING: [Synth 8-5788] Register crdClk_reg in module manageScene is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:254]
-WARNING: [Synth 8-5788] Register onScene_credit_reg in module manageScene is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:252]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized17' (15#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-6155] done synthesizing module 'spareScene' (16#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/spareScene.v:23]
+WARNING: [Synth 8-5788] Register onScene_fight_reg in module manageScene is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:223]
+WARNING: [Synth 8-5788] Register onScene_gw_reg in module manageScene is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:223]
+WARNING: [Synth 8-5788] Register onScene_spare_reg in module manageScene is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:232]
+WARNING: [Synth 8-5788] Register onScene_act_reg in module manageScene is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:234]
+WARNING: [Synth 8-5788] Register crdClk_reg in module manageScene is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:259]
+WARNING: [Synth 8-5788] Register onScene_credit_reg in module manageScene is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:257]
 WARNING: [Synth 8-3848] Net RsTx_reg in module/entity manageScene does not have driver. [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:48]
-INFO: [Synth 8-6155] done synthesizing module 'manageScene' (16#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'manageScene' (17#1) [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/manageScene.v:23]
 WARNING: [Synth 8-3331] design spareScene has unconnected port video_on
 WARNING: [Synth 8-3331] design actScene has unconnected port video_on
 WARNING: [Synth 8-3331] design menuScene has unconnected port video_on
 WARNING: [Synth 8-3331] design menuScene has unconnected port newpic
 WARNING: [Synth 8-3331] design creditScene has unconnected port video_on
+WARNING: [Synth 8-3331] design gameWin has unconnected port video_on
 WARNING: [Synth 8-3331] design gameOver has unconnected port video_on
 WARNING: [Synth 8-3331] design loadingScene has unconnected port clk
 WARNING: [Synth 8-3331] design loadingScene has unconnected port video_on
@@ -207,7 +217,7 @@ WARNING: [Synth 8-3331] design fightScene has unconnected port video_on
 WARNING: [Synth 8-3331] design fightScene has unconnected port newpic
 WARNING: [Synth 8-3331] design vga_sync has unconnected port reset
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 450.633 ; gain = 171.285
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 451.512 ; gain = 172.469
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -220,10 +230,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 450.633 ; gain = 171.285
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 451.512 ; gain = 172.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 450.633 ; gain = 171.285
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 451.512 ; gain = 172.469
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -234,30 +244,30 @@ Parsing XDC File [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/cons
 Finished Parsing XDC File [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/manageScene_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/manageScene_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 799.520 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 800.820 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 799.527 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 800.820 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 799.527 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 799.527 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 800.820 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 800.820 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 799.527 ; gain = 520.180
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 800.820 ; gain = 521.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 799.527 ; gain = 520.180
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 800.820 ; gain = 521.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 799.527 ; gain = 520.180
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 800.820 ; gain = 521.777
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "shift" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "inc_bitcounter" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -266,6 +276,7 @@ INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To p
 INFO: [Synth 8-5544] ROM "onHitEnemy" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "onHitEnemy" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "rgb_reg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:60]
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:60]
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:60]
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:60]
@@ -293,7 +304,7 @@ INFO: [Synth 8-5544] ROM "onScene_fight" won't be mapped to Block RAM because ad
 INFO: [Synth 8-5544] ROM "onScene_spare" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "onScene_act" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 799.527 ; gain = 520.180
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 800.820 ; gain = 521.777
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'fdivTarget2' (ClockDivider) to 'genblk1[28].fdiv2'
 INFO: [Synth 8-223] decloning instance 'fdivTarget' (ClockDivider) to 'genblk1[18].fdiv2'
@@ -302,74 +313,74 @@ Report RTL Partitions:
 +------+-----------------+------------+----------+
 |      |RTL Partition    |Replication |Instances |
 +------+-----------------+------------+----------+
-|1     |menuScene        |           1|     17270|
-|2     |fightScene       |           1|      6618|
-|3     |manageScene__GB2 |           1|     10417|
-|4     |manageScene__GB3 |           1|      8922|
-|5     |creditScene      |           1|     10355|
+|1     |manageScene__GB0 |           1|     17778|
+|2     |manageScene__GB1 |           1|      6819|
+|3     |manageScene__GB2 |           1|      6644|
+|4     |manageScene__GB3 |           1|      9937|
+|5     |manageScene__GB4 |           1|     13974|
 +------+-----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   3 Input     33 Bit       Adders := 54    
-	   2 Input     32 Bit       Adders := 65    
-	   3 Input     32 Bit       Adders := 41    
-	   2 Input     31 Bit       Adders := 21    
+	   3 Input     33 Bit       Adders := 56    
+	   2 Input     32 Bit       Adders := 67    
+	   3 Input     32 Bit       Adders := 42    
+	   2 Input     31 Bit       Adders := 22    
 	   2 Input     11 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 21    
 	   3 Input     10 Bit       Adders := 10    
-	   2 Input      7 Bit       Adders := 27    
-	   3 Input      6 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 54    
-	   3 Input      5 Bit       Adders := 5     
-	   3 Input      4 Bit       Adders := 7     
+	   2 Input     10 Bit       Adders := 21    
+	   2 Input      7 Bit       Adders := 28    
+	   3 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 56    
+	   3 Input      5 Bit       Adders := 7     
+	   3 Input      4 Bit       Adders := 5     
 	   2 Input      4 Bit       Adders := 2     
 	   2 Input      3 Bit       Adders := 8     
 	   2 Input      2 Bit       Adders := 13    
 +---Registers : 
-	               12 Bit    Registers := 6     
+	               12 Bit    Registers := 7     
 	               10 Bit    Registers := 18    
-	                8 Bit    Registers := 28    
+	                8 Bit    Registers := 29    
 	                4 Bit    Registers := 2     
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 5     
-	                1 Bit    Registers := 94    
+	                1 Bit    Registers := 96    
 +---Multipliers : 
 	                32x32  Multipliers := 8     
 +---ROMs : 
-	                              ROMs := 27    
+	                              ROMs := 28    
 +---Muxes : 
-	   2 Input     31 Bit        Muxes := 21    
-	   9 Input     12 Bit        Muxes := 1     
-	  10 Input     12 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 22    
 	   5 Input     12 Bit        Muxes := 1     
 	   6 Input     12 Bit        Muxes := 1     
+	   9 Input     12 Bit        Muxes := 1     
+	  10 Input     12 Bit        Muxes := 1     
 	   4 Input     12 Bit        Muxes := 1     
 	  11 Input     12 Bit        Muxes := 1     
-	   2 Input     10 Bit        Muxes := 9     
 	   6 Input     10 Bit        Muxes := 4     
+	   2 Input     10 Bit        Muxes := 9     
 	   4 Input     10 Bit        Muxes := 4     
-	   2 Input      7 Bit        Muxes := 4     
-	   8 Input      7 Bit        Muxes := 3     
-	   6 Input      7 Bit        Muxes := 1     
 	   5 Input      7 Bit        Muxes := 2     
 	   3 Input      7 Bit        Muxes := 1     
 	   4 Input      7 Bit        Muxes := 1     
-	   7 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 4     
+	   8 Input      7 Bit        Muxes := 4     
 	   9 Input      7 Bit        Muxes := 1     
-	   2 Input      6 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 140   
-	   2 Input      4 Bit        Muxes := 7     
+	   7 Input      7 Bit        Muxes := 1     
+	   6 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 147   
+	   2 Input      4 Bit        Muxes := 5     
 	   2 Input      3 Bit        Muxes := 9     
 	   7 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 7     
 	   5 Input      2 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 6     
-	   2 Input      1 Bit        Muxes := 99    
+	   2 Input      1 Bit        Muxes := 100   
 	   7 Input      1 Bit        Muxes := 3     
-	   8 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -386,243 +397,23 @@ Detailed RTL Component Info :
 	                8 Bit    Registers := 1     
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 12    
+	                1 Bit    Registers := 13    
 +---Muxes : 
 	   2 Input      7 Bit        Muxes := 1     
 	   7 Input      7 Bit        Muxes := 1     
 	   7 Input      3 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 61    
+	   2 Input      1 Bit        Muxes := 62    
 	   7 Input      1 Bit        Muxes := 3     
 	   4 Input      1 Bit        Muxes := 4     
-	   8 Input      1 Bit        Muxes := 1     
-Module Font_Rom__13 
-Detailed RTL Component Info : 
-+---Registers : 
-	                8 Bit    Registers := 1     
-+---ROMs : 
-	                              ROMs := 1     
-Module Pixel_On_Text2__2 
-Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     33 Bit       Adders := 2     
-	   2 Input     32 Bit       Adders := 2     
-	   3 Input     32 Bit       Adders := 1     
-	   2 Input     31 Bit       Adders := 1     
-	   2 Input      7 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 2     
-	   2 Input      2 Bit       Adders := 2     
-+---Registers : 
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     31 Bit        Muxes := 1     
-	   2 Input      7 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 5     
-	   2 Input      2 Bit        Muxes := 1     
-Module Font_Rom__12 
-Detailed RTL Component Info : 
-+---Registers : 
-	                8 Bit    Registers := 1     
-+---ROMs : 
-	                              ROMs := 1     
-Module Pixel_On_Text2__parameterized0__5 
-Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     33 Bit       Adders := 2     
-	   2 Input     32 Bit       Adders := 2     
-	   3 Input     32 Bit       Adders := 2     
-	   2 Input      7 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 2     
-+---Registers : 
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      5 Bit        Muxes := 5     
-Module Font_Rom__11 
-Detailed RTL Component Info : 
-+---Registers : 
-	                8 Bit    Registers := 1     
-+---ROMs : 
-	                              ROMs := 1     
-Module Pixel_On_Text2__parameterized1__2 
-Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     33 Bit       Adders := 2     
-	   2 Input     32 Bit       Adders := 2     
-	   3 Input     32 Bit       Adders := 1     
-	   2 Input     31 Bit       Adders := 1     
-	   2 Input      7 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 2     
-	   3 Input      4 Bit       Adders := 1     
-+---Registers : 
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     31 Bit        Muxes := 1     
-	   8 Input      7 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 5     
-	   2 Input      4 Bit        Muxes := 1     
-Module fightScene 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     32 Bit       Adders := 3     
-	   2 Input     11 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 4     
-	   3 Input     10 Bit       Adders := 2     
-+---Registers : 
-	               12 Bit    Registers := 1     
-	               10 Bit    Registers := 3     
-	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   9 Input     12 Bit        Muxes := 1     
-	  10 Input     12 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 1     
-	   5 Input      2 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 3     
-	   4 Input      1 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2     
-Module Font_Rom 
-Detailed RTL Component Info : 
-+---Registers : 
-	                8 Bit    Registers := 1     
-+---ROMs : 
-	                              ROMs := 1     
-Module Pixel_On_Text2__parameterized3 
-Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     33 Bit       Adders := 2     
-	   2 Input     32 Bit       Adders := 2     
-	   3 Input     32 Bit       Adders := 1     
-	   2 Input     31 Bit       Adders := 1     
-	   2 Input      7 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 2     
-	   2 Input      3 Bit       Adders := 2     
-+---Registers : 
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     31 Bit        Muxes := 1     
-	   6 Input      7 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 5     
-	   2 Input      3 Bit        Muxes := 1     
-Module Font_Rom__26 
-Detailed RTL Component Info : 
-+---Registers : 
-	                8 Bit    Registers := 1     
-+---ROMs : 
-	                              ROMs := 1     
-Module Pixel_On_Text2__parameterized4 
-Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     33 Bit       Adders := 2     
-	   2 Input     32 Bit       Adders := 2     
-	   3 Input     32 Bit       Adders := 1     
-	   2 Input     31 Bit       Adders := 1     
-	   2 Input      7 Bit       Adders := 1     
-	   3 Input      6 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 2     
-+---Registers : 
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     31 Bit        Muxes := 1     
-	   2 Input      6 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 5     
-Module Font_Rom__25 
-Detailed RTL Component Info : 
-+---Registers : 
-	                8 Bit    Registers := 1     
-+---ROMs : 
-	                              ROMs := 1     
-Module Pixel_On_Text2__parameterized5 
-Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     33 Bit       Adders := 2     
-	   2 Input     32 Bit       Adders := 2     
-	   3 Input     32 Bit       Adders := 1     
-	   2 Input     31 Bit       Adders := 1     
-	   2 Input      7 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 2     
-	   3 Input      5 Bit       Adders := 1     
-+---Registers : 
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     31 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 6     
-Module Font_Rom__24 
-Detailed RTL Component Info : 
-+---Registers : 
-	                8 Bit    Registers := 1     
-+---ROMs : 
-	                              ROMs := 1     
-Module Pixel_On_Text2__parameterized6 
-Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     33 Bit       Adders := 2     
-	   2 Input     32 Bit       Adders := 2     
-	   3 Input     32 Bit       Adders := 1     
-	   2 Input     31 Bit       Adders := 1     
-	   2 Input      7 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 2     
-	   3 Input      4 Bit       Adders := 1     
-+---Registers : 
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     31 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 5     
-	   2 Input      4 Bit        Muxes := 1     
-Module Font_Rom__23 
-Detailed RTL Component Info : 
-+---Registers : 
-	                8 Bit    Registers := 1     
-+---ROMs : 
-	                              ROMs := 1     
-Module Pixel_On_Text2__parameterized7 
-Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     33 Bit       Adders := 2     
-	   2 Input     32 Bit       Adders := 2     
-	   3 Input     32 Bit       Adders := 1     
-	   2 Input     31 Bit       Adders := 1     
-	   2 Input      7 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 2     
-	   3 Input      4 Bit       Adders := 1     
-+---Registers : 
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     31 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 5     
-	   2 Input      4 Bit        Muxes := 1     
-Module Font_Rom__22 
-Detailed RTL Component Info : 
-+---Registers : 
-	                8 Bit    Registers := 1     
-+---ROMs : 
-	                              ROMs := 1     
-Module Pixel_On_Text2__parameterized8 
-Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     33 Bit       Adders := 2     
-	   2 Input     32 Bit       Adders := 2     
-	   3 Input     32 Bit       Adders := 1     
-	   2 Input     31 Bit       Adders := 1     
-	   2 Input      7 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 2     
-	   3 Input      4 Bit       Adders := 1     
-+---Registers : 
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     31 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 5     
-	   2 Input      4 Bit        Muxes := 1     
-Module creditScene 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
+	   9 Input      1 Bit        Muxes := 1     
 Module Font_Rom__10 
 Detailed RTL Component Info : 
 +---Registers : 
 	                8 Bit    Registers := 1     
 +---ROMs : 
 	                              ROMs := 1     
-Module Pixel_On_Text2__parameterized9 
+Module Pixel_On_Text2__parameterized10 
 Detailed RTL Component Info : 
 +---Adders : 
 	   3 Input     33 Bit       Adders := 2     
@@ -645,7 +436,7 @@ Detailed RTL Component Info :
 	                8 Bit    Registers := 1     
 +---ROMs : 
 	                              ROMs := 1     
-Module Pixel_On_Text2__parameterized10 
+Module Pixel_On_Text2__parameterized11 
 Detailed RTL Component Info : 
 +---Adders : 
 	   3 Input     33 Bit       Adders := 2     
@@ -668,7 +459,7 @@ Detailed RTL Component Info :
 	                8 Bit    Registers := 1     
 +---ROMs : 
 	                              ROMs := 1     
-Module Pixel_On_Text2__parameterized11 
+Module Pixel_On_Text2__parameterized12 
 Detailed RTL Component Info : 
 +---Adders : 
 	   3 Input     33 Bit       Adders := 2     
@@ -691,7 +482,7 @@ Detailed RTL Component Info :
 	                8 Bit    Registers := 1     
 +---ROMs : 
 	                              ROMs := 1     
-Module Pixel_On_Text2__parameterized12 
+Module Pixel_On_Text2__parameterized13 
 Detailed RTL Component Info : 
 +---Adders : 
 	   3 Input     33 Bit       Adders := 2     
@@ -837,38 +628,190 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   5 Input     12 Bit        Muxes := 1     
 	   6 Input     12 Bit        Muxes := 1     
-Module transmitter 
+Module Font_Rom__14 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Pixel_On_Text2__parameterized3 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      4 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 1     
 +---Registers : 
-	               10 Bit    Registers := 1     
-	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 6     
+	                1 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input     10 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 7     
-Module ClockDivider__1 
+	   2 Input     31 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 1     
+Module gameWin 
 Detailed RTL Component Info : 
 +---Registers : 
-	                1 Bit    Registers := 1     
-Module ClockDivider__2 
+	               12 Bit    Registers := 1     
+Module Font_Rom__13 
 Detailed RTL Component Info : 
 +---Registers : 
-	                1 Bit    Registers := 1     
-Module receiver 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Pixel_On_Text2__parameterized16 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      4 Bit       Adders := 1     
-	   2 Input      2 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      5 Bit       Adders := 1     
 +---Registers : 
-	               10 Bit    Registers := 1     
-	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 6     
+Module Font_Rom__12 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Pixel_On_Text2__parameterized17 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 6     
+Module spareScene 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module Font_Rom__11 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Pixel_On_Text2__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   9 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 1     
+Module gameOver 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+Module Font_Rom__17 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Pixel_On_Text2__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 1     
+Module Font_Rom__16 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Pixel_On_Text2__parameterized0__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 5     
+Module Font_Rom__15 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Pixel_On_Text2__parameterized1__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 1     
+Module fightScene 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 4     
+	   3 Input     10 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 7     
+	                1 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input      1 Bit        Muxes := 8     
+	   9 Input     12 Bit        Muxes := 1     
+	  10 Input     12 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
 	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
 Module enemyCircle__1 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -903,7 +846,7 @@ Detailed RTL Component Info :
 	   2 Input     10 Bit        Muxes := 4     
 	   4 Input     10 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 8     
-Module Font_Rom__16 
+Module Font_Rom__20 
 Detailed RTL Component Info : 
 +---Registers : 
 	                8 Bit    Registers := 1     
@@ -926,7 +869,7 @@ Detailed RTL Component Info :
 	   2 Input      7 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 5     
 	   2 Input      2 Bit        Muxes := 1     
-Module Font_Rom__15 
+Module Font_Rom__19 
 Detailed RTL Component Info : 
 +---Registers : 
 	                8 Bit    Registers := 1     
@@ -944,7 +887,7 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      5 Bit        Muxes := 5     
-Module Font_Rom__14 
+Module Font_Rom__18 
 Detailed RTL Component Info : 
 +---Registers : 
 	                8 Bit    Registers := 1     
@@ -985,19 +928,14 @@ Detailed RTL Component Info :
 	  11 Input     12 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 5     
-Module loadingScene 
+Module ClockDivider__1 
 Detailed RTL Component Info : 
 +---Registers : 
-	               12 Bit    Registers := 1     
-Module vga_sync 
+	                1 Bit    Registers := 1     
+Module ClockDivider__2 
 Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     10 Bit       Adders := 2     
-	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
-	               10 Bit    Registers := 2     
-	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
 Module ClockDivider__3 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -1110,74 +1048,31 @@ Module ClockDivider
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
-Module Font_Rom__21 
-Detailed RTL Component Info : 
-+---Registers : 
-	                8 Bit    Registers := 1     
-+---ROMs : 
-	                              ROMs := 1     
-Module Pixel_On_Text2__parameterized15 
+Module transmitter 
 Detailed RTL Component Info : 
 +---Adders : 
-	   3 Input     33 Bit       Adders := 2     
-	   2 Input     32 Bit       Adders := 2     
-	   3 Input     32 Bit       Adders := 1     
-	   2 Input     31 Bit       Adders := 1     
-	   2 Input      7 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 2     
-	   3 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
 +---Registers : 
-	                1 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
 +---Muxes : 
-	   2 Input     31 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 6     
-Module Font_Rom__20 
-Detailed RTL Component Info : 
-+---Registers : 
-	                8 Bit    Registers := 1     
-+---ROMs : 
-	                              ROMs := 1     
-Module Pixel_On_Text2__parameterized16 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+Module receiver 
 Detailed RTL Component Info : 
 +---Adders : 
-	   3 Input     33 Bit       Adders := 2     
-	   2 Input     32 Bit       Adders := 2     
-	   3 Input     32 Bit       Adders := 1     
-	   2 Input     31 Bit       Adders := 1     
-	   2 Input      7 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 2     
-	   3 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
-	                1 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
 +---Muxes : 
-	   2 Input     31 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 6     
-Module spareScene 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 2     
-Module Font_Rom__19 
-Detailed RTL Component Info : 
-+---Registers : 
-	                8 Bit    Registers := 1     
-+---ROMs : 
-	                              ROMs := 1     
-Module Pixel_On_Text2__parameterized13 
-Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     33 Bit       Adders := 2     
-	   2 Input     32 Bit       Adders := 2     
-	   3 Input     32 Bit       Adders := 1     
-	   2 Input     31 Bit       Adders := 1     
-	   2 Input      7 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 2     
-	   3 Input      5 Bit       Adders := 1     
-+---Registers : 
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     31 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 6     
-Module Font_Rom__18 
+	   2 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 1     
+Module Font_Rom 
 Detailed RTL Component Info : 
 +---Registers : 
 	                8 Bit    Registers := 1     
@@ -1198,17 +1093,13 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     31 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 6     
-Module actScene 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-Module Font_Rom__17 
+Module Font_Rom__27 
 Detailed RTL Component Info : 
 +---Registers : 
 	                8 Bit    Registers := 1     
 +---ROMs : 
 	                              ROMs := 1     
-Module Pixel_On_Text2__parameterized2 
+Module Pixel_On_Text2__parameterized15 
 Detailed RTL Component Info : 
 +---Adders : 
 	   3 Input     33 Bit       Adders := 2     
@@ -1217,18 +1108,163 @@ Detailed RTL Component Info :
 	   2 Input     31 Bit       Adders := 1     
 	   2 Input      7 Bit       Adders := 1     
 	   2 Input      5 Bit       Adders := 2     
-	   3 Input      4 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 1     
 +---Registers : 
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input     31 Bit        Muxes := 1     
-	   9 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 6     
+Module actScene 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Font_Rom__26 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Pixel_On_Text2__parameterized4 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   6 Input      7 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 5     
-	   2 Input      4 Bit        Muxes := 1     
-Module gameOver 
+	   2 Input      3 Bit        Muxes := 1     
+Module Font_Rom__25 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Pixel_On_Text2__parameterized5 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+Module Font_Rom__24 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Pixel_On_Text2__parameterized6 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 6     
+Module Font_Rom__23 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Pixel_On_Text2__parameterized7 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+Module Font_Rom__22 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Pixel_On_Text2__parameterized8 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 6     
+Module Font_Rom__21 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Pixel_On_Text2__parameterized9 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 6     
+Module creditScene 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module loadingScene 
 Detailed RTL Component Info : 
 +---Registers : 
 	               12 Bit    Registers := 1     
+Module vga_sync 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -1249,13 +1285,6 @@ INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recomm
 INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:78]
 INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:78]
 INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/new/enemyCircle.v:78]
-DSP Report: Generating DSP healthBar, operation Mode is: A*(B:0x24).
-DSP Report: operator healthBar is absorbed into DSP healthBar.
-DSP Report: Generating DSP rgb_reg3, operation Mode is: (C:0x1a4)-A*(B:0x24).
-DSP Report: operator rgb_reg3 is absorbed into DSP rgb_reg3.
-DSP Report: operator healthBar is absorbed into DSP rgb_reg3.
-DSP Report: Generating DSP enemyHealthBar, operation Mode is: A*(B:0x24).
-DSP Report: operator enemyHealthBar is absorbed into DSP enemyHealthBar.
 INFO: [Synth 8-4471] merging register 'h2/FontRom/fontRow_reg[7:0]' into 'h1/FontRom/fontRow_reg[7:0]' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Font_Rom.vhd:2233]
 INFO: [Synth 8-4471] merging register 'h3/FontRom/fontRow_reg[7:0]' into 'h1/FontRom/fontRow_reg[7:0]' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Font_Rom.vhd:2233]
 INFO: [Synth 8-4471] merging register 'h4/FontRom/fontRow_reg[7:0]' into 'h1/FontRom/fontRow_reg[7:0]' [C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/sources_1/imports/new/Font_Rom.vhd:2233]
@@ -1263,6 +1292,13 @@ DSP Report: Generating DSP healthBar, operation Mode is: A*(B:0x24).
 DSP Report: operator healthBar is absorbed into DSP healthBar.
 DSP Report: Generating DSP enemyHealthBar, operation Mode is: A*(B:0x24).
 DSP Report: operator enemyHealthBar is absorbed into DSP enemyHealthBar.
+DSP Report: Generating DSP healthBar, operation Mode is: A*(B:0x24).
+DSP Report: operator healthBar is absorbed into DSP healthBar.
+DSP Report: Generating DSP rgb_reg3, operation Mode is: (C:0x1a4)-A*(B:0x24).
+DSP Report: operator rgb_reg3 is absorbed into DSP rgb_reg3.
+DSP Report: operator healthBar is absorbed into DSP rgb_reg3.
+DSP Report: Generating DSP enemyHealthBar, operation Mode is: A*(B:0x24).
+DSP Report: operator enemyHealthBar is absorbed into DSP enemyHealthBar.
 DSP Report: Generating DSP ec2/hitEnemy5, operation Mode is: A*B.
 DSP Report: operator ec2/hitEnemy5 is absorbed into DSP ec2/hitEnemy5.
 DSP Report: operator ec2/hitEnemy5 is absorbed into DSP ec2/hitEnemy5.
@@ -1306,47 +1342,18 @@ DSP Report: operator healthBar is absorbed into DSP healthBar.
 DSP Report: Generating DSP rgb_reg3, operation Mode is: (C:0x1a4)-A*(B:0x24).
 DSP Report: operator rgb_reg3 is absorbed into DSP rgb_reg3.
 DSP Report: operator healthBar is absorbed into DSP rgb_reg3.
-INFO: [Synth 8-5544] ROM "receiver_unit/shift" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "onScene_menu" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "receiver_unit/shift" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "TxData" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-3886] merging instance 'fight/y_pos_reg[0]' (FDRE) to 'fight/y_pos_reg[9]'
-INFO: [Synth 8-3886] merging instance 'fight/y_pos_reg[1]' (FDRE) to 'fight/y_pos_reg[9]'
-INFO: [Synth 8-3886] merging instance 'fight/y_pos_reg[2]' (FDRE) to 'fight/y_pos_reg[9]'
-INFO: [Synth 8-3886] merging instance 'fight/y_pos_reg[3]' (FDRE) to 'fight/y_pos_reg[9]'
-INFO: [Synth 8-3886] merging instance 'fight/y_pos_reg[4]' (FDSE) to 'fight/y_pos_reg[7]'
-INFO: [Synth 8-3886] merging instance 'fight/y_pos_reg[5]' (FDSE) to 'fight/y_pos_reg[7]'
-INFO: [Synth 8-3886] merging instance 'fight/y_pos_reg[6]' (FDSE) to 'fight/y_pos_reg[7]'
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (fight/\y_pos_reg[7] )
-INFO: [Synth 8-3886] merging instance 'fight/y_pos_reg[8]' (FDRE) to 'fight/y_pos_reg[9]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (fight/\y_pos_reg[9] )
-INFO: [Synth 8-3886] merging instance 'fight/rgb_reg_reg[0]' (FDR) to 'fight/rgb_reg_reg[3]'
-INFO: [Synth 8-3886] merging instance 'fight/rgb_reg_reg[1]' (FDR) to 'fight/rgb_reg_reg[3]'
-INFO: [Synth 8-3886] merging instance 'fight/rgb_reg_reg[2]' (FDR) to 'fight/rgb_reg_reg[3]'
-INFO: [Synth 8-3886] merging instance 'fight/rgb_reg_reg[4]' (FDR) to 'fight/rgb_reg_reg[7]'
-INFO: [Synth 8-3886] merging instance 'fight/rgb_reg_reg[5]' (FDR) to 'fight/rgb_reg_reg[7]'
-INFO: [Synth 8-3886] merging instance 'fight/rgb_reg_reg[6]' (FDR) to 'fight/rgb_reg_reg[7]'
-INFO: [Synth 8-3886] merging instance 'fight/rgb_reg_reg[8]' (FDS) to 'fight/rgb_reg_reg[9]'
-INFO: [Synth 8-3886] merging instance 'fight/rgb_reg_reg[9]' (FDS) to 'fight/rgb_reg_reg[10]'
-INFO: [Synth 8-3886] merging instance 'fight/rgb_reg_reg[10]' (FDS) to 'fight/rgb_reg_reg[11]'
-INFO: [Synth 8-3886] merging instance 'menu/rgb_reg_reg[0]' (FDR) to 'menu/rgb_reg_reg[3]'
-INFO: [Synth 8-3886] merging instance 'menu/rgb_reg_reg[1]' (FDR) to 'menu/rgb_reg_reg[3]'
-INFO: [Synth 8-3886] merging instance 'menu/rgb_reg_reg[2]' (FDR) to 'menu/rgb_reg_reg[3]'
-INFO: [Synth 8-3886] merging instance 'menu/rgb_reg_reg[4]' (FDR) to 'menu/rgb_reg_reg[7]'
-INFO: [Synth 8-3886] merging instance 'menu/rgb_reg_reg[5]' (FDR) to 'menu/rgb_reg_reg[7]'
-INFO: [Synth 8-3886] merging instance 'menu/rgb_reg_reg[6]' (FDR) to 'menu/rgb_reg_reg[7]'
-INFO: [Synth 8-3886] merging instance 'menu/rgb_reg_reg[8]' (FDS) to 'menu/rgb_reg_reg[9]'
-INFO: [Synth 8-3886] merging instance 'menu/rgb_reg_reg[9]' (FDS) to 'menu/rgb_reg_reg[10]'
-INFO: [Synth 8-3886] merging instance 'menu/rgb_reg_reg[10]' (FDS) to 'menu/rgb_reg_reg[11]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\TxData_reg[5] )
-INFO: [Synth 8-3886] merging instance 'i_0/ats/rgb_reg_reg[0]' (FDR) to 'i_0/ats/rgb_reg_reg[3]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/rgb_reg_reg[1]' (FDR) to 'i_0/ats/rgb_reg_reg[3]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/rgb_reg_reg[2]' (FDR) to 'i_0/ats/rgb_reg_reg[3]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/rgb_reg_reg[4]' (FDR) to 'i_0/ats/rgb_reg_reg[7]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/rgb_reg_reg[5]' (FDR) to 'i_0/ats/rgb_reg_reg[7]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/rgb_reg_reg[6]' (FDR) to 'i_0/ats/rgb_reg_reg[7]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/rgb_reg_reg[8]' (FDS) to 'i_0/ats/rgb_reg_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/rgb_reg_reg[9]' (FDS) to 'i_0/ats/rgb_reg_reg[10]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/rgb_reg_reg[10]' (FDS) to 'i_0/ats/rgb_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_0/menu/rgb_reg_reg[0]' (FDR) to 'i_0/menu/rgb_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_0/menu/rgb_reg_reg[1]' (FDR) to 'i_0/menu/rgb_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_0/menu/rgb_reg_reg[2]' (FDR) to 'i_0/menu/rgb_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_0/menu/rgb_reg_reg[4]' (FDR) to 'i_0/menu/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_0/menu/rgb_reg_reg[5]' (FDR) to 'i_0/menu/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_0/menu/rgb_reg_reg[6]' (FDR) to 'i_0/menu/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_0/menu/rgb_reg_reg[8]' (FDS) to 'i_0/menu/rgb_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/menu/rgb_reg_reg[9]' (FDS) to 'i_0/menu/rgb_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_0/menu/rgb_reg_reg[10]' (FDS) to 'i_0/menu/rgb_reg_reg[11]'
 INFO: [Synth 8-3886] merging instance 'i_1/go/rgb_reg_reg[0]' (FDR) to 'i_1/go/rgb_reg_reg[1]'
 INFO: [Synth 8-3886] merging instance 'i_1/go/rgb_reg_reg[1]' (FDR) to 'i_1/go/rgb_reg_reg[2]'
 INFO: [Synth 8-3886] merging instance 'i_1/go/rgb_reg_reg[2]' (FDR) to 'i_1/go/rgb_reg_reg[3]'
@@ -1354,58 +1361,98 @@ INFO: [Synth 8-3886] merging instance 'i_1/go/rgb_reg_reg[3]' (FDR) to 'i_1/go/r
 INFO: [Synth 8-3886] merging instance 'i_1/go/rgb_reg_reg[4]' (FDR) to 'i_1/go/rgb_reg_reg[5]'
 INFO: [Synth 8-3886] merging instance 'i_1/go/rgb_reg_reg[5]' (FDR) to 'i_1/go/rgb_reg_reg[6]'
 INFO: [Synth 8-3886] merging instance 'i_1/go/rgb_reg_reg[6]' (FDR) to 'i_1/go/rgb_reg_reg[7]'
-INFO: [Synth 8-3886] merging instance 'i_1/go/rgb_reg_reg[8]' (FDS) to 'i_1/go/rgb_reg_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_1/go/rgb_reg_reg[9]' (FDS) to 'i_1/go/rgb_reg_reg[10]'
-INFO: [Synth 8-3886] merging instance 'i_1/go/rgb_reg_reg[10]' (FDS) to 'i_1/go/rgb_reg_reg[11]'
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\go/rgb_reg_reg[11] )
-INFO: [Synth 8-3886] merging instance 'i_1/rgb_reg_reg[0]' (FDE) to 'i_1/rgb_reg_reg[3]'
-INFO: [Synth 8-3886] merging instance 'i_1/rgb_reg_reg[1]' (FDE) to 'i_1/rgb_reg_reg[3]'
-INFO: [Synth 8-3886] merging instance 'i_1/rgb_reg_reg[2]' (FDE) to 'i_1/rgb_reg_reg[3]'
-INFO: [Synth 8-3886] merging instance 'i_1/rgb_reg_reg[4]' (FDE) to 'i_1/rgb_reg_reg[7]'
-INFO: [Synth 8-3886] merging instance 'i_1/rgb_reg_reg[5]' (FDE) to 'i_1/rgb_reg_reg[7]'
-INFO: [Synth 8-3886] merging instance 'i_1/rgb_reg_reg[6]' (FDE) to 'i_1/rgb_reg_reg[7]'
-INFO: [Synth 8-3886] merging instance 'i_1/rgb_reg_reg[8]' (FDE) to 'i_1/rgb_reg_reg[11]'
-INFO: [Synth 8-3886] merging instance 'i_1/rgb_reg_reg[9]' (FDE) to 'i_1/rgb_reg_reg[11]'
-INFO: [Synth 8-3886] merging instance 'i_1/rgb_reg_reg[10]' (FDE) to 'i_1/rgb_reg_reg[11]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec2/newSpeed_x_reg[0]' (FDE) to 'i_0/ats/ec2/newSpeed_x_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec2/newSpeed_x_reg[1]' (FDE) to 'i_0/ats/ec2/newSpeed_x_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec2/newSpeed_x_reg[2]' (FDE) to 'i_0/ats/ec2/newSpeed_x_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec2/newSpeed_x_reg[3]' (FDE) to 'i_0/ats/ec2/newSpeed_x_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec2/newSpeed_x_reg[4]' (FDE) to 'i_0/ats/ec2/newSpeed_x_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec2/newSpeed_x_reg[5]' (FDE) to 'i_0/ats/ec2/newSpeed_x_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec2/newSpeed_x_reg[6]' (FDE) to 'i_0/ats/ec2/newSpeed_x_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec2/newSpeed_x_reg[7]' (FDE) to 'i_0/ats/ec2/newSpeed_x_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec2/newSpeed_x_reg[8]' (FDE) to 'i_0/ats/ec2/newSpeed_x_reg[9]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\ats/ec2/newSpeed_x_reg[9] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/\ats/ec2/newSpeed_y_reg[0] )
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec2/newSpeed_y_reg[1]' (FDE) to 'i_0/ats/ec2/newSpeed_y_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec2/newSpeed_y_reg[2]' (FDE) to 'i_0/ats/ec2/newSpeed_y_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec2/newSpeed_y_reg[3]' (FDE) to 'i_0/ats/ec2/newSpeed_y_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec2/newSpeed_y_reg[4]' (FDE) to 'i_0/ats/ec2/newSpeed_y_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec2/newSpeed_y_reg[5]' (FDE) to 'i_0/ats/ec2/newSpeed_y_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec2/newSpeed_y_reg[6]' (FDE) to 'i_0/ats/ec2/newSpeed_y_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec2/newSpeed_y_reg[7]' (FDE) to 'i_0/ats/ec2/newSpeed_y_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec2/newSpeed_y_reg[8]' (FDE) to 'i_0/ats/ec2/newSpeed_y_reg[9]'
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/\ats/ec1/newSpeed_x_reg[0] )
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec1/newSpeed_x_reg[1]' (FDE) to 'i_0/ats/ec1/newSpeed_x_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec1/newSpeed_x_reg[2]' (FDE) to 'i_0/ats/ec1/newSpeed_x_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec1/newSpeed_x_reg[3]' (FDE) to 'i_0/ats/ec1/newSpeed_x_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec1/newSpeed_x_reg[4]' (FDE) to 'i_0/ats/ec1/newSpeed_x_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec1/newSpeed_x_reg[5]' (FDE) to 'i_0/ats/ec1/newSpeed_x_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec1/newSpeed_x_reg[6]' (FDE) to 'i_0/ats/ec1/newSpeed_x_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec1/newSpeed_x_reg[7]' (FDE) to 'i_0/ats/ec1/newSpeed_x_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec1/newSpeed_x_reg[8]' (FDE) to 'i_0/ats/ec1/newSpeed_x_reg[9]'
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/\ats/ec1/newSpeed_y_reg[0] )
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec1/newSpeed_y_reg[1]' (FDE) to 'i_0/ats/ec1/newSpeed_y_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec1/newSpeed_y_reg[2]' (FDE) to 'i_0/ats/ec1/newSpeed_y_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec1/newSpeed_y_reg[3]' (FDE) to 'i_0/ats/ec1/newSpeed_y_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec1/newSpeed_y_reg[4]' (FDE) to 'i_0/ats/ec1/newSpeed_y_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec1/newSpeed_y_reg[5]' (FDE) to 'i_0/ats/ec1/newSpeed_y_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec1/newSpeed_y_reg[6]' (FDE) to 'i_0/ats/ec1/newSpeed_y_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec1/newSpeed_y_reg[7]' (FDE) to 'i_0/ats/ec1/newSpeed_y_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/ats/ec1/newSpeed_y_reg[8]' (FDE) to 'i_0/ats/ec1/newSpeed_y_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_1/go/rgb_reg_reg[8]' (FDS) to 'i_1/gw/rgb_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_1/go/rgb_reg_reg[9]' (FDS) to 'i_1/gw/rgb_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_1/go/rgb_reg_reg[10]' (FDS) to 'i_1/gw/rgb_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_1/go/rgb_reg_reg[11]' (FDS) to 'i_1/gw/rgb_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_1/gw/rgb_reg_reg[0]' (FDR) to 'i_1/gw/rgb_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_1/gw/rgb_reg_reg[1]' (FDR) to 'i_1/gw/rgb_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_1/gw/rgb_reg_reg[2]' (FDR) to 'i_1/gw/rgb_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/gw/rgb_reg_reg[3]' (FDR) to 'i_1/gw/rgb_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_1/gw/rgb_reg_reg[4]' (FDR) to 'i_1/gw/rgb_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_1/gw/rgb_reg_reg[5]' (FDR) to 'i_1/gw/rgb_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_1/gw/rgb_reg_reg[6]' (FDR) to 'i_1/gw/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_1/gw/rgb_reg_reg[8]' (FDS) to 'i_1/gw/rgb_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_1/gw/rgb_reg_reg[9]' (FDS) to 'i_1/gw/rgb_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_1/gw/rgb_reg_reg[10]' (FDS) to 'i_1/gw/rgb_reg_reg[11]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\gw/rgb_reg_reg[11] )
+INFO: [Synth 8-3886] merging instance 'i_2/fight/y_pos_reg[0]' (FDRE) to 'i_2/fight/y_pos_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_2/fight/y_pos_reg[1]' (FDRE) to 'i_2/fight/y_pos_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_2/fight/y_pos_reg[2]' (FDRE) to 'i_2/fight/y_pos_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_2/fight/y_pos_reg[3]' (FDRE) to 'i_2/fight/y_pos_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_2/fight/y_pos_reg[4]' (FDSE) to 'i_2/fight/y_pos_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_2/fight/y_pos_reg[5]' (FDSE) to 'i_2/fight/y_pos_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_2/fight/y_pos_reg[6]' (FDSE) to 'i_2/fight/y_pos_reg[7]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/\fight/y_pos_reg[7] )
+INFO: [Synth 8-3886] merging instance 'i_2/fight/y_pos_reg[8]' (FDRE) to 'i_2/fight/y_pos_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\fight/y_pos_reg[9] )
+INFO: [Synth 8-3886] merging instance 'i_2/fight/rgb_reg_reg[0]' (FDR) to 'i_2/fight/rgb_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_2/fight/rgb_reg_reg[1]' (FDR) to 'i_2/fight/rgb_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_2/fight/rgb_reg_reg[2]' (FDR) to 'i_2/fight/rgb_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_2/fight/rgb_reg_reg[4]' (FDR) to 'i_2/fight/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_2/fight/rgb_reg_reg[5]' (FDR) to 'i_2/fight/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_2/fight/rgb_reg_reg[6]' (FDR) to 'i_2/fight/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_2/fight/rgb_reg_reg[8]' (FDS) to 'i_2/fight/rgb_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_2/fight/rgb_reg_reg[9]' (FDS) to 'i_2/fight/rgb_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_2/fight/rgb_reg_reg[10]' (FDS) to 'i_2/fight/rgb_reg_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\TxData_reg[5] )
+INFO: [Synth 8-3886] merging instance 'i_3/ats/rgb_reg_reg[0]' (FDR) to 'i_3/ats/rgb_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/rgb_reg_reg[1]' (FDR) to 'i_3/ats/rgb_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/rgb_reg_reg[2]' (FDR) to 'i_3/ats/rgb_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/rgb_reg_reg[4]' (FDR) to 'i_3/ats/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/rgb_reg_reg[5]' (FDR) to 'i_3/ats/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/rgb_reg_reg[6]' (FDR) to 'i_3/ats/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/rgb_reg_reg[8]' (FDS) to 'i_3/ats/rgb_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/rgb_reg_reg[9]' (FDS) to 'i_3/ats/rgb_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/rgb_reg_reg[10]' (FDS) to 'i_3/ats/rgb_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_2/rgb_reg_reg[0]' (FDE) to 'i_2/rgb_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_2/rgb_reg_reg[1]' (FDE) to 'i_2/rgb_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_2/rgb_reg_reg[2]' (FDE) to 'i_2/rgb_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_2/rgb_reg_reg[4]' (FDE) to 'i_2/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_2/rgb_reg_reg[5]' (FDE) to 'i_2/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_2/rgb_reg_reg[6]' (FDE) to 'i_2/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_2/rgb_reg_reg[8]' (FDE) to 'i_2/rgb_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_2/rgb_reg_reg[9]' (FDE) to 'i_2/rgb_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_2/rgb_reg_reg[10]' (FDE) to 'i_2/rgb_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec2/newSpeed_x_reg[0]' (FDE) to 'i_3/ats/ec2/newSpeed_x_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec2/newSpeed_x_reg[1]' (FDE) to 'i_3/ats/ec2/newSpeed_x_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec2/newSpeed_x_reg[2]' (FDE) to 'i_3/ats/ec2/newSpeed_x_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec2/newSpeed_x_reg[3]' (FDE) to 'i_3/ats/ec2/newSpeed_x_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec2/newSpeed_x_reg[4]' (FDE) to 'i_3/ats/ec2/newSpeed_x_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec2/newSpeed_x_reg[5]' (FDE) to 'i_3/ats/ec2/newSpeed_x_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec2/newSpeed_x_reg[6]' (FDE) to 'i_3/ats/ec2/newSpeed_x_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec2/newSpeed_x_reg[7]' (FDE) to 'i_3/ats/ec2/newSpeed_x_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec2/newSpeed_x_reg[8]' (FDE) to 'i_3/ats/ec2/newSpeed_x_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\ats/ec2/newSpeed_x_reg[9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/\ats/ec2/newSpeed_y_reg[0] )
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec2/newSpeed_y_reg[1]' (FDE) to 'i_3/ats/ec2/newSpeed_y_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec2/newSpeed_y_reg[2]' (FDE) to 'i_3/ats/ec2/newSpeed_y_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec2/newSpeed_y_reg[3]' (FDE) to 'i_3/ats/ec2/newSpeed_y_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec2/newSpeed_y_reg[4]' (FDE) to 'i_3/ats/ec2/newSpeed_y_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec2/newSpeed_y_reg[5]' (FDE) to 'i_3/ats/ec2/newSpeed_y_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec2/newSpeed_y_reg[6]' (FDE) to 'i_3/ats/ec2/newSpeed_y_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec2/newSpeed_y_reg[7]' (FDE) to 'i_3/ats/ec2/newSpeed_y_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec2/newSpeed_y_reg[8]' (FDE) to 'i_3/ats/ec2/newSpeed_y_reg[9]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/\ats/ec1/newSpeed_x_reg[0] )
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec1/newSpeed_x_reg[1]' (FDE) to 'i_3/ats/ec1/newSpeed_x_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec1/newSpeed_x_reg[2]' (FDE) to 'i_3/ats/ec1/newSpeed_x_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec1/newSpeed_x_reg[3]' (FDE) to 'i_3/ats/ec1/newSpeed_x_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec1/newSpeed_x_reg[4]' (FDE) to 'i_3/ats/ec1/newSpeed_x_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec1/newSpeed_x_reg[5]' (FDE) to 'i_3/ats/ec1/newSpeed_x_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec1/newSpeed_x_reg[6]' (FDE) to 'i_3/ats/ec1/newSpeed_x_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec1/newSpeed_x_reg[7]' (FDE) to 'i_3/ats/ec1/newSpeed_x_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec1/newSpeed_x_reg[8]' (FDE) to 'i_3/ats/ec1/newSpeed_x_reg[9]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/\ats/ec1/newSpeed_y_reg[0] )
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec1/newSpeed_y_reg[1]' (FDE) to 'i_3/ats/ec1/newSpeed_y_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec1/newSpeed_y_reg[2]' (FDE) to 'i_3/ats/ec1/newSpeed_y_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec1/newSpeed_y_reg[3]' (FDE) to 'i_3/ats/ec1/newSpeed_y_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec1/newSpeed_y_reg[4]' (FDE) to 'i_3/ats/ec1/newSpeed_y_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec1/newSpeed_y_reg[5]' (FDE) to 'i_3/ats/ec1/newSpeed_y_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec1/newSpeed_y_reg[6]' (FDE) to 'i_3/ats/ec1/newSpeed_y_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec1/newSpeed_y_reg[7]' (FDE) to 'i_3/ats/ec1/newSpeed_y_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/ats/ec1/newSpeed_y_reg[8]' (FDE) to 'i_3/ats/ec1/newSpeed_y_reg[9]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 799.527 ; gain = 520.180
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 800.820 ; gain = 521.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1417,21 +1464,13 @@ ROM:
 +---------------+---------------------------+---------------+----------------+
 |Pixel_On_Text2 | displayText[1]            | 64x7          | LUT            | 
 |Pixel_On_Text2 | displayText[1]            | 32x7          | LUT            | 
+|Pixel_On_Text2 | displayText[1]            | 64x7          | LUT            | 
 |Pixel_On_Text2 | displayText[1]            | 32x7          | LUT            | 
 |Pixel_On_Text2 | displayText[1]            | 32x7          | LUT            | 
 |Pixel_On_Text2 | displayText[1]            | 32x7          | LUT            | 
 |Pixel_On_Text2 | displayText[1]            | 32x7          | LUT            | 
-|Pixel_On_Text2 | FontRom/fontRow_reg       | 2048x8        | Block RAM      | 
-|Pixel_On_Text2 | FontRom/fontRow_reg       | 2048x8        | Block RAM      | 
-|Pixel_On_Text2 | FontRom/fontRow_reg       | 2048x8        | Block RAM      | 
-|creditScene    | t1/FontRom/fontRow_reg    | 2048x8        | Block RAM      | 
-|creditScene    | t2/displayText[1]         | 64x7          | LUT            | 
-|creditScene    | t2/FontRom/fontRow_reg    | 2048x8        | Block RAM      | 
-|creditScene    | t3/displayText[1]         | 32x7          | LUT            | 
-|creditScene    | t3/FontRom/fontRow_reg    | 2048x8        | Block RAM      | 
-|creditScene    | t4/FontRom/fontRow_reg    | 2048x8        | Block RAM      | 
-|creditScene    | t5/FontRom/fontRow_reg    | 2048x8        | Block RAM      | 
-|creditScene    | t6/FontRom/fontRow_reg    | 2048x8        | Block RAM      | 
+|Pixel_On_Text2 | displayText[1]            | 32x7          | LUT            | 
+|Pixel_On_Text2 | displayText[1]            | 32x7          | LUT            | 
 |menuScene      | fight/FontRom/fontRow_reg | 2048x8        | Block RAM      | 
 |menuScene      | act/FontRom/fontRow_reg   | 2048x8        | Block RAM      | 
 |menuScene      | item/FontRom/fontRow_reg  | 2048x8        | Block RAM      | 
@@ -1439,18 +1478,33 @@ ROM:
 |menuScene      | h1/FontRom/fontRow_reg    | 2048x8        | Block RAM      | 
 |menuScene      | t1/FontRom/fontRow_reg    | 2048x8        | Block RAM      | 
 |menuScene      | t2/FontRom/fontRow_reg    | 2048x8        | Block RAM      | 
-|Pixel_On_Text2 | FontRom/fontRow_reg       | 2048x8        | Block RAM      | 
-|Pixel_On_Text2 | FontRom/fontRow_reg       | 2048x8        | Block RAM      | 
-|Pixel_On_Text2 | FontRom/fontRow_reg       | 2048x8        | Block RAM      | 
+|gameWin        | t1/FontRom/fontRow_reg    | 2048x8        | Block RAM      | 
 |spareScene     | m1/displayText[1]         | 32x7          | LUT            | 
 |spareScene     | m1/FontRom/fontRow_reg    | 2048x8        | Block RAM      | 
 |spareScene     | m2/displayText[1]         | 32x7          | LUT            | 
 |spareScene     | m2/FontRom/fontRow_reg    | 2048x8        | Block RAM      | 
+|gameOver       | t1/FontRom/fontRow_reg    | 2048x8        | Block RAM      | 
+|Pixel_On_Text2 | FontRom/fontRow_reg       | 2048x8        | Block RAM      | 
+|Pixel_On_Text2 | FontRom/fontRow_reg       | 2048x8        | Block RAM      | 
+|Pixel_On_Text2 | FontRom/fontRow_reg       | 2048x8        | Block RAM      | 
+|Pixel_On_Text2 | FontRom/fontRow_reg       | 2048x8        | Block RAM      | 
+|Pixel_On_Text2 | FontRom/fontRow_reg       | 2048x8        | Block RAM      | 
+|Pixel_On_Text2 | FontRom/fontRow_reg       | 2048x8        | Block RAM      | 
 |actScene       | m1/displayText[1]         | 32x7          | LUT            | 
 |actScene       | m1/FontRom/fontRow_reg    | 2048x8        | Block RAM      | 
 |actScene       | m2/displayText[1]         | 32x7          | LUT            | 
 |actScene       | m2/FontRom/fontRow_reg    | 2048x8        | Block RAM      | 
-|gameOver       | t1/FontRom/fontRow_reg    | 2048x8        | Block RAM      | 
+|creditScene    | t1/FontRom/fontRow_reg    | 2048x8        | Block RAM      | 
+|creditScene    | t2/displayText[1]         | 64x7          | LUT            | 
+|creditScene    | t2/FontRom/fontRow_reg    | 2048x8        | Block RAM      | 
+|creditScene    | t3/displayText[1]         | 32x7          | LUT            | 
+|creditScene    | t3/FontRom/fontRow_reg    | 2048x8        | Block RAM      | 
+|creditScene    | t4/displayText[1]         | 64x7          | LUT            | 
+|creditScene    | t4/FontRom/fontRow_reg    | 2048x8        | Block RAM      | 
+|creditScene    | t5/displayText[1]         | 32x7          | LUT            | 
+|creditScene    | t5/FontRom/fontRow_reg    | 2048x8        | Block RAM      | 
+|creditScene    | t6/displayText[1]         | 32x7          | LUT            | 
+|creditScene    | t6/FontRom/fontRow_reg    | 2048x8        | Block RAM      | 
 +---------------+---------------------------+---------------+----------------+
 
 
@@ -1458,11 +1512,11 @@ DSP: Preliminary Mapping  Report (see note below)
 +---------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name    | DSP Mapping          | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +---------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|menuScene      | A*(B:0x24)           | 10     | 6      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|menuScene      | A*(B:0x24)           | 10     | 6      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |fightScene     | A*(B:0x24)           | 10     | 6      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |fightScene     | (C:0x1a4)-A*(B:0x24) | 10     | 6      | 9      | -      | 10     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
 |fightScene     | A*(B:0x24)           | 10     | 6      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|menuScene      | A*(B:0x24)           | 10     | 6      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|menuScene      | A*(B:0x24)           | 10     | 6      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |afterTurnScene | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |afterTurnScene | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |afterTurnScene | (PCIN>>17)+A*B       | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
@@ -1484,74 +1538,66 @@ Note: The table above is a preliminary report that shows the DSPs inferred at th
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6837] The timing for the instance fight/i_0/t1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance fight/i_1/t2/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance cred/i_0/t1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance cred/i_1/t2/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance cred/i_2/t3/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance cred/i_3/t4/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance cred/i_4/t5/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance cred/i_5/t6/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance menu/i_0/fight/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance menu/i_1/act/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance menu/i_2/item/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance menu/i_3/spare/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance menu/i_4/h1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance menu/i_5/t1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance menu/i_6/t2/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance i_0/i_0/ats/t1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance i_0/i_1/ats/heart/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance i_0/i_2/ats/t2/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance i_1/i_0/spare/m1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance i_1/i_1/spare/m2/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance i_1/i_2/act/m1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance i_1/i_3/act/m2/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/menu/i_0/fight/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/menu/i_1/act/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/menu/i_2/item/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/menu/i_3/spare/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/menu/i_4/h1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/menu/i_5/t1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/menu/i_6/t2/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_1/i_0/gw/t1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_1/i_2/spare/m1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_1/i_3/spare/m2/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance i_1/i_4/go/t1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/fighti_0/fight/t1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/fighti_1/fight/t2/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_3/i_0/ats/t1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_3/i_1/ats/heart/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_3/i_2/ats/t2/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_4/i_0/act/m1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_4/i_1/act/m2/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_4/i_2/cred/t1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_4/i_3/cred/t2/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_4/i_4/cred/t3/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_4/i_5/cred/t4/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_4/i_6/cred/t5/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_4/i_7/cred/t6/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 
 Report RTL Partitions: 
 +------+-----------------+------------+----------+
 |      |RTL Partition    |Replication |Instances |
 +------+-----------------+------------+----------+
-|1     |menuScene        |           1|       719|
-|2     |fightScene       |           1|      1126|
-|3     |manageScene__GB2 |           1|      1997|
-|4     |manageScene__GB3 |           1|       443|
-|5     |creditScene      |           1|       524|
+|1     |manageScene__GB0 |           1|       775|
+|2     |manageScene__GB1 |           1|       432|
+|3     |manageScene__GB2 |           1|       881|
+|4     |manageScene__GB3 |           1|      1875|
+|5     |manageScene__GB4 |           1|       682|
 +------+-----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 880.094 ; gain = 600.746
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 878.109 ; gain = 599.066
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 933.883 ; gain = 654.535
+Finished Timing Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 983.180 ; gain = 704.137
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+-----------------+------------+----------+
 |      |RTL Partition    |Replication |Instances |
 +------+-----------------+------------+----------+
-|1     |menuScene        |           1|       719|
-|2     |fightScene       |           1|      1126|
-|3     |manageScene__GB2 |           1|      1962|
-|4     |manageScene__GB3 |           1|       443|
-|5     |creditScene      |           1|       524|
+|1     |manageScene__GB0 |           1|       775|
+|2     |manageScene__GB1 |           1|       432|
+|3     |manageScene__GB2 |           1|       881|
+|4     |manageScene_GT0  |           1|      2466|
 +------+-----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6837] The timing for the instance fight/t1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance fight/t1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance cred/t1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance cred/t1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance cred/t3/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance cred/t3/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance cred/t5/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance cred/t5/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance menu/fight/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance menu/fight/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance menu/item/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
@@ -1560,15 +1606,24 @@ INFO: [Synth 8-6837] The timing for the instance menu/h1/FontRom/fontRow_reg (im
 INFO: [Synth 8-6837] The timing for the instance menu/h1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance menu/t2/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance menu/t2/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance ats/heart/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance ats/heart/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance spare/m1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance spare/m1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance act/m1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance act/m1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance go/t1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance go/t1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance fight/t2/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance fight/t2/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ats/heart/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ats/heart/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance act/m1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance act/m1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance cred/t1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance cred/t1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance cred/t3/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance cred/t3/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance cred/t5/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance cred/t5/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 937.754 ; gain = 658.406
+Finished Technology Mapping : Time (s): cpu = 00:01:16 ; elapsed = 00:01:22 . Memory (MB): peak = 983.180 ; gain = 704.137
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1588,12 +1643,13 @@ Finished Flattening Before IO Insertion
 ---------------------------------------------------------------------------------
 Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop gw/t1/pixel_reg is being inverted and renamed to gw/t1/pixel_reg_inv.
 INFO: [Synth 8-5365] Flop go/t1/pixel_reg is being inverted and renamed to go/t1/pixel_reg_inv.
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:04 ; elapsed = 00:01:07 . Memory (MB): peak = 937.754 ; gain = 658.406
+Finished IO Insertion : Time (s): cpu = 00:01:17 ; elapsed = 00:01:23 . Memory (MB): peak = 983.180 ; gain = 704.137
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1606,7 +1662,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:04 ; elapsed = 00:01:07 . Memory (MB): peak = 937.754 ; gain = 658.406
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:17 ; elapsed = 00:01:24 . Memory (MB): peak = 983.180 ; gain = 704.137
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1618,25 +1674,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 937.754 ; gain = 658.406
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:17 ; elapsed = 00:01:24 . Memory (MB): peak = 983.180 ; gain = 704.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 937.754 ; gain = 658.406
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:17 ; elapsed = 00:01:24 . Memory (MB): peak = 983.180 ; gain = 704.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 937.754 ; gain = 658.406
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:17 ; elapsed = 00:01:24 . Memory (MB): peak = 983.180 ; gain = 704.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 937.754 ; gain = 658.406
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:17 ; elapsed = 00:01:24 . Memory (MB): peak = 983.180 ; gain = 704.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1653,21 +1709,21 @@ Report Cell Usage:
 |      |Cell      |Count |
 +------+----------+------+
 |1     |BUFG      |     2|
-|2     |CARRY4    |   270|
+|2     |CARRY4    |   272|
 |3     |DSP48E1   |    18|
 |4     |DSP48E1_1 |     2|
-|5     |LUT1      |   201|
-|6     |LUT2      |   449|
-|7     |LUT3      |   101|
-|8     |LUT4      |   199|
-|9     |LUT5      |   291|
-|10    |LUT6      |   450|
-|11    |MUXF7     |     1|
+|5     |LUT1      |   199|
+|6     |LUT2      |   468|
+|7     |LUT3      |    95|
+|8     |LUT4      |   213|
+|9     |LUT5      |   315|
+|10    |LUT6      |   423|
+|11    |MUXF7     |     2|
 |12    |RAMB18E1  |    12|
 |13    |FDCE      |     5|
-|14    |FDPE      |     5|
-|15    |FDRE      |   265|
-|16    |FDSE      |    27|
+|14    |FDPE      |     6|
+|15    |FDRE      |   267|
+|16    |FDSE      |    26|
 |17    |LDC       |     4|
 |18    |IBUF      |     2|
 |19    |OBUF      |    15|
@@ -1677,34 +1733,34 @@ Report Instance Areas:
 +------+----------------------+----------------------------------+------+
 |      |Instance              |Module                            |Cells |
 +------+----------------------+----------------------------------+------+
-|1     |top                   |                                  |  2319|
-|2     |  act                 |actScene                          |    13|
-|3     |    m1                |Pixel_On_Text2__parameterized13   |     8|
+|1     |top                   |                                  |  2346|
+|2     |  act                 |actScene                          |    14|
+|3     |    m1                |Pixel_On_Text2__parameterized14   |     8|
 |4     |      FontRom         |Font_Rom_47                       |     4|
-|5     |    m2                |Pixel_On_Text2__parameterized14   |     4|
-|6     |  ats                 |afterTurnScene                    |   639|
-|7     |    ec1               |enemyCircle                       |   169|
+|5     |    m2                |Pixel_On_Text2__parameterized15   |     4|
+|6     |  ats                 |afterTurnScene                    |   642|
+|7     |    ec1               |enemyCircle                       |   163|
 |8     |    ec2               |enemyCircle_42                    |   135|
 |9     |    heart             |Pixel_On_Text2__parameterized0_43 |    50|
 |10    |      FontRom         |Font_Rom_46                       |    15|
-|11    |    t1                |Pixel_On_Text2_44                 |    25|
-|12    |    t2                |Pixel_On_Text2__parameterized1_45 |    37|
-|13    |  cred                |creditScene                       |    42|
-|14    |    t1                |Pixel_On_Text2__parameterized3    |    10|
-|15    |      FontRom         |Font_Rom_41                       |     6|
-|16    |    t2                |Pixel_On_Text2__parameterized4    |     3|
-|17    |    t3                |Pixel_On_Text2__parameterized5    |    11|
-|18    |      FontRom         |Font_Rom_40                       |     7|
-|19    |    t4                |Pixel_On_Text2__parameterized6    |     3|
-|20    |    t5                |Pixel_On_Text2__parameterized7    |    10|
-|21    |      FontRom         |Font_Rom_39                       |     6|
-|22    |    t6                |Pixel_On_Text2__parameterized8    |     3|
+|11    |    t1                |Pixel_On_Text2_44                 |    22|
+|12    |    t2                |Pixel_On_Text2__parameterized1_45 |    42|
+|13    |  cred                |creditScene                       |    36|
+|14    |    t1                |Pixel_On_Text2__parameterized4    |     9|
+|15    |      FontRom         |Font_Rom_41                       |     5|
+|16    |    t2                |Pixel_On_Text2__parameterized5    |     3|
+|17    |    t3                |Pixel_On_Text2__parameterized6    |     8|
+|18    |      FontRom         |Font_Rom_40                       |     4|
+|19    |    t4                |Pixel_On_Text2__parameterized7    |     3|
+|20    |    t5                |Pixel_On_Text2__parameterized8    |     8|
+|21    |      FontRom         |Font_Rom_39                       |     4|
+|22    |    t6                |Pixel_On_Text2__parameterized9    |     3|
 |23    |  fdivTarget          |ClockDivider                      |     2|
 |24    |  fdivTarget2         |ClockDivider_0                    |     2|
-|25    |  fight               |fightScene                        |   255|
-|26    |    t1                |Pixel_On_Text2_36                 |    19|
-|27    |      FontRom         |Font_Rom_38                       |     3|
-|28    |    t2                |Pixel_On_Text2__parameterized1_37 |    14|
+|25    |  fight               |fightScene                        |   268|
+|26    |    t1                |Pixel_On_Text2_36                 |    17|
+|27    |    t2                |Pixel_On_Text2__parameterized1_37 |    31|
+|28    |      FontRom         |Font_Rom_38                       |    17|
 |29    |  \genblk1[0].fdiv2   |ClockDivider_1                    |     5|
 |30    |  \genblk1[10].fdiv2  |ClockDivider_2                    |     2|
 |31    |  \genblk1[11].fdiv2  |ClockDivider_3                    |     2|
@@ -1732,55 +1788,57 @@ Report Instance Areas:
 |53    |  \genblk1[7].fdiv2   |ClockDivider_25                   |     2|
 |54    |  \genblk1[8].fdiv2   |ClockDivider_26                   |     2|
 |55    |  \genblk1[9].fdiv2   |ClockDivider_27                   |     2|
-|56    |  go                  |gameOver                          |     5|
-|57    |    t1                |Pixel_On_Text2__parameterized2    |     4|
-|58    |      FontRom         |Font_Rom_35                       |     1|
-|59    |  menu                |menuScene                         |   163|
-|60    |    act               |Pixel_On_Text2__parameterized10   |     4|
-|61    |    fight             |Pixel_On_Text2__parameterized9    |    10|
-|62    |      FontRom         |Font_Rom_34                       |     6|
-|63    |    h1                |Pixel_On_Text2__parameterized0    |     6|
-|64    |      FontRom         |Font_Rom_33                       |     5|
-|65    |    h2                |Pixel_On_Text2__parameterized0_28 |     1|
-|66    |    h3                |Pixel_On_Text2__parameterized0_29 |     1|
-|67    |    h4                |Pixel_On_Text2__parameterized0_30 |     2|
-|68    |    item              |Pixel_On_Text2__parameterized11   |     8|
-|69    |      FontRom         |Font_Rom_32                       |     4|
-|70    |    spare             |Pixel_On_Text2__parameterized12   |     4|
-|71    |    t1                |Pixel_On_Text2                    |     3|
-|72    |    t2                |Pixel_On_Text2__parameterized1    |    13|
-|73    |      FontRom         |Font_Rom_31                       |     5|
-|74    |  nolabel_line72      |transmitter                       |    65|
-|75    |  receiver_unit       |receiver                          |    94|
-|76    |  spare               |spareScene                        |    16|
-|77    |    m1                |Pixel_On_Text2__parameterized15   |     8|
-|78    |      FontRom         |Font_Rom                          |     5|
-|79    |    m2                |Pixel_On_Text2__parameterized16   |     3|
-|80    |  vga_sync_unit       |vga_sync                          |   881|
+|56    |  go                  |gameOver                          |    10|
+|57    |    t1                |Pixel_On_Text2__parameterized2    |     9|
+|58    |      FontRom         |Font_Rom_35                       |     6|
+|59    |  gw                  |gameWin                           |     8|
+|60    |    t1                |Pixel_On_Text2__parameterized3    |     3|
+|61    |  menu                |menuScene                         |   163|
+|62    |    act               |Pixel_On_Text2__parameterized11   |     4|
+|63    |    fight             |Pixel_On_Text2__parameterized10   |     7|
+|64    |      FontRom         |Font_Rom_34                       |     3|
+|65    |    h1                |Pixel_On_Text2__parameterized0    |     6|
+|66    |      FontRom         |Font_Rom_33                       |     5|
+|67    |    h2                |Pixel_On_Text2__parameterized0_28 |     1|
+|68    |    h3                |Pixel_On_Text2__parameterized0_29 |     1|
+|69    |    h4                |Pixel_On_Text2__parameterized0_30 |     2|
+|70    |    item              |Pixel_On_Text2__parameterized12   |     8|
+|71    |      FontRom         |Font_Rom_32                       |     4|
+|72    |    spare             |Pixel_On_Text2__parameterized13   |     4|
+|73    |    t1                |Pixel_On_Text2                    |     3|
+|74    |    t2                |Pixel_On_Text2__parameterized1    |    13|
+|75    |      FontRom         |Font_Rom_31                       |     5|
+|76    |  nolabel_line72      |transmitter                       |    65|
+|77    |  receiver_unit       |receiver                          |    90|
+|78    |  spare               |spareScene                        |    14|
+|79    |    m1                |Pixel_On_Text2__parameterized16   |     8|
+|80    |      FontRom         |Font_Rom                          |     5|
+|81    |    m2                |Pixel_On_Text2__parameterized17   |     3|
+|82    |  vga_sync_unit       |vga_sync                          |   887|
 +------+----------------------+----------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 937.754 ; gain = 658.406
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:17 ; elapsed = 00:01:24 . Memory (MB): peak = 983.180 ; gain = 704.137
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:53 ; elapsed = 00:01:00 . Memory (MB): peak = 937.754 ; gain = 309.512
-Synthesis Optimization Complete : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 937.754 ; gain = 658.406
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:06 ; elapsed = 00:01:16 . Memory (MB): peak = 983.180 ; gain = 354.828
+Synthesis Optimization Complete : Time (s): cpu = 00:01:17 ; elapsed = 00:01:24 . Memory (MB): peak = 983.180 ; gain = 704.137
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 307 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 310 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 937.754 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 983.180 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 4 instances were transformed.
   LDC => LDCE: 4 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-268 Infos, 81 Warnings, 0 Critical Warnings and 0 Errors encountered.
+287 Infos, 86 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 937.754 ; gain = 671.039
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 937.754 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:20 ; elapsed = 00:01:28 . Memory (MB): peak = 983.180 ; gain = 716.902
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 983.180 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.runs/synth_1/manageScene.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file manageScene_utilization_synth.rpt -pb manageScene_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat May 30 03:03:19 2020...
+INFO: [Common 17-206] Exiting Vivado at Wed Jun  3 18:44:31 2020...

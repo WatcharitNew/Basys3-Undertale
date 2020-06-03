@@ -40,7 +40,7 @@ module manageScene(
 	wire [11:0] rgb_reg_act;
 	//wire [11:0] rgb_reg_spare;
 	wire [11:0] rgb_reg_fight;
-	
+    wire [11:0] rgb_reg_gw;
 	wire [11:0] rgb_reg_spare_fail;
 	wire [11:0] rgb_reg_spare_complete;
 	
@@ -81,6 +81,7 @@ module manageScene(
     reg onScene_spare;
     reg onScene_fight;
     reg onScene_go;
+    reg onScene_gw;
     
     //health
     wire [9:0] maxHealth=6;
@@ -119,6 +120,8 @@ module manageScene(
         onScene_act = 0;
         onScene_spare = 0;
         onScene_fight = 0;
+        onScene_gw = 0;
+        onScene_go = 0;
         acted = 0;
         stop = 0;
         crdClk = 0;
@@ -192,6 +195,7 @@ module manageScene(
     afterTurnScene ats(clk, video_on, p_tick, x, y, onScene_ats, maxHealth, newpic, direc, targetClk, maxEnemyHealth, newEnemyHealth, rgb_reg_ats, newHealth);
     loadingScene ls(clk,video_on, p_tick, x, y, rgb_reg_ls);
     gameOver go(clk,video_on, p_tick, x, y, rgb_reg_go);
+    gameWin gw(clk,video_on, p_tick, x, y, rgb_reg_gw);
     creditScene cred(clk, video_on, p_tick, x, y, rgb_reg_cred);
     menuScene menu(clk, video_on, p_tick, x, y, newpic, selectedMenu, maxHealth,newHealth, maxEnemyHealth, newEnemyHealth,rgb_reg_menu);
     actScene act(clk, video_on, p_tick, x, y, rgb_reg_act);
@@ -208,6 +212,7 @@ module manageScene(
         else if (onScene_spare && !acted) rgb_reg = rgb_reg_spare_fail;
         else if (onScene_spare && acted) rgb_reg = rgb_reg_spare_complete;
         else if (onScene_go) rgb_reg = rgb_reg_go;
+        else if (onScene_gw) rgb_reg = rgb_reg_gw;
     end
     
     wire isDie = (newHealth <= 1);
@@ -215,7 +220,7 @@ module manageScene(
     always @(posedge atsClk or posedge isDie or posedge isSelect or posedge isWon)
     begin
         if (isDie) begin onScene_ats<=0; onScene_menu<=0; onScene_go<=1; end
-        else if (isWon) begin onScene_fight<=0; onScene_menu<=0; onScene_go<=1; onScene_ats<=0;  end 
+        else if (isWon) begin onScene_fight<=0; onScene_menu<=0; onScene_gw<=1; onScene_ats<=0;  end 
         else if (isSelect) 
         begin 
             if(onScene_menu) 
