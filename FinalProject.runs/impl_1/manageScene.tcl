@@ -70,12 +70,12 @@ set rc [catch {
   set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir F:/HWLAB/FinalProject/FinalProject.cache/wt [current_project]
-  set_property parent.project_path F:/HWLAB/FinalProject/FinalProject.xpr [current_project]
-  set_property ip_output_repo F:/HWLAB/FinalProject/FinalProject.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.cache/wt [current_project]
+  set_property parent.project_path C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.xpr [current_project]
+  set_property ip_output_repo C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet F:/HWLAB/FinalProject/FinalProject.runs/synth_1/manageScene.dcp
-  read_xdc F:/HWLAB/Lab6/Lab6.srcs/constrs_1/new/Basys3_Master.xdc
+  add_files -quiet C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.runs/synth_1/manageScene.dcp
+  read_xdc C:/Users/pooml/Desktop/Basys3-Undertale/FinalProject.srcs/constrs_1/new/Basys3_Master.xdc
   link_design -top manageScene -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]
